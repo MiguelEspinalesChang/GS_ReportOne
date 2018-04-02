@@ -1,0 +1,362 @@
+﻿namespace SegundaVista.Vistas
+{
+    partial class Cliente
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente));
+            this.pnlMenuHijo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pnlBtn = new System.Windows.Forms.Panel();
+            this.ntnEliminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnAgregarCliente = new System.Windows.Forms.Button();
+            this.pnlContenedorHijo = new System.Windows.Forms.Panel();
+            this.pnlAlerta = new System.Windows.Forms.Panel();
+            this.pnlAlertaRojo = new System.Windows.Forms.Panel();
+            this.btnCerrarAlertaR = new System.Windows.Forms.PictureBox();
+            this.lblRojo = new System.Windows.Forms.Label();
+            this.pnlAlertaVerde = new System.Windows.Forms.Panel();
+            this.btnCerrarAlertaV = new System.Windows.Forms.PictureBox();
+            this.lblverde = new System.Windows.Forms.Label();
+            this.pnlListaClientes = new System.Windows.Forms.Panel();
+            this.gridClientes = new System.Windows.Forms.DataGridView();
+            this.btnAgregarMedidor = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnGuardarMedidor = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pnlMenuHijo.SuspendLayout();
+            this.pnlBtn.SuspendLayout();
+            this.pnlContenedorHijo.SuspendLayout();
+            this.pnlAlerta.SuspendLayout();
+            this.pnlAlertaRojo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrarAlertaR)).BeginInit();
+            this.pnlAlertaVerde.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrarAlertaV)).BeginInit();
+            this.pnlListaClientes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridClientes)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pnlMenuHijo
+            // 
+            this.pnlMenuHijo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
+            this.pnlMenuHijo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlMenuHijo.Controls.Add(this.label1);
+            this.pnlMenuHijo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlMenuHijo.Location = new System.Drawing.Point(0, 0);
+            this.pnlMenuHijo.Name = "pnlMenuHijo";
+            this.pnlMenuHijo.Size = new System.Drawing.Size(980, 40);
+            this.pnlMenuHijo.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(420, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 24);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "GS-Cliente";
+            // 
+            // pnlBtn
+            // 
+            this.pnlBtn.BackColor = System.Drawing.Color.White;
+            this.pnlBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlBtn.Controls.Add(this.btnAgregarMedidor);
+            this.pnlBtn.Controls.Add(this.ntnEliminar);
+            this.pnlBtn.Controls.Add(this.btnEditar);
+            this.pnlBtn.Controls.Add(this.btnAgregarCliente);
+            this.pnlBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlBtn.Location = new System.Drawing.Point(0, 0);
+            this.pnlBtn.Name = "pnlBtn";
+            this.pnlBtn.Size = new System.Drawing.Size(978, 49);
+            this.pnlBtn.TabIndex = 1;
+            // 
+            // ntnEliminar
+            // 
+            this.ntnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            this.ntnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ntnEliminar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ntnEliminar.ForeColor = System.Drawing.Color.Black;
+            this.ntnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("ntnEliminar.Image")));
+            this.ntnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ntnEliminar.Location = new System.Drawing.Point(401, 3);
+            this.ntnEliminar.Name = "ntnEliminar";
+            this.ntnEliminar.Size = new System.Drawing.Size(193, 40);
+            this.ntnEliminar.TabIndex = 17;
+            this.ntnEliminar.Text = "Eliminar";
+            this.ntnEliminar.UseVisualStyleBackColor = true;
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.Black;
+            this.btnEditar.Image = ((System.Drawing.Image)(resources.GetObject("btnEditar.Image")));
+            this.btnEditar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.Location = new System.Drawing.Point(202, 3);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(193, 40);
+            this.btnEditar.TabIndex = 16;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            // 
+            // btnAgregarCliente
+            // 
+            this.btnAgregarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            this.btnAgregarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarCliente.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarCliente.ForeColor = System.Drawing.Color.Black;
+            this.btnAgregarCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarCliente.Image")));
+            this.btnAgregarCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarCliente.Location = new System.Drawing.Point(3, 2);
+            this.btnAgregarCliente.Name = "btnAgregarCliente";
+            this.btnAgregarCliente.Size = new System.Drawing.Size(193, 41);
+            this.btnAgregarCliente.TabIndex = 15;
+            this.btnAgregarCliente.Text = "Agregar";
+            this.btnAgregarCliente.UseVisualStyleBackColor = true;
+            this.btnAgregarCliente.Click += new System.EventHandler(this.btnAgregarCliente_Click);
+            // 
+            // pnlContenedorHijo
+            // 
+            this.pnlContenedorHijo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlContenedorHijo.Controls.Add(this.label2);
+            this.pnlContenedorHijo.Controls.Add(this.button1);
+            this.pnlContenedorHijo.Controls.Add(this.btnGuardarMedidor);
+            this.pnlContenedorHijo.Controls.Add(this.pnlListaClientes);
+            this.pnlContenedorHijo.Controls.Add(this.pnlAlerta);
+            this.pnlContenedorHijo.Controls.Add(this.pnlBtn);
+            this.pnlContenedorHijo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContenedorHijo.Location = new System.Drawing.Point(0, 40);
+            this.pnlContenedorHijo.Name = "pnlContenedorHijo";
+            this.pnlContenedorHijo.Size = new System.Drawing.Size(980, 522);
+            this.pnlContenedorHijo.TabIndex = 4;
+            // 
+            // pnlAlerta
+            // 
+            this.pnlAlerta.Controls.Add(this.pnlAlertaRojo);
+            this.pnlAlerta.Controls.Add(this.pnlAlertaVerde);
+            this.pnlAlerta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlAlerta.Location = new System.Drawing.Point(0, 49);
+            this.pnlAlerta.Name = "pnlAlerta";
+            this.pnlAlerta.Size = new System.Drawing.Size(978, 41);
+            this.pnlAlerta.TabIndex = 2;
+            // 
+            // pnlAlertaRojo
+            // 
+            this.pnlAlertaRojo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlAlertaRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.pnlAlertaRojo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlAlertaRojo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlAlertaRojo.Controls.Add(this.btnCerrarAlertaR);
+            this.pnlAlertaRojo.Controls.Add(this.lblRojo);
+            this.pnlAlertaRojo.Location = new System.Drawing.Point(591, 6);
+            this.pnlAlertaRojo.Name = "pnlAlertaRojo";
+            this.pnlAlertaRojo.Size = new System.Drawing.Size(383, 30);
+            this.pnlAlertaRojo.TabIndex = 1;
+            // 
+            // btnCerrarAlertaR
+            // 
+            this.btnCerrarAlertaR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarAlertaR.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarAlertaR.Image")));
+            this.btnCerrarAlertaR.Location = new System.Drawing.Point(5, 3);
+            this.btnCerrarAlertaR.Name = "btnCerrarAlertaR";
+            this.btnCerrarAlertaR.Size = new System.Drawing.Size(22, 22);
+            this.btnCerrarAlertaR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnCerrarAlertaR.TabIndex = 2;
+            this.btnCerrarAlertaR.TabStop = false;
+            this.btnCerrarAlertaR.Click += new System.EventHandler(this.btnCerrarAlertaR_Click);
+            // 
+            // lblRojo
+            // 
+            this.lblRojo.AutoSize = true;
+            this.lblRojo.Location = new System.Drawing.Point(47, 8);
+            this.lblRojo.Name = "lblRojo";
+            this.lblRojo.Size = new System.Drawing.Size(0, 13);
+            this.lblRojo.TabIndex = 0;
+            this.lblRojo.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pnlAlertaVerde
+            // 
+            this.pnlAlertaVerde.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlAlertaVerde.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(216)))));
+            this.pnlAlertaVerde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlAlertaVerde.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlAlertaVerde.Controls.Add(this.btnCerrarAlertaV);
+            this.pnlAlertaVerde.Controls.Add(this.lblverde);
+            this.pnlAlertaVerde.Location = new System.Drawing.Point(593, 6);
+            this.pnlAlertaVerde.Name = "pnlAlertaVerde";
+            this.pnlAlertaVerde.Size = new System.Drawing.Size(382, 30);
+            this.pnlAlertaVerde.TabIndex = 0;
+            // 
+            // btnCerrarAlertaV
+            // 
+            this.btnCerrarAlertaV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarAlertaV.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarAlertaV.Image")));
+            this.btnCerrarAlertaV.Location = new System.Drawing.Point(5, 3);
+            this.btnCerrarAlertaV.Name = "btnCerrarAlertaV";
+            this.btnCerrarAlertaV.Size = new System.Drawing.Size(22, 22);
+            this.btnCerrarAlertaV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnCerrarAlertaV.TabIndex = 1;
+            this.btnCerrarAlertaV.TabStop = false;
+            this.btnCerrarAlertaV.Click += new System.EventHandler(this.btnCerrarAlertaV_Click);
+            // 
+            // lblverde
+            // 
+            this.lblverde.AutoSize = true;
+            this.lblverde.Location = new System.Drawing.Point(312, 7);
+            this.lblverde.Name = "lblverde";
+            this.lblverde.Size = new System.Drawing.Size(0, 13);
+            this.lblverde.TabIndex = 0;
+            // 
+            // pnlListaClientes
+            // 
+            this.pnlListaClientes.Controls.Add(this.gridClientes);
+            this.pnlListaClientes.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlListaClientes.Location = new System.Drawing.Point(0, 90);
+            this.pnlListaClientes.Name = "pnlListaClientes";
+            this.pnlListaClientes.Size = new System.Drawing.Size(298, 430);
+            this.pnlListaClientes.TabIndex = 3;
+            // 
+            // gridClientes
+            // 
+            this.gridClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridClientes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridClientes.Location = new System.Drawing.Point(0, 0);
+            this.gridClientes.Name = "gridClientes";
+            this.gridClientes.Size = new System.Drawing.Size(298, 430);
+            this.gridClientes.TabIndex = 0;
+            // 
+            // btnAgregarMedidor
+            // 
+            this.btnAgregarMedidor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            this.btnAgregarMedidor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarMedidor.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarMedidor.ForeColor = System.Drawing.Color.Black;
+            this.btnAgregarMedidor.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarMedidor.Image")));
+            this.btnAgregarMedidor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarMedidor.Location = new System.Drawing.Point(600, 3);
+            this.btnAgregarMedidor.Name = "btnAgregarMedidor";
+            this.btnAgregarMedidor.Size = new System.Drawing.Size(193, 41);
+            this.btnAgregarMedidor.TabIndex = 18;
+            this.btnAgregarMedidor.Text = "Agregar";
+            this.btnAgregarMedidor.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(479, 142);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(169, 41);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "Editar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnGuardarMedidor
+            // 
+            this.btnGuardarMedidor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            this.btnGuardarMedidor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarMedidor.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarMedidor.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardarMedidor.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardarMedidor.Image")));
+            this.btnGuardarMedidor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardarMedidor.Location = new System.Drawing.Point(304, 142);
+            this.btnGuardarMedidor.Name = "btnGuardarMedidor";
+            this.btnGuardarMedidor.Size = new System.Drawing.Size(169, 41);
+            this.btnGuardarMedidor.TabIndex = 21;
+            this.btnGuardarMedidor.Text = "Guardar";
+            this.btnGuardarMedidor.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(350, 110);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 13);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Medidor";
+            // 
+            // Cliente
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(980, 562);
+            this.Controls.Add(this.pnlContenedorHijo);
+            this.Controls.Add(this.pnlMenuHijo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Cliente";
+            this.Text = "Cliente";
+            this.Load += new System.EventHandler(this.Cliente_Load);
+            this.pnlMenuHijo.ResumeLayout(false);
+            this.pnlMenuHijo.PerformLayout();
+            this.pnlBtn.ResumeLayout(false);
+            this.pnlContenedorHijo.ResumeLayout(false);
+            this.pnlContenedorHijo.PerformLayout();
+            this.pnlAlerta.ResumeLayout(false);
+            this.pnlAlertaRojo.ResumeLayout(false);
+            this.pnlAlertaRojo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrarAlertaR)).EndInit();
+            this.pnlAlertaVerde.ResumeLayout(false);
+            this.pnlAlertaVerde.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrarAlertaV)).EndInit();
+            this.pnlListaClientes.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridClientes)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Panel pnlMenuHijo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel pnlBtn;
+        private System.Windows.Forms.Button ntnEliminar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnAgregarCliente;
+        private System.Windows.Forms.Panel pnlContenedorHijo;
+        private System.Windows.Forms.Panel pnlAlerta;
+        private System.Windows.Forms.Panel pnlAlertaRojo;
+        private System.Windows.Forms.Label lblRojo;
+        private System.Windows.Forms.Panel pnlAlertaVerde;
+        private System.Windows.Forms.Label lblverde;
+        private System.Windows.Forms.PictureBox btnCerrarAlertaV;
+        private System.Windows.Forms.PictureBox btnCerrarAlertaR;
+        private System.Windows.Forms.Panel pnlListaClientes;
+        private System.Windows.Forms.DataGridView gridClientes;
+        private System.Windows.Forms.Button btnAgregarMedidor;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGuardarMedidor;
+    }
+}
