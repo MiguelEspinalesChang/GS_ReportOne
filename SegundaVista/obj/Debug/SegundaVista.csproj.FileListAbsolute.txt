@@ -131,3 +131,4 @@ D:\SegundaVista_Mongo\SegundaVista\obj\Debug\SegundaVista.Vistas.S4X.resources
 D:\SegundaVista_Mongo\SegundaVista\obj\Debug\SegundaVista.Vistas.Usuario.resources
 D:\SegundaVista_Mongo\SegundaVista\obj\Debug\SegundaVista.csproj.GenerateResource.Cache
 D:\SegundaVista_Mongo\SegundaVista\obj\Debug\SegundaVista.Vistas.AgregarCliente.resources
+C:\Users\HP004\Desktop\SegundaVista_Mongo\SegundaVista\obj\Debug\SegundaVista.Vistas.AgregarCliente.resources

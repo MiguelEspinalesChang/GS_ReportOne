@@ -8,8 +8,8 @@ namespace SegundaVista.clases
 {
     class Clientee
     {
-        public int IdCliente_MongoDB { get; set; }
-        public int Id { get; set; }
+        public string ObjectId_Cliente { get; set; }
+        //public int Id { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
         public string Nombre_Empresa { get; set; }

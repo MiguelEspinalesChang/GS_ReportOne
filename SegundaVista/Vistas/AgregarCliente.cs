@@ -22,7 +22,6 @@ namespace SegundaVista.Vistas
         private void AgregarCliente_Load(object sender, EventArgs e)
         {
 
-            Conector_DataBase conect = new Conector_DataBase();
            
 
         }
@@ -34,6 +33,8 @@ namespace SegundaVista.Vistas
 
         private void btnGuardarMedidor_Click(object sender, EventArgs e)
         {
+            Conector_DataBase conector = new Conector_DataBase();
+
             Clientee cliente = new Clientee();
             cliente.Nombre = txt_m_Nombre.Text;
             cliente.Apellido = txt_m_Apellido.Text;
@@ -43,6 +44,18 @@ namespace SegundaVista.Vistas
             cliente.RazonSocial = txt_m_RazonSocial.Text;
             cliente.Ruc = txt_m_Ruc.Text;
             cliente.NisCliente = txt_m_NisCliente.Text;
+
+           // Mandar los datos del usuario ala base de datos en mongo
+            conector.insertar(cliente.Nombre,cliente.Apellido,cliente.Nombre_Empresa,cliente.Responsable_Medicion,cliente.DirigirReporte_A,cliente.RazonSocial,cliente.Ruc,cliente.NisCliente);
+            MessageBox.Show("Usuario Agregado");
+            txt_m_Nombre.Text = "";
+            txt_m_Apellido.Text = "";
+            txt_m_NomEmpresa.Text = "";
+            txt_m_ResMedicion.Text = "";
+            txt_m_DirigirReporte.Text = "";
+            txt_m_RazonSocial.Text = "";
+            txt_m_Ruc.Text = "";
+            txt_m_NisCliente.Text = "";
         }
 
         private void txt_m_Nombre_Click(object sender, EventArgs e)
