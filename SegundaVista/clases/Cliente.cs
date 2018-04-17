@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MongoDB.Bson;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,10 @@ namespace SegundaVista.clases
 {
     class Clientee
     {
-        public string ObjectId_Cliente { get; set; }
+        public ObjectId ObjectId_Cliente { get; set; }
         //public int Id { get; set; }
         public string Nombre { get; set; }
+        public DateTime date_Loader { get; set; }
         public string Apellido { get; set; }
         public string Nombre_Empresa { get; set; }
         public string RazonSocial { get; set; }

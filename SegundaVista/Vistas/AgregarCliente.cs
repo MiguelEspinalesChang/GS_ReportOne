@@ -46,7 +46,7 @@ namespace SegundaVista.Vistas
             cliente.NisCliente = txt_m_NisCliente.Text;
 
            // Mandar los datos del usuario ala base de datos en mongo
-            conector.insertar(cliente.Nombre,cliente.Apellido,cliente.Nombre_Empresa,cliente.Responsable_Medicion,cliente.DirigirReporte_A,cliente.RazonSocial,cliente.Ruc,cliente.NisCliente);
+            conector.insertar_Cliete(cliente.Nombre,cliente.Apellido,cliente.Nombre_Empresa,cliente.Responsable_Medicion,cliente.DirigirReporte_A,cliente.RazonSocial,cliente.Ruc,cliente.NisCliente);
             MessageBox.Show("Usuario Agregado");
             txt_m_Nombre.Text = "";
             txt_m_Apellido.Text = "";
