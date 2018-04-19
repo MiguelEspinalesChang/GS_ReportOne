@@ -66,16 +66,17 @@ namespace SegundaVista.Vistas
 
         public class Client
         {
-            public ObjectId Id { get; set; }
-            public DateTime date_Loader { get; set; }
-            public string Nombre { get; set; }
-            public string Apellido { get; set; }
             public string Nombre_Empresa { get; set; }
-            public string Responsable_Medicion { get; set; }
-            public string DirigirReporte_A { get; set; }
+            public string NisCliente { get; set; }
             public string RazonSocial { get; set; }
             public string Ruc { get; set; }
-            public string NisCliente { get; set; }
+            public string Nombre { get; set; }
+            public string Apellido { get; set; }
+            public string Responsable_Medicion { get; set; }
+            public string DirigirReporte_A { get; set; }
+            public ObjectId Id { get; set; }
+            public DateTime date_Loader { get; set; }
+
         }
 
         public void Usuarios()
@@ -95,10 +96,9 @@ namespace SegundaVista.Vistas
                 Cli.Responsable_Medicion = deger.Responsable_Medicion.ToString();
                 Cli.DirigirReporte_A = deger.DirigirReporte_A.ToString();
                 Cli.RazonSocial = deger.RazonSocial.ToString();
-                Cli.Ruc=  deger.Ruc.ToString() ;
-                Cli.NisCliente= deger.NisCliente.ToString() ;
-                Cli.ObjectId_Cliente = deger.Id ;
-
+                Cli.Ruc = deger.Ruc.ToString();
+                Cli.NisCliente = deger.NisCliente.ToString();
+                Cli.ObjectId_Cliente = deger.Id;
                 doclist.Add(deger);
                 var bindingList = new BindingList<Client>(doclist);
                 var source = new BindingSource(bindingList, null);
@@ -106,7 +106,13 @@ namespace SegundaVista.Vistas
             }
 
 
-           
+
+        }
+
+        private void btnAgregarMedidor_Click(object sender, EventArgs e)
+        {
+            Form abrir = new AgregarMedidor();
+            abrir.ShowDialog();
         }
     }
 }

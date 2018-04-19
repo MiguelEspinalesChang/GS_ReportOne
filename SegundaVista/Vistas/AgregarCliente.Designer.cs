@@ -34,7 +34,7 @@
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.pnlBtnClientes = new System.Windows.Forms.Panel();
             this.btnGuardarMedidor = new System.Windows.Forms.Button();
-            this.PnlFormClielte = new System.Windows.Forms.Panel();
+            this.PnlFormCliente = new System.Windows.Forms.Panel();
             this.txt_m_NisCliente = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_m_DirigirReporte = new MaterialSkin.Controls.MaterialSingleLineTextField();
@@ -54,7 +54,7 @@
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
-            this.PnlFormClielte.SuspendLayout();
+            this.PnlFormCliente.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlBarraTitulo
@@ -119,30 +119,30 @@
             this.btnGuardarMedidor.UseVisualStyleBackColor = true;
             this.btnGuardarMedidor.Click += new System.EventHandler(this.btnGuardarMedidor_Click);
             // 
-            // PnlFormClielte
+            // PnlFormCliente
             // 
-            this.PnlFormClielte.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PnlFormClielte.Controls.Add(this.txt_m_NisCliente);
-            this.PnlFormClielte.Controls.Add(this.label8);
-            this.PnlFormClielte.Controls.Add(this.txt_m_DirigirReporte);
-            this.PnlFormClielte.Controls.Add(this.label7);
-            this.PnlFormClielte.Controls.Add(this.txt_m_ResMedicion);
-            this.PnlFormClielte.Controls.Add(this.label6);
-            this.PnlFormClielte.Controls.Add(this.txt_m_Ruc);
-            this.PnlFormClielte.Controls.Add(this.label5);
-            this.PnlFormClielte.Controls.Add(this.txt_m_RazonSocial);
-            this.PnlFormClielte.Controls.Add(this.label4);
-            this.PnlFormClielte.Controls.Add(this.txt_m_NomEmpresa);
-            this.PnlFormClielte.Controls.Add(this.label3);
-            this.PnlFormClielte.Controls.Add(this.txt_m_Apellido);
-            this.PnlFormClielte.Controls.Add(this.txt_m_Nombre);
-            this.PnlFormClielte.Controls.Add(this.label2);
-            this.PnlFormClielte.Controls.Add(this.label19);
-            this.PnlFormClielte.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlFormClielte.Location = new System.Drawing.Point(0, 95);
-            this.PnlFormClielte.Name = "PnlFormClielte";
-            this.PnlFormClielte.Size = new System.Drawing.Size(465, 297);
-            this.PnlFormClielte.TabIndex = 9;
+            this.PnlFormCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PnlFormCliente.Controls.Add(this.txt_m_NisCliente);
+            this.PnlFormCliente.Controls.Add(this.label8);
+            this.PnlFormCliente.Controls.Add(this.txt_m_DirigirReporte);
+            this.PnlFormCliente.Controls.Add(this.label7);
+            this.PnlFormCliente.Controls.Add(this.txt_m_ResMedicion);
+            this.PnlFormCliente.Controls.Add(this.label6);
+            this.PnlFormCliente.Controls.Add(this.txt_m_Ruc);
+            this.PnlFormCliente.Controls.Add(this.label5);
+            this.PnlFormCliente.Controls.Add(this.txt_m_RazonSocial);
+            this.PnlFormCliente.Controls.Add(this.label4);
+            this.PnlFormCliente.Controls.Add(this.txt_m_NomEmpresa);
+            this.PnlFormCliente.Controls.Add(this.label3);
+            this.PnlFormCliente.Controls.Add(this.txt_m_Apellido);
+            this.PnlFormCliente.Controls.Add(this.txt_m_Nombre);
+            this.PnlFormCliente.Controls.Add(this.label2);
+            this.PnlFormCliente.Controls.Add(this.label19);
+            this.PnlFormCliente.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlFormCliente.Location = new System.Drawing.Point(0, 95);
+            this.PnlFormCliente.Name = "PnlFormCliente";
+            this.PnlFormCliente.Size = new System.Drawing.Size(465, 297);
+            this.PnlFormCliente.TabIndex = 9;
             // 
             // txt_m_NisCliente
             // 
@@ -398,9 +398,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(465, 392);
-            this.Controls.Add(this.PnlFormClielte);
+            this.Controls.Add(this.PnlFormCliente);
             this.Controls.Add(this.pnlBtnClientes);
             this.Controls.Add(this.PnlBarraTitulo);
+            this.MaximumSize = new System.Drawing.Size(481, 430);
+            this.MinimumSize = new System.Drawing.Size(481, 430);
             this.Name = "AgregarCliente";
             this.Text = "AgregarCliente";
             this.Load += new System.EventHandler(this.AgregarCliente_Load);
@@ -408,8 +410,8 @@
             this.PnlBarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.pnlBtnClientes.ResumeLayout(false);
-            this.PnlFormClielte.ResumeLayout(false);
-            this.PnlFormClielte.PerformLayout();
+            this.PnlFormCliente.ResumeLayout(false);
+            this.PnlFormCliente.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -420,7 +422,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.Panel pnlBtnClientes;
-        private System.Windows.Forms.Panel PnlFormClielte;
+        private System.Windows.Forms.Panel PnlFormCliente;
         private System.Windows.Forms.Button btnGuardarMedidor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label19;

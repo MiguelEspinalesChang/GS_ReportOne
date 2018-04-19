@@ -132,3 +132,4 @@ D:\SegundaVista_Mongo\SegundaVista\obj\Debug\SegundaVista.Vistas.Usuario.resourc
 D:\SegundaVista_Mongo\SegundaVista\obj\Debug\SegundaVista.csproj.GenerateResource.Cache
 D:\SegundaVista_Mongo\SegundaVista\obj\Debug\SegundaVista.Vistas.AgregarCliente.resources
 C:\Users\HP004\Desktop\SegundaVista_Mongo\SegundaVista\obj\Debug\SegundaVista.Vistas.AgregarCliente.resources
+C:\Users\HP004\Desktop\SegundaVista_Mongo\SegundaVista\obj\Debug\SegundaVista.Vistas.AgregarMedidor.resources
