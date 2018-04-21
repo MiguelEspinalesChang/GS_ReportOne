@@ -145,6 +145,7 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mongo_Data\Clases\AgregarMedidor.cs" />
     <Compile Include="Mongo_Data\Clases\Conector_DataBase.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>

@@ -35,6 +35,34 @@
             this.pnlBtnClientes = new System.Windows.Forms.Panel();
             this.btnGuardarMedidor = new System.Windows.Forms.Button();
             this.PnlFormMedidor = new System.Windows.Forms.Panel();
+            this.txtNumero_Serie = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.txtCodigo_Fabricante = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.txtPresicion = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.txtClase = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.txtTipo = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.txtNumero_Medidor = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtNumero_Grupo = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.txtTP_secundario = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.txtTP_primaria = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.txtRelacion_TC = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.txtModo_Uso = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.txtTc_secundaria = new System.Windows.Forms.TextBox();
+            this.txt_Vc_punto = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txt_Vb_punto = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.txt_Va_punto = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txt_Ic_punto = new System.Windows.Forms.TextBox();
@@ -47,14 +75,57 @@
             this.label12 = new System.Windows.Forms.Label();
             this.txtKWH_punto_dia = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtRE_Voltaje = new System.Windows.Forms.TextBox();
+            this.txtRelacion_TP = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtRelacion = new System.Windows.Forms.TextBox();
+            this.txtTc_primaria = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtModelo = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupComunicacion = new System.Windows.Forms.GroupBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.radio_RadiFrecuencia_no = new System.Windows.Forms.RadioButton();
+            this.radio_RadiFrecuencia_si = new System.Windows.Forms.RadioButton();
+            this.label30 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.radio_Infrarrojo_no = new System.Windows.Forms.RadioButton();
+            this.radio_Infrarrojo_si = new System.Windows.Forms.RadioButton();
+            this.label29 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.radio_PuertoOptico_no = new System.Windows.Forms.RadioButton();
+            this.radio_PuertoOptico_si = new System.Windows.Forms.RadioButton();
+            this.label28 = new System.Windows.Forms.Label();
+            this.check_radio_frecuencia = new System.Windows.Forms.CheckBox();
+            this.check_infrarrojo = new System.Windows.Forms.CheckBox();
+            this.checkPuerto_optico = new System.Windows.Forms.CheckBox();
+            this.check_RS_485 = new System.Windows.Forms.CheckBox();
+            this.checkRS_232 = new System.Windows.Forms.CheckBox();
+            this.check_Modem = new System.Windows.Forms.CheckBox();
+            this.check_Eternet = new System.Windows.Forms.CheckBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.radio_Eternet_no = new System.Windows.Forms.RadioButton();
+            this.radio_Eternet_si = new System.Windows.Forms.RadioButton();
+            this.label26 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radio_RS232_no = new System.Windows.Forms.RadioButton();
+            this.radio_RS232_si = new System.Windows.Forms.RadioButton();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radio_Modem_no = new System.Windows.Forms.RadioButton();
+            this.radio_Modem_si = new System.Windows.Forms.RadioButton();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtNumTelefono_modem = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.groupEternet = new System.Windows.Forms.GroupBox();
+            this.radio_RS485_no = new System.Windows.Forms.RadioButton();
+            this.radio_RS485_si = new System.Windows.Forms.RadioButton();
+            this.label21 = new System.Windows.Forms.Label();
+            this.txt_Numero_Id = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtUbicacionMedidor = new System.Windows.Forms.TextBox();
@@ -65,90 +136,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombreMedidor = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.txt_Vb_punto = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.txt_Vc_punto = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.groupEternet = new System.Windows.Forms.GroupBox();
-            this.txt_Numero_Id = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.radio_RS485_si = new System.Windows.Forms.RadioButton();
-            this.radio_RS485_no = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radio_Modem_no = new System.Windows.Forms.RadioButton();
-            this.radio_Modem_si = new System.Windows.Forms.RadioButton();
-            this.label22 = new System.Windows.Forms.Label();
-            this.txtNumTelefono_modem = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radio_RS232_no = new System.Windows.Forms.RadioButton();
-            this.radio_RS232_si = new System.Windows.Forms.RadioButton();
-            this.label24 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radio_Eternet_no = new System.Windows.Forms.RadioButton();
-            this.radio_Eternet_si = new System.Windows.Forms.RadioButton();
-            this.label26 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.check_Eternet = new System.Windows.Forms.CheckBox();
-            this.check_Modem = new System.Windows.Forms.CheckBox();
-            this.checkRS_232 = new System.Windows.Forms.CheckBox();
-            this.check_RS_485 = new System.Windows.Forms.CheckBox();
-            this.checkPuerto_optico = new System.Windows.Forms.CheckBox();
-            this.check_infrarrojo = new System.Windows.Forms.CheckBox();
-            this.check_radio_frecuencia = new System.Windows.Forms.CheckBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.radio_PuertoOptico_no = new System.Windows.Forms.RadioButton();
-            this.radio_PuertoOptico_si = new System.Windows.Forms.RadioButton();
-            this.label28 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.radio_Infrarrojo_no = new System.Windows.Forms.RadioButton();
-            this.radio_Infrarrojo_si = new System.Windows.Forms.RadioButton();
-            this.label29 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.radio_RadiFrecuencia_no = new System.Windows.Forms.RadioButton();
-            this.radio_RadiFrecuencia_si = new System.Windows.Forms.RadioButton();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.txtModo_Uso = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
             this.PnlFormMedidor.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupComunicacion.SuspendLayout();
-            this.groupEternet.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupEternet.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlBarraTitulo
@@ -211,35 +211,36 @@
             this.btnGuardarMedidor.TabIndex = 22;
             this.btnGuardarMedidor.Text = "Guardar";
             this.btnGuardarMedidor.UseVisualStyleBackColor = true;
+            this.btnGuardarMedidor.Click += new System.EventHandler(this.btnGuardarMedidor_Click);
             // 
             // PnlFormMedidor
             // 
             this.PnlFormMedidor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.PnlFormMedidor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PnlFormMedidor.Controls.Add(this.textBox13);
+            this.PnlFormMedidor.Controls.Add(this.txtNumero_Serie);
             this.PnlFormMedidor.Controls.Add(this.label40);
-            this.PnlFormMedidor.Controls.Add(this.textBox12);
+            this.PnlFormMedidor.Controls.Add(this.txtCodigo_Fabricante);
             this.PnlFormMedidor.Controls.Add(this.label39);
-            this.PnlFormMedidor.Controls.Add(this.textBox11);
+            this.PnlFormMedidor.Controls.Add(this.txtPresicion);
             this.PnlFormMedidor.Controls.Add(this.label38);
-            this.PnlFormMedidor.Controls.Add(this.textBox10);
+            this.PnlFormMedidor.Controls.Add(this.txtClase);
             this.PnlFormMedidor.Controls.Add(this.label37);
-            this.PnlFormMedidor.Controls.Add(this.textBox9);
+            this.PnlFormMedidor.Controls.Add(this.txtTipo);
             this.PnlFormMedidor.Controls.Add(this.label36);
-            this.PnlFormMedidor.Controls.Add(this.textBox8);
+            this.PnlFormMedidor.Controls.Add(this.txtNumero_Medidor);
             this.PnlFormMedidor.Controls.Add(this.label9);
-            this.PnlFormMedidor.Controls.Add(this.textBox7);
+            this.PnlFormMedidor.Controls.Add(this.txtNumero_Grupo);
             this.PnlFormMedidor.Controls.Add(this.label35);
-            this.PnlFormMedidor.Controls.Add(this.textBox6);
+            this.PnlFormMedidor.Controls.Add(this.txtTP_secundario);
             this.PnlFormMedidor.Controls.Add(this.label34);
-            this.PnlFormMedidor.Controls.Add(this.textBox5);
+            this.PnlFormMedidor.Controls.Add(this.txtTP_primaria);
             this.PnlFormMedidor.Controls.Add(this.label33);
-            this.PnlFormMedidor.Controls.Add(this.textBox4);
+            this.PnlFormMedidor.Controls.Add(this.txtRelacion_TC);
             this.PnlFormMedidor.Controls.Add(this.label32);
             this.PnlFormMedidor.Controls.Add(this.txtModo_Uso);
             this.PnlFormMedidor.Controls.Add(this.label7);
             this.PnlFormMedidor.Controls.Add(this.label31);
-            this.PnlFormMedidor.Controls.Add(this.textBox3);
+            this.PnlFormMedidor.Controls.Add(this.txtTc_secundaria);
             this.PnlFormMedidor.Controls.Add(this.txt_Vc_punto);
             this.PnlFormMedidor.Controls.Add(this.label18);
             this.PnlFormMedidor.Controls.Add(this.txt_Vb_punto);
@@ -256,9 +257,9 @@
             this.PnlFormMedidor.Controls.Add(this.label12);
             this.PnlFormMedidor.Controls.Add(this.txtKWH_punto_dia);
             this.PnlFormMedidor.Controls.Add(this.label11);
-            this.PnlFormMedidor.Controls.Add(this.txtRE_Voltaje);
+            this.PnlFormMedidor.Controls.Add(this.txtRelacion_TP);
             this.PnlFormMedidor.Controls.Add(this.label10);
-            this.PnlFormMedidor.Controls.Add(this.txtRelacion);
+            this.PnlFormMedidor.Controls.Add(this.txtTc_primaria);
             this.PnlFormMedidor.Controls.Add(this.label8);
             this.PnlFormMedidor.Controls.Add(this.txtModelo);
             this.PnlFormMedidor.Controls.Add(this.label6);
@@ -279,6 +280,248 @@
             this.PnlFormMedidor.Size = new System.Drawing.Size(991, 524);
             this.PnlFormMedidor.TabIndex = 10;
             this.PnlFormMedidor.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlFormMedidor_Paint);
+            // 
+            // txtNumero_Serie
+            // 
+            this.txtNumero_Serie.Location = new System.Drawing.Point(682, 171);
+            this.txtNumero_Serie.Name = "txtNumero_Serie";
+            this.txtNumero_Serie.Size = new System.Drawing.Size(269, 20);
+            this.txtNumero_Serie.TabIndex = 141;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(679, 146);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(79, 22);
+            this.label40.TabIndex = 140;
+            this.label40.Text = "N° Serie";
+            // 
+            // txtCodigo_Fabricante
+            // 
+            this.txtCodigo_Fabricante.Location = new System.Drawing.Point(682, 123);
+            this.txtCodigo_Fabricante.Name = "txtCodigo_Fabricante";
+            this.txtCodigo_Fabricante.Size = new System.Drawing.Size(269, 20);
+            this.txtCodigo_Fabricante.TabIndex = 139;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(679, 98);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(217, 22);
+            this.label39.TabIndex = 138;
+            this.label39.Text = "Codigo Del Fabricante";
+            // 
+            // txtPresicion
+            // 
+            this.txtPresicion.Location = new System.Drawing.Point(463, 123);
+            this.txtPresicion.Name = "txtPresicion";
+            this.txtPresicion.Size = new System.Drawing.Size(209, 20);
+            this.txtPresicion.TabIndex = 137;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(460, 98);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(88, 22);
+            this.label38.TabIndex = 136;
+            this.label38.Text = "Presicion";
+            // 
+            // txtClase
+            // 
+            this.txtClase.Location = new System.Drawing.Point(353, 123);
+            this.txtClase.Name = "txtClase";
+            this.txtClase.Size = new System.Drawing.Size(100, 20);
+            this.txtClase.TabIndex = 135;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(350, 98);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(60, 22);
+            this.label37.TabIndex = 134;
+            this.label37.Text = "Clase";
+            // 
+            // txtTipo
+            // 
+            this.txtTipo.Location = new System.Drawing.Point(238, 123);
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Size = new System.Drawing.Size(100, 20);
+            this.txtTipo.TabIndex = 133;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(235, 98);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(46, 22);
+            this.label36.TabIndex = 132;
+            this.label36.Text = "Tipo";
+            // 
+            // txtNumero_Medidor
+            // 
+            this.txtNumero_Medidor.Location = new System.Drawing.Point(236, 27);
+            this.txtNumero_Medidor.Name = "txtNumero_Medidor";
+            this.txtNumero_Medidor.Size = new System.Drawing.Size(212, 20);
+            this.txtNumero_Medidor.TabIndex = 131;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(238, 2);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(147, 22);
+            this.label9.TabIndex = 130;
+            this.label9.Text = "N° Del Medidor";
+            // 
+            // txtNumero_Grupo
+            // 
+            this.txtNumero_Grupo.Location = new System.Drawing.Point(820, 27);
+            this.txtNumero_Grupo.Multiline = true;
+            this.txtNumero_Grupo.Name = "txtNumero_Grupo";
+            this.txtNumero_Grupo.Size = new System.Drawing.Size(131, 20);
+            this.txtNumero_Grupo.TabIndex = 129;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(820, 2);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(97, 22);
+            this.label35.TabIndex = 128;
+            this.label35.Text = "N° Grupo";
+            // 
+            // txtTP_secundario
+            // 
+            this.txtTP_secundario.Location = new System.Drawing.Point(465, 171);
+            this.txtTP_secundario.Name = "txtTP_secundario";
+            this.txtTP_secundario.Size = new System.Drawing.Size(100, 20);
+            this.txtTP_secundario.TabIndex = 127;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(470, 145);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(72, 22);
+            this.label34.TabIndex = 126;
+            this.label34.Text = "TP_Sec";
+            // 
+            // txtTP_primaria
+            // 
+            this.txtTP_primaria.Location = new System.Drawing.Point(359, 171);
+            this.txtTP_primaria.Name = "txtTP_primaria";
+            this.txtTP_primaria.Size = new System.Drawing.Size(100, 20);
+            this.txtTP_primaria.TabIndex = 125;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(364, 145);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(76, 22);
+            this.label33.TabIndex = 124;
+            this.label33.Text = "TP_Prim";
+            // 
+            // txtRelacion_TC
+            // 
+            this.txtRelacion_TC.Enabled = false;
+            this.txtRelacion_TC.Location = new System.Drawing.Point(243, 172);
+            this.txtRelacion_TC.Name = "txtRelacion_TC";
+            this.txtRelacion_TC.Size = new System.Drawing.Size(100, 20);
+            this.txtRelacion_TC.TabIndex = 123;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(238, 146);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(70, 22);
+            this.label32.TabIndex = 122;
+            this.label32.Text = "Rel_TC";
+            // 
+            // txtModo_Uso
+            // 
+            this.txtModo_Uso.Location = new System.Drawing.Point(683, 27);
+            this.txtModo_Uso.Multiline = true;
+            this.txtModo_Uso.Name = "txtModo_Uso";
+            this.txtModo_Uso.Size = new System.Drawing.Size(131, 20);
+            this.txtModo_Uso.TabIndex = 121;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(683, 2);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(131, 22);
+            this.label7.TabIndex = 120;
+            this.label7.Text = "Modo De Uso";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(127, 146);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(76, 22);
+            this.label31.TabIndex = 119;
+            this.label31.Text = "TC_Sec";
+            // 
+            // txtTc_secundaria
+            // 
+            this.txtTc_secundaria.Location = new System.Drawing.Point(131, 171);
+            this.txtTc_secundaria.Multiline = true;
+            this.txtTc_secundaria.Name = "txtTc_secundaria";
+            this.txtTc_secundaria.Size = new System.Drawing.Size(100, 20);
+            this.txtTc_secundaria.TabIndex = 118;
+            // 
+            // txt_Vc_punto
+            // 
+            this.txt_Vc_punto.Location = new System.Drawing.Point(575, 220);
+            this.txt_Vc_punto.Name = "txt_Vc_punto";
+            this.txt_Vc_punto.Size = new System.Drawing.Size(100, 20);
+            this.txt_Vc_punto.TabIndex = 117;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(574, 195);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(103, 22);
+            this.label18.TabIndex = 116;
+            this.label18.Text = "Vc_punto";
+            // 
+            // txt_Vb_punto
+            // 
+            this.txt_Vb_punto.Location = new System.Drawing.Point(465, 220);
+            this.txt_Vb_punto.Name = "txt_Vb_punto";
+            this.txt_Vb_punto.Size = new System.Drawing.Size(100, 20);
+            this.txt_Vb_punto.TabIndex = 115;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(464, 195);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(104, 22);
+            this.label17.TabIndex = 114;
+            this.label17.Text = "Vb_punto";
             // 
             // txt_Va_punto
             // 
@@ -382,31 +625,32 @@
             this.label11.TabIndex = 102;
             this.label11.Text = "KWH punto_Dia";
             // 
-            // txtRE_Voltaje
+            // txtRelacion_TP
             // 
-            this.txtRE_Voltaje.Location = new System.Drawing.Point(571, 170);
-            this.txtRE_Voltaje.Name = "txtRE_Voltaje";
-            this.txtRE_Voltaje.Size = new System.Drawing.Size(100, 20);
-            this.txtRE_Voltaje.TabIndex = 101;
+            this.txtRelacion_TP.Enabled = false;
+            this.txtRelacion_TP.Location = new System.Drawing.Point(571, 170);
+            this.txtRelacion_TP.Name = "txtRelacion_TP";
+            this.txtRelacion_TP.Size = new System.Drawing.Size(100, 20);
+            this.txtRelacion_TP.TabIndex = 101;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(593, 146);
+            this.label10.Location = new System.Drawing.Point(574, 145);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 22);
+            this.label10.Size = new System.Drawing.Size(71, 22);
             this.label10.TabIndex = 100;
-            this.label10.Text = "Rel  TP";
+            this.label10.Text = "Rel _TP";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // txtRelacion
+            // txtTc_primaria
             // 
-            this.txtRelacion.Location = new System.Drawing.Point(13, 171);
-            this.txtRelacion.Multiline = true;
-            this.txtRelacion.Name = "txtRelacion";
-            this.txtRelacion.Size = new System.Drawing.Size(100, 20);
-            this.txtRelacion.TabIndex = 97;
+            this.txtTc_primaria.Location = new System.Drawing.Point(13, 171);
+            this.txtTc_primaria.Multiline = true;
+            this.txtTc_primaria.Name = "txtTc_primaria";
+            this.txtTc_primaria.Size = new System.Drawing.Size(100, 20);
+            this.txtTc_primaria.TabIndex = 97;
             // 
             // label8
             // 
@@ -471,6 +715,463 @@
             this.groupComunicacion.TabIndex = 95;
             this.groupComunicacion.TabStop = false;
             this.groupComunicacion.Text = "Comunicacion";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.radio_RadiFrecuencia_no);
+            this.groupBox6.Controls.Add(this.radio_RadiFrecuencia_si);
+            this.groupBox6.Controls.Add(this.label30);
+            this.groupBox6.Location = new System.Drawing.Point(459, 190);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(220, 68);
+            this.groupBox6.TabIndex = 124;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Radio frecuencia";
+            // 
+            // radio_RadiFrecuencia_no
+            // 
+            this.radio_RadiFrecuencia_no.AutoSize = true;
+            this.radio_RadiFrecuencia_no.Location = new System.Drawing.Point(163, 27);
+            this.radio_RadiFrecuencia_no.Name = "radio_RadiFrecuencia_no";
+            this.radio_RadiFrecuencia_no.Size = new System.Drawing.Size(51, 27);
+            this.radio_RadiFrecuencia_no.TabIndex = 114;
+            this.radio_RadiFrecuencia_no.TabStop = true;
+            this.radio_RadiFrecuencia_no.Text = "no";
+            this.radio_RadiFrecuencia_no.UseVisualStyleBackColor = true;
+            this.radio_RadiFrecuencia_no.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
+            // 
+            // radio_RadiFrecuencia_si
+            // 
+            this.radio_RadiFrecuencia_si.AutoSize = true;
+            this.radio_RadiFrecuencia_si.Location = new System.Drawing.Point(118, 27);
+            this.radio_RadiFrecuencia_si.Name = "radio_RadiFrecuencia_si";
+            this.radio_RadiFrecuencia_si.Size = new System.Drawing.Size(41, 27);
+            this.radio_RadiFrecuencia_si.TabIndex = 113;
+            this.radio_RadiFrecuencia_si.TabStop = true;
+            this.radio_RadiFrecuencia_si.Text = "si";
+            this.radio_RadiFrecuencia_si.UseVisualStyleBackColor = true;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(11, 27);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(106, 22);
+            this.label30.TabIndex = 112;
+            this.label30.Text = "Operativo";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.radio_Infrarrojo_no);
+            this.groupBox5.Controls.Add(this.radio_Infrarrojo_si);
+            this.groupBox5.Controls.Add(this.label29);
+            this.groupBox5.Location = new System.Drawing.Point(233, 190);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(220, 68);
+            this.groupBox5.TabIndex = 123;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Infrarrojo";
+            // 
+            // radio_Infrarrojo_no
+            // 
+            this.radio_Infrarrojo_no.AutoSize = true;
+            this.radio_Infrarrojo_no.Location = new System.Drawing.Point(163, 27);
+            this.radio_Infrarrojo_no.Name = "radio_Infrarrojo_no";
+            this.radio_Infrarrojo_no.Size = new System.Drawing.Size(51, 27);
+            this.radio_Infrarrojo_no.TabIndex = 114;
+            this.radio_Infrarrojo_no.TabStop = true;
+            this.radio_Infrarrojo_no.Text = "no";
+            this.radio_Infrarrojo_no.UseVisualStyleBackColor = true;
+            // 
+            // radio_Infrarrojo_si
+            // 
+            this.radio_Infrarrojo_si.AutoSize = true;
+            this.radio_Infrarrojo_si.Location = new System.Drawing.Point(118, 27);
+            this.radio_Infrarrojo_si.Name = "radio_Infrarrojo_si";
+            this.radio_Infrarrojo_si.Size = new System.Drawing.Size(41, 27);
+            this.radio_Infrarrojo_si.TabIndex = 113;
+            this.radio_Infrarrojo_si.TabStop = true;
+            this.radio_Infrarrojo_si.Text = "si";
+            this.radio_Infrarrojo_si.UseVisualStyleBackColor = true;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(11, 27);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(106, 22);
+            this.label29.TabIndex = 112;
+            this.label29.Text = "Operativo";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.radio_PuertoOptico_no);
+            this.groupBox4.Controls.Add(this.radio_PuertoOptico_si);
+            this.groupBox4.Controls.Add(this.label28);
+            this.groupBox4.Location = new System.Drawing.Point(6, 190);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(220, 68);
+            this.groupBox4.TabIndex = 122;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Puerto Optico";
+            // 
+            // radio_PuertoOptico_no
+            // 
+            this.radio_PuertoOptico_no.AutoSize = true;
+            this.radio_PuertoOptico_no.Location = new System.Drawing.Point(163, 27);
+            this.radio_PuertoOptico_no.Name = "radio_PuertoOptico_no";
+            this.radio_PuertoOptico_no.Size = new System.Drawing.Size(51, 27);
+            this.radio_PuertoOptico_no.TabIndex = 114;
+            this.radio_PuertoOptico_no.TabStop = true;
+            this.radio_PuertoOptico_no.Text = "no";
+            this.radio_PuertoOptico_no.UseVisualStyleBackColor = true;
+            // 
+            // radio_PuertoOptico_si
+            // 
+            this.radio_PuertoOptico_si.AutoSize = true;
+            this.radio_PuertoOptico_si.Location = new System.Drawing.Point(118, 27);
+            this.radio_PuertoOptico_si.Name = "radio_PuertoOptico_si";
+            this.radio_PuertoOptico_si.Size = new System.Drawing.Size(41, 27);
+            this.radio_PuertoOptico_si.TabIndex = 113;
+            this.radio_PuertoOptico_si.TabStop = true;
+            this.radio_PuertoOptico_si.Text = "si";
+            this.radio_PuertoOptico_si.UseVisualStyleBackColor = true;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(11, 27);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(106, 22);
+            this.label28.TabIndex = 112;
+            this.label28.Text = "Operativo";
+            // 
+            // check_radio_frecuencia
+            // 
+            this.check_radio_frecuencia.AutoSize = true;
+            this.check_radio_frecuencia.Location = new System.Drawing.Point(668, 30);
+            this.check_radio_frecuencia.Name = "check_radio_frecuencia";
+            this.check_radio_frecuencia.Size = new System.Drawing.Size(187, 27);
+            this.check_radio_frecuencia.TabIndex = 121;
+            this.check_radio_frecuencia.Text = "Radio frecuencia";
+            this.check_radio_frecuencia.UseVisualStyleBackColor = true;
+            // 
+            // check_infrarrojo
+            // 
+            this.check_infrarrojo.AutoSize = true;
+            this.check_infrarrojo.Location = new System.Drawing.Point(558, 30);
+            this.check_infrarrojo.Name = "check_infrarrojo";
+            this.check_infrarrojo.Size = new System.Drawing.Size(110, 27);
+            this.check_infrarrojo.TabIndex = 120;
+            this.check_infrarrojo.Text = "Infrarrojo";
+            this.check_infrarrojo.UseVisualStyleBackColor = true;
+            // 
+            // checkPuerto_optico
+            // 
+            this.checkPuerto_optico.AutoSize = true;
+            this.checkPuerto_optico.Location = new System.Drawing.Point(407, 30);
+            this.checkPuerto_optico.Name = "checkPuerto_optico";
+            this.checkPuerto_optico.Size = new System.Drawing.Size(156, 27);
+            this.checkPuerto_optico.TabIndex = 119;
+            this.checkPuerto_optico.Text = "Puerto Optico";
+            this.checkPuerto_optico.UseVisualStyleBackColor = true;
+            // 
+            // check_RS_485
+            // 
+            this.check_RS_485.AutoSize = true;
+            this.check_RS_485.Location = new System.Drawing.Point(310, 30);
+            this.check_RS_485.Name = "check_RS_485";
+            this.check_RS_485.Size = new System.Drawing.Size(93, 27);
+            this.check_RS_485.TabIndex = 118;
+            this.check_RS_485.Text = "RS_485";
+            this.check_RS_485.UseVisualStyleBackColor = true;
+            // 
+            // checkRS_232
+            // 
+            this.checkRS_232.AutoSize = true;
+            this.checkRS_232.Location = new System.Drawing.Point(211, 30);
+            this.checkRS_232.Name = "checkRS_232";
+            this.checkRS_232.Size = new System.Drawing.Size(93, 27);
+            this.checkRS_232.TabIndex = 117;
+            this.checkRS_232.Text = "RS_232";
+            this.checkRS_232.UseVisualStyleBackColor = true;
+            // 
+            // check_Modem
+            // 
+            this.check_Modem.AutoSize = true;
+            this.check_Modem.Location = new System.Drawing.Point(104, 30);
+            this.check_Modem.Name = "check_Modem";
+            this.check_Modem.Size = new System.Drawing.Size(101, 27);
+            this.check_Modem.TabIndex = 116;
+            this.check_Modem.Text = "Modem";
+            this.check_Modem.UseVisualStyleBackColor = true;
+            // 
+            // check_Eternet
+            // 
+            this.check_Eternet.AutoSize = true;
+            this.check_Eternet.Location = new System.Drawing.Point(6, 30);
+            this.check_Eternet.Name = "check_Eternet";
+            this.check_Eternet.Size = new System.Drawing.Size(92, 27);
+            this.check_Eternet.TabIndex = 115;
+            this.check_Eternet.Text = "Eternet";
+            this.check_Eternet.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.radio_Eternet_no);
+            this.groupBox3.Controls.Add(this.radio_Eternet_si);
+            this.groupBox3.Controls.Add(this.label26);
+            this.groupBox3.Controls.Add(this.textBox2);
+            this.groupBox3.Controls.Add(this.label27);
+            this.groupBox3.Location = new System.Drawing.Point(6, 63);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(220, 121);
+            this.groupBox3.TabIndex = 111;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Ethernet ";
+            // 
+            // radio_Eternet_no
+            // 
+            this.radio_Eternet_no.AutoSize = true;
+            this.radio_Eternet_no.Location = new System.Drawing.Point(163, 27);
+            this.radio_Eternet_no.Name = "radio_Eternet_no";
+            this.radio_Eternet_no.Size = new System.Drawing.Size(51, 27);
+            this.radio_Eternet_no.TabIndex = 114;
+            this.radio_Eternet_no.TabStop = true;
+            this.radio_Eternet_no.Text = "no";
+            this.radio_Eternet_no.UseVisualStyleBackColor = true;
+            // 
+            // radio_Eternet_si
+            // 
+            this.radio_Eternet_si.AutoSize = true;
+            this.radio_Eternet_si.Location = new System.Drawing.Point(118, 27);
+            this.radio_Eternet_si.Name = "radio_Eternet_si";
+            this.radio_Eternet_si.Size = new System.Drawing.Size(41, 27);
+            this.radio_Eternet_si.TabIndex = 113;
+            this.radio_Eternet_si.TabStop = true;
+            this.radio_Eternet_si.Text = "si";
+            this.radio_Eternet_si.UseVisualStyleBackColor = true;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(11, 27);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(106, 22);
+            this.label26.TabIndex = 112;
+            this.label26.Text = "Operativo";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(15, 76);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(193, 31);
+            this.textBox2.TabIndex = 111;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(11, 51);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(50, 22);
+            this.label27.TabIndex = 110;
+            this.label27.Text = "N°Ip";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.radio_RS232_no);
+            this.groupBox2.Controls.Add(this.radio_RS232_si);
+            this.groupBox2.Controls.Add(this.label24);
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.label25);
+            this.groupBox2.Location = new System.Drawing.Point(458, 63);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(220, 121);
+            this.groupBox2.TabIndex = 110;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "RS_232";
+            // 
+            // radio_RS232_no
+            // 
+            this.radio_RS232_no.AutoSize = true;
+            this.radio_RS232_no.Location = new System.Drawing.Point(163, 27);
+            this.radio_RS232_no.Name = "radio_RS232_no";
+            this.radio_RS232_no.Size = new System.Drawing.Size(51, 27);
+            this.radio_RS232_no.TabIndex = 114;
+            this.radio_RS232_no.TabStop = true;
+            this.radio_RS232_no.Text = "no";
+            this.radio_RS232_no.UseVisualStyleBackColor = true;
+            // 
+            // radio_RS232_si
+            // 
+            this.radio_RS232_si.AutoSize = true;
+            this.radio_RS232_si.Location = new System.Drawing.Point(118, 27);
+            this.radio_RS232_si.Name = "radio_RS232_si";
+            this.radio_RS232_si.Size = new System.Drawing.Size(41, 27);
+            this.radio_RS232_si.TabIndex = 113;
+            this.radio_RS232_si.TabStop = true;
+            this.radio_RS232_si.Text = "si";
+            this.radio_RS232_si.UseVisualStyleBackColor = true;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(6, 27);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(106, 22);
+            this.label24.TabIndex = 112;
+            this.label24.Text = "Operativo";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(10, 76);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(204, 31);
+            this.textBox1.TabIndex = 111;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(10, 51);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(109, 22);
+            this.label25.TabIndex = 110;
+            this.label25.Text = "N°Telefono";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radio_Modem_no);
+            this.groupBox1.Controls.Add(this.radio_Modem_si);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.txtNumTelefono_modem);
+            this.groupBox1.Controls.Add(this.label23);
+            this.groupBox1.Location = new System.Drawing.Point(232, 63);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(220, 121);
+            this.groupBox1.TabIndex = 109;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Modem";
+            // 
+            // radio_Modem_no
+            // 
+            this.radio_Modem_no.AutoSize = true;
+            this.radio_Modem_no.Location = new System.Drawing.Point(149, 24);
+            this.radio_Modem_no.Name = "radio_Modem_no";
+            this.radio_Modem_no.Size = new System.Drawing.Size(51, 27);
+            this.radio_Modem_no.TabIndex = 114;
+            this.radio_Modem_no.TabStop = true;
+            this.radio_Modem_no.Text = "no";
+            this.radio_Modem_no.UseVisualStyleBackColor = true;
+            // 
+            // radio_Modem_si
+            // 
+            this.radio_Modem_si.AutoSize = true;
+            this.radio_Modem_si.Location = new System.Drawing.Point(112, 24);
+            this.radio_Modem_si.Name = "radio_Modem_si";
+            this.radio_Modem_si.Size = new System.Drawing.Size(41, 27);
+            this.radio_Modem_si.TabIndex = 113;
+            this.radio_Modem_si.TabStop = true;
+            this.radio_Modem_si.Text = "si";
+            this.radio_Modem_si.UseVisualStyleBackColor = true;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(7, 27);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(106, 22);
+            this.label22.TabIndex = 112;
+            this.label22.Text = "Operativo";
+            // 
+            // txtNumTelefono_modem
+            // 
+            this.txtNumTelefono_modem.Location = new System.Drawing.Point(11, 76);
+            this.txtNumTelefono_modem.Name = "txtNumTelefono_modem";
+            this.txtNumTelefono_modem.Size = new System.Drawing.Size(203, 31);
+            this.txtNumTelefono_modem.TabIndex = 111;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(7, 51);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(109, 22);
+            this.label23.TabIndex = 110;
+            this.label23.Text = "N°Telefono";
+            // 
+            // groupEternet
+            // 
+            this.groupEternet.Controls.Add(this.radio_RS485_no);
+            this.groupEternet.Controls.Add(this.radio_RS485_si);
+            this.groupEternet.Controls.Add(this.label21);
+            this.groupEternet.Controls.Add(this.txt_Numero_Id);
+            this.groupEternet.Controls.Add(this.label20);
+            this.groupEternet.Location = new System.Drawing.Point(684, 63);
+            this.groupEternet.Name = "groupEternet";
+            this.groupEternet.Size = new System.Drawing.Size(220, 121);
+            this.groupEternet.TabIndex = 108;
+            this.groupEternet.TabStop = false;
+            this.groupEternet.Text = "RS_485";
+            // 
+            // radio_RS485_no
+            // 
+            this.radio_RS485_no.AutoSize = true;
+            this.radio_RS485_no.Location = new System.Drawing.Point(163, 24);
+            this.radio_RS485_no.Name = "radio_RS485_no";
+            this.radio_RS485_no.Size = new System.Drawing.Size(51, 27);
+            this.radio_RS485_no.TabIndex = 114;
+            this.radio_RS485_no.TabStop = true;
+            this.radio_RS485_no.Text = "no";
+            this.radio_RS485_no.UseVisualStyleBackColor = true;
+            this.radio_RS485_no.CheckedChanged += new System.EventHandler(this.radio_Eternet_no_CheckedChanged);
+            // 
+            // radio_RS485_si
+            // 
+            this.radio_RS485_si.AutoSize = true;
+            this.radio_RS485_si.Location = new System.Drawing.Point(118, 24);
+            this.radio_RS485_si.Name = "radio_RS485_si";
+            this.radio_RS485_si.Size = new System.Drawing.Size(41, 27);
+            this.radio_RS485_si.TabIndex = 113;
+            this.radio_RS485_si.TabStop = true;
+            this.radio_RS485_si.Text = "si";
+            this.radio_RS485_si.UseVisualStyleBackColor = true;
+            this.radio_RS485_si.CheckedChanged += new System.EventHandler(this.radio_Eternet_si_CheckedChanged);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(6, 27);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(106, 22);
+            this.label21.TabIndex = 112;
+            this.label21.Text = "Operativo";
+            // 
+            // txt_Numero_Id
+            // 
+            this.txt_Numero_Id.Location = new System.Drawing.Point(10, 76);
+            this.txt_Numero_Id.Name = "txt_Numero_Id";
+            this.txt_Numero_Id.Size = new System.Drawing.Size(204, 31);
+            this.txt_Numero_Id.TabIndex = 111;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(6, 51);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(50, 22);
+            this.label20.TabIndex = 110;
+            this.label20.Text = "N°Id";
             // 
             // txtMarca
             // 
@@ -560,704 +1261,6 @@
             this.label19.TabIndex = 81;
             this.label19.Text = "Nombre Del Medidor";
             // 
-            // txt_Vb_punto
-            // 
-            this.txt_Vb_punto.Location = new System.Drawing.Point(465, 220);
-            this.txt_Vb_punto.Name = "txt_Vb_punto";
-            this.txt_Vb_punto.Size = new System.Drawing.Size(100, 20);
-            this.txt_Vb_punto.TabIndex = 115;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(464, 195);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(104, 22);
-            this.label17.TabIndex = 114;
-            this.label17.Text = "Vb_punto";
-            // 
-            // txt_Vc_punto
-            // 
-            this.txt_Vc_punto.Location = new System.Drawing.Point(575, 220);
-            this.txt_Vc_punto.Name = "txt_Vc_punto";
-            this.txt_Vc_punto.Size = new System.Drawing.Size(100, 20);
-            this.txt_Vc_punto.TabIndex = 117;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(574, 195);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(103, 22);
-            this.label18.TabIndex = 116;
-            this.label18.Text = "Vc_punto";
-            // 
-            // groupEternet
-            // 
-            this.groupEternet.Controls.Add(this.radio_RS485_no);
-            this.groupEternet.Controls.Add(this.radio_RS485_si);
-            this.groupEternet.Controls.Add(this.label21);
-            this.groupEternet.Controls.Add(this.txt_Numero_Id);
-            this.groupEternet.Controls.Add(this.label20);
-            this.groupEternet.Location = new System.Drawing.Point(684, 63);
-            this.groupEternet.Name = "groupEternet";
-            this.groupEternet.Size = new System.Drawing.Size(220, 121);
-            this.groupEternet.TabIndex = 108;
-            this.groupEternet.TabStop = false;
-            this.groupEternet.Text = "RS_485";
-            // 
-            // txt_Numero_Id
-            // 
-            this.txt_Numero_Id.Location = new System.Drawing.Point(10, 76);
-            this.txt_Numero_Id.Name = "txt_Numero_Id";
-            this.txt_Numero_Id.Size = new System.Drawing.Size(204, 31);
-            this.txt_Numero_Id.TabIndex = 111;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(6, 51);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(50, 22);
-            this.label20.TabIndex = 110;
-            this.label20.Text = "N°Id";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(6, 27);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(106, 22);
-            this.label21.TabIndex = 112;
-            this.label21.Text = "Operativo";
-            // 
-            // radio_RS485_si
-            // 
-            this.radio_RS485_si.AutoSize = true;
-            this.radio_RS485_si.Location = new System.Drawing.Point(118, 24);
-            this.radio_RS485_si.Name = "radio_RS485_si";
-            this.radio_RS485_si.Size = new System.Drawing.Size(41, 27);
-            this.radio_RS485_si.TabIndex = 113;
-            this.radio_RS485_si.TabStop = true;
-            this.radio_RS485_si.Text = "si";
-            this.radio_RS485_si.UseVisualStyleBackColor = true;
-            this.radio_RS485_si.CheckedChanged += new System.EventHandler(this.radio_Eternet_si_CheckedChanged);
-            // 
-            // radio_RS485_no
-            // 
-            this.radio_RS485_no.AutoSize = true;
-            this.radio_RS485_no.Location = new System.Drawing.Point(163, 24);
-            this.radio_RS485_no.Name = "radio_RS485_no";
-            this.radio_RS485_no.Size = new System.Drawing.Size(51, 27);
-            this.radio_RS485_no.TabIndex = 114;
-            this.radio_RS485_no.TabStop = true;
-            this.radio_RS485_no.Text = "no";
-            this.radio_RS485_no.UseVisualStyleBackColor = true;
-            this.radio_RS485_no.CheckedChanged += new System.EventHandler(this.radio_Eternet_no_CheckedChanged);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.radio_Modem_no);
-            this.groupBox1.Controls.Add(this.radio_Modem_si);
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.txtNumTelefono_modem);
-            this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Location = new System.Drawing.Point(232, 63);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(220, 121);
-            this.groupBox1.TabIndex = 109;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Modem";
-            // 
-            // radio_Modem_no
-            // 
-            this.radio_Modem_no.AutoSize = true;
-            this.radio_Modem_no.Location = new System.Drawing.Point(149, 24);
-            this.radio_Modem_no.Name = "radio_Modem_no";
-            this.radio_Modem_no.Size = new System.Drawing.Size(51, 27);
-            this.radio_Modem_no.TabIndex = 114;
-            this.radio_Modem_no.TabStop = true;
-            this.radio_Modem_no.Text = "no";
-            this.radio_Modem_no.UseVisualStyleBackColor = true;
-            // 
-            // radio_Modem_si
-            // 
-            this.radio_Modem_si.AutoSize = true;
-            this.radio_Modem_si.Location = new System.Drawing.Point(112, 24);
-            this.radio_Modem_si.Name = "radio_Modem_si";
-            this.radio_Modem_si.Size = new System.Drawing.Size(41, 27);
-            this.radio_Modem_si.TabIndex = 113;
-            this.radio_Modem_si.TabStop = true;
-            this.radio_Modem_si.Text = "si";
-            this.radio_Modem_si.UseVisualStyleBackColor = true;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(7, 27);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(106, 22);
-            this.label22.TabIndex = 112;
-            this.label22.Text = "Operativo";
-            // 
-            // txtNumTelefono_modem
-            // 
-            this.txtNumTelefono_modem.Location = new System.Drawing.Point(11, 76);
-            this.txtNumTelefono_modem.Name = "txtNumTelefono_modem";
-            this.txtNumTelefono_modem.Size = new System.Drawing.Size(203, 31);
-            this.txtNumTelefono_modem.TabIndex = 111;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(7, 51);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(109, 22);
-            this.label23.TabIndex = 110;
-            this.label23.Text = "N°Telefono";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.radio_RS232_no);
-            this.groupBox2.Controls.Add(this.radio_RS232_si);
-            this.groupBox2.Controls.Add(this.label24);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.label25);
-            this.groupBox2.Location = new System.Drawing.Point(458, 63);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(220, 121);
-            this.groupBox2.TabIndex = 110;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "RS_232";
-            // 
-            // radio_RS232_no
-            // 
-            this.radio_RS232_no.AutoSize = true;
-            this.radio_RS232_no.Location = new System.Drawing.Point(163, 27);
-            this.radio_RS232_no.Name = "radio_RS232_no";
-            this.radio_RS232_no.Size = new System.Drawing.Size(51, 27);
-            this.radio_RS232_no.TabIndex = 114;
-            this.radio_RS232_no.TabStop = true;
-            this.radio_RS232_no.Text = "no";
-            this.radio_RS232_no.UseVisualStyleBackColor = true;
-            // 
-            // radio_RS232_si
-            // 
-            this.radio_RS232_si.AutoSize = true;
-            this.radio_RS232_si.Location = new System.Drawing.Point(118, 27);
-            this.radio_RS232_si.Name = "radio_RS232_si";
-            this.radio_RS232_si.Size = new System.Drawing.Size(41, 27);
-            this.radio_RS232_si.TabIndex = 113;
-            this.radio_RS232_si.TabStop = true;
-            this.radio_RS232_si.Text = "si";
-            this.radio_RS232_si.UseVisualStyleBackColor = true;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(6, 27);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(106, 22);
-            this.label24.TabIndex = 112;
-            this.label24.Text = "Operativo";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(10, 76);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 31);
-            this.textBox1.TabIndex = 111;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(10, 51);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(109, 22);
-            this.label25.TabIndex = 110;
-            this.label25.Text = "N°Telefono";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.radio_Eternet_no);
-            this.groupBox3.Controls.Add(this.radio_Eternet_si);
-            this.groupBox3.Controls.Add(this.label26);
-            this.groupBox3.Controls.Add(this.textBox2);
-            this.groupBox3.Controls.Add(this.label27);
-            this.groupBox3.Location = new System.Drawing.Point(6, 63);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(220, 121);
-            this.groupBox3.TabIndex = 111;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Eternet ";
-            // 
-            // radio_Eternet_no
-            // 
-            this.radio_Eternet_no.AutoSize = true;
-            this.radio_Eternet_no.Location = new System.Drawing.Point(163, 27);
-            this.radio_Eternet_no.Name = "radio_Eternet_no";
-            this.radio_Eternet_no.Size = new System.Drawing.Size(51, 27);
-            this.radio_Eternet_no.TabIndex = 114;
-            this.radio_Eternet_no.TabStop = true;
-            this.radio_Eternet_no.Text = "no";
-            this.radio_Eternet_no.UseVisualStyleBackColor = true;
-            // 
-            // radio_Eternet_si
-            // 
-            this.radio_Eternet_si.AutoSize = true;
-            this.radio_Eternet_si.Location = new System.Drawing.Point(118, 27);
-            this.radio_Eternet_si.Name = "radio_Eternet_si";
-            this.radio_Eternet_si.Size = new System.Drawing.Size(41, 27);
-            this.radio_Eternet_si.TabIndex = 113;
-            this.radio_Eternet_si.TabStop = true;
-            this.radio_Eternet_si.Text = "si";
-            this.radio_Eternet_si.UseVisualStyleBackColor = true;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(11, 27);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(106, 22);
-            this.label26.TabIndex = 112;
-            this.label26.Text = "Operativo";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(15, 76);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(193, 31);
-            this.textBox2.TabIndex = 111;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(11, 51);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(50, 22);
-            this.label27.TabIndex = 110;
-            this.label27.Text = "N°Ip";
-            // 
-            // check_Eternet
-            // 
-            this.check_Eternet.AutoSize = true;
-            this.check_Eternet.Location = new System.Drawing.Point(6, 30);
-            this.check_Eternet.Name = "check_Eternet";
-            this.check_Eternet.Size = new System.Drawing.Size(92, 27);
-            this.check_Eternet.TabIndex = 115;
-            this.check_Eternet.Text = "Eternet";
-            this.check_Eternet.UseVisualStyleBackColor = true;
-            // 
-            // check_Modem
-            // 
-            this.check_Modem.AutoSize = true;
-            this.check_Modem.Location = new System.Drawing.Point(104, 30);
-            this.check_Modem.Name = "check_Modem";
-            this.check_Modem.Size = new System.Drawing.Size(101, 27);
-            this.check_Modem.TabIndex = 116;
-            this.check_Modem.Text = "Modem";
-            this.check_Modem.UseVisualStyleBackColor = true;
-            // 
-            // checkRS_232
-            // 
-            this.checkRS_232.AutoSize = true;
-            this.checkRS_232.Location = new System.Drawing.Point(211, 30);
-            this.checkRS_232.Name = "checkRS_232";
-            this.checkRS_232.Size = new System.Drawing.Size(93, 27);
-            this.checkRS_232.TabIndex = 117;
-            this.checkRS_232.Text = "RS_232";
-            this.checkRS_232.UseVisualStyleBackColor = true;
-            // 
-            // check_RS_485
-            // 
-            this.check_RS_485.AutoSize = true;
-            this.check_RS_485.Location = new System.Drawing.Point(310, 30);
-            this.check_RS_485.Name = "check_RS_485";
-            this.check_RS_485.Size = new System.Drawing.Size(93, 27);
-            this.check_RS_485.TabIndex = 118;
-            this.check_RS_485.Text = "RS_485";
-            this.check_RS_485.UseVisualStyleBackColor = true;
-            // 
-            // checkPuerto_optico
-            // 
-            this.checkPuerto_optico.AutoSize = true;
-            this.checkPuerto_optico.Location = new System.Drawing.Point(407, 30);
-            this.checkPuerto_optico.Name = "checkPuerto_optico";
-            this.checkPuerto_optico.Size = new System.Drawing.Size(156, 27);
-            this.checkPuerto_optico.TabIndex = 119;
-            this.checkPuerto_optico.Text = "Puerto Optico";
-            this.checkPuerto_optico.UseVisualStyleBackColor = true;
-            // 
-            // check_infrarrojo
-            // 
-            this.check_infrarrojo.AutoSize = true;
-            this.check_infrarrojo.Location = new System.Drawing.Point(558, 30);
-            this.check_infrarrojo.Name = "check_infrarrojo";
-            this.check_infrarrojo.Size = new System.Drawing.Size(110, 27);
-            this.check_infrarrojo.TabIndex = 120;
-            this.check_infrarrojo.Text = "Infrarrojo";
-            this.check_infrarrojo.UseVisualStyleBackColor = true;
-            // 
-            // check_radio_frecuencia
-            // 
-            this.check_radio_frecuencia.AutoSize = true;
-            this.check_radio_frecuencia.Location = new System.Drawing.Point(668, 30);
-            this.check_radio_frecuencia.Name = "check_radio_frecuencia";
-            this.check_radio_frecuencia.Size = new System.Drawing.Size(187, 27);
-            this.check_radio_frecuencia.TabIndex = 121;
-            this.check_radio_frecuencia.Text = "Radio frecuencia";
-            this.check_radio_frecuencia.UseVisualStyleBackColor = true;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.radio_PuertoOptico_no);
-            this.groupBox4.Controls.Add(this.radio_PuertoOptico_si);
-            this.groupBox4.Controls.Add(this.label28);
-            this.groupBox4.Location = new System.Drawing.Point(6, 190);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(220, 68);
-            this.groupBox4.TabIndex = 122;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Puerto Optico";
-            // 
-            // radio_PuertoOptico_no
-            // 
-            this.radio_PuertoOptico_no.AutoSize = true;
-            this.radio_PuertoOptico_no.Location = new System.Drawing.Point(163, 27);
-            this.radio_PuertoOptico_no.Name = "radio_PuertoOptico_no";
-            this.radio_PuertoOptico_no.Size = new System.Drawing.Size(51, 27);
-            this.radio_PuertoOptico_no.TabIndex = 114;
-            this.radio_PuertoOptico_no.TabStop = true;
-            this.radio_PuertoOptico_no.Text = "no";
-            this.radio_PuertoOptico_no.UseVisualStyleBackColor = true;
-            // 
-            // radio_PuertoOptico_si
-            // 
-            this.radio_PuertoOptico_si.AutoSize = true;
-            this.radio_PuertoOptico_si.Location = new System.Drawing.Point(118, 27);
-            this.radio_PuertoOptico_si.Name = "radio_PuertoOptico_si";
-            this.radio_PuertoOptico_si.Size = new System.Drawing.Size(41, 27);
-            this.radio_PuertoOptico_si.TabIndex = 113;
-            this.radio_PuertoOptico_si.TabStop = true;
-            this.radio_PuertoOptico_si.Text = "si";
-            this.radio_PuertoOptico_si.UseVisualStyleBackColor = true;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(11, 27);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(106, 22);
-            this.label28.TabIndex = 112;
-            this.label28.Text = "Operativo";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.radio_Infrarrojo_no);
-            this.groupBox5.Controls.Add(this.radio_Infrarrojo_si);
-            this.groupBox5.Controls.Add(this.label29);
-            this.groupBox5.Location = new System.Drawing.Point(233, 190);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(220, 68);
-            this.groupBox5.TabIndex = 123;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Infrarrojo";
-            // 
-            // radio_Infrarrojo_no
-            // 
-            this.radio_Infrarrojo_no.AutoSize = true;
-            this.radio_Infrarrojo_no.Location = new System.Drawing.Point(163, 27);
-            this.radio_Infrarrojo_no.Name = "radio_Infrarrojo_no";
-            this.radio_Infrarrojo_no.Size = new System.Drawing.Size(51, 27);
-            this.radio_Infrarrojo_no.TabIndex = 114;
-            this.radio_Infrarrojo_no.TabStop = true;
-            this.radio_Infrarrojo_no.Text = "no";
-            this.radio_Infrarrojo_no.UseVisualStyleBackColor = true;
-            // 
-            // radio_Infrarrojo_si
-            // 
-            this.radio_Infrarrojo_si.AutoSize = true;
-            this.radio_Infrarrojo_si.Location = new System.Drawing.Point(118, 27);
-            this.radio_Infrarrojo_si.Name = "radio_Infrarrojo_si";
-            this.radio_Infrarrojo_si.Size = new System.Drawing.Size(41, 27);
-            this.radio_Infrarrojo_si.TabIndex = 113;
-            this.radio_Infrarrojo_si.TabStop = true;
-            this.radio_Infrarrojo_si.Text = "si";
-            this.radio_Infrarrojo_si.UseVisualStyleBackColor = true;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(11, 27);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(106, 22);
-            this.label29.TabIndex = 112;
-            this.label29.Text = "Operativo";
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.radio_RadiFrecuencia_no);
-            this.groupBox6.Controls.Add(this.radio_RadiFrecuencia_si);
-            this.groupBox6.Controls.Add(this.label30);
-            this.groupBox6.Location = new System.Drawing.Point(459, 190);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(220, 68);
-            this.groupBox6.TabIndex = 124;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Radio frecuencia";
-            // 
-            // radio_RadiFrecuencia_no
-            // 
-            this.radio_RadiFrecuencia_no.AutoSize = true;
-            this.radio_RadiFrecuencia_no.Location = new System.Drawing.Point(163, 27);
-            this.radio_RadiFrecuencia_no.Name = "radio_RadiFrecuencia_no";
-            this.radio_RadiFrecuencia_no.Size = new System.Drawing.Size(51, 27);
-            this.radio_RadiFrecuencia_no.TabIndex = 114;
-            this.radio_RadiFrecuencia_no.TabStop = true;
-            this.radio_RadiFrecuencia_no.Text = "no";
-            this.radio_RadiFrecuencia_no.UseVisualStyleBackColor = true;
-            this.radio_RadiFrecuencia_no.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
-            // 
-            // radio_RadiFrecuencia_si
-            // 
-            this.radio_RadiFrecuencia_si.AutoSize = true;
-            this.radio_RadiFrecuencia_si.Location = new System.Drawing.Point(118, 27);
-            this.radio_RadiFrecuencia_si.Name = "radio_RadiFrecuencia_si";
-            this.radio_RadiFrecuencia_si.Size = new System.Drawing.Size(41, 27);
-            this.radio_RadiFrecuencia_si.TabIndex = 113;
-            this.radio_RadiFrecuencia_si.TabStop = true;
-            this.radio_RadiFrecuencia_si.Text = "si";
-            this.radio_RadiFrecuencia_si.UseVisualStyleBackColor = true;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(11, 27);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(106, 22);
-            this.label30.TabIndex = 112;
-            this.label30.Text = "Operativo";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(131, 171);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 118;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(127, 146);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(76, 22);
-            this.label31.TabIndex = 119;
-            this.label31.Text = "TC_Sec";
-            // 
-            // txtModo_Uso
-            // 
-            this.txtModo_Uso.Location = new System.Drawing.Point(683, 27);
-            this.txtModo_Uso.Multiline = true;
-            this.txtModo_Uso.Name = "txtModo_Uso";
-            this.txtModo_Uso.Size = new System.Drawing.Size(131, 20);
-            this.txtModo_Uso.TabIndex = 121;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(683, 2);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(131, 22);
-            this.label7.TabIndex = 120;
-            this.label7.Text = "Modo De Uso";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(236, 146);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(122, 22);
-            this.label32.TabIndex = 122;
-            this.label32.Text = "Relacion_TC";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(243, 172);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 123;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(359, 171);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 125;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(364, 145);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(76, 22);
-            this.label33.TabIndex = 124;
-            this.label33.Text = "TP_Prim";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(465, 171);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 127;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(470, 145);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(72, 22);
-            this.label34.TabIndex = 126;
-            this.label34.Text = "TP_Sec";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(820, 27);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(131, 20);
-            this.textBox7.TabIndex = 129;
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(820, 2);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(97, 22);
-            this.label35.TabIndex = 128;
-            this.label35.Text = "N° Grupo";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(236, 27);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(212, 20);
-            this.textBox8.TabIndex = 131;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(238, 2);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(147, 22);
-            this.label9.TabIndex = 130;
-            this.label9.Text = "N° Del Medidor";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(238, 123);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 133;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(235, 98);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(46, 22);
-            this.label36.TabIndex = 132;
-            this.label36.Text = "Tipo";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(353, 123);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 135;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(350, 98);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(60, 22);
-            this.label37.TabIndex = 134;
-            this.label37.Text = "Clase";
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(463, 123);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(209, 20);
-            this.textBox11.TabIndex = 137;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(460, 98);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(88, 22);
-            this.label38.TabIndex = 136;
-            this.label38.Text = "Presicion";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(682, 123);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(269, 20);
-            this.textBox12.TabIndex = 139;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(679, 98);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(217, 22);
-            this.label39.TabIndex = 138;
-            this.label39.Text = "Codigo Del Fabricante";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(682, 171);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(269, 20);
-            this.textBox13.TabIndex = 141;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(679, 146);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(79, 22);
-            this.label40.TabIndex = 140;
-            this.label40.Text = "N° Serie";
-            // 
             // AgregarMedidor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1266,7 +1269,8 @@
             this.Controls.Add(this.PnlFormMedidor);
             this.Controls.Add(this.pnlBtnClientes);
             this.Controls.Add(this.PnlBarraTitulo);
-            this.MinimumSize = new System.Drawing.Size(960, 611);
+            this.MaximumSize = new System.Drawing.Size(1007, 657);
+            this.MinimumSize = new System.Drawing.Size(1007, 657);
             this.Name = "AgregarMedidor";
             this.Text = "AgregarMedidor";
             this.Load += new System.EventHandler(this.AgregarMedidor_Load);
@@ -1279,20 +1283,20 @@
             this.panel1.ResumeLayout(false);
             this.groupComunicacion.ResumeLayout(false);
             this.groupComunicacion.PerformLayout();
-            this.groupEternet.ResumeLayout(false);
-            this.groupEternet.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupEternet.ResumeLayout(false);
+            this.groupEternet.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1319,9 +1323,9 @@
         private System.Windows.Forms.GroupBox groupComunicacion;
         private System.Windows.Forms.TextBox txtModelo;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtRelacion;
+        private System.Windows.Forms.TextBox txtTc_primaria;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtRE_Voltaje;
+        private System.Windows.Forms.TextBox txtRelacion_TP;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtPotencia_Punto_dia;
         private System.Windows.Forms.Label label12;
@@ -1382,29 +1386,29 @@
         private System.Windows.Forms.RadioButton radio_Infrarrojo_no;
         private System.Windows.Forms.RadioButton radio_Infrarrojo_si;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtTc_secundaria;
+        private System.Windows.Forms.TextBox txtRelacion_TC;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TextBox txtModo_Uso;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtTP_secundario;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtTP_primaria;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtNumero_Grupo;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtNumero_Medidor;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtCodigo_Fabricante;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtPresicion;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtClase;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtNumero_Serie;
         private System.Windows.Forms.Label label40;
     }
 }

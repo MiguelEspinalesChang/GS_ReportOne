@@ -112,7 +112,16 @@ namespace SegundaVista.Vistas
         private void btnAgregarMedidor_Click(object sender, EventArgs e)
         {
             Form abrir = new AgregarMedidor();
+
+
             abrir.ShowDialog();
+        }
+
+        private void gridClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+          //string Dato_NIS, Dato_NOMBRE;
+           // Dato_NIS = gridClientes.row[1];
+
         }
     }
 }

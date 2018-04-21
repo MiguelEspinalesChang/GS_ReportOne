@@ -39,6 +39,13 @@ namespace SegundaVista.Mongo_Data.Clases
             var collection_ = dataLocal.GetCollection<BsonDocument>("Usuarios");
             collection_.InsertOneAsync(documento);
         }
+        public void insertar_Medidor()
+        {
+
+
+        }
+
+
 
         public void Buscar_Cliente(string id)
         {

@@ -244,6 +244,7 @@
             this.gridClientes.ReadOnly = true;
             this.gridClientes.Size = new System.Drawing.Size(969, 171);
             this.gridClientes.TabIndex = 0;
+            this.gridClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridClientes_CellContentClick);
             // 
             // pnlAlerta
             // 
