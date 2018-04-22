@@ -11,12 +11,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Bson;
 using MongoDB.Driver;
+using SegundaVista.Mongo_Data;
 
 namespace SegundaVista.Vistas
 {
     public partial class Cliente : Form
     {
 
+        private Conexion MongoConexion = new Conexion();
 
         public Cliente()
         {
@@ -85,10 +87,11 @@ namespace SegundaVista.Vistas
             var client = new MongoClient(connectionString);
             var server = client.GetServer();
             var database = server.GetDatabase("GS_Report_one_DataBaseMongo");
-            var Documeto = database.GetCollection<Client>("Usuarios");
+            var Documento = MongoConexion.DataBase.GetCollection<Client>("Usuarios");
+            //MongoCollection<Client> Documento = database.GetCollection<Client>("Usuarios");
             BindingList<Client> doclist = new BindingList<Client>();
             Clientee Cli = new Clientee();
-            foreach (var deger in Documeto.FindAll())
+            foreach (var deger in Documento.FindAll())
             {
                 Cli.Nombre = deger.Nombre.ToString();
                 Cli.Apellido = deger.Apellido.ToString();
@@ -100,21 +103,45 @@ namespace SegundaVista.Vistas
                 Cli.NisCliente = deger.NisCliente.ToString();
                 Cli.ObjectId_Cliente = deger.Id;
                 doclist.Add(deger);
-                var bindingList = new BindingList<Client>(doclist);
-                var source = new BindingSource(bindingList, null);
-                gridClientes.DataSource = source;
+                
             }
 
-
+            var bindingList = new BindingList<Client>(doclist);
+            var source = new BindingSource(bindingList, null);
+            gridClientes.DataSource = source;
 
         }
 
         private void btnAgregarMedidor_Click(object sender, EventArgs e)
         {
-            Form abrir = new AgregarMedidor();
+            try
+            {
+                Form abrir = new AgregarMedidor();
+                var contador = gridClientes.SelectedRows.Count;
+                if (contador>0)
+                {     
+                    //IF DE CONTADOR MAYOR QUE CERO LANZAR VENTANA PASANDO DATOS
+                    //ELSE LANZAR ALERTA
+                    var clienteSelect = gridClientes.SelectedRows[0];
+                    var celdas = clienteSelect.Cells;
+                    var clienteNombre = celdas["Nombre"].Value;
+                    var NisCliente = celdas["NisCliente"].Value;
+                    abrir.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione Una Celda");
+                }
 
+               
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error : "+ ex);
+            }
 
-            abrir.ShowDialog();
+        
+        
         }
 
         private void gridClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)

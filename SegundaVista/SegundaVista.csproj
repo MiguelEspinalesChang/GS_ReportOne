@@ -147,6 +147,7 @@
     </Compile>
     <Compile Include="Mongo_Data\Clases\AgregarMedidor.cs" />
     <Compile Include="Mongo_Data\Clases\Conector_DataBase.cs" />
+    <Compile Include="Mongo_Data\Conexion.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -319,6 +320,7 @@
   <ItemGroup>
     <Folder Include="Analisis_Grafico\Analisis_Dia\" />
     <Folder Include="Analisis_Grafico\Analisis_multi_Dias\" />
+    <Folder Include="NewFolder1\" />
     <Folder Include="Reportes\Facturacion\" />
     <Folder Include="Reportes\Fact_multiple\" />
   </ItemGroup>
