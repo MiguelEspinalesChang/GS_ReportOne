@@ -27,7 +27,7 @@ namespace SegundaVista.Vistas
 
         private void Cliente_Load(object sender, EventArgs e)
         {
-            pnlAlerta.Visible = false;
+            pnlAlerta.Visible = true;
             pnlAlertaVerde.Visible = false;
             pnlAlertaRojo.Visible = false;
             Usuarios();
@@ -103,7 +103,7 @@ namespace SegundaVista.Vistas
                 Cli.NisCliente = deger.NisCliente.ToString();
                 Cli.ObjectId_Cliente = deger.Id;
                 doclist.Add(deger);
-                
+
             }
 
             var bindingList = new BindingList<Client>(doclist);
@@ -116,39 +116,40 @@ namespace SegundaVista.Vistas
         {
             try
             {
-                Form abrir = new AgregarMedidor();
                 var contador = gridClientes.SelectedRows.Count;
-                if (contador>0)
-                {     
-                    //IF DE CONTADOR MAYOR QUE CERO LANZAR VENTANA PASANDO DATOS
-                    //ELSE LANZAR ALERTA
+                if (contador > 0)
+                {
                     var clienteSelect = gridClientes.SelectedRows[0];
                     var celdas = clienteSelect.Cells;
-                    var clienteNombre = celdas["Nombre"].Value;
-                    var NisCliente = celdas["NisCliente"].Value;
-                    abrir.ShowDialog();
+                    string clienteNombre = Convert.ToString(celdas["Nombre"].Value);
+                    string NisCliente = Convert.ToString(celdas["NisCliente"].Value);
+                    AgregarMedidor Medi = new AgregarMedidor();
+                    Medi.txtNIS.Text = NisCliente;
+                    Medi.txtNom_Propietario.Text = clienteNombre;
+                    pnlAlertaRojo.Visible = false;
+                    Medi.ShowDialog();
                 }
                 else
                 {
-                    MessageBox.Show("Seleccione Una Celda");
+                    pnlAlertaRojo.Visible = true;
+                    lblRojo.Text = "Seleccione Una Celda";
+                    
                 }
 
-               
+
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error : "+ ex);
+                pnlAlertaRojo.Visible = true;
+                lblRojo.Text = "Error : " + ex;
             }
 
-        
-        
+
+
         }
 
         private void gridClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-          //string Dato_NIS, Dato_NOMBRE;
-           // Dato_NIS = gridClientes.row[1];
-
         }
     }
 }

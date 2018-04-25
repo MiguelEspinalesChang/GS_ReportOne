@@ -51,10 +51,23 @@
             this.txt_m_Nombre = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label2 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.pnlAlerta = new System.Windows.Forms.Panel();
+            this.pnlAlertaRojo = new System.Windows.Forms.Panel();
+            this.btnCerrarAlertaR = new System.Windows.Forms.PictureBox();
+            this.lblRojo = new System.Windows.Forms.Label();
+            this.pnlAlertaVerde = new System.Windows.Forms.Panel();
+            this.btnCerrarAlertaV = new System.Windows.Forms.PictureBox();
+            this.lblverde = new System.Windows.Forms.Label();
+            this.lbl_verde = new System.Windows.Forms.Label();
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
             this.PnlFormCliente.SuspendLayout();
+            this.pnlAlerta.SuspendLayout();
+            this.pnlAlertaRojo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrarAlertaR)).BeginInit();
+            this.pnlAlertaVerde.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrarAlertaV)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlBarraTitulo
@@ -96,6 +109,7 @@
             // pnlBtnClientes
             // 
             this.pnlBtnClientes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlBtnClientes.Controls.Add(this.pnlAlerta);
             this.pnlBtnClientes.Controls.Add(this.btnGuardarMedidor);
             this.pnlBtnClientes.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBtnClientes.Location = new System.Drawing.Point(0, 38);
@@ -393,6 +407,92 @@
             this.label19.TabIndex = 80;
             this.label19.Text = "Nombre";
             // 
+            // pnlAlerta
+            // 
+            this.pnlAlerta.Controls.Add(this.pnlAlertaVerde);
+            this.pnlAlerta.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlAlerta.Location = new System.Drawing.Point(218, 0);
+            this.pnlAlerta.Name = "pnlAlerta";
+            this.pnlAlerta.Size = new System.Drawing.Size(245, 55);
+            this.pnlAlerta.TabIndex = 24;
+            // 
+            // pnlAlertaRojo
+            // 
+            this.pnlAlertaRojo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlAlertaRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.pnlAlertaRojo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlAlertaRojo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlAlertaRojo.Controls.Add(this.btnCerrarAlertaR);
+            this.pnlAlertaRojo.Controls.Add(this.lblRojo);
+            this.pnlAlertaRojo.Location = new System.Drawing.Point(-1, -1);
+            this.pnlAlertaRojo.Name = "pnlAlertaRojo";
+            this.pnlAlertaRojo.Size = new System.Drawing.Size(197, 30);
+            this.pnlAlertaRojo.TabIndex = 1;
+            // 
+            // btnCerrarAlertaR
+            // 
+            this.btnCerrarAlertaR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarAlertaR.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarAlertaR.Image")));
+            this.btnCerrarAlertaR.Location = new System.Drawing.Point(5, 3);
+            this.btnCerrarAlertaR.Name = "btnCerrarAlertaR";
+            this.btnCerrarAlertaR.Size = new System.Drawing.Size(22, 22);
+            this.btnCerrarAlertaR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnCerrarAlertaR.TabIndex = 2;
+            this.btnCerrarAlertaR.TabStop = false;
+            this.btnCerrarAlertaR.Click += new System.EventHandler(this.btnCerrarAlertaR_Click);
+            // 
+            // lblRojo
+            // 
+            this.lblRojo.AutoSize = true;
+            this.lblRojo.Location = new System.Drawing.Point(47, 8);
+            this.lblRojo.Name = "lblRojo";
+            this.lblRojo.Size = new System.Drawing.Size(0, 13);
+            this.lblRojo.TabIndex = 0;
+            this.lblRojo.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // pnlAlertaVerde
+            // 
+            this.pnlAlertaVerde.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlAlertaVerde.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(216)))));
+            this.pnlAlertaVerde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlAlertaVerde.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlAlertaVerde.Controls.Add(this.pnlAlertaRojo);
+            this.pnlAlertaVerde.Controls.Add(this.lbl_verde);
+            this.pnlAlertaVerde.Controls.Add(this.btnCerrarAlertaV);
+            this.pnlAlertaVerde.Controls.Add(this.lblverde);
+            this.pnlAlertaVerde.Location = new System.Drawing.Point(45, 6);
+            this.pnlAlertaVerde.Name = "pnlAlertaVerde";
+            this.pnlAlertaVerde.Size = new System.Drawing.Size(197, 30);
+            this.pnlAlertaVerde.TabIndex = 0;
+            // 
+            // btnCerrarAlertaV
+            // 
+            this.btnCerrarAlertaV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarAlertaV.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarAlertaV.Image")));
+            this.btnCerrarAlertaV.Location = new System.Drawing.Point(5, 3);
+            this.btnCerrarAlertaV.Name = "btnCerrarAlertaV";
+            this.btnCerrarAlertaV.Size = new System.Drawing.Size(22, 22);
+            this.btnCerrarAlertaV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnCerrarAlertaV.TabIndex = 1;
+            this.btnCerrarAlertaV.TabStop = false;
+            this.btnCerrarAlertaV.Click += new System.EventHandler(this.btnCerrarAlertaV_Click);
+            // 
+            // lblverde
+            // 
+            this.lblverde.AutoSize = true;
+            this.lblverde.Location = new System.Drawing.Point(312, 7);
+            this.lblverde.Name = "lblverde";
+            this.lblverde.Size = new System.Drawing.Size(0, 13);
+            this.lblverde.TabIndex = 0;
+            // 
+            // lbl_verde
+            // 
+            this.lbl_verde.AutoSize = true;
+            this.lbl_verde.Location = new System.Drawing.Point(33, 7);
+            this.lbl_verde.Name = "lbl_verde";
+            this.lbl_verde.Size = new System.Drawing.Size(0, 13);
+            this.lbl_verde.TabIndex = 2;
+            // 
             // AgregarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -412,6 +512,13 @@
             this.pnlBtnClientes.ResumeLayout(false);
             this.PnlFormCliente.ResumeLayout(false);
             this.PnlFormCliente.PerformLayout();
+            this.pnlAlerta.ResumeLayout(false);
+            this.pnlAlertaRojo.ResumeLayout(false);
+            this.pnlAlertaRojo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrarAlertaR)).EndInit();
+            this.pnlAlertaVerde.ResumeLayout(false);
+            this.pnlAlertaVerde.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrarAlertaV)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -440,5 +547,13 @@
         private System.Windows.Forms.Label label7;
         private MaterialSkin.Controls.MaterialSingleLineTextField txt_m_NisCliente;
         private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Panel pnlAlerta;
+        public System.Windows.Forms.Panel pnlAlertaRojo;
+        private System.Windows.Forms.PictureBox btnCerrarAlertaR;
+        public System.Windows.Forms.Label lblRojo;
+        private System.Windows.Forms.Panel pnlAlertaVerde;
+        private System.Windows.Forms.PictureBox btnCerrarAlertaV;
+        private System.Windows.Forms.Label lblverde;
+        private System.Windows.Forms.Label lbl_verde;
     }
 }

@@ -21,9 +21,9 @@ namespace SegundaVista.Vistas
 
         private void AgregarCliente_Load(object sender, EventArgs e)
         {
-
-           
-
+            pnlAlerta.Visible = true;
+            pnlAlertaVerde.Visible = false;
+            pnlAlertaRojo.Visible = false;
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -47,7 +47,8 @@ namespace SegundaVista.Vistas
 
            // Mandar los datos del usuario ala base de datos en mongo
             conector.insertar_Cliete(cliente.Nombre,cliente.Apellido,cliente.Nombre_Empresa,cliente.Responsable_Medicion,cliente.DirigirReporte_A,cliente.RazonSocial,cliente.Ruc,cliente.NisCliente);
-            MessageBox.Show("Usuario Agregado");
+            pnlAlertaVerde.Visible = true;
+            lbl_verde.Text = "Usuario Agregado";
             txt_m_Nombre.Text = "";
             txt_m_Apellido.Text = "";
             txt_m_NomEmpresa.Text = "";
@@ -61,6 +62,16 @@ namespace SegundaVista.Vistas
         private void txt_m_Nombre_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCerrarAlertaV_Click(object sender, EventArgs e)
+        {
+            pnlAlertaVerde.Visible = false;
+        }
+
+        private void btnCerrarAlertaR_Click(object sender, EventArgs e)
+        {
+            pnlAlertaRojo.Visible = false;
         }
     }
 }

@@ -21,4 +21,5 @@ namespace SegundaVista.clases
         public string DirigirReporte_A { get; set; }
         public string NisCliente { get; set;  }
     }
+
 }
