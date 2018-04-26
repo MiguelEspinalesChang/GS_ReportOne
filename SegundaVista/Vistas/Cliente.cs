@@ -30,7 +30,16 @@ namespace SegundaVista.Vistas
             pnlAlerta.Visible = true;
             pnlAlertaVerde.Visible = false;
             pnlAlertaRojo.Visible = false;
-            Usuarios();
+            try
+            {
+                Usuarios();
+            }
+            catch (Exception ex)
+            {
+                pnlAlertaRojo.Visible = true;
+                lblRojo.Text = "Error Al Conectar al Servidor : " + ex;
+            }
+
         }
 
         private void pnlContenedorHijo_Paint(object sender, PaintEventArgs e)
@@ -133,7 +142,7 @@ namespace SegundaVista.Vistas
                 {
                     pnlAlertaRojo.Visible = true;
                     lblRojo.Text = "Seleccione Una Celda";
-                    
+
                 }
 
 

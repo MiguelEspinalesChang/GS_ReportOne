@@ -38,6 +38,7 @@
             this.btnCerrarAlertaR = new System.Windows.Forms.PictureBox();
             this.lblRojo = new System.Windows.Forms.Label();
             this.pnlAlertaVerde = new System.Windows.Forms.Panel();
+            this.lbl_verde = new System.Windows.Forms.Label();
             this.btnCerrarAlertaV = new System.Windows.Forms.PictureBox();
             this.lblverde = new System.Windows.Forms.Label();
             this.btnGuardarMedidor = new System.Windows.Forms.Button();
@@ -90,15 +91,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupComunicacion = new System.Windows.Forms.GroupBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.gro_B_RadioFrecuencia = new System.Windows.Forms.GroupBox();
             this.radio_RadiFrecuencia_no = new System.Windows.Forms.RadioButton();
             this.radio_RadiFrecuencia_si = new System.Windows.Forms.RadioButton();
             this.label30 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.gro_B_Infrarrojo = new System.Windows.Forms.GroupBox();
             this.radio_Infrarrojo_no = new System.Windows.Forms.RadioButton();
             this.radio_Infrarrojo_si = new System.Windows.Forms.RadioButton();
             this.label29 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.gro_B_PuertoOptico = new System.Windows.Forms.GroupBox();
             this.radio_PuertoOptico_no = new System.Windows.Forms.RadioButton();
             this.radio_PuertoOptico_si = new System.Windows.Forms.RadioButton();
             this.label28 = new System.Windows.Forms.Label();
@@ -109,25 +110,25 @@
             this.checkRS_232 = new System.Windows.Forms.CheckBox();
             this.check_Modem = new System.Windows.Forms.CheckBox();
             this.check_Eternet = new System.Windows.Forms.CheckBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gro_B_Eternet = new System.Windows.Forms.GroupBox();
             this.radio_Eternet_no = new System.Windows.Forms.RadioButton();
             this.radio_Eternet_si = new System.Windows.Forms.RadioButton();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNumeroIp_Eternet = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gro_B_RS_232 = new System.Windows.Forms.GroupBox();
             this.radio_RS232_no = new System.Windows.Forms.RadioButton();
             this.radio_RS232_si = new System.Windows.Forms.RadioButton();
             this.label24 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gro_B_Modem = new System.Windows.Forms.GroupBox();
             this.radio_Modem_no = new System.Windows.Forms.RadioButton();
             this.radio_Modem_si = new System.Windows.Forms.RadioButton();
             this.label22 = new System.Windows.Forms.Label();
             this.txtNumTelefono_modem = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.groupEternet = new System.Windows.Forms.GroupBox();
+            this.gro_B_RS_485 = new System.Windows.Forms.GroupBox();
             this.radio_RS485_no = new System.Windows.Forms.RadioButton();
             this.radio_RS485_si = new System.Windows.Forms.RadioButton();
             this.label21 = new System.Windows.Forms.Label();
@@ -154,13 +155,13 @@
             this.PnlFormMedidor.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupComunicacion.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupEternet.SuspendLayout();
+            this.gro_B_RadioFrecuencia.SuspendLayout();
+            this.gro_B_Infrarrojo.SuspendLayout();
+            this.gro_B_PuertoOptico.SuspendLayout();
+            this.gro_B_Eternet.SuspendLayout();
+            this.gro_B_RS_232.SuspendLayout();
+            this.gro_B_Modem.SuspendLayout();
+            this.gro_B_RS_485.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlBarraTitulo
@@ -248,7 +249,7 @@
             // lblRojo
             // 
             this.lblRojo.AutoSize = true;
-            this.lblRojo.Location = new System.Drawing.Point(47, 8);
+            this.lblRojo.Location = new System.Drawing.Point(35, 8);
             this.lblRojo.Name = "lblRojo";
             this.lblRojo.Size = new System.Drawing.Size(0, 13);
             this.lblRojo.TabIndex = 0;
@@ -260,12 +261,21 @@
             this.pnlAlertaVerde.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(216)))));
             this.pnlAlertaVerde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pnlAlertaVerde.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlAlertaVerde.Controls.Add(this.lbl_verde);
             this.pnlAlertaVerde.Controls.Add(this.btnCerrarAlertaV);
             this.pnlAlertaVerde.Controls.Add(this.lblverde);
             this.pnlAlertaVerde.Location = new System.Drawing.Point(20, 6);
             this.pnlAlertaVerde.Name = "pnlAlertaVerde";
             this.pnlAlertaVerde.Size = new System.Drawing.Size(382, 30);
             this.pnlAlertaVerde.TabIndex = 0;
+            // 
+            // lbl_verde
+            // 
+            this.lbl_verde.AutoSize = true;
+            this.lbl_verde.Location = new System.Drawing.Point(34, 8);
+            this.lbl_verde.Name = "lbl_verde";
+            this.lbl_verde.Size = new System.Drawing.Size(0, 13);
+            this.lbl_verde.TabIndex = 2;
             // 
             // btnCerrarAlertaV
             // 
@@ -414,6 +424,7 @@
             this.txtPresicion.Name = "txtPresicion";
             this.txtPresicion.Size = new System.Drawing.Size(212, 26);
             this.txtPresicion.TabIndex = 137;
+            this.txtPresicion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPresicion_KeyPress);
             // 
             // label38
             // 
@@ -432,6 +443,7 @@
             this.txtClase.Name = "txtClase";
             this.txtClase.Size = new System.Drawing.Size(100, 26);
             this.txtClase.TabIndex = 135;
+            this.txtClase.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtClase_KeyPress);
             // 
             // label37
             // 
@@ -718,6 +730,7 @@
             this.txtPotencia_Punto_dia.Name = "txtPotencia_Punto_dia";
             this.txtPotencia_Punto_dia.Size = new System.Drawing.Size(212, 26);
             this.txtPotencia_Punto_dia.TabIndex = 105;
+            this.txtPotencia_Punto_dia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPotencia_Punto_dia_KeyPress);
             // 
             // label12
             // 
@@ -818,9 +831,9 @@
             // groupComunicacion
             // 
             this.groupComunicacion.BackColor = System.Drawing.Color.White;
-            this.groupComunicacion.Controls.Add(this.groupBox6);
-            this.groupComunicacion.Controls.Add(this.groupBox5);
-            this.groupComunicacion.Controls.Add(this.groupBox4);
+            this.groupComunicacion.Controls.Add(this.gro_B_RadioFrecuencia);
+            this.groupComunicacion.Controls.Add(this.gro_B_Infrarrojo);
+            this.groupComunicacion.Controls.Add(this.gro_B_PuertoOptico);
             this.groupComunicacion.Controls.Add(this.check_radio_frecuencia);
             this.groupComunicacion.Controls.Add(this.check_infrarrojo);
             this.groupComunicacion.Controls.Add(this.checkPuerto_optico);
@@ -828,32 +841,33 @@
             this.groupComunicacion.Controls.Add(this.checkRS_232);
             this.groupComunicacion.Controls.Add(this.check_Modem);
             this.groupComunicacion.Controls.Add(this.check_Eternet);
-            this.groupComunicacion.Controls.Add(this.groupBox3);
-            this.groupComunicacion.Controls.Add(this.groupBox2);
-            this.groupComunicacion.Controls.Add(this.groupBox1);
-            this.groupComunicacion.Controls.Add(this.groupEternet);
+            this.groupComunicacion.Controls.Add(this.gro_B_Eternet);
+            this.groupComunicacion.Controls.Add(this.gro_B_RS_232);
+            this.groupComunicacion.Controls.Add(this.gro_B_Modem);
+            this.groupComunicacion.Controls.Add(this.gro_B_RS_485);
             this.groupComunicacion.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupComunicacion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupComunicacion.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupComunicacion.Location = new System.Drawing.Point(0, 0);
             this.groupComunicacion.Name = "groupComunicacion";
             this.groupComunicacion.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupComunicacion.Size = new System.Drawing.Size(944, 266);
+            this.groupComunicacion.Size = new System.Drawing.Size(964, 266);
             this.groupComunicacion.TabIndex = 95;
             this.groupComunicacion.TabStop = false;
             this.groupComunicacion.Text = "Comunicacion";
             // 
-            // groupBox6
+            // gro_B_RadioFrecuencia
             // 
-            this.groupBox6.Controls.Add(this.radio_RadiFrecuencia_no);
-            this.groupBox6.Controls.Add(this.radio_RadiFrecuencia_si);
-            this.groupBox6.Controls.Add(this.label30);
-            this.groupBox6.Location = new System.Drawing.Point(459, 190);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(220, 68);
-            this.groupBox6.TabIndex = 124;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Radio frecuencia";
+            this.gro_B_RadioFrecuencia.Controls.Add(this.radio_RadiFrecuencia_no);
+            this.gro_B_RadioFrecuencia.Controls.Add(this.radio_RadiFrecuencia_si);
+            this.gro_B_RadioFrecuencia.Controls.Add(this.label30);
+            this.gro_B_RadioFrecuencia.Location = new System.Drawing.Point(459, 190);
+            this.gro_B_RadioFrecuencia.Name = "gro_B_RadioFrecuencia";
+            this.gro_B_RadioFrecuencia.Size = new System.Drawing.Size(220, 68);
+            this.gro_B_RadioFrecuencia.TabIndex = 124;
+            this.gro_B_RadioFrecuencia.TabStop = false;
+            this.gro_B_RadioFrecuencia.Text = "Radio frecuencia";
+            this.gro_B_RadioFrecuencia.Visible = false;
             // 
             // radio_RadiFrecuencia_no
             // 
@@ -888,17 +902,18 @@
             this.label30.TabIndex = 112;
             this.label30.Text = "Operativo";
             // 
-            // groupBox5
+            // gro_B_Infrarrojo
             // 
-            this.groupBox5.Controls.Add(this.radio_Infrarrojo_no);
-            this.groupBox5.Controls.Add(this.radio_Infrarrojo_si);
-            this.groupBox5.Controls.Add(this.label29);
-            this.groupBox5.Location = new System.Drawing.Point(233, 190);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(220, 68);
-            this.groupBox5.TabIndex = 123;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Infrarrojo";
+            this.gro_B_Infrarrojo.Controls.Add(this.radio_Infrarrojo_no);
+            this.gro_B_Infrarrojo.Controls.Add(this.radio_Infrarrojo_si);
+            this.gro_B_Infrarrojo.Controls.Add(this.label29);
+            this.gro_B_Infrarrojo.Location = new System.Drawing.Point(233, 190);
+            this.gro_B_Infrarrojo.Name = "gro_B_Infrarrojo";
+            this.gro_B_Infrarrojo.Size = new System.Drawing.Size(220, 68);
+            this.gro_B_Infrarrojo.TabIndex = 123;
+            this.gro_B_Infrarrojo.TabStop = false;
+            this.gro_B_Infrarrojo.Text = "Infrarrojo";
+            this.gro_B_Infrarrojo.Visible = false;
             // 
             // radio_Infrarrojo_no
             // 
@@ -932,17 +947,18 @@
             this.label29.TabIndex = 112;
             this.label29.Text = "Operativo";
             // 
-            // groupBox4
+            // gro_B_PuertoOptico
             // 
-            this.groupBox4.Controls.Add(this.radio_PuertoOptico_no);
-            this.groupBox4.Controls.Add(this.radio_PuertoOptico_si);
-            this.groupBox4.Controls.Add(this.label28);
-            this.groupBox4.Location = new System.Drawing.Point(6, 190);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(220, 68);
-            this.groupBox4.TabIndex = 122;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Puerto Optico";
+            this.gro_B_PuertoOptico.Controls.Add(this.radio_PuertoOptico_no);
+            this.gro_B_PuertoOptico.Controls.Add(this.radio_PuertoOptico_si);
+            this.gro_B_PuertoOptico.Controls.Add(this.label28);
+            this.gro_B_PuertoOptico.Location = new System.Drawing.Point(6, 190);
+            this.gro_B_PuertoOptico.Name = "gro_B_PuertoOptico";
+            this.gro_B_PuertoOptico.Size = new System.Drawing.Size(220, 68);
+            this.gro_B_PuertoOptico.TabIndex = 122;
+            this.gro_B_PuertoOptico.TabStop = false;
+            this.gro_B_PuertoOptico.Text = "Puerto Optico";
+            this.gro_B_PuertoOptico.Visible = false;
             // 
             // radio_PuertoOptico_no
             // 
@@ -985,6 +1001,7 @@
             this.check_radio_frecuencia.TabIndex = 121;
             this.check_radio_frecuencia.Text = "Radio frecuencia";
             this.check_radio_frecuencia.UseVisualStyleBackColor = true;
+            this.check_radio_frecuencia.CheckedChanged += new System.EventHandler(this.check_radio_frecuencia_CheckedChanged);
             // 
             // check_infrarrojo
             // 
@@ -995,6 +1012,7 @@
             this.check_infrarrojo.TabIndex = 120;
             this.check_infrarrojo.Text = "Infrarrojo";
             this.check_infrarrojo.UseVisualStyleBackColor = true;
+            this.check_infrarrojo.CheckedChanged += new System.EventHandler(this.check_infrarrojo_CheckedChanged);
             // 
             // checkPuerto_optico
             // 
@@ -1005,6 +1023,7 @@
             this.checkPuerto_optico.TabIndex = 119;
             this.checkPuerto_optico.Text = "Puerto Optico";
             this.checkPuerto_optico.UseVisualStyleBackColor = true;
+            this.checkPuerto_optico.CheckedChanged += new System.EventHandler(this.checkPuerto_optico_CheckedChanged);
             // 
             // check_RS_485
             // 
@@ -1015,6 +1034,7 @@
             this.check_RS_485.TabIndex = 118;
             this.check_RS_485.Text = "RS_485";
             this.check_RS_485.UseVisualStyleBackColor = true;
+            this.check_RS_485.CheckedChanged += new System.EventHandler(this.check_RS_485_CheckedChanged);
             // 
             // checkRS_232
             // 
@@ -1025,6 +1045,7 @@
             this.checkRS_232.TabIndex = 117;
             this.checkRS_232.Text = "RS_232";
             this.checkRS_232.UseVisualStyleBackColor = true;
+            this.checkRS_232.CheckedChanged += new System.EventHandler(this.checkRS_232_CheckedChanged);
             // 
             // check_Modem
             // 
@@ -1035,6 +1056,7 @@
             this.check_Modem.TabIndex = 116;
             this.check_Modem.Text = "Modem";
             this.check_Modem.UseVisualStyleBackColor = true;
+            this.check_Modem.CheckedChanged += new System.EventHandler(this.check_Modem_CheckedChanged);
             // 
             // check_Eternet
             // 
@@ -1045,20 +1067,22 @@
             this.check_Eternet.TabIndex = 115;
             this.check_Eternet.Text = "Eternet";
             this.check_Eternet.UseVisualStyleBackColor = true;
+            this.check_Eternet.CheckedChanged += new System.EventHandler(this.check_Eternet_CheckedChanged);
             // 
-            // groupBox3
+            // gro_B_Eternet
             // 
-            this.groupBox3.Controls.Add(this.radio_Eternet_no);
-            this.groupBox3.Controls.Add(this.radio_Eternet_si);
-            this.groupBox3.Controls.Add(this.label26);
-            this.groupBox3.Controls.Add(this.textBox2);
-            this.groupBox3.Controls.Add(this.label27);
-            this.groupBox3.Location = new System.Drawing.Point(6, 63);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(220, 121);
-            this.groupBox3.TabIndex = 111;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Ethernet ";
+            this.gro_B_Eternet.Controls.Add(this.radio_Eternet_no);
+            this.gro_B_Eternet.Controls.Add(this.radio_Eternet_si);
+            this.gro_B_Eternet.Controls.Add(this.label26);
+            this.gro_B_Eternet.Controls.Add(this.txtNumeroIp_Eternet);
+            this.gro_B_Eternet.Controls.Add(this.label27);
+            this.gro_B_Eternet.Location = new System.Drawing.Point(6, 63);
+            this.gro_B_Eternet.Name = "gro_B_Eternet";
+            this.gro_B_Eternet.Size = new System.Drawing.Size(220, 121);
+            this.gro_B_Eternet.TabIndex = 111;
+            this.gro_B_Eternet.TabStop = false;
+            this.gro_B_Eternet.Text = "Ethernet ";
+            this.gro_B_Eternet.Visible = false;
             // 
             // radio_Eternet_no
             // 
@@ -1092,12 +1116,12 @@
             this.label26.TabIndex = 112;
             this.label26.Text = "Operativo";
             // 
-            // textBox2
+            // txtNumeroIp_Eternet
             // 
-            this.textBox2.Location = new System.Drawing.Point(15, 76);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(193, 31);
-            this.textBox2.TabIndex = 111;
+            this.txtNumeroIp_Eternet.Location = new System.Drawing.Point(15, 76);
+            this.txtNumeroIp_Eternet.Name = "txtNumeroIp_Eternet";
+            this.txtNumeroIp_Eternet.Size = new System.Drawing.Size(193, 31);
+            this.txtNumeroIp_Eternet.TabIndex = 111;
             // 
             // label27
             // 
@@ -1109,19 +1133,20 @@
             this.label27.TabIndex = 110;
             this.label27.Text = "N°Ip";
             // 
-            // groupBox2
+            // gro_B_RS_232
             // 
-            this.groupBox2.Controls.Add(this.radio_RS232_no);
-            this.groupBox2.Controls.Add(this.radio_RS232_si);
-            this.groupBox2.Controls.Add(this.label24);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.label25);
-            this.groupBox2.Location = new System.Drawing.Point(458, 63);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(220, 121);
-            this.groupBox2.TabIndex = 110;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "RS_232";
+            this.gro_B_RS_232.Controls.Add(this.radio_RS232_no);
+            this.gro_B_RS_232.Controls.Add(this.radio_RS232_si);
+            this.gro_B_RS_232.Controls.Add(this.label24);
+            this.gro_B_RS_232.Controls.Add(this.textBox1);
+            this.gro_B_RS_232.Controls.Add(this.label25);
+            this.gro_B_RS_232.Location = new System.Drawing.Point(458, 63);
+            this.gro_B_RS_232.Name = "gro_B_RS_232";
+            this.gro_B_RS_232.Size = new System.Drawing.Size(220, 121);
+            this.gro_B_RS_232.TabIndex = 110;
+            this.gro_B_RS_232.TabStop = false;
+            this.gro_B_RS_232.Text = "RS_232";
+            this.gro_B_RS_232.Visible = false;
             // 
             // radio_RS232_no
             // 
@@ -1172,19 +1197,20 @@
             this.label25.TabIndex = 110;
             this.label25.Text = "N°Telefono";
             // 
-            // groupBox1
+            // gro_B_Modem
             // 
-            this.groupBox1.Controls.Add(this.radio_Modem_no);
-            this.groupBox1.Controls.Add(this.radio_Modem_si);
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.txtNumTelefono_modem);
-            this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Location = new System.Drawing.Point(232, 63);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(220, 121);
-            this.groupBox1.TabIndex = 109;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Modem";
+            this.gro_B_Modem.Controls.Add(this.radio_Modem_no);
+            this.gro_B_Modem.Controls.Add(this.radio_Modem_si);
+            this.gro_B_Modem.Controls.Add(this.label22);
+            this.gro_B_Modem.Controls.Add(this.txtNumTelefono_modem);
+            this.gro_B_Modem.Controls.Add(this.label23);
+            this.gro_B_Modem.Location = new System.Drawing.Point(232, 63);
+            this.gro_B_Modem.Name = "gro_B_Modem";
+            this.gro_B_Modem.Size = new System.Drawing.Size(220, 121);
+            this.gro_B_Modem.TabIndex = 109;
+            this.gro_B_Modem.TabStop = false;
+            this.gro_B_Modem.Text = "Modem";
+            this.gro_B_Modem.Visible = false;
             // 
             // radio_Modem_no
             // 
@@ -1235,19 +1261,20 @@
             this.label23.TabIndex = 110;
             this.label23.Text = "N°Telefono";
             // 
-            // groupEternet
+            // gro_B_RS_485
             // 
-            this.groupEternet.Controls.Add(this.radio_RS485_no);
-            this.groupEternet.Controls.Add(this.radio_RS485_si);
-            this.groupEternet.Controls.Add(this.label21);
-            this.groupEternet.Controls.Add(this.txt_Numero_Id);
-            this.groupEternet.Controls.Add(this.label20);
-            this.groupEternet.Location = new System.Drawing.Point(684, 63);
-            this.groupEternet.Name = "groupEternet";
-            this.groupEternet.Size = new System.Drawing.Size(220, 121);
-            this.groupEternet.TabIndex = 108;
-            this.groupEternet.TabStop = false;
-            this.groupEternet.Text = "RS_485";
+            this.gro_B_RS_485.Controls.Add(this.radio_RS485_no);
+            this.gro_B_RS_485.Controls.Add(this.radio_RS485_si);
+            this.gro_B_RS_485.Controls.Add(this.label21);
+            this.gro_B_RS_485.Controls.Add(this.txt_Numero_Id);
+            this.gro_B_RS_485.Controls.Add(this.label20);
+            this.gro_B_RS_485.Location = new System.Drawing.Point(684, 63);
+            this.gro_B_RS_485.Name = "gro_B_RS_485";
+            this.gro_B_RS_485.Size = new System.Drawing.Size(220, 121);
+            this.gro_B_RS_485.TabIndex = 108;
+            this.gro_B_RS_485.TabStop = false;
+            this.gro_B_RS_485.Text = "RS_485";
+            this.gro_B_RS_485.Visible = false;
             // 
             // radio_RS485_no
             // 
@@ -1426,20 +1453,20 @@
             this.panel1.ResumeLayout(false);
             this.groupComunicacion.ResumeLayout(false);
             this.groupComunicacion.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupEternet.ResumeLayout(false);
-            this.groupEternet.PerformLayout();
+            this.gro_B_RadioFrecuencia.ResumeLayout(false);
+            this.gro_B_RadioFrecuencia.PerformLayout();
+            this.gro_B_Infrarrojo.ResumeLayout(false);
+            this.gro_B_Infrarrojo.PerformLayout();
+            this.gro_B_PuertoOptico.ResumeLayout(false);
+            this.gro_B_PuertoOptico.PerformLayout();
+            this.gro_B_Eternet.ResumeLayout(false);
+            this.gro_B_Eternet.PerformLayout();
+            this.gro_B_RS_232.ResumeLayout(false);
+            this.gro_B_RS_232.PerformLayout();
+            this.gro_B_Modem.ResumeLayout(false);
+            this.gro_B_Modem.PerformLayout();
+            this.gro_B_RS_485.ResumeLayout(false);
+            this.gro_B_RS_485.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1484,29 +1511,29 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txt_Vc_punto;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.GroupBox groupEternet;
+        private System.Windows.Forms.GroupBox gro_B_RS_485;
         private System.Windows.Forms.TextBox txt_Numero_Id;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.RadioButton radio_RS485_no;
         private System.Windows.Forms.RadioButton radio_RS485_si;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gro_B_Modem;
         private System.Windows.Forms.RadioButton radio_Modem_no;
         private System.Windows.Forms.RadioButton radio_Modem_si;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox txtNumTelefono_modem;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gro_B_RS_232;
         private System.Windows.Forms.RadioButton radio_RS232_no;
         private System.Windows.Forms.RadioButton radio_RS232_si;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gro_B_Eternet;
         private System.Windows.Forms.RadioButton radio_Eternet_no;
         private System.Windows.Forms.RadioButton radio_Eternet_si;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNumeroIp_Eternet;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.CheckBox check_Eternet;
         private System.Windows.Forms.CheckBox check_infrarrojo;
@@ -1515,15 +1542,15 @@
         private System.Windows.Forms.CheckBox checkRS_232;
         private System.Windows.Forms.CheckBox check_Modem;
         private System.Windows.Forms.CheckBox check_radio_frecuencia;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox gro_B_PuertoOptico;
         private System.Windows.Forms.RadioButton radio_PuertoOptico_no;
         private System.Windows.Forms.RadioButton radio_PuertoOptico_si;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox gro_B_RadioFrecuencia;
         private System.Windows.Forms.RadioButton radio_RadiFrecuencia_no;
         private System.Windows.Forms.RadioButton radio_RadiFrecuencia_si;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox gro_B_Infrarrojo;
         private System.Windows.Forms.RadioButton radio_Infrarrojo_no;
         private System.Windows.Forms.RadioButton radio_Infrarrojo_si;
         private System.Windows.Forms.Label label29;
@@ -1560,5 +1587,6 @@
         public System.Windows.Forms.Panel pnlAlerta;
         public System.Windows.Forms.Panel pnlAlertaRojo;
         public System.Windows.Forms.Label lblRojo;
+        private System.Windows.Forms.Label lbl_verde;
     }
 }
