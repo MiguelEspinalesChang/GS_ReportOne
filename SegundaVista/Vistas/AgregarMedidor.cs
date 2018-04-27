@@ -124,23 +124,65 @@ namespace SegundaVista.Vistas
                     Datos.Vb_punto = Convert.ToSingle(txt_Vb_punto.Text);
                     Datos.Vc_punto = Convert.ToSingle(txt_Vc_punto.Text);
 
+                    Boolean parametos = true;
                     // cominicacion
 
+                    //eternet
                     Datos.Eternet = check_Eternet.Checked;
-                    if(check_Eternet.Checked == true)
+                    if (check_Eternet.Checked == true)
                     {
                         if (txtNumeroIp_Eternet.Text != "")
                         {
                             Datos.Eternet_NumeroIp = txtNumeroIp_Eternet.Text;
+                            if (radio_Eternet_si.Checked == true)
+                            {
+                                Datos.Eternet_Operativo = true;
+                            }
+                            else
+                            {
+                                Datos.Eternet_Operativo = false;
+                            }
                         }
                         else
                         {
                             pnlAlertaRojo.Visible = true;
                             lblRojo.Text = "Por Favor Rellene Todos Los Campos ";
                         }
-                        
-                        
                     }
+                    else
+                    {
+                        Datos.Eternet_NumeroIp = "Null";
+                        Datos.Eternet_Operativo = false;
+                    }
+
+                    //modem
+                    Datos.Modem = check_Modem.Checked;
+                    if (check_Modem.Checked == true)
+                    {
+                        if (txtNumTelefono_modem.Text != "")
+                        {
+                            Datos.Modem_Telefono = Convert.ToInt16(txtNumTelefono_modem.Text);
+                            if (radio_Modem_si.Checked == true)
+                            {
+                                Datos.Modem_Operativo = true;
+                            }
+                            else
+                            {
+                                Datos.Modem_Operativo = false;
+                            }
+                        }
+                        else
+                        {
+                            pnlAlertaRojo.Visible = true;
+                            lblRojo.Text = "Por Favor Rellene Todos Los Campos ";
+                        }
+                    }
+                    else
+                    {
+                        Datos.Modem_Telefono = 0;
+                        Datos.Modem_Operativo = false;
+                    }
+
                     //conector.insertar_Medidor(
                     //    Datos.Nis, Datos.Numero_Medidor, Datos.Nombre_Medidor, Datos.Modo_Uso, Datos.Grupo,
                     //    Datos.Nombre_Propietario,Datos.UbicaCion, Datos.KWH_Punto_dia, Datos.Potencia_Punto_dia,
@@ -150,9 +192,25 @@ namespace SegundaVista.Vistas
                     //    Datos.Vb_punto, Datos.Vc_punto
                     //    );
                     // MessageBox.Show("Medidor Agregado");
-                   // pnlAlertaRojo.Visible = false;
-                    pnlAlertaVerde.Visible = true;
-                    lbl_verde.Text = "Medidor Agregado";
+                    // pnlAlertaRojo.Visible = false;
+                    if (parametos == true && 
+                        check_Eternet.Checked == true && txtNumeroIp_Eternet.Text != ""
+                        || check_Modem.Checked == true && txtNumTelefono_modem.Text != "")
+                    {
+                        pnlAlertaVerde.Visible = true;
+                        lbl_verde.Text = "Medidor Agregado";
+                    }
+                  else
+                    {
+                        if (parametos == true
+                            && check_Eternet.Checked == false
+                            && check_Modem.Checked == false)
+                        {
+                            pnlAlertaVerde.Visible = true;
+                            lbl_verde.Text = "Medidor Agregado";
+                        }
+                    }
+
                 }
                 catch (Exception ex)
                 {
@@ -193,9 +251,6 @@ namespace SegundaVista.Vistas
 
         private void txtKWH_punto_dia_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // validar.NumerosDecimales(e);
-            // pnlAlertaRojo.Visible = true;
-            // lblRojo.Text = "El Campo Solo Acepta números o números con punto decimal";
             if (Char.IsDigit(e.KeyChar))
             {
                 e.Handled = false;
@@ -689,6 +744,32 @@ namespace SegundaVista.Vistas
                 e.Handled = true;
                 pnlAlertaRojo.Visible = true;
                 lblRojo.Text = "El Campo Solo Acepta números o números con punto decimal";
+            }
+        }
+
+        private void txtNumTelefono_modem_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                pnlAlertaRojo.Visible = true;
+                lblRojo.Text = "El Campo Solo Acepta números ";
             }
         }
     }

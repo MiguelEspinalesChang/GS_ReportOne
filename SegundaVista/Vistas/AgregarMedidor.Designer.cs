@@ -1091,13 +1091,13 @@
             this.radio_Eternet_no.Name = "radio_Eternet_no";
             this.radio_Eternet_no.Size = new System.Drawing.Size(51, 27);
             this.radio_Eternet_no.TabIndex = 114;
-            this.radio_Eternet_no.TabStop = true;
             this.radio_Eternet_no.Text = "no";
             this.radio_Eternet_no.UseVisualStyleBackColor = true;
             // 
             // radio_Eternet_si
             // 
             this.radio_Eternet_si.AutoSize = true;
+            this.radio_Eternet_si.Checked = true;
             this.radio_Eternet_si.Location = new System.Drawing.Point(118, 27);
             this.radio_Eternet_si.Name = "radio_Eternet_si";
             this.radio_Eternet_si.Size = new System.Drawing.Size(41, 27);
@@ -1226,6 +1226,7 @@
             // radio_Modem_si
             // 
             this.radio_Modem_si.AutoSize = true;
+            this.radio_Modem_si.Checked = true;
             this.radio_Modem_si.Location = new System.Drawing.Point(112, 24);
             this.radio_Modem_si.Name = "radio_Modem_si";
             this.radio_Modem_si.Size = new System.Drawing.Size(41, 27);
@@ -1250,6 +1251,7 @@
             this.txtNumTelefono_modem.Name = "txtNumTelefono_modem";
             this.txtNumTelefono_modem.Size = new System.Drawing.Size(203, 31);
             this.txtNumTelefono_modem.TabIndex = 111;
+            this.txtNumTelefono_modem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumTelefono_modem_KeyPress);
             // 
             // label23
             // 
