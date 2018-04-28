@@ -15,6 +15,7 @@ namespace SegundaVista.clases
         public string Nombre_Medidor { get; set; }
         public string Modo_Uso { get; set; }
         public string Grupo { get; set; }
+        public string Area { get; set; }
         public string Nombre_Propietario { get; set; }
         public string UbicaCion { get; set; }
         public float KWH_Punto_dia { get; set; }

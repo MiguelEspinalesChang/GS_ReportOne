@@ -270,6 +270,8 @@
     <Content Include="layout\iconos\icons8-acerca-de-32.png" />
     <Content Include="layout\iconos\icons8-agregar-administrador-32.png" />
     <Content Include="layout\iconos\icons8-agregar-administrador-50.png" />
+    <Content Include="layout\iconos\icons8-atención-8.ico" />
+    <Content Include="layout\iconos\icons8-atención-8.png" />
     <Content Include="layout\iconos\icons8-base-de-datos-32.png" />
     <Content Include="layout\iconos\icons8-búsqueda-32.png" />
     <Content Include="layout\iconos\icons8-caja-de-herramientas-32.png" />
@@ -294,6 +296,8 @@
     <Content Include="layout\iconos\icons8-placa-base-32.png" />
     <Content Include="layout\iconos\icons8-reequilibrar-la-cartera-32.png" />
     <Content Include="layout\iconos\icons8-restaurar-ventana-100.png" />
+    <Content Include="layout\iconos\icons8-signo-de-exclamación-32.ico" />
+    <Content Include="layout\iconos\icons8-signo-de-exclamación-32.png" />
     <Content Include="layout\iconos\icons8-usuario-100.png" />
     <Content Include="layout\iconos\icons8-usuario-32.png" />
     <Content Include="layout\imagenes\1260_main.gif" />

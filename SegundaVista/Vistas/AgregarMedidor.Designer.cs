@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarMedidor));
             this.PnlBarraTitulo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -144,6 +145,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombreMedidor = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.txtArea = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.epError = new System.Windows.Forms.ErrorProvider(this.components);
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
@@ -162,6 +166,7 @@
             this.gro_B_RS_232.SuspendLayout();
             this.gro_B_Modem.SuspendLayout();
             this.gro_B_RS_485.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epError)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlBarraTitulo
@@ -317,6 +322,8 @@
             // 
             this.PnlFormMedidor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.PnlFormMedidor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PnlFormMedidor.Controls.Add(this.label41);
+            this.PnlFormMedidor.Controls.Add(this.txtArea);
             this.PnlFormMedidor.Controls.Add(this.txtNumero_Serie);
             this.PnlFormMedidor.Controls.Add(this.label40);
             this.PnlFormMedidor.Controls.Add(this.txtCodigo_Fabricante);
@@ -384,16 +391,16 @@
             // txtNumero_Serie
             // 
             this.txtNumero_Serie.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtNumero_Serie.Location = new System.Drawing.Point(682, 183);
+            this.txtNumero_Serie.Location = new System.Drawing.Point(733, 182);
             this.txtNumero_Serie.Name = "txtNumero_Serie";
-            this.txtNumero_Serie.Size = new System.Drawing.Size(269, 26);
+            this.txtNumero_Serie.Size = new System.Drawing.Size(212, 26);
             this.txtNumero_Serie.TabIndex = 141;
             // 
             // label40
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(679, 158);
+            this.label40.Location = new System.Drawing.Point(730, 158);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(79, 22);
             this.label40.TabIndex = 140;
@@ -402,7 +409,7 @@
             // txtCodigo_Fabricante
             // 
             this.txtCodigo_Fabricante.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtCodigo_Fabricante.Location = new System.Drawing.Point(682, 135);
+            this.txtCodigo_Fabricante.Location = new System.Drawing.Point(733, 135);
             this.txtCodigo_Fabricante.Name = "txtCodigo_Fabricante";
             this.txtCodigo_Fabricante.Size = new System.Drawing.Size(212, 26);
             this.txtCodigo_Fabricante.TabIndex = 139;
@@ -411,7 +418,7 @@
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(679, 110);
+            this.label39.Location = new System.Drawing.Point(730, 110);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(217, 22);
             this.label39.TabIndex = 138;
@@ -420,7 +427,7 @@
             // txtPresicion
             // 
             this.txtPresicion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtPresicion.Location = new System.Drawing.Point(464, 135);
+            this.txtPresicion.Location = new System.Drawing.Point(498, 135);
             this.txtPresicion.Name = "txtPresicion";
             this.txtPresicion.Size = new System.Drawing.Size(212, 26);
             this.txtPresicion.TabIndex = 137;
@@ -430,7 +437,7 @@
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(461, 110);
+            this.label38.Location = new System.Drawing.Point(495, 110);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(88, 22);
             this.label38.TabIndex = 136;
@@ -439,7 +446,7 @@
             // txtClase
             // 
             this.txtClase.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtClase.Location = new System.Drawing.Point(353, 135);
+            this.txtClase.Location = new System.Drawing.Point(368, 135);
             this.txtClase.Name = "txtClase";
             this.txtClase.Size = new System.Drawing.Size(100, 26);
             this.txtClase.TabIndex = 135;
@@ -449,7 +456,7 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(350, 110);
+            this.label37.Location = new System.Drawing.Point(365, 110);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(60, 22);
             this.label37.TabIndex = 134;
@@ -458,7 +465,7 @@
             // txtTipo
             // 
             this.txtTipo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtTipo.Location = new System.Drawing.Point(238, 135);
+            this.txtTipo.Location = new System.Drawing.Point(253, 135);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(100, 26);
             this.txtTipo.TabIndex = 133;
@@ -467,7 +474,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(235, 110);
+            this.label36.Location = new System.Drawing.Point(250, 110);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(46, 22);
             this.label36.TabIndex = 132;
@@ -476,18 +483,19 @@
             // txtNumero_Medidor
             // 
             this.txtNumero_Medidor.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtNumero_Medidor.Location = new System.Drawing.Point(236, 27);
+            this.txtNumero_Medidor.Location = new System.Drawing.Point(251, 27);
             this.txtNumero_Medidor.Name = "txtNumero_Medidor";
             this.txtNumero_Medidor.Size = new System.Drawing.Size(212, 26);
             this.txtNumero_Medidor.TabIndex = 131;
             this.txtNumero_Medidor.Click += new System.EventHandler(this.txtNumero_Medidor_Click);
             this.txtNumero_Medidor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero_Medidor_KeyPress);
+            this.txtNumero_Medidor.Validated += new System.EventHandler(this.txtNumero_Medidor_Validated);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(238, 2);
+            this.label9.Location = new System.Drawing.Point(253, 2);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(147, 22);
             this.label9.TabIndex = 130;
@@ -496,17 +504,17 @@
             // txtNumero_Grupo
             // 
             this.txtNumero_Grupo.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtNumero_Grupo.Location = new System.Drawing.Point(820, 27);
+            this.txtNumero_Grupo.Location = new System.Drawing.Point(734, 81);
             this.txtNumero_Grupo.Multiline = true;
             this.txtNumero_Grupo.Name = "txtNumero_Grupo";
-            this.txtNumero_Grupo.Size = new System.Drawing.Size(131, 26);
+            this.txtNumero_Grupo.Size = new System.Drawing.Size(100, 26);
             this.txtNumero_Grupo.TabIndex = 129;
             // 
             // label35
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(820, 2);
+            this.label35.Location = new System.Drawing.Point(734, 56);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(97, 22);
             this.label35.TabIndex = 128;
@@ -515,7 +523,7 @@
             // txtTP_secundario
             // 
             this.txtTP_secundario.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtTP_secundario.Location = new System.Drawing.Point(466, 183);
+            this.txtTP_secundario.Location = new System.Drawing.Point(500, 183);
             this.txtTP_secundario.Name = "txtTP_secundario";
             this.txtTP_secundario.Size = new System.Drawing.Size(100, 26);
             this.txtTP_secundario.TabIndex = 127;
@@ -525,7 +533,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(471, 157);
+            this.label34.Location = new System.Drawing.Point(505, 157);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(72, 22);
             this.label34.TabIndex = 126;
@@ -534,7 +542,7 @@
             // txtTP_primaria
             // 
             this.txtTP_primaria.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtTP_primaria.Location = new System.Drawing.Point(359, 183);
+            this.txtTP_primaria.Location = new System.Drawing.Point(374, 183);
             this.txtTP_primaria.Name = "txtTP_primaria";
             this.txtTP_primaria.Size = new System.Drawing.Size(100, 26);
             this.txtTP_primaria.TabIndex = 125;
@@ -544,7 +552,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(364, 157);
+            this.label33.Location = new System.Drawing.Point(379, 157);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(76, 22);
             this.label33.TabIndex = 124;
@@ -554,7 +562,7 @@
             // 
             this.txtRelacion_TC.Enabled = false;
             this.txtRelacion_TC.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtRelacion_TC.Location = new System.Drawing.Point(243, 184);
+            this.txtRelacion_TC.Location = new System.Drawing.Point(258, 184);
             this.txtRelacion_TC.Name = "txtRelacion_TC";
             this.txtRelacion_TC.Size = new System.Drawing.Size(100, 26);
             this.txtRelacion_TC.TabIndex = 123;
@@ -563,7 +571,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(238, 158);
+            this.label32.Location = new System.Drawing.Point(253, 158);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(70, 22);
             this.label32.TabIndex = 122;
@@ -572,17 +580,17 @@
             // txtModo_Uso
             // 
             this.txtModo_Uso.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtModo_Uso.Location = new System.Drawing.Point(683, 27);
+            this.txtModo_Uso.Location = new System.Drawing.Point(841, 27);
             this.txtModo_Uso.Multiline = true;
             this.txtModo_Uso.Name = "txtModo_Uso";
-            this.txtModo_Uso.Size = new System.Drawing.Size(131, 26);
+            this.txtModo_Uso.Size = new System.Drawing.Size(100, 26);
             this.txtModo_Uso.TabIndex = 121;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(683, 2);
+            this.label7.Location = new System.Drawing.Point(836, 2);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(131, 22);
             this.label7.TabIndex = 120;
@@ -611,7 +619,7 @@
             // txt_Vc_punto
             // 
             this.txt_Vc_punto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txt_Vc_punto.Location = new System.Drawing.Point(576, 232);
+            this.txt_Vc_punto.Location = new System.Drawing.Point(610, 232);
             this.txt_Vc_punto.Name = "txt_Vc_punto";
             this.txt_Vc_punto.Size = new System.Drawing.Size(100, 26);
             this.txt_Vc_punto.TabIndex = 117;
@@ -621,7 +629,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(575, 207);
+            this.label18.Location = new System.Drawing.Point(609, 207);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(103, 22);
             this.label18.TabIndex = 116;
@@ -630,7 +638,7 @@
             // txt_Vb_punto
             // 
             this.txt_Vb_punto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txt_Vb_punto.Location = new System.Drawing.Point(466, 232);
+            this.txt_Vb_punto.Location = new System.Drawing.Point(500, 232);
             this.txt_Vb_punto.Name = "txt_Vb_punto";
             this.txt_Vb_punto.Size = new System.Drawing.Size(100, 26);
             this.txt_Vb_punto.TabIndex = 115;
@@ -640,7 +648,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(465, 207);
+            this.label17.Location = new System.Drawing.Point(499, 207);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(104, 22);
             this.label17.TabIndex = 114;
@@ -649,7 +657,7 @@
             // txt_Va_punto
             // 
             this.txt_Va_punto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txt_Va_punto.Location = new System.Drawing.Point(354, 232);
+            this.txt_Va_punto.Location = new System.Drawing.Point(369, 232);
             this.txt_Va_punto.Name = "txt_Va_punto";
             this.txt_Va_punto.Size = new System.Drawing.Size(100, 26);
             this.txt_Va_punto.TabIndex = 113;
@@ -659,7 +667,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(351, 207);
+            this.label16.Location = new System.Drawing.Point(366, 207);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(104, 22);
             this.label16.TabIndex = 112;
@@ -668,7 +676,7 @@
             // txt_Ic_punto
             // 
             this.txt_Ic_punto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txt_Ic_punto.Location = new System.Drawing.Point(242, 232);
+            this.txt_Ic_punto.Location = new System.Drawing.Point(257, 232);
             this.txt_Ic_punto.Name = "txt_Ic_punto";
             this.txt_Ic_punto.Size = new System.Drawing.Size(100, 26);
             this.txt_Ic_punto.TabIndex = 111;
@@ -678,7 +686,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(239, 207);
+            this.label15.Location = new System.Drawing.Point(254, 207);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(93, 22);
             this.label15.TabIndex = 110;
@@ -726,9 +734,9 @@
             // txtPotencia_Punto_dia
             // 
             this.txtPotencia_Punto_dia.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtPotencia_Punto_dia.Location = new System.Drawing.Point(683, 81);
+            this.txtPotencia_Punto_dia.Location = new System.Drawing.Point(840, 81);
             this.txtPotencia_Punto_dia.Name = "txtPotencia_Punto_dia";
-            this.txtPotencia_Punto_dia.Size = new System.Drawing.Size(212, 26);
+            this.txtPotencia_Punto_dia.Size = new System.Drawing.Size(100, 26);
             this.txtPotencia_Punto_dia.TabIndex = 105;
             this.txtPotencia_Punto_dia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPotencia_Punto_dia_KeyPress);
             // 
@@ -736,16 +744,16 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(683, 56);
+            this.label12.Location = new System.Drawing.Point(836, 56);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(193, 22);
+            this.label12.Size = new System.Drawing.Size(146, 22);
             this.label12.TabIndex = 104;
-            this.label12.Text = "Potencia punto_Dia";
+            this.label12.Text = "Pot_punto_Dia";
             // 
             // txtKWH_punto_dia
             // 
             this.txtKWH_punto_dia.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtKWH_punto_dia.Location = new System.Drawing.Point(462, 81);
+            this.txtKWH_punto_dia.Location = new System.Drawing.Point(496, 81);
             this.txtKWH_punto_dia.Name = "txtKWH_punto_dia";
             this.txtKWH_punto_dia.Size = new System.Drawing.Size(212, 26);
             this.txtKWH_punto_dia.TabIndex = 103;
@@ -755,7 +763,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(462, 56);
+            this.label11.Location = new System.Drawing.Point(496, 56);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(152, 22);
             this.label11.TabIndex = 102;
@@ -765,7 +773,7 @@
             // 
             this.txtRelacion_TP.Enabled = false;
             this.txtRelacion_TP.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtRelacion_TP.Location = new System.Drawing.Point(572, 182);
+            this.txtRelacion_TP.Location = new System.Drawing.Point(606, 182);
             this.txtRelacion_TP.Name = "txtRelacion_TP";
             this.txtRelacion_TP.Size = new System.Drawing.Size(100, 26);
             this.txtRelacion_TP.TabIndex = 101;
@@ -774,7 +782,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(575, 157);
+            this.label10.Location = new System.Drawing.Point(609, 157);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(71, 22);
             this.label10.TabIndex = 100;
@@ -872,6 +880,7 @@
             // radio_RadiFrecuencia_no
             // 
             this.radio_RadiFrecuencia_no.AutoSize = true;
+            this.radio_RadiFrecuencia_no.Checked = true;
             this.radio_RadiFrecuencia_no.Location = new System.Drawing.Point(163, 27);
             this.radio_RadiFrecuencia_no.Name = "radio_RadiFrecuencia_no";
             this.radio_RadiFrecuencia_no.Size = new System.Drawing.Size(51, 27);
@@ -888,7 +897,6 @@
             this.radio_RadiFrecuencia_si.Name = "radio_RadiFrecuencia_si";
             this.radio_RadiFrecuencia_si.Size = new System.Drawing.Size(41, 27);
             this.radio_RadiFrecuencia_si.TabIndex = 113;
-            this.radio_RadiFrecuencia_si.TabStop = true;
             this.radio_RadiFrecuencia_si.Text = "si";
             this.radio_RadiFrecuencia_si.UseVisualStyleBackColor = true;
             // 
@@ -918,6 +926,7 @@
             // radio_Infrarrojo_no
             // 
             this.radio_Infrarrojo_no.AutoSize = true;
+            this.radio_Infrarrojo_no.Checked = true;
             this.radio_Infrarrojo_no.Location = new System.Drawing.Point(163, 27);
             this.radio_Infrarrojo_no.Name = "radio_Infrarrojo_no";
             this.radio_Infrarrojo_no.Size = new System.Drawing.Size(51, 27);
@@ -933,7 +942,6 @@
             this.radio_Infrarrojo_si.Name = "radio_Infrarrojo_si";
             this.radio_Infrarrojo_si.Size = new System.Drawing.Size(41, 27);
             this.radio_Infrarrojo_si.TabIndex = 113;
-            this.radio_Infrarrojo_si.TabStop = true;
             this.radio_Infrarrojo_si.Text = "si";
             this.radio_Infrarrojo_si.UseVisualStyleBackColor = true;
             // 
@@ -963,6 +971,7 @@
             // radio_PuertoOptico_no
             // 
             this.radio_PuertoOptico_no.AutoSize = true;
+            this.radio_PuertoOptico_no.Checked = true;
             this.radio_PuertoOptico_no.Location = new System.Drawing.Point(163, 27);
             this.radio_PuertoOptico_no.Name = "radio_PuertoOptico_no";
             this.radio_PuertoOptico_no.Size = new System.Drawing.Size(51, 27);
@@ -978,7 +987,6 @@
             this.radio_PuertoOptico_si.Name = "radio_PuertoOptico_si";
             this.radio_PuertoOptico_si.Size = new System.Drawing.Size(41, 27);
             this.radio_PuertoOptico_si.TabIndex = 113;
-            this.radio_PuertoOptico_si.TabStop = true;
             this.radio_PuertoOptico_si.Text = "si";
             this.radio_PuertoOptico_si.UseVisualStyleBackColor = true;
             // 
@@ -1087,22 +1095,22 @@
             // radio_Eternet_no
             // 
             this.radio_Eternet_no.AutoSize = true;
+            this.radio_Eternet_no.Checked = true;
             this.radio_Eternet_no.Location = new System.Drawing.Point(163, 27);
             this.radio_Eternet_no.Name = "radio_Eternet_no";
             this.radio_Eternet_no.Size = new System.Drawing.Size(51, 27);
             this.radio_Eternet_no.TabIndex = 114;
+            this.radio_Eternet_no.TabStop = true;
             this.radio_Eternet_no.Text = "no";
             this.radio_Eternet_no.UseVisualStyleBackColor = true;
             // 
             // radio_Eternet_si
             // 
             this.radio_Eternet_si.AutoSize = true;
-            this.radio_Eternet_si.Checked = true;
             this.radio_Eternet_si.Location = new System.Drawing.Point(118, 27);
             this.radio_Eternet_si.Name = "radio_Eternet_si";
             this.radio_Eternet_si.Size = new System.Drawing.Size(41, 27);
             this.radio_Eternet_si.TabIndex = 113;
-            this.radio_Eternet_si.TabStop = true;
             this.radio_Eternet_si.Text = "si";
             this.radio_Eternet_si.UseVisualStyleBackColor = true;
             // 
@@ -1151,6 +1159,7 @@
             // radio_RS232_no
             // 
             this.radio_RS232_no.AutoSize = true;
+            this.radio_RS232_no.Checked = true;
             this.radio_RS232_no.Location = new System.Drawing.Point(163, 27);
             this.radio_RS232_no.Name = "radio_RS232_no";
             this.radio_RS232_no.Size = new System.Drawing.Size(51, 27);
@@ -1166,7 +1175,6 @@
             this.radio_RS232_si.Name = "radio_RS232_si";
             this.radio_RS232_si.Size = new System.Drawing.Size(41, 27);
             this.radio_RS232_si.TabIndex = 113;
-            this.radio_RS232_si.TabStop = true;
             this.radio_RS232_si.Text = "si";
             this.radio_RS232_si.UseVisualStyleBackColor = true;
             // 
@@ -1215,6 +1223,7 @@
             // radio_Modem_no
             // 
             this.radio_Modem_no.AutoSize = true;
+            this.radio_Modem_no.Checked = true;
             this.radio_Modem_no.Location = new System.Drawing.Point(149, 24);
             this.radio_Modem_no.Name = "radio_Modem_no";
             this.radio_Modem_no.Size = new System.Drawing.Size(51, 27);
@@ -1226,12 +1235,10 @@
             // radio_Modem_si
             // 
             this.radio_Modem_si.AutoSize = true;
-            this.radio_Modem_si.Checked = true;
             this.radio_Modem_si.Location = new System.Drawing.Point(112, 24);
             this.radio_Modem_si.Name = "radio_Modem_si";
             this.radio_Modem_si.Size = new System.Drawing.Size(41, 27);
             this.radio_Modem_si.TabIndex = 113;
-            this.radio_Modem_si.TabStop = true;
             this.radio_Modem_si.Text = "si";
             this.radio_Modem_si.UseVisualStyleBackColor = true;
             // 
@@ -1281,6 +1288,7 @@
             // radio_RS485_no
             // 
             this.radio_RS485_no.AutoSize = true;
+            this.radio_RS485_no.Checked = true;
             this.radio_RS485_no.Location = new System.Drawing.Point(163, 24);
             this.radio_RS485_no.Name = "radio_RS485_no";
             this.radio_RS485_no.Size = new System.Drawing.Size(51, 27);
@@ -1297,7 +1305,6 @@
             this.radio_RS485_si.Name = "radio_RS485_si";
             this.radio_RS485_si.Size = new System.Drawing.Size(41, 27);
             this.radio_RS485_si.TabIndex = 113;
-            this.radio_RS485_si.TabStop = true;
             this.radio_RS485_si.Text = "si";
             this.radio_RS485_si.UseVisualStyleBackColor = true;
             this.radio_RS485_si.CheckedChanged += new System.EventHandler(this.radio_Eternet_si_CheckedChanged);
@@ -1350,7 +1357,7 @@
             // txtUbicacionMedidor
             // 
             this.txtUbicacionMedidor.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtUbicacionMedidor.Location = new System.Drawing.Point(239, 81);
+            this.txtUbicacionMedidor.Location = new System.Drawing.Point(254, 81);
             this.txtUbicacionMedidor.Multiline = true;
             this.txtUbicacionMedidor.Name = "txtUbicacionMedidor";
             this.txtUbicacionMedidor.Size = new System.Drawing.Size(212, 26);
@@ -1360,7 +1367,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(238, 56);
+            this.label4.Location = new System.Drawing.Point(253, 56);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(217, 22);
             this.label4.TabIndex = 87;
@@ -1410,7 +1417,7 @@
             // txtNombreMedidor
             // 
             this.txtNombreMedidor.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtNombreMedidor.Location = new System.Drawing.Point(460, 27);
+            this.txtNombreMedidor.Location = new System.Drawing.Point(494, 27);
             this.txtNombreMedidor.Name = "txtNombreMedidor";
             this.txtNombreMedidor.Size = new System.Drawing.Size(212, 26);
             this.txtNombreMedidor.TabIndex = 82;
@@ -1420,11 +1427,35 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(460, 2);
+            this.label19.Location = new System.Drawing.Point(494, 2);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(199, 22);
             this.label19.TabIndex = 81;
             this.label19.Text = "Nombre Del Medidor";
+            // 
+            // txtArea
+            // 
+            this.txtArea.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtArea.Location = new System.Drawing.Point(733, 27);
+            this.txtArea.Multiline = true;
+            this.txtArea.Name = "txtArea";
+            this.txtArea.Size = new System.Drawing.Size(100, 26);
+            this.txtArea.TabIndex = 142;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(734, 2);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(56, 22);
+            this.label41.TabIndex = 143;
+            this.label41.Text = "Area";
+            // 
+            // epError
+            // 
+            this.epError.ContainerControl = this;
+            this.epError.Icon = ((System.Drawing.Icon)(resources.GetObject("epError.Icon")));
             // 
             // AgregarMedidor
             // 
@@ -1469,6 +1500,7 @@
             this.gro_B_Modem.PerformLayout();
             this.gro_B_RS_485.ResumeLayout(false);
             this.gro_B_RS_485.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epError)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1590,5 +1622,8 @@
         public System.Windows.Forms.Panel pnlAlertaRojo;
         public System.Windows.Forms.Label lblRojo;
         private System.Windows.Forms.Label lbl_verde;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.TextBox txtArea;
+        private System.Windows.Forms.ErrorProvider epError;
     }
 }
