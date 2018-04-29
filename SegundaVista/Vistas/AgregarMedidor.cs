@@ -76,178 +76,70 @@ namespace SegundaVista.Vistas
         {
             pnlAlertaVerde.Visible = false;
             pnlAlertaRojo.Visible = false;
-            if (txtArea.Text != "" && txtUbicacionMedidor.Text != "" && txtPotencia_Punto_dia.Text != ""
-                && txtNumero_Grupo.Text != "" && txtKWH_punto_dia.Text != "" && txtMarca.Text != ""
-                && txtModelo.Text != "" && txtTipo.Text != "" && txtPresicion.Text != "" && txtCodigo_Fabricante.Text != ""
-                && txtTc_primaria.Text != "" && txtTc_secundaria.Text != "" && txtTP_primaria.Text != ""
-                && txtTP_secundario.Text != "" && txtNumero_Serie.Text != "" && txt_Ia_punto.Text !="" && txt_Ib_punto.Text !=""
-                && txt_Ic_punto.Text !="" && txt_Va_punto.Text!="" && txt_Vb_punto.Text!="" && txt_Vc_punto.Text!=""
-                )
+            DatosMedidor datosTxt = new DatosMedidor();
+            Conector_DataBase conector = new Conector_DataBase();
+
+            try { 
+
+            //Campos Obligatorios
+
+
+            //Ternarios Para Validar Y rellenar los datos del Medidor
+            datosTxt.Area = (string.IsNullOrEmpty(txtArea.Text)) ? "" : txtArea.Text;
+            datosTxt.Modo_Uso = (string.IsNullOrEmpty(txtModo_Uso.Text)) ? "" : txtModo_Uso.Text;
+            datosTxt.Ubicacion = (string.IsNullOrEmpty(txtUbicacionMedidor.Text)) ? "" : txtUbicacionMedidor.Text;
+            datosTxt.KWH_Punto_dia = (string.IsNullOrEmpty(txtKWH_punto_dia.Text)) ? 0 : Convert.ToSingle(txtKWH_punto_dia.Text);
+            datosTxt.Grupo = (string.IsNullOrEmpty(txtNumero_Grupo.Text)) ? "" : txtNumero_Grupo.Text;
+            datosTxt.Potencia_Punto_dia = (string.IsNullOrEmpty(txtPotencia_Punto_dia.Text)) ? 0 : Convert.ToSingle(txtArea.Text);
+            datosTxt.Marca = (string.IsNullOrEmpty(txtMarca.Text)) ? "" : txtPotencia_Punto_dia.Text;
+            datosTxt.Modelo = (string.IsNullOrEmpty(txtModelo.Text)) ? "" : txtModelo.Text;
+            datosTxt.Tipo = (string.IsNullOrEmpty(txtTipo.Text)) ? "" : txtTipo.Text;
+            datosTxt.Presicion = (string.IsNullOrEmpty(txtPresicion.Text)) ? 0 : Convert.ToSingle(txtPresicion.Text);
+            datosTxt.Codigo_fabricante = (string.IsNullOrEmpty(txtCodigo_Fabricante.Text)) ? "" : txtCodigo_Fabricante.Text;
+            datosTxt.TC_Primario = (string.IsNullOrEmpty(txtTc_primaria.Text)) ? 0 : Convert.ToSingle(txtTipo.Text);
+            datosTxt.TC_secundario = (string.IsNullOrEmpty(txtTc_secundaria.Text)) ? 0 : Convert.ToSingle(txtTc_secundaria.Text);
+            datosTxt.TP_Primario = (string.IsNullOrEmpty(txtTP_primaria.Text)) ? 0 : Convert.ToSingle(txtTP_primaria.Text);
+            datosTxt.TP_secundario = (string.IsNullOrEmpty(txtTP_secundario.Text)) ? 0 : Convert.ToSingle(txtTP_secundario.Text);
+            datosTxt.Numero_Cerie = (string.IsNullOrEmpty(txtNumero_Serie.Text)) ? "" : txtNumero_Serie.Text;
+            datosTxt.Ia_punto = (string.IsNullOrEmpty(txt_Ia_punto.Text)) ? 0 : Convert.ToSingle(txt_Ia_punto.Text);
+            datosTxt.Ib_punto = (string.IsNullOrEmpty(txt_Ib_punto.Text)) ? 0 : Convert.ToSingle(txt_Ib_punto.Text);
+            datosTxt.Ic_punto = (string.IsNullOrEmpty(txt_Ic_punto.Text)) ? 0 : Convert.ToSingle(txt_Ic_punto.Text);
+            datosTxt.Va_punto = (string.IsNullOrEmpty(txt_Va_punto.Text)) ? 0 : Convert.ToSingle(txt_Va_punto.Text);
+            datosTxt.Vb_punto = (string.IsNullOrEmpty(txt_Vb_punto.Text)) ? 0 : Convert.ToSingle(txt_Vb_punto.Text);
+            datosTxt.Vc_punto = (string.IsNullOrEmpty(txt_Vc_punto.Text)) ? 0 : Convert.ToSingle(txt_Vc_punto.Text);
+            if (datosTxt.TC_secundario == 0)
             {
-                Campos();
+                datosTxt.Relacion_TC = 0;
             }
             else
             {
-                txtKWH_punto_dia.Text = "0";
-                txtPotencia_Punto_dia.Text = "0";
-                txtUbicacionMedidor.Text = "---";
-                txtArea.Text = "---";
-                txtNumero_Grupo.Text = "---";
-                txtMarca.Text = "---";
-                txtModelo.Text = "---";
-                txtTipo.Text = "---";
-                txtPresicion.Text = "0";
-                txtCodigo_Fabricante.Text = "---";
-                txtTc_primaria.Text = "1";
-                txtTc_secundaria.Text = "1";
-                txtTP_primaria.Text = "1";
-                txtTP_secundario.Text = "1";
-                txtNumero_Serie.Text = "---";
-                txt_Ia_punto.Text = "0";
-                txt_Ib_punto.Text = "0";
-                txt_Ic_punto.Text = "0";
-                txt_Va_punto.Text = "0";
-                txt_Vb_punto.Text = "0";
-                txt_Vc_punto.Text = "0";
-                Campos();
+                datosTxt.Relacion_TC = datosTxt.TC_Primario / datosTxt.TC_secundario;
             }
 
-
-            // pnlAlertaRojo.Visible = true;
-            // lblRojo.Text = "Por Favor Rellene Todos Los Campos ";
-        }
-
-        public void Campos()
-        {
-
-            try
+            if (datosTxt.TP_secundario == 0)
             {
+                datosTxt.Relacion_TP = 0;
+            }
+            else
+            {
+                datosTxt.Relacion_TP = datosTxt.TP_Primario / datosTxt.TP_secundario;
+            }
 
+            //Comunicacion
+            datosTxt.Eternet = check_Eternet.Checked;
+            datosTxt.Eternet_NumeroIp = (string.IsNullOrEmpty(txtNumeroIp_Eternet.Text)) ? "" : txtNumero_Serie.Text;
+            if (radio_Eternet_si.Checked == true)
+            {
+                datosTxt.Eternet_Operativo = true;
+            }
+            else
+            {
+                datosTxt.Eternet_Operativo = false;
+            }
 
-                float relacionTC, relacionTP;
-                relacionTC = Convert.ToSingle(txtTc_primaria.Text) / Convert.ToSingle(txtTc_secundaria.Text);
-                relacionTP = Convert.ToSingle(txtTP_primaria.Text) / Convert.ToSingle(txtTP_secundario.Text);
-                txtRelacion_TC.Text = "" + relacionTC;
-                txtRelacion_TP.Text = "" + relacionTP;
-
-                Conector_DataBase conector = new Conector_DataBase();
-                DatosMedidor Datos = new DatosMedidor();
-                Datos.Nis = txtNIS.Text;
-                Datos.Numero_Medidor = txtNumero_Medidor.Text;
-                Datos.Nombre_Medidor = txtNombreMedidor.Text;
-                Datos.Modo_Uso = txtModo_Uso.Text;
-                Datos.Grupo = txtNumero_Grupo.Text;
-                Datos.Area = txtArea.Text;
-                Datos.Nombre_Propietario = txtNom_Propietario.Text;
-                Datos.UbicaCion = txtUbicacionMedidor.Text;
-                Datos.KWH_Punto_dia = Convert.ToSingle(txtKWH_punto_dia.Text);
-                Datos.Potencia_Punto_dia = Convert.ToSingle(txtPotencia_Punto_dia.Text);
-                Datos.Marca = txtMarca.Text;
-                Datos.Modelo = txtModelo.Text;
-                Datos.Tipo = txtTipo.Text;
-                Datos.clase = Convert.ToInt16(txtClase.Text);
-                Datos.Presicion = Convert.ToSingle(txtPresicion.Text);
-                Datos.Codigo_fabricante = txtCodigo_Fabricante.Text;
-                Datos.TC_Primario = Convert.ToSingle(txtTc_primaria.Text);
-                Datos.TC_secundario = Convert.ToSingle(txtTc_secundaria.Text);
-                Datos.Relacion_TC = relacionTC;
-                Datos.TP_Primario = Convert.ToSingle(txtTP_primaria.Text);
-                Datos.TP_secundario = Convert.ToSingle(txtTP_secundario.Text);
-                Datos.Relacion_TP = relacionTP;
-                Datos.Numero_Cerie = txtNumero_Serie.Text;
-                Datos.Ia_punto = Convert.ToSingle(txt_Ia_punto.Text);
-                Datos.Ib_punto = Convert.ToSingle(txt_Ib_punto.Text);
-                Datos.Ic_punto = Convert.ToSingle(txt_Ic_punto.Text);
-                Datos.Va_punto = Convert.ToSingle(txt_Va_punto.Text);
-                Datos.Vb_punto = Convert.ToSingle(txt_Vb_punto.Text);
-                Datos.Vc_punto = Convert.ToSingle(txt_Vc_punto.Text);
-                bool Numero_Medidor;
-
-                if (txtNumero_Medidor.Text.Trim() == "")
-                {
-                    pnlAlertaRojo.Visible = true;
-                    lblRojo.Text = "Por Favor Rellene Todos Los Campos ";
-                    epError.SetError(txtNumero_Medidor, "Introduzca Numero Del Medidor ");
-                    txtNumero_Medidor.Focus();
-                    Numero_Medidor = false;
-                }
-                else
-                {
-                    epError.Clear();
-                    Numero_Medidor = true;
-                }
-
-                // cominicacion
-
-                //eternet
-                Datos.Eternet = check_Eternet.Checked;
-                if (check_Eternet.Checked == true)
-                {
-                    if (txtNumeroIp_Eternet.Text != "")
-                    {
-                        Datos.Eternet_NumeroIp = txtNumeroIp_Eternet.Text;
-                        if (radio_Eternet_si.Checked == true)
-                        {
-                            Datos.Eternet_Operativo = true;
-                        }
-                        else
-                        {
-                            Datos.Eternet_Operativo = false;
-                        }
-                    }
-                    else
-                    {
-                        txtNumeroIp_Eternet.Text = "";
-                        Datos.Eternet_NumeroIp = "Null";
-                        Datos.Eternet_Operativo = false;
-                    }
-                }
-                else
-                {
-                    Datos.Eternet_NumeroIp = "Null";
-                    Datos.Eternet_Operativo = false;
-                }
-
-                //modem
-                Datos.Modem = check_Modem.Checked;
-                if (check_Modem.Checked == true)
-                {
-                    if (txtNumTelefono_modem.Text != "")
-                    {
-                        Datos.Modem_Telefono = Convert.ToInt16(txtNumTelefono_modem.Text);
-                        if (radio_Modem_si.Checked == true)
-                        {
-                            Datos.Modem_Operativo = true;
-                        }
-                        else
-                        {
-                            Datos.Modem_Operativo = false;
-                        }
-                    }
-                    else
-                    {
-                        pnlAlertaRojo.Visible = true;
-                        lblRojo.Text = "Por Favor Rellene Los Campos ";
-                    }
-                }
-                else
-                {
-                    Datos.Modem_Telefono = 0;
-                    Datos.Modem_Operativo = false;
-                }
-
-                //conector.insertar_Medidor(
-                //    Datos.Nis, Datos.Numero_Medidor, Datos.Nombre_Medidor, Datos.Modo_Uso, Datos.Grupo,
-                //    Datos.Nombre_Propietario,Datos.UbicaCion, Datos.KWH_Punto_dia, Datos.Potencia_Punto_dia,
-                //    Datos.Marca, Datos.Modelo, Datos.Tipo, Datos.clase, Datos.Presicion,Datos.Codigo_fabricante,
-                //    Datos.TC_Primario, Datos.TC_secundario,Datos.Relacion_TC, Datos.TP_Primario,Datos.TP_secundario,
-                //    Datos.Relacion_TP, Datos.Numero_Cerie, Datos.Ia_punto, Datos.Ib_punto,Datos.Ic_punto, Datos.Va_punto,
-                //    Datos.Vb_punto, Datos.Vc_punto
-                //    );
-                // MessageBox.Show("Medidor Agregado");
-                // pnlAlertaVerde.Visible = false;
-                // lbl_verde.Text = "Medidor Agregado";
-
+                conector.insertar_Medidor(datosTxt);
+                pnlAlertaVerde.Visible = true;
+                lbl_verde.Text = "Medidor Guardado";
             }
             catch (Exception ex)
             {
@@ -255,6 +147,10 @@ namespace SegundaVista.Vistas
                 lblRojo.Text = "Error Al Guardar Los Datos Del Medidor";
 
             }
+
+
+            // pnlAlertaRojo.Visible = true;
+            // lblRojo.Text = "Por Favor Rellene Todos Los Campos ";
         }
 
         private void txtNIS_TextChanged(object sender, EventArgs e)
@@ -697,31 +593,54 @@ namespace SegundaVista.Vistas
             }
         }
 
+        private bool ValidadorChart(char texto, List<string> tipos)
+        {
+
+            foreach (var item in tipos)
+            {
+
+                switch (item)
+                {
+                    case "numero":
+                        if (!Char.IsDigit(texto))
+                            return false;
+
+                        break;
+
+                    case "texto":
+                        break;
+
+                }
+
+            }
+
+            return true;
+        }
+
+        ///////////////
+        
+
         private void txtClase_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsSeparator(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else if (Char.IsControl(e.KeyChar))
+            List<string> listaTipos = new List<string>();
+            listaTipos.Add("numero");
+            bool esValido = ValidadorChart(e.KeyChar, listaTipos);
+
+            if (esValido)
             {
                 e.Handled = false;
             }
             else
             {
                 e.Handled = true;
-                pnlAlertaRojo.Visible = true;
-                lblRojo.Text = "El Campo Solo Acepta números ";
+                // pnlAlertaRojo.Visible = true;
+                //lblRojo.Text = "El Campo Solo Acepta números ";
             }
         }
+
+
+
+        ////////////////////////////////
 
         private void txtPresicion_KeyPress(object sender, KeyPressEventArgs e)
         {

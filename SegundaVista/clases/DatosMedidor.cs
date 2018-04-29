@@ -7,7 +7,7 @@ using MongoDB.Bson;
 
 namespace SegundaVista.clases
 {
-    class DatosMedidor
+    public class DatosMedidor
     {
         public ObjectId ObjectId_Medidor { get; set; }
         public string Nis { get; set; }
@@ -17,7 +17,7 @@ namespace SegundaVista.clases
         public string Grupo { get; set; }
         public string Area { get; set; }
         public string Nombre_Propietario { get; set; }
-        public string UbicaCion { get; set; }
+        public string Ubicacion { get; set; }
         public float KWH_Punto_dia { get; set; }
         public float Potencia_Punto_dia { get; set; }
         public string Marca { get; set; }

@@ -39,25 +39,25 @@ namespace SegundaVista.Mongo_Data.Clases
             var collection_ = dataLocal.GetCollection<BsonDocument>("Usuarios");
             collection_.InsertOneAsync(documento);
         }
-        //public void insertar_Medidor()
-        //{
-        //    var documento = new BsonDocument
-        //    {
-        //        /*{"_id",id},*/
-        //        {"date_Loader",DateTime.Now},
-        //        { "Nombre",Nombre},
-        //        {"Apellido",Apellido},
-        //        {"Nombre_Empresa",Nombre_Empresa},
-        //        {"Responsable_Medicion",Responsable_Medicion},
-        //        {"DirigirReporte_A",DirigirReporte_A},
-        //        {"RazonSocial",RazonSocial},
-        //        {"Ruc",Ruc},
-        //        {"NisCliente",NisCliente}
-        //    };
-        //    var collection_ = dataLocal.GetCollection<BsonDocument>("Usuarios");
-        //    collection_.InsertOneAsync(documento);
+        public void insertar_Medidor(DatosMedidor datosTxt)
+        {
+           var documento = new BsonDocument
+           {
+               /*{"_id",id},*/
+              {"date_Loader",DateTime.Now},
+               { "Nis",datosTxt.Nis}
+               // {"Apellido",Apellido},
+               //{"Nombre_Empresa",Nombre_Empresa},
+               //{"Responsable_Medicion",Responsable_Medicion},
+               //{"DirigirReporte_A",DirigirReporte_A},
+               //{"RazonSocial",RazonSocial},
+               //{"Ruc",Ruc},
+               //{"NisCliente",NisCliente}
+           };
+          //  var collection_ = dataLocal.GetCollection<BsonDocument>("Usuarios");
+          // collection_.InsertOneAsync(documento);
 
-        //}
+        }
 
 
 
