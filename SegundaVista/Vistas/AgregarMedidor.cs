@@ -124,8 +124,8 @@ namespace SegundaVista.Vistas
             {
                 datosTxt.Relacion_TP = datosTxt.TP_Primario / datosTxt.TP_secundario;
             }
-
             //Comunicacion
+            //Eternet
             datosTxt.Eternet = check_Eternet.Checked;
             datosTxt.Eternet_NumeroIp = (string.IsNullOrEmpty(txtNumeroIp_Eternet.Text)) ? "" : txtNumero_Serie.Text;
             if (radio_Eternet_si.Checked == true)
@@ -137,7 +137,7 @@ namespace SegundaVista.Vistas
                 datosTxt.Eternet_Operativo = false;
             }
 
-                conector.insertar_Medidor(datosTxt);
+              //  conector.insertar_Medidor(datosTxt);
                 pnlAlertaVerde.Visible = true;
                 lbl_verde.Text = "Medidor Guardado";
             }
@@ -603,8 +603,25 @@ namespace SegundaVista.Vistas
                 {
                     case "numero":
                         if (!Char.IsDigit(texto))
+                        {
                             return false;
-
+                        }
+                        else if (Char.IsSeparator(texto))
+                        {
+                            return  false;
+                        }
+                        else if (Char.IsControl(texto))
+                        {
+                            return false;
+                        }
+                        else if (Char.IsControl(texto))
+                        {
+                            return false;
+                        }
+                        else
+                        {
+                            return true;
+                       }
                         break;
 
                     case "texto":
@@ -622,20 +639,45 @@ namespace SegundaVista.Vistas
 
         private void txtClase_KeyPress(object sender, KeyPressEventArgs e)
         {
-            List<string> listaTipos = new List<string>();
-            listaTipos.Add("numero");
-            bool esValido = ValidadorChart(e.KeyChar, listaTipos);
+            //List<string> listaTipos = new List<string>();
+            //listaTipos.Add("numero");
+            //bool esValido = ValidadorChart(e.KeyChar, listaTipos);
 
-            if (esValido)
+            //if (esValido)
+            //{
+            //    pnlAlertaRojo.Visible = false;
+            //    e.Handled = false;
+            //}
+            //else
+            //{
+            //    e.Handled = true;
+            //    pnlAlertaRojo.Visible = true;
+            //    lblRojo.Text = "El Campo Solo Acepta números ";
+            //}
+
+            if (Char.IsDigit(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (Char.IsControl(e.KeyChar))
             {
                 e.Handled = false;
             }
             else
             {
                 e.Handled = true;
-                // pnlAlertaRojo.Visible = true;
-                //lblRojo.Text = "El Campo Solo Acepta números ";
+                pnlAlertaRojo.Visible = true;
+                lblRojo.Text = "El Campo Solo Acepta números ";
             }
+
         }
 
 
