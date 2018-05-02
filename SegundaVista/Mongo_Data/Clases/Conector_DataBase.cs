@@ -45,17 +45,17 @@ namespace SegundaVista.Mongo_Data.Clases
            {
                /*{"_id",id},*/
               {"date_Loader",DateTime.Now},
-               { "Nis",datosTxt.Nis}
-               // {"Apellido",Apellido},
-               //{"Nombre_Empresa",Nombre_Empresa},
-               //{"Responsable_Medicion",Responsable_Medicion},
+              {"Nis",datosTxt.Nis},
+              {"Numero Medidor",datosTxt.Numero_Medidor},
+              {"Nombre Medidor",datosTxt.Nombre_Medidor},
+              {"Area",datosTxt.Area},
                //{"DirigirReporte_A",DirigirReporte_A},
                //{"RazonSocial",RazonSocial},
                //{"Ruc",Ruc},
                //{"NisCliente",NisCliente}
            };
-          //  var collection_ = dataLocal.GetCollection<BsonDocument>("Usuarios");
-          // collection_.InsertOneAsync(documento);
+             var collection_ = dataLocal.GetCollection<BsonDocument>("Medidor");
+             collection_.InsertOneAsync(documento);
 
         }
 

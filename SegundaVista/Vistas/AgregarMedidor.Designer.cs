@@ -44,6 +44,8 @@
             this.lblverde = new System.Windows.Forms.Label();
             this.btnGuardarMedidor = new System.Windows.Forms.Button();
             this.PnlFormMedidor = new System.Windows.Forms.Panel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.txtArea = new System.Windows.Forms.TextBox();
             this.txtNumero_Serie = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.txtCodigo_Fabricante = new System.Windows.Forms.TextBox();
@@ -121,7 +123,7 @@
             this.radio_RS232_no = new System.Windows.Forms.RadioButton();
             this.radio_RS232_si = new System.Windows.Forms.RadioButton();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtId_RS232 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.gro_B_Modem = new System.Windows.Forms.GroupBox();
             this.radio_Modem_no = new System.Windows.Forms.RadioButton();
@@ -133,7 +135,7 @@
             this.radio_RS485_no = new System.Windows.Forms.RadioButton();
             this.radio_RS485_si = new System.Windows.Forms.RadioButton();
             this.label21 = new System.Windows.Forms.Label();
-            this.txt_Numero_Id = new System.Windows.Forms.TextBox();
+            this.txtRS485_Id = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.txtMarca = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -145,9 +147,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombreMedidor = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.txtArea = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
             this.epError = new System.Windows.Forms.ErrorProvider(this.components);
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.epNombreMedidor = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epClase = new System.Windows.Forms.ErrorProvider(this.components);
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
@@ -167,6 +170,8 @@
             this.gro_B_Modem.SuspendLayout();
             this.gro_B_RS_485.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epError)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epNombreMedidor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epClase)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlBarraTitulo
@@ -387,6 +392,25 @@
             this.PnlFormMedidor.Size = new System.Drawing.Size(991, 545);
             this.PnlFormMedidor.TabIndex = 10;
             this.PnlFormMedidor.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlFormMedidor_Paint);
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(734, 2);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(56, 22);
+            this.label41.TabIndex = 143;
+            this.label41.Text = "Area";
+            // 
+            // txtArea
+            // 
+            this.txtArea.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.txtArea.Location = new System.Drawing.Point(733, 27);
+            this.txtArea.Multiline = true;
+            this.txtArea.Name = "txtArea";
+            this.txtArea.Size = new System.Drawing.Size(100, 26);
+            this.txtArea.TabIndex = 142;
             // 
             // txtNumero_Serie
             // 
@@ -839,6 +863,7 @@
             // groupComunicacion
             // 
             this.groupComunicacion.BackColor = System.Drawing.Color.White;
+            this.groupComunicacion.Controls.Add(this.comboBox1);
             this.groupComunicacion.Controls.Add(this.gro_B_RadioFrecuencia);
             this.groupComunicacion.Controls.Add(this.gro_B_Infrarrojo);
             this.groupComunicacion.Controls.Add(this.gro_B_PuertoOptico);
@@ -1146,7 +1171,7 @@
             this.gro_B_RS_232.Controls.Add(this.radio_RS232_no);
             this.gro_B_RS_232.Controls.Add(this.radio_RS232_si);
             this.gro_B_RS_232.Controls.Add(this.label24);
-            this.gro_B_RS_232.Controls.Add(this.textBox1);
+            this.gro_B_RS_232.Controls.Add(this.txtId_RS232);
             this.gro_B_RS_232.Controls.Add(this.label25);
             this.gro_B_RS_232.Location = new System.Drawing.Point(458, 63);
             this.gro_B_RS_232.Name = "gro_B_RS_232";
@@ -1188,12 +1213,12 @@
             this.label24.TabIndex = 112;
             this.label24.Text = "Operativo";
             // 
-            // textBox1
+            // txtId_RS232
             // 
-            this.textBox1.Location = new System.Drawing.Point(10, 76);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 31);
-            this.textBox1.TabIndex = 111;
+            this.txtId_RS232.Location = new System.Drawing.Point(10, 76);
+            this.txtId_RS232.Name = "txtId_RS232";
+            this.txtId_RS232.Size = new System.Drawing.Size(204, 31);
+            this.txtId_RS232.TabIndex = 111;
             // 
             // label25
             // 
@@ -1201,9 +1226,9 @@
             this.label25.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.Location = new System.Drawing.Point(10, 51);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(109, 22);
+            this.label25.Size = new System.Drawing.Size(50, 22);
             this.label25.TabIndex = 110;
-            this.label25.Text = "N°Telefono";
+            this.label25.Text = "N°Id";
             // 
             // gro_B_Modem
             // 
@@ -1275,7 +1300,7 @@
             this.gro_B_RS_485.Controls.Add(this.radio_RS485_no);
             this.gro_B_RS_485.Controls.Add(this.radio_RS485_si);
             this.gro_B_RS_485.Controls.Add(this.label21);
-            this.gro_B_RS_485.Controls.Add(this.txt_Numero_Id);
+            this.gro_B_RS_485.Controls.Add(this.txtRS485_Id);
             this.gro_B_RS_485.Controls.Add(this.label20);
             this.gro_B_RS_485.Location = new System.Drawing.Point(684, 63);
             this.gro_B_RS_485.Name = "gro_B_RS_485";
@@ -1319,12 +1344,12 @@
             this.label21.TabIndex = 112;
             this.label21.Text = "Operativo";
             // 
-            // txt_Numero_Id
+            // txtRS485_Id
             // 
-            this.txt_Numero_Id.Location = new System.Drawing.Point(10, 76);
-            this.txt_Numero_Id.Name = "txt_Numero_Id";
-            this.txt_Numero_Id.Size = new System.Drawing.Size(204, 31);
-            this.txt_Numero_Id.TabIndex = 111;
+            this.txtRS485_Id.Location = new System.Drawing.Point(10, 76);
+            this.txtRS485_Id.Name = "txtRS485_Id";
+            this.txtRS485_Id.Size = new System.Drawing.Size(204, 31);
+            this.txtRS485_Id.TabIndex = 111;
             // 
             // label20
             // 
@@ -1433,29 +1458,33 @@
             this.label19.TabIndex = 81;
             this.label19.Text = "Nombre Del Medidor";
             // 
-            // txtArea
-            // 
-            this.txtArea.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtArea.Location = new System.Drawing.Point(733, 27);
-            this.txtArea.Multiline = true;
-            this.txtArea.Name = "txtArea";
-            this.txtArea.Size = new System.Drawing.Size(100, 26);
-            this.txtArea.TabIndex = 142;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(734, 2);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(56, 22);
-            this.label41.TabIndex = 143;
-            this.label41.Text = "Area";
-            // 
             // epError
             // 
             this.epError.ContainerControl = this;
             this.epError.Icon = ((System.Drawing.Icon)(resources.GetObject("epError.Icon")));
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "200",
+            "100"});
+            this.comboBox1.Location = new System.Drawing.Point(894, 227);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(16, 31);
+            this.comboBox1.TabIndex = 125;
+            this.comboBox1.UseWaitCursor = true;
+            this.comboBox1.Visible = false;
+            // 
+            // epNombreMedidor
+            // 
+            this.epNombreMedidor.ContainerControl = this;
+            this.epNombreMedidor.Icon = ((System.Drawing.Icon)(resources.GetObject("epNombreMedidor.Icon")));
+            // 
+            // epClase
+            // 
+            this.epClase.ContainerControl = this;
+            this.epClase.Icon = ((System.Drawing.Icon)(resources.GetObject("epClase.Icon")));
             // 
             // AgregarMedidor
             // 
@@ -1501,6 +1530,8 @@
             this.gro_B_RS_485.ResumeLayout(false);
             this.gro_B_RS_485.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epError)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epNombreMedidor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epClase)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1546,7 +1577,7 @@
         private System.Windows.Forms.TextBox txt_Vc_punto;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.GroupBox gro_B_RS_485;
-        private System.Windows.Forms.TextBox txt_Numero_Id;
+        private System.Windows.Forms.TextBox txtRS485_Id;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.RadioButton radio_RS485_no;
         private System.Windows.Forms.RadioButton radio_RS485_si;
@@ -1561,7 +1592,7 @@
         private System.Windows.Forms.RadioButton radio_RS232_no;
         private System.Windows.Forms.RadioButton radio_RS232_si;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtId_RS232;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.GroupBox gro_B_Eternet;
         private System.Windows.Forms.RadioButton radio_Eternet_no;
@@ -1625,5 +1656,8 @@
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.TextBox txtArea;
         private System.Windows.Forms.ErrorProvider epError;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ErrorProvider epNombreMedidor;
+        private System.Windows.Forms.ErrorProvider epClase;
     }
 }

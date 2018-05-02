@@ -48,11 +48,11 @@ namespace SegundaVista.clases
 
         public BsonBoolean Modem { get; set; }
         public BsonBoolean Modem_Operativo { get; set; }
-        public int Modem_Telefono { get; set; }
+        public string Modem_Telefono { get; set; }
 
         public BsonBoolean RS232 { get; set; }
         public BsonBoolean RS232_Operativo { get; set; }
-        public int RS232_Id { get; set; }
+        public string RS232_Id { get; set; }
 
         public BsonBoolean RS485 { get; set; }
         public BsonBoolean RS485_Operativo { get; set; }
