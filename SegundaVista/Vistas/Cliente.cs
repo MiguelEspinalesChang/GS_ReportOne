@@ -33,6 +33,7 @@ namespace SegundaVista.Vistas
             try
             {
                 Usuarios();
+                Medidor();
             }
             catch (Exception ex)
             {
@@ -89,6 +90,59 @@ namespace SegundaVista.Vistas
             public DateTime date_Loader { get; set; }
 
         }
+        public class MedidorDatos
+        {
+            public ObjectId Id { get; set; }
+            public DateTime date_Loader { get; set; }
+            public string Nis { get; set; }
+            public string Numero_Medidor { get; set; }
+            public string Nombre_Medidor { get; set; }
+            public string Modo_Uso { get; set; }
+            public string Grupo { get; set; }
+            public string Area { get; set; }
+            public string Nombre_Propietario { get; set; }
+            public string Ubicacion { get; set; }
+            public float KWH_Punto_dia { get; set; }
+            public float Potencia_Punto_dia { get; set; }
+            public string Marca { get; set; }
+            public string Modelo { get; set; }
+            public string Tipo { get; set; }
+            public int clase { get; set; }
+            public float Presicion { get; set; }
+            public string Codigo_fabricante { get; set; }
+            public float TC_Primario { get; set; }
+            public float TC_secundario { get; set; }
+            public float Relacion_TC { get; set; }
+            public float TP_Primario { get; set; }
+            public float TP_secundario { get; set; }
+            public float Relacion_TP { get; set; }
+            public string Numero_Cerie { get; set; }
+            public float Ia_punto { get; set; }
+            public float Ib_punto { get; set; }
+            public float Ic_punto { get; set; }
+            public float Va_punto { get; set; }
+            public float Vb_punto { get; set; }
+            public float Vc_punto { get; set; }
+            ///Datos de comunicacion
+            public BsonBoolean Eternet { get; set; }
+            public BsonBoolean Eternet_Operativo { get; set; }
+            public string Eternet_NumeroIp { get; set; }
+            public BsonBoolean Modem { get; set; }
+            public BsonBoolean Modem_Operativo { get; set; }
+            public string Modem_Telefono { get; set; }
+            public BsonBoolean RS232 { get; set; }
+            public BsonBoolean RS232_Operativo { get; set; }
+            public string RS232_Id { get; set; }
+            public BsonBoolean RS485 { get; set; }
+            public BsonBoolean RS485_Operativo { get; set; }
+            public string RS485_Numero_Id { get; set; }
+            public BsonBoolean PuertoOptico { get; set; }
+            public BsonBoolean PuertoOptico_Operativo { get; set; }
+            public BsonBoolean infrarrojo { get; set; }
+            public BsonBoolean infrarrojo_Operativo { get; set; }
+            public BsonBoolean RadioFrecuencia { get; set; }
+            public BsonBoolean RadioFrecuencia_Operativo { get; set; }
+        }
 
         public void Usuarios()
         {
@@ -97,7 +151,7 @@ namespace SegundaVista.Vistas
             var server = client.GetServer();
             var database = server.GetDatabase("GS_Report_one_DataBaseMongo");
             var Documento = MongoConexion.DataBase.GetCollection<Client>("Usuarios");
-            //MongoCollection<Client> Documento = database.GetCollection<Client>("Usuarios");
+
             BindingList<Client> doclist = new BindingList<Client>();
             Clientee Cli = new Clientee();
             foreach (var deger in Documento.FindAll())
@@ -111,6 +165,7 @@ namespace SegundaVista.Vistas
                 Cli.Ruc = deger.Ruc.ToString();
                 Cli.NisCliente = deger.NisCliente.ToString();
                 Cli.ObjectId_Cliente = deger.Id;
+                Cli.date_Loader = deger.date_Loader.Date;
                 doclist.Add(deger);
 
             }
@@ -119,6 +174,28 @@ namespace SegundaVista.Vistas
             var source = new BindingSource(bindingList, null);
             gridClientes.DataSource = source;
 
+        }
+        public void Medidor()
+        {
+            var connectionString = "mongodb://localhost";
+            var client = new MongoClient(connectionString);
+            var server = client.GetServer();
+            var database = server.GetDatabase("GS_Report_one_DataBaseMongo");
+            var Documento = MongoConexion.DataBase.GetCollection<MedidorDatos>("Medidor");
+            BindingList<MedidorDatos> doclist = new BindingList<MedidorDatos>();
+            MedidorDatos _Medidor = new MedidorDatos();
+            foreach (var deger in Documento.FindAll())
+            {
+                _Medidor.Id = deger.Id;
+                _Medidor.date_Loader = deger.date_Loader.Date;
+                _Medidor.Nis = deger.Nis;
+                _Medidor.Numero_Medidor = deger.Numero_Medidor;
+                _Medidor.Nombre_Medidor = deger.Nombre_Medidor;
+                _Medidor.Modo_Uso = deger.Modo_Uso;
+            }
+            var bindingList = new BindingList<MedidorDatos>(doclist);
+            var source = new BindingSource(bindingList, null);
+            gridMedidor.DataSource = source;
         }
 
         private void btnAgregarMedidor_Click(object sender, EventArgs e)

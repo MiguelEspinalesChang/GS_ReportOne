@@ -83,73 +83,76 @@ namespace SegundaVista.Vistas
             {
 
                 //Campos Obligatorios
-               
 
-                    //Ternarios Para Validar Y rellenar los datos del Medidor
-                    datosTxt.Nis = txtNIS.Text;
-                    datosTxt.Nombre_Propietario = txtNom_Propietario.Text;
-                    datosTxt.Area = (string.IsNullOrEmpty(txtArea.Text)) ? "" : txtArea.Text;
-                    datosTxt.Modo_Uso = (string.IsNullOrEmpty(txtModo_Uso.Text)) ? "" : txtModo_Uso.Text;
-                    datosTxt.Ubicacion = (string.IsNullOrEmpty(txtUbicacionMedidor.Text)) ? "" : txtUbicacionMedidor.Text;
-                    datosTxt.KWH_Punto_dia = (string.IsNullOrEmpty(txtKWH_punto_dia.Text)) ? 0 : Convert.ToSingle(txtKWH_punto_dia.Text);
-                    datosTxt.Grupo = (string.IsNullOrEmpty(txtNumero_Grupo.Text)) ? "" : txtNumero_Grupo.Text;
-                    datosTxt.Potencia_Punto_dia = (string.IsNullOrEmpty(txtPotencia_Punto_dia.Text)) ? 0 : Convert.ToSingle(txtArea.Text);
-                    datosTxt.Marca = (string.IsNullOrEmpty(txtMarca.Text)) ? "" : txtMarca.Text;
-                    datosTxt.Modelo = (string.IsNullOrEmpty(txtModelo.Text)) ? "" : txtModelo.Text;
-                    datosTxt.Tipo = (string.IsNullOrEmpty(txtTipo.Text)) ? "" : txtTipo.Text;
-                    datosTxt.Presicion = (string.IsNullOrEmpty(txtPresicion.Text)) ? 0 : Convert.ToSingle(txtPresicion.Text);
-                    datosTxt.Codigo_fabricante = (string.IsNullOrEmpty(txtCodigo_Fabricante.Text)) ? "" : txtCodigo_Fabricante.Text;
-                    datosTxt.TC_Primario = (string.IsNullOrEmpty(txtTc_primaria.Text)) ? 0 : Convert.ToSingle(txtTipo.Text);
-                    datosTxt.TC_secundario = (string.IsNullOrEmpty(txtTc_secundaria.Text)) ? 0 : Convert.ToSingle(txtTc_secundaria.Text);
-                    datosTxt.TP_Primario = (string.IsNullOrEmpty(txtTP_primaria.Text)) ? 0 : Convert.ToSingle(txtTP_primaria.Text);
-                    datosTxt.TP_secundario = (string.IsNullOrEmpty(txtTP_secundario.Text)) ? 0 : Convert.ToSingle(txtTP_secundario.Text);
-                    datosTxt.Numero_Cerie = (string.IsNullOrEmpty(txtNumero_Serie.Text)) ? "" : txtNumero_Serie.Text;
-                    datosTxt.Ia_punto = (string.IsNullOrEmpty(txt_Ia_punto.Text)) ? 0 : Convert.ToSingle(txt_Ia_punto.Text);
-                    datosTxt.Ib_punto = (string.IsNullOrEmpty(txt_Ib_punto.Text)) ? 0 : Convert.ToSingle(txt_Ib_punto.Text);
-                    datosTxt.Ic_punto = (string.IsNullOrEmpty(txt_Ic_punto.Text)) ? 0 : Convert.ToSingle(txt_Ic_punto.Text);
-                    datosTxt.Va_punto = (string.IsNullOrEmpty(txt_Va_punto.Text)) ? 0 : Convert.ToSingle(txt_Va_punto.Text);
-                    datosTxt.Vb_punto = (string.IsNullOrEmpty(txt_Vb_punto.Text)) ? 0 : Convert.ToSingle(txt_Vb_punto.Text);
-                    datosTxt.Vc_punto = (string.IsNullOrEmpty(txt_Vc_punto.Text)) ? 0 : Convert.ToSingle(txt_Vc_punto.Text);
-                    datosTxt.Relacion_TC = (datosTxt.TC_secundario == 0) ? 0 : datosTxt.TC_Primario / datosTxt.TC_secundario;
-                    datosTxt.Relacion_TP = (datosTxt.TP_secundario == 0) ? 0 : datosTxt.TP_Primario / datosTxt.TP_secundario;
 
-                    //Comunicacion
+                //Ternarios Para Validar Y rellenar los datos del Medidor
+                datosTxt.Nis = txtNIS.Text;
+                datosTxt.Nombre_Propietario = txtNom_Propietario.Text;
+                datosTxt.Area = (string.IsNullOrEmpty(txtArea.Text)) ? "" : txtArea.Text;
+                datosTxt.Modo_Uso = (string.IsNullOrEmpty(txtModo_Uso.Text)) ? "" : txtModo_Uso.Text;
+                datosTxt.Ubicacion = (string.IsNullOrEmpty(txtUbicacionMedidor.Text)) ? "" : txtUbicacionMedidor.Text;
+                datosTxt.KWH_Punto_dia = (string.IsNullOrEmpty(txtKWH_punto_dia.Text)) ? 0 : Convert.ToSingle(txtKWH_punto_dia.Text);
+                datosTxt.Grupo = (string.IsNullOrEmpty(txtNumero_Grupo.Text)) ? "" : txtNumero_Grupo.Text;
+                datosTxt.Potencia_Punto_dia = (string.IsNullOrEmpty(txtPotencia_Punto_dia.Text)) ? 0 : Convert.ToSingle(txtArea.Text);
+                datosTxt.Marca = (string.IsNullOrEmpty(txtMarca.Text)) ? "" : txtMarca.Text;
+                datosTxt.Modelo = (string.IsNullOrEmpty(txtModelo.Text)) ? "" : txtModelo.Text;
+                datosTxt.Tipo = (string.IsNullOrEmpty(txtTipo.Text)) ? "" : txtTipo.Text;
+                datosTxt.Presicion = (string.IsNullOrEmpty(txtPresicion.Text)) ? 0 : Convert.ToSingle(txtPresicion.Text);
+                datosTxt.Codigo_fabricante = (string.IsNullOrEmpty(txtCodigo_Fabricante.Text)) ? "" : txtCodigo_Fabricante.Text;
+                datosTxt.TC_Primario = (string.IsNullOrEmpty(txtTc_primaria.Text)) ? 0 : Convert.ToSingle(txtTipo.Text);
+                datosTxt.TC_secundario = (string.IsNullOrEmpty(txtTc_secundaria.Text)) ? 0 : Convert.ToSingle(txtTc_secundaria.Text);
+                datosTxt.TP_Primario = (string.IsNullOrEmpty(txtTP_primaria.Text)) ? 0 : Convert.ToSingle(txtTP_primaria.Text);
+                datosTxt.TP_secundario = (string.IsNullOrEmpty(txtTP_secundario.Text)) ? 0 : Convert.ToSingle(txtTP_secundario.Text);
+                datosTxt.Numero_Cerie = (string.IsNullOrEmpty(txtNumero_Serie.Text)) ? "" : txtNumero_Serie.Text;
+                datosTxt.Ia_punto = (string.IsNullOrEmpty(txt_Ia_punto.Text)) ? 0 : Convert.ToSingle(txt_Ia_punto.Text);
+                datosTxt.Ib_punto = (string.IsNullOrEmpty(txt_Ib_punto.Text)) ? 0 : Convert.ToSingle(txt_Ib_punto.Text);
+                datosTxt.Ic_punto = (string.IsNullOrEmpty(txt_Ic_punto.Text)) ? 0 : Convert.ToSingle(txt_Ic_punto.Text);
+                datosTxt.Va_punto = (string.IsNullOrEmpty(txt_Va_punto.Text)) ? 0 : Convert.ToSingle(txt_Va_punto.Text);
+                datosTxt.Vb_punto = (string.IsNullOrEmpty(txt_Vb_punto.Text)) ? 0 : Convert.ToSingle(txt_Vb_punto.Text);
+                datosTxt.Vc_punto = (string.IsNullOrEmpty(txt_Vc_punto.Text)) ? 0 : Convert.ToSingle(txt_Vc_punto.Text);
+                datosTxt.Relacion_TC = (datosTxt.TC_secundario == 0) ? 0 : datosTxt.TC_Primario / datosTxt.TC_secundario;
+                datosTxt.Relacion_TP = (datosTxt.TP_secundario == 0) ? 0 : datosTxt.TP_Primario / datosTxt.TP_secundario;
 
-                    //Eternet
+                //Comunicacion
 
-                    datosTxt.Eternet = check_Eternet.Checked;
-                    datosTxt.Eternet_NumeroIp = (string.IsNullOrEmpty(txtNumeroIp_Eternet.Text)) ? "" : txtNumero_Serie.Text;
-                    datosTxt.Eternet_Operativo = (radio_Eternet_si.Checked) ? true : false;
+                //Eternet
 
-                    //Modem
+                datosTxt.Eternet = check_Eternet.Checked;
+                datosTxt.Eternet_NumeroIp = (string.IsNullOrEmpty(txtNumeroIp_Eternet.Text)) ? "" : txtNumero_Serie.Text;
+                datosTxt.Eternet_Operativo = (radio_Eternet_si.Checked) ? true : false;
 
-                    datosTxt.Modem = check_Modem.Checked;
-                    datosTxt.Modem_Telefono = (string.IsNullOrEmpty(txtNumTelefono_modem.Text)) ? "" : txtNumTelefono_modem.Text;
-                    datosTxt.Modem_Operativo = (radio_Modem_si.Checked) ? true : false;
+                //Modem
 
-                    //RS232
-                    datosTxt.RS232 = checkRS_232.Checked;
-                    datosTxt.RS232_Id = (string.IsNullOrEmpty(txtId_RS232.Text)) ? "" : txtId_RS232.Text;
-                    datosTxt.RS232_Operativo = (radio_RS232_si.Checked) ? true : false;
+                datosTxt.Modem = check_Modem.Checked;
+                datosTxt.Modem_Telefono = (string.IsNullOrEmpty(txtNumTelefono_modem.Text)) ? "" : txtNumTelefono_modem.Text;
+                datosTxt.Modem_Operativo = (radio_Modem_si.Checked) ? true : false;
 
-                    // RS 485
-                    datosTxt.RS485 = check_RS_485.Checked;
-                    datosTxt.RS485_Numero_Id = (string.IsNullOrEmpty(txtRS485_Id.Text)) ? "" : txtRS485_Id.Text;
-                    datosTxt.RS485_Operativo = (radio_RS485_si.Checked) ? true : false;
+                //RS232
+                datosTxt.RS232 = checkRS_232.Checked;
+                datosTxt.RS232_Id = (string.IsNullOrEmpty(txtId_RS232.Text)) ? "" : txtId_RS232.Text;
+                datosTxt.RS232_Operativo = (radio_RS232_si.Checked) ? true : false;
 
-                    //Puerto Optico
-                    datosTxt.PuertoOptico = checkPuerto_optico.Checked;
-                    datosTxt.PuertoOptico_Operativo = (radio_PuertoOptico_si.Checked) ? true : false;
+                // RS 485
+                datosTxt.RS485 = check_RS_485.Checked;
+                datosTxt.RS485_Numero_Id = (string.IsNullOrEmpty(txtRS485_Id.Text)) ? "" : txtRS485_Id.Text;
+                datosTxt.RS485_Operativo = (radio_RS485_si.Checked) ? true : false;
 
-                    //Infrarrojo
-                    datosTxt.infrarrojo = check_infrarrojo.Checked;
-                    datosTxt.infrarrojo_Operativo = (radio_Infrarrojo_si.Checked) ? true : false;
+                //Puerto Optico
+                datosTxt.PuertoOptico = checkPuerto_optico.Checked;
+                datosTxt.PuertoOptico_Operativo = (radio_PuertoOptico_si.Checked) ? true : false;
 
-                    //Radio frecuencia
-                    datosTxt.RadioFrecuencia = check_radio_frecuencia.Checked;
-                    datosTxt.RadioFrecuencia_Operativo = (radio_RadiFrecuencia_si.Checked) ? true : false;
-                if (txtNumero_Medidor.Text != "" && txtNombreMedidor.Text !="" && txtClase.Text !="")
+                //Infrarrojo
+                datosTxt.infrarrojo = check_infrarrojo.Checked;
+                datosTxt.infrarrojo_Operativo = (radio_Infrarrojo_si.Checked) ? true : false;
+
+                //Radio frecuencia
+                datosTxt.RadioFrecuencia = check_radio_frecuencia.Checked;
+                datosTxt.RadioFrecuencia_Operativo = (radio_RadiFrecuencia_si.Checked) ? true : false;
+                if (txtNumero_Medidor.Text != "" && txtNombreMedidor.Text != "" && txtClase.Text != "")
                 {
+                    datosTxt.Numero_Medidor = txtNumero_Medidor.Text;
+                    datosTxt.clase = Convert.ToInt16(txtClase.Text);
+                    datosTxt.Nombre_Medidor = txtNombreMedidor.Text;
                     epError.Clear();
                     epNombreMedidor.Clear();
                     epClase.Clear();
