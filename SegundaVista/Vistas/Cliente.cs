@@ -33,7 +33,7 @@ namespace SegundaVista.Vistas
             try
             {
                 Usuarios();
-                Medidor();
+              //  Medidor();
             }
             catch (Exception ex)
             {
@@ -92,8 +92,7 @@ namespace SegundaVista.Vistas
         }
         public class MedidorDatos
         {
-            public ObjectId Id { get; set; }
-            public DateTime date_Loader { get; set; }
+          
             public string Nis { get; set; }
             public string Numero_Medidor { get; set; }
             public string Nombre_Medidor { get; set; }
@@ -142,15 +141,17 @@ namespace SegundaVista.Vistas
             public BsonBoolean infrarrojo_Operativo { get; set; }
             public BsonBoolean RadioFrecuencia { get; set; }
             public BsonBoolean RadioFrecuencia_Operativo { get; set; }
+            public ObjectId Id { get; set; }
+            public DateTime date_Loader { get; set; }
         }
 
-        public void Usuarios()
+        private void Usuarios()
         {
             var connectionString = "mongodb://localhost";
             var client = new MongoClient(connectionString);
             var server = client.GetServer();
             var database = server.GetDatabase("GS_Report_one_DataBaseMongo");
-            var Documento = MongoConexion.DataBase.GetCollection<Client>("Usuarios");
+            var Documento = MongoConexion.DataBase.GetCollection<Client>("Clientes");
 
             BindingList<Client> doclist = new BindingList<Client>();
             Clientee Cli = new Clientee();
@@ -183,15 +184,61 @@ namespace SegundaVista.Vistas
             var database = server.GetDatabase("GS_Report_one_DataBaseMongo");
             var Documento = MongoConexion.DataBase.GetCollection<MedidorDatos>("Medidor");
             BindingList<MedidorDatos> doclist = new BindingList<MedidorDatos>();
-            MedidorDatos _Medidor = new MedidorDatos();
+            DatosMedidor _Medidor = new DatosMedidor();
             foreach (var deger in Documento.FindAll())
             {
-                _Medidor.Id = deger.Id;
+                _Medidor.ObjectId_Medidor = deger.Id;
                 _Medidor.date_Loader = deger.date_Loader.Date;
-                _Medidor.Nis = deger.Nis;
-                _Medidor.Numero_Medidor = deger.Numero_Medidor;
-                _Medidor.Nombre_Medidor = deger.Nombre_Medidor;
-                _Medidor.Modo_Uso = deger.Modo_Uso;
+                _Medidor.Nis = deger.Nis.ToString();
+                _Medidor.Numero_Medidor = deger.Numero_Medidor.ToString();
+                _Medidor.Nombre_Medidor = deger.Nombre_Medidor.ToString();
+                _Medidor.Modo_Uso = deger.Modo_Uso.ToString();
+                _Medidor.Grupo = deger.Grupo.ToString();
+                _Medidor.Area = deger.Area.ToString();
+                _Medidor.Nombre_Propietario = deger.Nombre_Propietario.ToString();
+                _Medidor.Ubicacion = deger.Ubicacion.ToString();
+                _Medidor.KWH_Punto_dia = deger.KWH_Punto_dia;
+                _Medidor.Potencia_Punto_dia = deger.Potencia_Punto_dia;
+                _Medidor.Marca = deger.Marca.ToString();
+                _Medidor.Modelo = deger.Modelo.ToString();
+                _Medidor.Tipo = deger.Tipo.ToString();
+                _Medidor.clase = deger.clase;
+                _Medidor.Presicion = deger.Presicion;
+                _Medidor.Codigo_fabricante = deger.Codigo_fabricante.ToString();
+                _Medidor.TC_Primario = deger.TC_Primario;
+                _Medidor.TC_secundario = deger.TC_secundario;
+                _Medidor.TC_secundario = deger.TC_secundario;
+                _Medidor.Relacion_TC = deger.Relacion_TC;
+                _Medidor.TP_Primario = deger.TP_Primario;
+                _Medidor.TP_secundario = deger.TP_secundario;
+                _Medidor.Relacion_TP = deger.Relacion_TP;
+                _Medidor.Numero_Cerie = deger.Numero_Cerie.ToString();
+                _Medidor.Ia_punto = deger.Ia_punto;
+                _Medidor.Ib_punto = deger.Ib_punto;
+                _Medidor.Ic_punto = deger.Ic_punto;
+                _Medidor.Va_punto = deger.Va_punto;
+                _Medidor.Vb_punto = deger.Vb_punto;
+                _Medidor.Vc_punto = deger.Vc_punto;
+                _Medidor.Eternet = deger.Eternet.ToBoolean();
+                _Medidor.Eternet_Operativo = deger.Eternet_Operativo.ToBoolean();
+                _Medidor.Eternet_NumeroIp = deger.Eternet_NumeroIp.ToString();
+                _Medidor.Modem = deger.Modem.ToBoolean();
+                _Medidor.Modem_Operativo = deger.Modem_Operativo.ToBoolean();
+                _Medidor.Modem_Telefono = deger.Modem_Telefono.ToString();
+                _Medidor.RS232 = deger.RS232.ToBoolean();
+                _Medidor.RS232_Operativo = deger.RS232_Operativo.ToBoolean();
+                _Medidor.RS232_Id = deger.RS232_Id.ToString();
+                _Medidor.RS485 = deger.RS485.ToBoolean();
+                _Medidor.RS485_Operativo = deger.RS485_Operativo.ToBoolean();
+                _Medidor.RS485_Numero_Id = deger.RS485_Numero_Id.ToString();
+                _Medidor.PuertoOptico = deger.PuertoOptico.ToBoolean();
+                _Medidor.PuertoOptico_Operativo = deger.PuertoOptico_Operativo.ToBoolean();
+                _Medidor.infrarrojo = deger.infrarrojo.ToBoolean();
+                _Medidor.infrarrojo_Operativo = deger.infrarrojo_Operativo.ToBoolean();
+                _Medidor.RadioFrecuencia = deger.RadioFrecuencia.ToBoolean();
+                _Medidor.RadioFrecuencia_Operativo = deger.RadioFrecuencia_Operativo.ToBoolean();
+
+                doclist.Add(deger);
             }
             var bindingList = new BindingList<MedidorDatos>(doclist);
             var source = new BindingSource(bindingList, null);
@@ -236,6 +283,12 @@ namespace SegundaVista.Vistas
 
         private void gridClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Form abrir = new EditarCliente();
+            abrir.ShowDialog();
         }
     }
 }

@@ -35,7 +35,7 @@ namespace SegundaVista.Mongo_Data.Clases
                 {"Ruc",Ruc},
                 {"NisCliente",NisCliente}
             };
-            var collection_ = dataLocal.GetCollection<BsonDocument>("Usuarios");
+            var collection_ = dataLocal.GetCollection<BsonDocument>("Clientes");
             collection_.InsertOneAsync(documento);
         }
         // funcion para agregar Medidores

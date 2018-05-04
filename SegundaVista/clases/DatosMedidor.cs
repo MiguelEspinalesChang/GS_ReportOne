@@ -10,6 +10,7 @@ namespace SegundaVista.clases
     public class DatosMedidor
     {
         public ObjectId ObjectId_Medidor { get; set; }
+        public DateTime date_Loader { get; set; }
         public string Nis { get; set; }
         public string Numero_Medidor { get; set; }
         public string Nombre_Medidor { get; set; }
