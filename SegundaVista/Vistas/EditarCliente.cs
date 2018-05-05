@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SegundaVista.clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MongoDB.Bson;
+using MongoDB.Driver;
 
 namespace SegundaVista.Vistas
 {
@@ -27,6 +30,24 @@ namespace SegundaVista.Vistas
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        public class DatosCliente
+        {
+            DatosCliente()
+            {
+
+            }
+        }
+
+        private void btnGuardarMedidor_Click(object sender, EventArgs e)
+        {
+
+            Clientee dato = new Clientee();
+            var connectionString = "mongodb://localhost";
+            MongoClient client = new MongoClient(connectionString);
+            MongoServer server = client.GetServer();
+            var database = server.GetDatabase("GS_Report_one_DataBaseMongo");
+          //  MongoCollection Client 
         }
     }
 }

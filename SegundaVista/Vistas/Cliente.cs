@@ -19,6 +19,7 @@ namespace SegundaVista.Vistas
     {
 
         private Conexion MongoConexion = new Conexion();
+        
 
         public Cliente()
         {
@@ -92,7 +93,7 @@ namespace SegundaVista.Vistas
         }
         public class MedidorDatos
         {
-          
+
             public string Nis { get; set; }
             public string Numero_Medidor { get; set; }
             public string Nombre_Medidor { get; set; }
@@ -176,16 +177,17 @@ namespace SegundaVista.Vistas
             gridClientes.DataSource = source;
 
         }
-        public void Medidor()
+        private void Medidor()
         {
+             Conexion _MongoConexion = new Conexion();
             var connectionString = "mongodb://localhost";
             var client = new MongoClient(connectionString);
             var server = client.GetServer();
             var database = server.GetDatabase("GS_Report_one_DataBaseMongo");
-            var Documento = MongoConexion.DataBase.GetCollection<MedidorDatos>("Medidor");
+            var Documentoo = _MongoConexion.DataBase.GetCollection<MedidorDatos>("Medidor");
             BindingList<MedidorDatos> doclist = new BindingList<MedidorDatos>();
             DatosMedidor _Medidor = new DatosMedidor();
-            foreach (var deger in Documento.FindAll())
+            foreach (var deger in Documentoo.FindAll())
             {
                 _Medidor.ObjectId_Medidor = deger.Id;
                 _Medidor.date_Loader = deger.date_Loader.Date;
@@ -287,8 +289,43 @@ namespace SegundaVista.Vistas
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            Form abrir = new EditarCliente();
-            abrir.ShowDialog();
+            //Form abrir = new EditarCliente();
+            //abrir.ShowDialog();
+            var contador = gridClientes.SelectedRows.Count;
+            if (contador > 0)
+            {
+                var clienteSelect = gridClientes.SelectedRows[0];
+                var celdas = clienteSelect.Cells;
+
+                string NomEmpresa = Convert.ToString(celdas["Nombre_Empresa"].Value);
+                string NisCliente = Convert.ToString(celdas["NisCliente"].Value);
+                string RazonSocial = Convert.ToString(celdas["RazonSocial"].Value);
+                string Ruc = Convert.ToString(celdas["Ruc"].Value);
+                string clienteNombre = Convert.ToString(celdas["Nombre"].Value);
+                string clienteApellido = Convert.ToString(celdas["Apellido"].Value);
+                string Res_Medidor = Convert.ToString(celdas["Responsable_Medicion"].Value);
+                string DirigirReporte = Convert.ToString(celdas["DirigirReporte_A"].Value);
+                string IdCliente = Convert.ToString(celdas["Id"].Value);
+
+                EditarCliente cliente_Edit = new EditarCliente();
+                cliente_Edit.txt_E_IdCliente.Text = IdCliente;
+                cliente_Edit.txt_E_Nombre.Text = clienteNombre;
+                cliente_Edit.txt_E_RazonSocial.Text = RazonSocial;
+                cliente_Edit.txt_E_Apellido.Text = clienteApellido;
+                cliente_Edit.txt_E_Ruc.Text = Ruc;
+                cliente_Edit.txt_E_NombreEmpresa.Text = NomEmpresa;
+                cliente_Edit.txt_E_NisCliente.Text = NisCliente;
+                cliente_Edit.txt_E_ResponsableMedidcion.Text = Res_Medidor;
+                cliente_Edit.txt_E_DirigirReporte.Text = DirigirReporte;
+                pnlAlertaRojo.Visible = false;
+                cliente_Edit.ShowDialog();
+            }
+            else
+            {
+                pnlAlertaRojo.Visible = true;
+                lblRojo.Text = "Seleccione Una Celda";
+
+            }
         }
     }
 }

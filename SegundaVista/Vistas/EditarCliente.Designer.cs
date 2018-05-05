@@ -49,18 +49,18 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.PnlFormCliente = new System.Windows.Forms.Panel();
+            this.txt_E_ResponsableMedidcion = new System.Windows.Forms.TextBox();
+            this.txt_E_NisCliente = new System.Windows.Forms.TextBox();
+            this.txt_E_DirigirReporte = new System.Windows.Forms.TextBox();
+            this.txt_E_Nombre = new System.Windows.Forms.TextBox();
+            this.txt_E_Ruc = new System.Windows.Forms.TextBox();
+            this.txt_E_NombreEmpresa = new System.Windows.Forms.TextBox();
+            this.txt_E_RazonSocial = new System.Windows.Forms.TextBox();
+            this.txt_E_Apellido = new System.Windows.Forms.TextBox();
+            this.txt_E_IdCliente = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txt_E_IdCliente = new System.Windows.Forms.TextBox();
-            this.txt_E_Apellido = new System.Windows.Forms.TextBox();
-            this.txt_E_RazonSocial = new System.Windows.Forms.TextBox();
-            this.txt_E_NombreEmpresa = new System.Windows.Forms.TextBox();
-            this.txt_E_Ruc = new System.Windows.Forms.TextBox();
-            this.txt_E_Nombre = new System.Windows.Forms.TextBox();
-            this.txt_E_DirigirReporte = new System.Windows.Forms.TextBox();
-            this.txt_E_NisCliente = new System.Windows.Forms.TextBox();
-            this.txt_E_ResponsableMedidcion = new System.Windows.Forms.TextBox();
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
@@ -217,6 +217,7 @@
             this.btnGuardarMedidor.TabIndex = 22;
             this.btnGuardarMedidor.Text = "Guardar";
             this.btnGuardarMedidor.UseVisualStyleBackColor = true;
+            this.btnGuardarMedidor.Click += new System.EventHandler(this.btnGuardarMedidor_Click);
             // 
             // label8
             // 
@@ -242,7 +243,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(243, 98);
+            this.label5.Location = new System.Drawing.Point(244, 98);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 22);
             this.label5.TabIndex = 92;
@@ -262,7 +263,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(11, 98);
+            this.label3.Location = new System.Drawing.Point(14, 146);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(225, 22);
             this.label3.TabIndex = 88;
@@ -272,7 +273,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(11, 50);
+            this.label2.Location = new System.Drawing.Point(14, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 22);
             this.label2.TabIndex = 83;
@@ -305,25 +306,69 @@
             this.PnlFormCliente.Size = new System.Drawing.Size(464, 297);
             this.PnlFormCliente.TabIndex = 10;
             // 
-            // label7
+            // txt_E_ResponsableMedidcion
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(14, 146);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(157, 22);
-            this.label7.TabIndex = 96;
-            this.label7.Text = "Dirigir Reporte A";
+            this.txt_E_ResponsableMedidcion.Location = new System.Drawing.Point(18, 219);
+            this.txt_E_ResponsableMedidcion.Name = "txt_E_ResponsableMedidcion";
+            this.txt_E_ResponsableMedidcion.Size = new System.Drawing.Size(160, 20);
+            this.txt_E_ResponsableMedidcion.TabIndex = 109;
             // 
-            // label19
+            // txt_E_NisCliente
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(243, 1);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(84, 22);
-            this.label19.TabIndex = 80;
-            this.label19.Text = "Nombre";
+            this.txt_E_NisCliente.Location = new System.Drawing.Point(247, 171);
+            this.txt_E_NisCliente.Name = "txt_E_NisCliente";
+            this.txt_E_NisCliente.Size = new System.Drawing.Size(160, 20);
+            this.txt_E_NisCliente.TabIndex = 108;
+            // 
+            // txt_E_DirigirReporte
+            // 
+            this.txt_E_DirigirReporte.Location = new System.Drawing.Point(15, 267);
+            this.txt_E_DirigirReporte.Name = "txt_E_DirigirReporte";
+            this.txt_E_DirigirReporte.Size = new System.Drawing.Size(160, 20);
+            this.txt_E_DirigirReporte.TabIndex = 107;
+            // 
+            // txt_E_Nombre
+            // 
+            this.txt_E_Nombre.Location = new System.Drawing.Point(18, 75);
+            this.txt_E_Nombre.Name = "txt_E_Nombre";
+            this.txt_E_Nombre.Size = new System.Drawing.Size(160, 20);
+            this.txt_E_Nombre.TabIndex = 106;
+            // 
+            // txt_E_Ruc
+            // 
+            this.txt_E_Ruc.Location = new System.Drawing.Point(247, 123);
+            this.txt_E_Ruc.Name = "txt_E_Ruc";
+            this.txt_E_Ruc.Size = new System.Drawing.Size(160, 20);
+            this.txt_E_Ruc.TabIndex = 105;
+            // 
+            // txt_E_NombreEmpresa
+            // 
+            this.txt_E_NombreEmpresa.Location = new System.Drawing.Point(21, 171);
+            this.txt_E_NombreEmpresa.Name = "txt_E_NombreEmpresa";
+            this.txt_E_NombreEmpresa.Size = new System.Drawing.Size(160, 20);
+            this.txt_E_NombreEmpresa.TabIndex = 104;
+            // 
+            // txt_E_RazonSocial
+            // 
+            this.txt_E_RazonSocial.Location = new System.Drawing.Point(247, 75);
+            this.txt_E_RazonSocial.Name = "txt_E_RazonSocial";
+            this.txt_E_RazonSocial.Size = new System.Drawing.Size(160, 20);
+            this.txt_E_RazonSocial.TabIndex = 103;
+            // 
+            // txt_E_Apellido
+            // 
+            this.txt_E_Apellido.Location = new System.Drawing.Point(18, 123);
+            this.txt_E_Apellido.Name = "txt_E_Apellido";
+            this.txt_E_Apellido.Size = new System.Drawing.Size(160, 20);
+            this.txt_E_Apellido.TabIndex = 102;
+            // 
+            // txt_E_IdCliente
+            // 
+            this.txt_E_IdCliente.Enabled = false;
+            this.txt_E_IdCliente.Location = new System.Drawing.Point(15, 27);
+            this.txt_E_IdCliente.Name = "txt_E_IdCliente";
+            this.txt_E_IdCliente.Size = new System.Drawing.Size(160, 20);
+            this.txt_E_IdCliente.TabIndex = 100;
             // 
             // label9
             // 
@@ -335,68 +380,25 @@
             this.label9.TabIndex = 99;
             this.label9.Text = "Id Cliente";
             // 
-            // txt_E_IdCliente
+            // label7
             // 
-            this.txt_E_IdCliente.Location = new System.Drawing.Point(15, 27);
-            this.txt_E_IdCliente.Name = "txt_E_IdCliente";
-            this.txt_E_IdCliente.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_IdCliente.TabIndex = 100;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(14, 242);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(157, 22);
+            this.label7.TabIndex = 96;
+            this.label7.Text = "Dirigir Reporte A";
             // 
-            // txt_E_Apellido
+            // label19
             // 
-            this.txt_E_Apellido.Location = new System.Drawing.Point(15, 75);
-            this.txt_E_Apellido.Name = "txt_E_Apellido";
-            this.txt_E_Apellido.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_Apellido.TabIndex = 102;
-            // 
-            // txt_E_RazonSocial
-            // 
-            this.txt_E_RazonSocial.Location = new System.Drawing.Point(247, 75);
-            this.txt_E_RazonSocial.Name = "txt_E_RazonSocial";
-            this.txt_E_RazonSocial.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_RazonSocial.TabIndex = 103;
-            // 
-            // txt_E_NombreEmpresa
-            // 
-            this.txt_E_NombreEmpresa.Location = new System.Drawing.Point(18, 123);
-            this.txt_E_NombreEmpresa.Name = "txt_E_NombreEmpresa";
-            this.txt_E_NombreEmpresa.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_NombreEmpresa.TabIndex = 104;
-            // 
-            // txt_E_Ruc
-            // 
-            this.txt_E_Ruc.Location = new System.Drawing.Point(247, 123);
-            this.txt_E_Ruc.Name = "txt_E_Ruc";
-            this.txt_E_Ruc.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_Ruc.TabIndex = 105;
-            // 
-            // txt_E_Nombre
-            // 
-            this.txt_E_Nombre.Location = new System.Drawing.Point(247, 26);
-            this.txt_E_Nombre.Name = "txt_E_Nombre";
-            this.txt_E_Nombre.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_Nombre.TabIndex = 106;
-            // 
-            // txt_E_DirigirReporte
-            // 
-            this.txt_E_DirigirReporte.Location = new System.Drawing.Point(15, 171);
-            this.txt_E_DirigirReporte.Name = "txt_E_DirigirReporte";
-            this.txt_E_DirigirReporte.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_DirigirReporte.TabIndex = 107;
-            // 
-            // txt_E_NisCliente
-            // 
-            this.txt_E_NisCliente.Location = new System.Drawing.Point(247, 171);
-            this.txt_E_NisCliente.Name = "txt_E_NisCliente";
-            this.txt_E_NisCliente.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_NisCliente.TabIndex = 108;
-            // 
-            // txt_E_ResponsableMedidcion
-            // 
-            this.txt_E_ResponsableMedidcion.Location = new System.Drawing.Point(18, 219);
-            this.txt_E_ResponsableMedidcion.Name = "txt_E_ResponsableMedidcion";
-            this.txt_E_ResponsableMedidcion.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_ResponsableMedidcion.TabIndex = 109;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(14, 50);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(84, 22);
+            this.label19.TabIndex = 80;
+            this.label19.Text = "Nombre";
             // 
             // EditarCliente
             // 
@@ -452,15 +454,15 @@
         private System.Windows.Forms.Panel PnlFormCliente;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox txt_E_ResponsableMedidcion;
-        private System.Windows.Forms.TextBox txt_E_NisCliente;
-        private System.Windows.Forms.TextBox txt_E_DirigirReporte;
-        private System.Windows.Forms.TextBox txt_E_Nombre;
-        private System.Windows.Forms.TextBox txt_E_Ruc;
-        private System.Windows.Forms.TextBox txt_E_NombreEmpresa;
-        private System.Windows.Forms.TextBox txt_E_RazonSocial;
-        private System.Windows.Forms.TextBox txt_E_Apellido;
-        private System.Windows.Forms.TextBox txt_E_IdCliente;
         private System.Windows.Forms.Label label9;
+        public System.Windows.Forms.TextBox txt_E_ResponsableMedidcion;
+        public System.Windows.Forms.TextBox txt_E_NisCliente;
+        public System.Windows.Forms.TextBox txt_E_DirigirReporte;
+        public System.Windows.Forms.TextBox txt_E_Nombre;
+        public System.Windows.Forms.TextBox txt_E_Ruc;
+        public System.Windows.Forms.TextBox txt_E_NombreEmpresa;
+        public System.Windows.Forms.TextBox txt_E_RazonSocial;
+        public System.Windows.Forms.TextBox txt_E_Apellido;
+        public System.Windows.Forms.TextBox txt_E_IdCliente;
     }
 }
