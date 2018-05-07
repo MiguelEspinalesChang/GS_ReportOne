@@ -12,6 +12,9 @@ using System.Windows.Forms;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using SegundaVista.Mongo_Data;
+using MongoDB.Driver.Builders;
+using MongoDB.Driver.Linq;
+using MongoDB;
 
 namespace SegundaVista.Vistas
 {
@@ -19,14 +22,14 @@ namespace SegundaVista.Vistas
     {
 
         private Conexion MongoConexion = new Conexion();
-        
+
 
         public Cliente()
         {
             InitializeComponent();
         }
 
-        private void Cliente_Load(object sender, EventArgs e)
+        public void RefrescarCocaCola()
         {
             pnlAlerta.Visible = true;
             pnlAlertaVerde.Visible = false;
@@ -34,14 +37,19 @@ namespace SegundaVista.Vistas
             try
             {
                 Usuarios();
-              //  Medidor();
+                Medidor();
             }
             catch (Exception ex)
             {
                 pnlAlertaRojo.Visible = true;
                 lblRojo.Text = "Error Al Conectar al Servidor : " + ex;
             }
+        }
 
+        private void Cliente_Load(object sender, EventArgs e)
+        {
+
+            RefrescarCocaCola();
         }
 
         private void pnlContenedorHijo_Paint(object sender, PaintEventArgs e)
@@ -75,6 +83,7 @@ namespace SegundaVista.Vistas
         {
             Form abrir = new AgregarCliente();
             abrir.ShowDialog();
+            //RefrescarCocaCola();
         }
 
         public class Client
@@ -91,32 +100,40 @@ namespace SegundaVista.Vistas
             public DateTime date_Loader { get; set; }
 
         }
+
         public class MedidorDatos
         {
-
-            public string Nis { get; set; }
+            [DisplayName("Numero Medidor")]
             public string Numero_Medidor { get; set; }
+            //System.ComponentModel.
+            [Browsable(false)]
+            public ObjectId _id { get; set; }
+            [Browsable(false)]
+            public DateTime date_Loader { get; set; }
+            [DisplayName("Nis Cliente")]
+            public string NisCliente { get; set; }
+            [DisplayName("Nombre Medido")]
             public string Nombre_Medidor { get; set; }
-            public string Modo_Uso { get; set; }
-            public string Grupo { get; set; }
             public string Area { get; set; }
-            public string Nombre_Propietario { get; set; }
-            public string Ubicacion { get; set; }
-            public float KWH_Punto_dia { get; set; }
-            public float Potencia_Punto_dia { get; set; }
+            public string Modo_De_Uso { get; set; }
+            public string Nombre_Del_Propietario { get; set; }
+            public string Ubicacion_Del_Medidor { get; set; }
+            public float KWH_punto_Dia { get; set; }
+            public string Grupo { get; set; }
+            public float Pototencia_punto_Dia { get; set; }
             public string Marca { get; set; }
             public string Modelo { get; set; }
             public string Tipo { get; set; }
-            public int clase { get; set; }
+            public int Clase { get; set; }
             public float Presicion { get; set; }
-            public string Codigo_fabricante { get; set; }
+            public string Codigo_Del_Fabricante { get; set; }
             public float TC_Primario { get; set; }
-            public float TC_secundario { get; set; }
+            public float TC_Secundario { get; set; }
             public float Relacion_TC { get; set; }
-            public float TP_Primario { get; set; }
-            public float TP_secundario { get; set; }
-            public float Relacion_TP { get; set; }
-            public string Numero_Cerie { get; set; }
+            public float Tp_Primario { get; set; }
+            public float Tp_Secundario { get; set; }
+            public float Relacion_Tp { get; set; }
+            public string Numero_Serie { get; set; }
             public float Ia_punto { get; set; }
             public float Ib_punto { get; set; }
             public float Ic_punto { get; set; }
@@ -135,23 +152,22 @@ namespace SegundaVista.Vistas
             public string RS232_Id { get; set; }
             public BsonBoolean RS485 { get; set; }
             public BsonBoolean RS485_Operativo { get; set; }
-            public string RS485_Numero_Id { get; set; }
+            public string RS485_Id { get; set; }
             public BsonBoolean PuertoOptico { get; set; }
             public BsonBoolean PuertoOptico_Operativo { get; set; }
             public BsonBoolean infrarrojo { get; set; }
             public BsonBoolean infrarrojo_Operativo { get; set; }
             public BsonBoolean RadioFrecuencia { get; set; }
             public BsonBoolean RadioFrecuencia_Operativo { get; set; }
-            public ObjectId Id { get; set; }
-            public DateTime date_Loader { get; set; }
+
         }
 
         private void Usuarios()
         {
-            var connectionString = "mongodb://localhost";
-            var client = new MongoClient(connectionString);
-            var server = client.GetServer();
-            var database = server.GetDatabase("GS_Report_one_DataBaseMongo");
+            //var connectionString = "mongodb://localhost";
+            //var client = new MongoClient(connectionString);
+            //var server = client.GetServer();
+            //var database = server.GetDatabase("GS_Report_one_DataBaseMongo");
             var Documento = MongoConexion.DataBase.GetCollection<Client>("Clientes");
 
             BindingList<Client> doclist = new BindingList<Client>();
@@ -174,77 +190,89 @@ namespace SegundaVista.Vistas
 
             var bindingList = new BindingList<Client>(doclist);
             var source = new BindingSource(bindingList, null);
+            gridClientes.Rows.Clear();
             gridClientes.DataSource = source;
+            gridClientes.Refresh();
 
         }
         private void Medidor()
         {
-             Conexion _MongoConexion = new Conexion();
-            var connectionString = "mongodb://localhost";
-            var client = new MongoClient(connectionString);
-            var server = client.GetServer();
-            var database = server.GetDatabase("GS_Report_one_DataBaseMongo");
-            var Documentoo = _MongoConexion.DataBase.GetCollection<MedidorDatos>("Medidor");
-            BindingList<MedidorDatos> doclist = new BindingList<MedidorDatos>();
-            DatosMedidor _Medidor = new DatosMedidor();
-            foreach (var deger in Documentoo.FindAll())
-            {
-                _Medidor.ObjectId_Medidor = deger.Id;
-                _Medidor.date_Loader = deger.date_Loader.Date;
-                _Medidor.Nis = deger.Nis.ToString();
-                _Medidor.Numero_Medidor = deger.Numero_Medidor.ToString();
-                _Medidor.Nombre_Medidor = deger.Nombre_Medidor.ToString();
-                _Medidor.Modo_Uso = deger.Modo_Uso.ToString();
-                _Medidor.Grupo = deger.Grupo.ToString();
-                _Medidor.Area = deger.Area.ToString();
-                _Medidor.Nombre_Propietario = deger.Nombre_Propietario.ToString();
-                _Medidor.Ubicacion = deger.Ubicacion.ToString();
-                _Medidor.KWH_Punto_dia = deger.KWH_Punto_dia;
-                _Medidor.Potencia_Punto_dia = deger.Potencia_Punto_dia;
-                _Medidor.Marca = deger.Marca.ToString();
-                _Medidor.Modelo = deger.Modelo.ToString();
-                _Medidor.Tipo = deger.Tipo.ToString();
-                _Medidor.clase = deger.clase;
-                _Medidor.Presicion = deger.Presicion;
-                _Medidor.Codigo_fabricante = deger.Codigo_fabricante.ToString();
-                _Medidor.TC_Primario = deger.TC_Primario;
-                _Medidor.TC_secundario = deger.TC_secundario;
-                _Medidor.TC_secundario = deger.TC_secundario;
-                _Medidor.Relacion_TC = deger.Relacion_TC;
-                _Medidor.TP_Primario = deger.TP_Primario;
-                _Medidor.TP_secundario = deger.TP_secundario;
-                _Medidor.Relacion_TP = deger.Relacion_TP;
-                _Medidor.Numero_Cerie = deger.Numero_Cerie.ToString();
-                _Medidor.Ia_punto = deger.Ia_punto;
-                _Medidor.Ib_punto = deger.Ib_punto;
-                _Medidor.Ic_punto = deger.Ic_punto;
-                _Medidor.Va_punto = deger.Va_punto;
-                _Medidor.Vb_punto = deger.Vb_punto;
-                _Medidor.Vc_punto = deger.Vc_punto;
-                _Medidor.Eternet = deger.Eternet.ToBoolean();
-                _Medidor.Eternet_Operativo = deger.Eternet_Operativo.ToBoolean();
-                _Medidor.Eternet_NumeroIp = deger.Eternet_NumeroIp.ToString();
-                _Medidor.Modem = deger.Modem.ToBoolean();
-                _Medidor.Modem_Operativo = deger.Modem_Operativo.ToBoolean();
-                _Medidor.Modem_Telefono = deger.Modem_Telefono.ToString();
-                _Medidor.RS232 = deger.RS232.ToBoolean();
-                _Medidor.RS232_Operativo = deger.RS232_Operativo.ToBoolean();
-                _Medidor.RS232_Id = deger.RS232_Id.ToString();
-                _Medidor.RS485 = deger.RS485.ToBoolean();
-                _Medidor.RS485_Operativo = deger.RS485_Operativo.ToBoolean();
-                _Medidor.RS485_Numero_Id = deger.RS485_Numero_Id.ToString();
-                _Medidor.PuertoOptico = deger.PuertoOptico.ToBoolean();
-                _Medidor.PuertoOptico_Operativo = deger.PuertoOptico_Operativo.ToBoolean();
-                _Medidor.infrarrojo = deger.infrarrojo.ToBoolean();
-                _Medidor.infrarrojo_Operativo = deger.infrarrojo_Operativo.ToBoolean();
-                _Medidor.RadioFrecuencia = deger.RadioFrecuencia.ToBoolean();
-                _Medidor.RadioFrecuencia_Operativo = deger.RadioFrecuencia_Operativo.ToBoolean();
+            //var Documento = MongoConexion.DataBase.GetCollection<Document>("Medidor");
+            //List<MedidorDatos> doclist = new List<MedidorDatos>();
+            //DatosMedidor _Medidor = new DatosMedidor();
 
-                doclist.Add(deger);
-            }
-            var bindingList = new BindingList<MedidorDatos>(doclist);
-            var source = new BindingSource(bindingList, null);
-            gridMedidor.DataSource = source;
+            // doclist = Documento.ToList();
+
+            var collection = MongoConexion.DataBase.GetCollection<MedidorDatos>("Medidor");
+            var result = collection.FindAll();
+            //var filter = Builders<MyModel>.Filter.Eq(x => x.SomeProperty == "SomeValue" && x.SomeOtherProperty == "SomeOtherValue");
+            //var results = collection.Find(filter).ToList();
+
+            List<MedidorDatos> parts = new List<MedidorDatos>();
+            parts = result.ToList();
+            gridMedidor.DataSource = parts;
+            gridMedidor.Refresh();
+            // gridMedidor.DataBindings();
+
+            //foreach (var deger in Documento.FindAll().ToList())
+            //{
+            //    _Medidor.ObjectId_Medidor = deger.Id;
+            //    _Medidor.date_Loader = deger.date_Loader.Date;
+            //    _Medidor.Nis = deger.Nis.ToString();
+            //    _Medidor.Numero_Medidor = deger.Numero_Medidor.ToString();
+            //    _Medidor.Nombre_Medidor = deger.Nombre_Medidor.ToString();
+            //    _Medidor.Modo_Uso = deger.Modo_Uso.ToString();
+            //    _Medidor.Grupo = deger.Grupo.ToString();
+            //    _Medidor.Area = deger.Area.ToString();
+            //    _Medidor.Nombre_Propietario = deger.Nombre_Propietario.ToString();
+            //    _Medidor.Ubicacion = deger.Ubicacion.ToString();
+            //    _Medidor.KWH_Punto_dia = deger.KWH_Punto_dia;
+            //    _Medidor.Potencia_Punto_dia = deger.Potencia_Punto_dia;
+            //    _Medidor.Marca = deger.Marca.ToString();
+            //    _Medidor.Modelo = deger.Modelo.ToString();
+            //    _Medidor.Tipo = deger.Tipo.ToString();
+            //    _Medidor.clase = deger.clase;
+            //    _Medidor.Presicion = deger.Presicion;
+            //    _Medidor.Codigo_fabricante = deger.Codigo_fabricante.ToString();
+            //    _Medidor.TC_Primario = deger.TC_Primario;
+            //    _Medidor.TC_secundario = deger.TC_secundario;
+            //    _Medidor.TC_secundario = deger.TC_secundario;
+            //    _Medidor.Relacion_TC = deger.Relacion_TC;
+            //    _Medidor.TP_Primario = deger.TP_Primario;
+            //    _Medidor.TP_secundario = deger.TP_secundario;
+            //    _Medidor.Relacion_TP = deger.Relacion_TP;
+            //    _Medidor.Numero_Cerie = deger.Numero_Cerie.ToString();
+            //    _Medidor.Ia_punto = deger.Ia_punto;
+            //    _Medidor.Ib_punto = deger.Ib_punto;
+            //    _Medidor.Ic_punto = deger.Ic_punto;
+            //    _Medidor.Va_punto = deger.Va_punto;
+            //    _Medidor.Vb_punto = deger.Vb_punto;
+            //    _Medidor.Vc_punto = deger.Vc_punto;
+            //    _Medidor.Eternet = deger.Eternet.ToBoolean();
+            //    _Medidor.Eternet_Operativo = deger.Eternet_Operativo.ToBoolean();
+            //    _Medidor.Eternet_NumeroIp = deger.Eternet_NumeroIp.ToString();
+            //    _Medidor.Modem = deger.Modem.ToBoolean();
+            //    _Medidor.Modem_Operativo = deger.Modem_Operativo.ToBoolean();
+            //    _Medidor.Modem_Telefono = deger.Modem_Telefono.ToString();
+            //    _Medidor.RS232 = deger.RS232.ToBoolean();
+            //    _Medidor.RS232_Operativo = deger.RS232_Operativo.ToBoolean();
+            //    _Medidor.RS232_Id = deger.RS232_Id.ToString();
+            //    _Medidor.RS485 = deger.RS485.ToBoolean();
+            //    _Medidor.RS485_Operativo = deger.RS485_Operativo.ToBoolean();
+            //    _Medidor.RS485_Numero_Id = deger.RS485_Numero_Id.ToString();
+            //    _Medidor.PuertoOptico = deger.PuertoOptico.ToBoolean();
+            //    _Medidor.PuertoOptico_Operativo = deger.PuertoOptico_Operativo.ToBoolean();
+            //    _Medidor.infrarrojo = deger.infrarrojo.ToBoolean();
+            //    _Medidor.infrarrojo_Operativo = deger.infrarrojo_Operativo.ToBoolean();
+            //    _Medidor.RadioFrecuencia = deger.RadioFrecuencia.ToBoolean();
+            //    _Medidor.RadioFrecuencia_Operativo = deger.RadioFrecuencia_Operativo.ToBoolean();
+
+            //    doclist.Add(deger);
+            //}
+
+            //var bindingList = new BindingList<MedidorDatos>(doclist);
+            //var source = new BindingSource(bindingList, null);
+            //gridMedidor.DataSource = source;
         }
 
         private void btnAgregarMedidor_Click(object sender, EventArgs e)
@@ -263,6 +291,7 @@ namespace SegundaVista.Vistas
                     Medi.txtNom_Propietario.Text = clienteNombre;
                     pnlAlertaRojo.Visible = false;
                     Medi.ShowDialog();
+                    var cdeldas = clienteSelect.Cells;
                 }
                 else
                 {

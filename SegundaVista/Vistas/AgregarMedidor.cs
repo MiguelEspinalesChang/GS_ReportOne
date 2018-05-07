@@ -93,7 +93,7 @@ namespace SegundaVista.Vistas
                 datosTxt.Ubicacion = (string.IsNullOrEmpty(txtUbicacionMedidor.Text)) ? "" : txtUbicacionMedidor.Text;
                 datosTxt.KWH_Punto_dia = (string.IsNullOrEmpty(txtKWH_punto_dia.Text)) ? 0 : Convert.ToSingle(txtKWH_punto_dia.Text);
                 datosTxt.Grupo = (string.IsNullOrEmpty(txtNumero_Grupo.Text)) ? "" : txtNumero_Grupo.Text;
-                datosTxt.Potencia_Punto_dia = (string.IsNullOrEmpty(txtPotencia_Punto_dia.Text)) ? 0 : Convert.ToSingle(txtArea.Text);
+                datosTxt.Potencia_Punto_dia = (string.IsNullOrEmpty(txtPotencia_Punto_dia.Text)) ? 0 : Convert.ToSingle(txtPotencia_Punto_dia.Text);
                 datosTxt.Marca = (string.IsNullOrEmpty(txtMarca.Text)) ? "" : txtMarca.Text;
                 datosTxt.Modelo = (string.IsNullOrEmpty(txtModelo.Text)) ? "" : txtModelo.Text;
                 datosTxt.Tipo = (string.IsNullOrEmpty(txtTipo.Text)) ? "" : txtTipo.Text;

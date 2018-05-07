@@ -218,3 +218,4 @@ C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.S
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.Usuario.resources
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.csproj.GenerateResource.Cache
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.EditarCliente.resources
+C:\Users\Chang-PC\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.EditarCliente.resources

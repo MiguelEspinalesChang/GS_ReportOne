@@ -14,6 +14,9 @@ namespace SegundaVista.Vistas
 {
     public partial class AgregarCliente : Form
     {
+        Cliente padre = new Cliente();
+        private bool seAgregoUno = false;
+
         public AgregarCliente()
         {
             InitializeComponent();
@@ -28,6 +31,10 @@ namespace SegundaVista.Vistas
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
+            if (seAgregoUno)
+                padre.RefrescarCocaCola();
+            
+
             this.Close();
         }
 
@@ -57,6 +64,8 @@ namespace SegundaVista.Vistas
             txt_m_RazonSocial.Text = "";
             txt_m_Ruc.Text = "";
             txt_m_NisCliente.Text = "";
+
+            seAgregoUno = true;
         }
 
         private void txt_m_Nombre_Click(object sender, EventArgs e)
