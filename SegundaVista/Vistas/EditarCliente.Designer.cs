@@ -61,6 +61,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
@@ -282,6 +283,7 @@
             // PnlFormCliente
             // 
             this.PnlFormCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PnlFormCliente.Controls.Add(this.lblId);
             this.PnlFormCliente.Controls.Add(this.txt_E_ResponsableMedidcion);
             this.PnlFormCliente.Controls.Add(this.txt_E_NisCliente);
             this.PnlFormCliente.Controls.Add(this.txt_E_DirigirReporte);
@@ -400,6 +402,15 @@
             this.label19.TabIndex = 80;
             this.label19.Text = "Nombre";
             // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(197, 10);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(0, 13);
+            this.lblId.TabIndex = 110;
+            this.lblId.Visible = false;
+            // 
             // EditarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -464,5 +475,6 @@
         public System.Windows.Forms.TextBox txt_E_RazonSocial;
         public System.Windows.Forms.TextBox txt_E_Apellido;
         public System.Windows.Forms.TextBox txt_E_IdCliente;
+        private System.Windows.Forms.Label lblId;
     }
 }

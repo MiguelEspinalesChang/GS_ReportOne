@@ -83,20 +83,25 @@ namespace SegundaVista.Vistas
         {
             Form abrir = new AgregarCliente();
             abrir.ShowDialog();
-            //RefrescarCocaCola();
+            RefrescarCocaCola();
         }
 
         public class Client
         {
+            [DisplayName("Nombre Empresa")]
             public string Nombre_Empresa { get; set; }
             public string NisCliente { get; set; }
             public string RazonSocial { get; set; }
             public string Ruc { get; set; }
             public string Nombre { get; set; }
             public string Apellido { get; set; }
+            [DisplayName("Responsable Medicion")]
             public string Responsable_Medicion { get; set; }
+            [DisplayName("DirigirReporte A")]
             public string DirigirReporte_A { get; set; }
+            [DisplayName("Id Cliente")]
             public ObjectId Id { get; set; }
+            [Browsable(false)]
             public DateTime date_Loader { get; set; }
 
         }
@@ -115,59 +120,85 @@ namespace SegundaVista.Vistas
             [DisplayName("Nombre Medido")]
             public string Nombre_Medidor { get; set; }
             public string Area { get; set; }
+            [DisplayName("Modo De Uso")]
             public string Modo_De_Uso { get; set; }
+            [DisplayName("Nombre Del Propietario")]
             public string Nombre_Del_Propietario { get; set; }
+            [DisplayName("Ubicacion Del Medidor")]
             public string Ubicacion_Del_Medidor { get; set; }
+            [DisplayName("KWH punto Dia")]
             public float KWH_punto_Dia { get; set; }
             public string Grupo { get; set; }
+            [DisplayName("Pototencia punto Dia")]
             public float Pototencia_punto_Dia { get; set; }
             public string Marca { get; set; }
             public string Modelo { get; set; }
             public string Tipo { get; set; }
             public int Clase { get; set; }
             public float Presicion { get; set; }
+            [DisplayName("Codigo Del Fabricante")]
             public string Codigo_Del_Fabricante { get; set; }
+            [DisplayName("TC Primario")]
             public float TC_Primario { get; set; }
+            [DisplayName("TC Secundario")]
             public float TC_Secundario { get; set; }
+            [DisplayName("TRelacion TC")]
             public float Relacion_TC { get; set; }
+            [DisplayName("Tp_Primari")]
             public float Tp_Primario { get; set; }
+            [DisplayName("Tp Secundario")]
             public float Tp_Secundario { get; set; }
+            [DisplayName("Relacion Tp")]
             public float Relacion_Tp { get; set; }
+            [DisplayName("Numero Serie")]
             public string Numero_Serie { get; set; }
+            [DisplayName("Ia punto")]
             public float Ia_punto { get; set; }
+            [DisplayName("Ib punto")]
             public float Ib_punto { get; set; }
+            [DisplayName("Ic punto")]
             public float Ic_punto { get; set; }
+            [DisplayName("Va punto")]
             public float Va_punto { get; set; }
+            [DisplayName("Vb punto")]
             public float Vb_punto { get; set; }
+            [DisplayName("Vc punto")]
             public float Vc_punto { get; set; }
             ///Datos de comunicacion
             public BsonBoolean Eternet { get; set; }
+            [DisplayName("Eternet Operativo")]
             public BsonBoolean Eternet_Operativo { get; set; }
+            [DisplayName("Eternet NumeroIp")]
             public string Eternet_NumeroIp { get; set; }
             public BsonBoolean Modem { get; set; }
+            [DisplayName("Modem Operativo")]
             public BsonBoolean Modem_Operativo { get; set; }
+            [DisplayName("Modem Telefono")]
             public string Modem_Telefono { get; set; }
             public BsonBoolean RS232 { get; set; }
+            [DisplayName("RS232 Operativo")]
             public BsonBoolean RS232_Operativo { get; set; }
+            [DisplayName("RS232 Id")]
             public string RS232_Id { get; set; }
             public BsonBoolean RS485 { get; set; }
+            [DisplayName("RS485 Operativo")]
             public BsonBoolean RS485_Operativo { get; set; }
             public string RS485_Id { get; set; }
             public BsonBoolean PuertoOptico { get; set; }
+            [DisplayName("PuertoOptico Operativo")]
             public BsonBoolean PuertoOptico_Operativo { get; set; }
             public BsonBoolean infrarrojo { get; set; }
+            [DisplayName("infrarrojo Operativo")]
             public BsonBoolean infrarrojo_Operativo { get; set; }
             public BsonBoolean RadioFrecuencia { get; set; }
+            [DisplayName("RadioFrecuencia Operativo")]
             public BsonBoolean RadioFrecuencia_Operativo { get; set; }
 
         }
 
         private void Usuarios()
         {
-            //var connectionString = "mongodb://localhost";
-            //var client = new MongoClient(connectionString);
-            //var server = client.GetServer();
-            //var database = server.GetDatabase("GS_Report_one_DataBaseMongo");
+           
             var Documento = MongoConexion.DataBase.GetCollection<Client>("Clientes");
 
             BindingList<Client> doclist = new BindingList<Client>();
@@ -197,82 +228,15 @@ namespace SegundaVista.Vistas
         }
         private void Medidor()
         {
-            //var Documento = MongoConexion.DataBase.GetCollection<Document>("Medidor");
-            //List<MedidorDatos> doclist = new List<MedidorDatos>();
-            //DatosMedidor _Medidor = new DatosMedidor();
-
-            // doclist = Documento.ToList();
-
+          
             var collection = MongoConexion.DataBase.GetCollection<MedidorDatos>("Medidor");
             var result = collection.FindAll();
-            //var filter = Builders<MyModel>.Filter.Eq(x => x.SomeProperty == "SomeValue" && x.SomeOtherProperty == "SomeOtherValue");
-            //var results = collection.Find(filter).ToList();
 
             List<MedidorDatos> parts = new List<MedidorDatos>();
             parts = result.ToList();
             gridMedidor.DataSource = parts;
             gridMedidor.Refresh();
-            // gridMedidor.DataBindings();
-
-            //foreach (var deger in Documento.FindAll().ToList())
-            //{
-            //    _Medidor.ObjectId_Medidor = deger.Id;
-            //    _Medidor.date_Loader = deger.date_Loader.Date;
-            //    _Medidor.Nis = deger.Nis.ToString();
-            //    _Medidor.Numero_Medidor = deger.Numero_Medidor.ToString();
-            //    _Medidor.Nombre_Medidor = deger.Nombre_Medidor.ToString();
-            //    _Medidor.Modo_Uso = deger.Modo_Uso.ToString();
-            //    _Medidor.Grupo = deger.Grupo.ToString();
-            //    _Medidor.Area = deger.Area.ToString();
-            //    _Medidor.Nombre_Propietario = deger.Nombre_Propietario.ToString();
-            //    _Medidor.Ubicacion = deger.Ubicacion.ToString();
-            //    _Medidor.KWH_Punto_dia = deger.KWH_Punto_dia;
-            //    _Medidor.Potencia_Punto_dia = deger.Potencia_Punto_dia;
-            //    _Medidor.Marca = deger.Marca.ToString();
-            //    _Medidor.Modelo = deger.Modelo.ToString();
-            //    _Medidor.Tipo = deger.Tipo.ToString();
-            //    _Medidor.clase = deger.clase;
-            //    _Medidor.Presicion = deger.Presicion;
-            //    _Medidor.Codigo_fabricante = deger.Codigo_fabricante.ToString();
-            //    _Medidor.TC_Primario = deger.TC_Primario;
-            //    _Medidor.TC_secundario = deger.TC_secundario;
-            //    _Medidor.TC_secundario = deger.TC_secundario;
-            //    _Medidor.Relacion_TC = deger.Relacion_TC;
-            //    _Medidor.TP_Primario = deger.TP_Primario;
-            //    _Medidor.TP_secundario = deger.TP_secundario;
-            //    _Medidor.Relacion_TP = deger.Relacion_TP;
-            //    _Medidor.Numero_Cerie = deger.Numero_Cerie.ToString();
-            //    _Medidor.Ia_punto = deger.Ia_punto;
-            //    _Medidor.Ib_punto = deger.Ib_punto;
-            //    _Medidor.Ic_punto = deger.Ic_punto;
-            //    _Medidor.Va_punto = deger.Va_punto;
-            //    _Medidor.Vb_punto = deger.Vb_punto;
-            //    _Medidor.Vc_punto = deger.Vc_punto;
-            //    _Medidor.Eternet = deger.Eternet.ToBoolean();
-            //    _Medidor.Eternet_Operativo = deger.Eternet_Operativo.ToBoolean();
-            //    _Medidor.Eternet_NumeroIp = deger.Eternet_NumeroIp.ToString();
-            //    _Medidor.Modem = deger.Modem.ToBoolean();
-            //    _Medidor.Modem_Operativo = deger.Modem_Operativo.ToBoolean();
-            //    _Medidor.Modem_Telefono = deger.Modem_Telefono.ToString();
-            //    _Medidor.RS232 = deger.RS232.ToBoolean();
-            //    _Medidor.RS232_Operativo = deger.RS232_Operativo.ToBoolean();
-            //    _Medidor.RS232_Id = deger.RS232_Id.ToString();
-            //    _Medidor.RS485 = deger.RS485.ToBoolean();
-            //    _Medidor.RS485_Operativo = deger.RS485_Operativo.ToBoolean();
-            //    _Medidor.RS485_Numero_Id = deger.RS485_Numero_Id.ToString();
-            //    _Medidor.PuertoOptico = deger.PuertoOptico.ToBoolean();
-            //    _Medidor.PuertoOptico_Operativo = deger.PuertoOptico_Operativo.ToBoolean();
-            //    _Medidor.infrarrojo = deger.infrarrojo.ToBoolean();
-            //    _Medidor.infrarrojo_Operativo = deger.infrarrojo_Operativo.ToBoolean();
-            //    _Medidor.RadioFrecuencia = deger.RadioFrecuencia.ToBoolean();
-            //    _Medidor.RadioFrecuencia_Operativo = deger.RadioFrecuencia_Operativo.ToBoolean();
-
-            //    doclist.Add(deger);
-            //}
-
-            //var bindingList = new BindingList<MedidorDatos>(doclist);
-            //var source = new BindingSource(bindingList, null);
-            //gridMedidor.DataSource = source;
+         
         }
 
         private void btnAgregarMedidor_Click(object sender, EventArgs e)
@@ -307,8 +271,6 @@ namespace SegundaVista.Vistas
                 pnlAlertaRojo.Visible = true;
                 lblRojo.Text = "Error : " + ex;
             }
-
-
 
         }
 

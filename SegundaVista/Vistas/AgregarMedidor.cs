@@ -82,7 +82,6 @@ namespace SegundaVista.Vistas
             try
             {
 
-                //Campos Obligatorios
 
 
                 //Ternarios Para Validar Y rellenar los datos del Medidor
@@ -99,7 +98,7 @@ namespace SegundaVista.Vistas
                 datosTxt.Tipo = (string.IsNullOrEmpty(txtTipo.Text)) ? "" : txtTipo.Text;
                 datosTxt.Presicion = (string.IsNullOrEmpty(txtPresicion.Text)) ? 0 : Convert.ToSingle(txtPresicion.Text);
                 datosTxt.Codigo_fabricante = (string.IsNullOrEmpty(txtCodigo_Fabricante.Text)) ? "" : txtCodigo_Fabricante.Text;
-                datosTxt.TC_Primario = (string.IsNullOrEmpty(txtTc_primaria.Text)) ? 0 : Convert.ToSingle(txtTipo.Text);
+                datosTxt.TC_Primario = (string.IsNullOrEmpty(txtTc_primaria.Text)) ? 0 : Convert.ToSingle(txtTc_primaria.Text);
                 datosTxt.TC_secundario = (string.IsNullOrEmpty(txtTc_secundaria.Text)) ? 0 : Convert.ToSingle(txtTc_secundaria.Text);
                 datosTxt.TP_Primario = (string.IsNullOrEmpty(txtTP_primaria.Text)) ? 0 : Convert.ToSingle(txtTP_primaria.Text);
                 datosTxt.TP_secundario = (string.IsNullOrEmpty(txtTP_secundario.Text)) ? 0 : Convert.ToSingle(txtTP_secundario.Text);
@@ -118,7 +117,7 @@ namespace SegundaVista.Vistas
                 //Eternet
 
                 datosTxt.Eternet = check_Eternet.Checked;
-                datosTxt.Eternet_NumeroIp = (string.IsNullOrEmpty(txtNumeroIp_Eternet.Text)) ? "" : txtNumero_Serie.Text;
+                datosTxt.Eternet_NumeroIp = (string.IsNullOrEmpty(txtNumeroIp_Eternet.Text)) ? "" : txtNumeroIp_Eternet.Text;
                 datosTxt.Eternet_Operativo = (radio_Eternet_si.Checked) ? true : false;
 
                 //Modem
@@ -173,7 +172,7 @@ namespace SegundaVista.Vistas
             catch (Exception ex)
             {
                 pnlAlertaRojo.Visible = true;
-                lblRojo.Text = "Error Al Guardar Los Datos Del Medidor";
+                lblRojo.Text = "Error Al Guardar Los Datos Del Medidor" +ex;
 
             }
 

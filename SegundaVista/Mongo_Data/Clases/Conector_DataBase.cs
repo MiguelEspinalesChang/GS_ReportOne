@@ -33,7 +33,8 @@ namespace SegundaVista.Mongo_Data.Clases
                 {"DirigirReporte_A",DirigirReporte_A},
                 {"RazonSocial",RazonSocial},
                 {"Ruc",Ruc},
-                {"NisCliente",NisCliente}
+                {"NisCliente",NisCliente},
+               
             };
             var collection_ = dataLocal.GetCollection<BsonDocument>("Clientes");
             collection_.InsertOneAsync(documento);
