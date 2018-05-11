@@ -41,7 +41,7 @@
             this.lbl_verde = new System.Windows.Forms.Label();
             this.btnCerrarAlertaV = new System.Windows.Forms.PictureBox();
             this.lblverde = new System.Windows.Forms.Label();
-            this.btnGuardarMedidor = new System.Windows.Forms.Button();
+            this.btnGuardarClienteEditado = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -61,7 +61,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.lblId = new System.Windows.Forms.Label();
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
@@ -113,7 +112,7 @@
             // 
             this.pnlBtnClientes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlBtnClientes.Controls.Add(this.pnlAlerta);
-            this.pnlBtnClientes.Controls.Add(this.btnGuardarMedidor);
+            this.pnlBtnClientes.Controls.Add(this.btnGuardarClienteEditado);
             this.pnlBtnClientes.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBtnClientes.Location = new System.Drawing.Point(0, 38);
             this.pnlBtnClientes.Name = "pnlBtnClientes";
@@ -167,6 +166,7 @@
             this.btnCerrarAlertaR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCerrarAlertaR.TabIndex = 2;
             this.btnCerrarAlertaR.TabStop = false;
+            this.btnCerrarAlertaR.Click += new System.EventHandler(this.btnCerrarAlertaR_Click);
             // 
             // lblRojo
             // 
@@ -195,6 +195,7 @@
             this.btnCerrarAlertaV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCerrarAlertaV.TabIndex = 1;
             this.btnCerrarAlertaV.TabStop = false;
+            this.btnCerrarAlertaV.Click += new System.EventHandler(this.btnCerrarAlertaV_Click);
             // 
             // lblverde
             // 
@@ -204,21 +205,21 @@
             this.lblverde.Size = new System.Drawing.Size(0, 13);
             this.lblverde.TabIndex = 0;
             // 
-            // btnGuardarMedidor
+            // btnGuardarClienteEditado
             // 
-            this.btnGuardarMedidor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.btnGuardarMedidor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarMedidor.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarMedidor.ForeColor = System.Drawing.Color.Black;
-            this.btnGuardarMedidor.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardarMedidor.Image")));
-            this.btnGuardarMedidor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardarMedidor.Location = new System.Drawing.Point(12, 6);
-            this.btnGuardarMedidor.Name = "btnGuardarMedidor";
-            this.btnGuardarMedidor.Size = new System.Drawing.Size(169, 41);
-            this.btnGuardarMedidor.TabIndex = 22;
-            this.btnGuardarMedidor.Text = "Guardar";
-            this.btnGuardarMedidor.UseVisualStyleBackColor = true;
-            this.btnGuardarMedidor.Click += new System.EventHandler(this.btnGuardarMedidor_Click);
+            this.btnGuardarClienteEditado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            this.btnGuardarClienteEditado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarClienteEditado.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarClienteEditado.ForeColor = System.Drawing.Color.Black;
+            this.btnGuardarClienteEditado.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardarClienteEditado.Image")));
+            this.btnGuardarClienteEditado.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardarClienteEditado.Location = new System.Drawing.Point(12, 6);
+            this.btnGuardarClienteEditado.Name = "btnGuardarClienteEditado";
+            this.btnGuardarClienteEditado.Size = new System.Drawing.Size(169, 41);
+            this.btnGuardarClienteEditado.TabIndex = 22;
+            this.btnGuardarClienteEditado.Text = "Guardar";
+            this.btnGuardarClienteEditado.UseVisualStyleBackColor = true;
+            this.btnGuardarClienteEditado.Click += new System.EventHandler(this.btnGuardarMedidor_Click);
             // 
             // label8
             // 
@@ -283,7 +284,6 @@
             // PnlFormCliente
             // 
             this.PnlFormCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PnlFormCliente.Controls.Add(this.lblId);
             this.PnlFormCliente.Controls.Add(this.txt_E_ResponsableMedidcion);
             this.PnlFormCliente.Controls.Add(this.txt_E_NisCliente);
             this.PnlFormCliente.Controls.Add(this.txt_E_DirigirReporte);
@@ -307,6 +307,7 @@
             this.PnlFormCliente.Name = "PnlFormCliente";
             this.PnlFormCliente.Size = new System.Drawing.Size(464, 297);
             this.PnlFormCliente.TabIndex = 10;
+            this.PnlFormCliente.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlFormCliente_Paint);
             // 
             // txt_E_ResponsableMedidcion
             // 
@@ -402,15 +403,6 @@
             this.label19.TabIndex = 80;
             this.label19.Text = "Nombre";
             // 
-            // lblId
-            // 
-            this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(197, 10);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(0, 13);
-            this.lblId.TabIndex = 110;
-            this.lblId.Visible = false;
-            // 
             // EditarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -455,7 +447,7 @@
         private System.Windows.Forms.Label lbl_verde;
         private System.Windows.Forms.PictureBox btnCerrarAlertaV;
         private System.Windows.Forms.Label lblverde;
-        private System.Windows.Forms.Button btnGuardarMedidor;
+        private System.Windows.Forms.Button btnGuardarClienteEditado;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -475,6 +467,5 @@
         public System.Windows.Forms.TextBox txt_E_RazonSocial;
         public System.Windows.Forms.TextBox txt_E_Apellido;
         public System.Windows.Forms.TextBox txt_E_IdCliente;
-        private System.Windows.Forms.Label lblId;
     }
 }

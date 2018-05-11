@@ -130,6 +130,7 @@
             this.ntnEliminar.TabIndex = 17;
             this.ntnEliminar.Text = "Eliminar";
             this.ntnEliminar.UseVisualStyleBackColor = true;
+            this.ntnEliminar.Click += new System.EventHandler(this.ntnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -319,7 +320,7 @@
             // lblverde
             // 
             this.lblverde.AutoSize = true;
-            this.lblverde.Location = new System.Drawing.Point(312, 7);
+            this.lblverde.Location = new System.Drawing.Point(45, 3);
             this.lblverde.Name = "lblverde";
             this.lblverde.Size = new System.Drawing.Size(0, 13);
             this.lblverde.TabIndex = 0;

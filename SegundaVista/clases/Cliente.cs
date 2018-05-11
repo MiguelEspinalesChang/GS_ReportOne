@@ -10,6 +10,7 @@ namespace SegundaVista.clases
     class Clientee
     {
         public ObjectId ObjectId_Cliente { get; set; }
+        public string id_cliente { get; set; }
         public string Nombre { get; set; }
         public DateTime date_Loader { get; set; }
         public string Apellido { get; set; }

@@ -99,8 +99,10 @@ namespace SegundaVista.Vistas
             public string Responsable_Medicion { get; set; }
             [DisplayName("DirigirReporte A")]
             public string DirigirReporte_A { get; set; }
-            [DisplayName("Id Cliente")]
+            [Browsable(false)]
             public ObjectId Id { get; set; }
+            [DisplayName("Id Cliente")]
+            public string id_cliente { get; set; }
             [Browsable(false)]
             public DateTime date_Loader { get; set; }
 
@@ -198,7 +200,7 @@ namespace SegundaVista.Vistas
 
         private void Usuarios()
         {
-           
+
             var Documento = MongoConexion.DataBase.GetCollection<Client>("Clientes");
 
             BindingList<Client> doclist = new BindingList<Client>();
@@ -228,7 +230,7 @@ namespace SegundaVista.Vistas
         }
         private void Medidor()
         {
-          
+
             var collection = MongoConexion.DataBase.GetCollection<MedidorDatos>("Medidor");
             var result = collection.FindAll();
 
@@ -236,7 +238,7 @@ namespace SegundaVista.Vistas
             parts = result.ToList();
             gridMedidor.DataSource = parts;
             gridMedidor.Refresh();
-         
+
         }
 
         private void btnAgregarMedidor_Click(object sender, EventArgs e)
@@ -296,10 +298,11 @@ namespace SegundaVista.Vistas
                 string clienteApellido = Convert.ToString(celdas["Apellido"].Value);
                 string Res_Medidor = Convert.ToString(celdas["Responsable_Medicion"].Value);
                 string DirigirReporte = Convert.ToString(celdas["DirigirReporte_A"].Value);
-                string IdCliente = Convert.ToString(celdas["Id"].Value);
+                //string IdCliente = Convert.ToString(celdas["Id"].Value);
+                string idPropia = Convert.ToString(celdas["id_cliente"].Value);
 
                 EditarCliente cliente_Edit = new EditarCliente();
-                cliente_Edit.txt_E_IdCliente.Text = IdCliente;
+                cliente_Edit.txt_E_IdCliente.Text = idPropia;
                 cliente_Edit.txt_E_Nombre.Text = clienteNombre;
                 cliente_Edit.txt_E_RazonSocial.Text = RazonSocial;
                 cliente_Edit.txt_E_Apellido.Text = clienteApellido;
@@ -308,8 +311,36 @@ namespace SegundaVista.Vistas
                 cliente_Edit.txt_E_NisCliente.Text = NisCliente;
                 cliente_Edit.txt_E_ResponsableMedidcion.Text = Res_Medidor;
                 cliente_Edit.txt_E_DirigirReporte.Text = DirigirReporte;
+                // cliente_Edit.lblId.Text = idPropia;
                 pnlAlertaRojo.Visible = false;
                 cliente_Edit.ShowDialog();
+                RefrescarCocaCola();
+            }
+            else
+            {
+                pnlAlertaRojo.Visible = true;
+                lblRojo.Text = "Seleccione Una Celda";
+
+            }
+        }
+
+        private void ntnEliminar_Click(object sender, EventArgs e)
+        {
+            var contador = gridClientes.SelectedRows.Count;
+            if (contador > 0)
+            {
+                var Documento = MongoConexion.DataBase.GetCollection<Client>("Clientes");
+                var clienteSelect = gridClientes.SelectedRows[0];
+                var celdas = clienteSelect.Cells;
+                string idPropia = Convert.ToString(celdas["id_cliente"].Value);
+
+                var consulta = Query.EQ("id_cliente", idPropia);
+                Documento.Remove(consulta);
+
+                RefrescarCocaCola();
+                pnlAlertaVerde.Visible = true;
+                lblverde.Text = "Cliente Eliminado";
+                
             }
             else
             {

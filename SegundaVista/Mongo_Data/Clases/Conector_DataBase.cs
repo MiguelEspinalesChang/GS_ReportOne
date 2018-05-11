@@ -21,10 +21,10 @@ namespace SegundaVista.Mongo_Data.Clases
         // funcion para agregar Usuarios
         public void insertar_Cliete(string Nombre, string Apellido, string Nombre_Empresa, string Responsable_Medicion, string DirigirReporte_A, string RazonSocial, string Ruc, string NisCliente)
         {
-            //string id = ObjectId.GenerateNewId().ToString();
+            string id = ObjectId.GenerateNewId().ToString();
             var documento = new BsonDocument
             {
-                /*{"_id",id},*/
+                {"id_cliente",id},
                 {"date_Loader",DateTime.Now},
                 {"Nombre",Nombre},
                 {"Apellido",Apellido},
