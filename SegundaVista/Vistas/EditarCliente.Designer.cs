@@ -61,6 +61,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.lblNombreCliente = new System.Windows.Forms.Label();
+            this.lblNisCliente = new System.Windows.Forms.Label();
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
@@ -284,6 +286,8 @@
             // PnlFormCliente
             // 
             this.PnlFormCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PnlFormCliente.Controls.Add(this.lblNisCliente);
+            this.PnlFormCliente.Controls.Add(this.lblNombreCliente);
             this.PnlFormCliente.Controls.Add(this.txt_E_ResponsableMedidcion);
             this.PnlFormCliente.Controls.Add(this.txt_E_NisCliente);
             this.PnlFormCliente.Controls.Add(this.txt_E_DirigirReporte);
@@ -403,6 +407,24 @@
             this.label19.TabIndex = 80;
             this.label19.Text = "Nombre";
             // 
+            // lblNombreCliente
+            // 
+            this.lblNombreCliente.AutoSize = true;
+            this.lblNombreCliente.Location = new System.Drawing.Point(205, 10);
+            this.lblNombreCliente.Name = "lblNombreCliente";
+            this.lblNombreCliente.Size = new System.Drawing.Size(0, 13);
+            this.lblNombreCliente.TabIndex = 110;
+            this.lblNombreCliente.Visible = false;
+            // 
+            // lblNisCliente
+            // 
+            this.lblNisCliente.AutoSize = true;
+            this.lblNisCliente.Location = new System.Drawing.Point(208, 27);
+            this.lblNisCliente.Name = "lblNisCliente";
+            this.lblNisCliente.Size = new System.Drawing.Size(0, 13);
+            this.lblNisCliente.TabIndex = 111;
+            this.lblNisCliente.Visible = false;
+            // 
             // EditarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -467,5 +489,7 @@
         public System.Windows.Forms.TextBox txt_E_RazonSocial;
         public System.Windows.Forms.TextBox txt_E_Apellido;
         public System.Windows.Forms.TextBox txt_E_IdCliente;
+        private System.Windows.Forms.Label lblNisCliente;
+        private System.Windows.Forms.Label lblNombreCliente;
     }
 }

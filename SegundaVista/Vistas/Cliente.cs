@@ -349,5 +349,22 @@ namespace SegundaVista.Vistas
 
             }
         }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+
+            //if ( MetroFramework.MetroMessageBox.Show(this,"Yes/No","Mensaje",MessageBoxButtons.YesNo,MessageBoxIcon.Question)== DialogResult.Yes)
+            //{
+            //    pnlAlertaRojo.Visible = true;
+            //    lblRojo.Text = "si";
+            //}
+            DialogResult dialogResult = MessageBox.Show("Desea Eliminar El Cliente", "Alerta", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.Yes)
+            {
+                pnlAlertaRojo.Visible = true;
+                  lblRojo.Text = "si";
+            }
+          
+        }
     }
 }

@@ -50,6 +50,7 @@
             this.pnlAlertaVerde = new System.Windows.Forms.Panel();
             this.btnCerrarAlertaV = new System.Windows.Forms.PictureBox();
             this.lblverde = new System.Windows.Forms.Label();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.pnlMenuHijo.SuspendLayout();
             this.pnlBtn.SuspendLayout();
             this.pnlContenedorHijo.SuspendLayout();
@@ -250,6 +251,7 @@
             // 
             // pnlAlerta
             // 
+            this.pnlAlerta.Controls.Add(this.metroButton1);
             this.pnlAlerta.Controls.Add(this.pnlAlertaRojo);
             this.pnlAlerta.Controls.Add(this.pnlAlertaVerde);
             this.pnlAlerta.Dock = System.Windows.Forms.DockStyle.Top;
@@ -325,6 +327,16 @@
             this.lblverde.Size = new System.Drawing.Size(0, 13);
             this.lblverde.TabIndex = 0;
             // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(11, 13);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(75, 23);
+            this.metroButton1.TabIndex = 2;
+            this.metroButton1.Text = "mensaje";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
             // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -379,5 +391,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel pnlListaMedidor;
         private System.Windows.Forms.DataGridView gridMedidor;
+        private MetroFramework.Controls.MetroButton metroButton1;
     }
 }

@@ -29,10 +29,10 @@ namespace SegundaVista.Vistas
             pnlAlertaVerde.Visible = false;
             pnlAlertaRojo.Visible = false;
 
-            string nameAnterior = txt_E_Nombre.Text;
-            string nisAnterior = txt_E_NisCliente.Text;
+            lblNombreCliente.Text = txt_E_Nombre.Text;
+            lblNisCliente.Text = txt_E_NisCliente.Text;
 
-          
+
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -85,18 +85,20 @@ namespace SegundaVista.Vistas
 
                 Cliente.Save(entity);
 
+                if (lblNombreCliente.Text != cliente_Editado.Nombre )
 
                 pnlAlertaVerde.Visible = true;
                 lbl_verde.Text = "Cliente Editado";
+
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 pnlAlertaRojo.Visible = true;
-                lblRojo.Text = "Erro Al Editar Cliente : "+ ex;
+                lblRojo.Text = "Erro Al Editar Cliente : " + ex;
             }
 
-           
-           
+
+
 
         }
 
