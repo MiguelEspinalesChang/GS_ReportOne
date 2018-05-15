@@ -12,7 +12,7 @@ using SegundaVista.Vistas;
 
 namespace SegundaVista
 {
-    public partial class Principal : Form
+    public partial class Principal : MetroFramework.Forms.MetroForm
     {
         public Principal()
         {

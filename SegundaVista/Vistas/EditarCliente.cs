@@ -54,6 +54,60 @@ namespace SegundaVista.Vistas
             public string NisCliente { get; set; }
         }
 
+        public class MedidorDatos
+        {
+            public string Numero_Medidor { get; set; }
+            //System.ComponentModel.
+            public ObjectId _id { get; set; }
+            public DateTime date_Loader { get; set; }
+            public string NisCliente { get; set; }
+            public string Nombre_Medidor { get; set; }
+            public string Area { get; set; }
+            public string Modo_De_Uso { get; set; }
+            public string Nombre_Del_Propietario { get; set; }
+            public string Ubicacion_Del_Medidor { get; set; }
+            public float KWH_punto_Dia { get; set; }
+            public string Grupo { get; set; }
+            public float Pototencia_punto_Dia { get; set; }
+            public string Marca { get; set; }
+            public string Modelo { get; set; }
+            public string Tipo { get; set; }
+            public int Clase { get; set; }
+            public float Presicion { get; set; }
+            public string Codigo_Del_Fabricante { get; set; }
+            public float TC_Primario { get; set; }
+            public float TC_Secundario { get; set; }
+            public float Relacion_TC { get; set; }
+            public float Tp_Primario { get; set; }
+            public float Tp_Secundario { get; set; }
+            public float Relacion_Tp { get; set; }
+            public string Numero_Serie { get; set; }
+            public float Ia_punto { get; set; }
+            public float Ib_punto { get; set; }
+            public float Ic_punto { get; set; }
+            public float Va_punto { get; set; }
+            public float Vb_punto { get; set; }
+            public float Vc_punto { get; set; }
+            ///Datos de comunicacion
+            public BsonBoolean Eternet { get; set; }
+            public BsonBoolean Eternet_Operativo { get; set; }
+            public string Eternet_NumeroIp { get; set; }
+            public BsonBoolean Modem { get; set; }
+            public BsonBoolean Modem_Operativo { get; set; }
+            public string Modem_Telefono { get; set; }
+            public BsonBoolean RS232 { get; set; }
+            public BsonBoolean RS232_Operativo { get; set; }
+            public string RS232_Id { get; set; }
+            public BsonBoolean RS485 { get; set; }
+            public BsonBoolean RS485_Operativo { get; set; }
+            public string RS485_Id { get; set; }
+            public BsonBoolean PuertoOptico { get; set; }
+            public BsonBoolean PuertoOptico_Operativo { get; set; }
+            public BsonBoolean infrarrojo { get; set; }
+            public BsonBoolean infrarrojo_Operativo { get; set; }
+            public BsonBoolean RadioFrecuencia { get; set; }
+            public BsonBoolean RadioFrecuencia_Operativo { get; set; }
+        }
 
         private void btnGuardarMedidor_Click(object sender, EventArgs e)
         {
@@ -82,10 +136,16 @@ namespace SegundaVista.Vistas
                 entity.RazonSocial = cliente_Editado.RazonSocial;
                 entity.Ruc = cliente_Editado.Ruc;
                 entity.NisCliente = cliente_Editado.NisCliente;
-
                 Cliente.Save(entity);
-
-                if (lblNombreCliente.Text != cliente_Editado.Nombre )
+                if (lblNombreCliente.Text != cliente_Editado.Nombre || lblNisCliente.Text != cliente_Editado.NisCliente)
+                {
+                    var Medidor = MongoConexion.DataBase.GetCollection<MedidorDatos>("Medidor");
+                    var consulta = Query.EQ("NisCliente", lblNisCliente.Text);
+                    var entidad = Medidor.FindOne(consulta);
+                    entidad.Nombre_Del_Propietario = cliente_Editado.Nombre;
+                    entidad.NisCliente = cliente_Editado.NisCliente;
+                    Medidor.Save(entidad);
+                }
 
                 pnlAlertaVerde.Visible = true;
                 lbl_verde.Text = "Cliente Editado";

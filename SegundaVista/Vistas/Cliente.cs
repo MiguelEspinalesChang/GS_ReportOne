@@ -326,6 +326,12 @@ namespace SegundaVista.Vistas
 
         private void ntnEliminar_Click(object sender, EventArgs e)
         {
+            //if ( MetroFramework.MetroMessageBox.Show(this,"Yes/No","Mensaje",MessageBoxButtons.YesNo,MessageBoxIcon.Warning)== DialogResult.Yes)
+            //{
+            //    pnlAlertaRojo.Visible = true;
+            //    lblRojo.Text = "si";
+            //}
+           
             var contador = gridClientes.SelectedRows.Count;
             if (contador > 0)
             {
@@ -334,12 +340,19 @@ namespace SegundaVista.Vistas
                 var celdas = clienteSelect.Cells;
                 string idPropia = Convert.ToString(celdas["id_cliente"].Value);
 
-                var consulta = Query.EQ("id_cliente", idPropia);
-                Documento.Remove(consulta);
+               
 
-                RefrescarCocaCola();
-                pnlAlertaVerde.Visible = true;
-                lblverde.Text = "Cliente Eliminado";
+                DialogResult dialogResult = MessageBox.Show("Desea Eliminar El Cliente", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    var consulta = Query.EQ("id_cliente", idPropia);
+                    Documento.Remove(consulta);
+
+                    RefrescarCocaCola();
+                    pnlAlertaVerde.Visible = true;
+                    lblverde.Text = "Cliente Eliminado";
+                }
+               
                 
             }
             else
@@ -350,21 +363,9 @@ namespace SegundaVista.Vistas
             }
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void pnlContenedorHijo_Paint_2(object sender, PaintEventArgs e)
         {
 
-            //if ( MetroFramework.MetroMessageBox.Show(this,"Yes/No","Mensaje",MessageBoxButtons.YesNo,MessageBoxIcon.Question)== DialogResult.Yes)
-            //{
-            //    pnlAlertaRojo.Visible = true;
-            //    lblRojo.Text = "si";
-            //}
-            DialogResult dialogResult = MessageBox.Show("Desea Eliminar El Cliente", "Alerta", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
-            if (dialogResult == DialogResult.Yes)
-            {
-                pnlAlertaRojo.Visible = true;
-                  lblRojo.Text = "si";
-            }
-          
         }
     }
 }

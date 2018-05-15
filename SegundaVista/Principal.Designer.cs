@@ -71,6 +71,7 @@
             this.PnlMenuVertical.Controls.Add(this.lblVersionAplicacion);
             this.PnlMenuVertical.Controls.Add(this.panel5);
             this.PnlMenuVertical.Controls.Add(this.button2);
+            this.PnlMenuVertical.Controls.Add(this.pictureBox1);
             this.PnlMenuVertical.Controls.Add(this.panel4);
             this.PnlMenuVertical.Controls.Add(this.button1);
             this.PnlMenuVertical.Controls.Add(this.panel10);
@@ -85,8 +86,6 @@
             this.PnlMenuVertical.Controls.Add(this.btnMedidor);
             this.PnlMenuVertical.Controls.Add(this.panel1);
             this.PnlMenuVertical.Controls.Add(this.btnUsuario);
-            this.PnlMenuVertical.Controls.Add(this.pictureBox1);
-            this.PnlMenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlMenuVertical.Location = new System.Drawing.Point(0, 38);
             this.PnlMenuVertical.Name = "PnlMenuVertical";
             this.PnlMenuVertical.Size = new System.Drawing.Size(220, 562);
@@ -306,7 +305,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(221, 107);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -319,7 +318,7 @@
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1159, -1);
+            this.btnCerrar.Location = new System.Drawing.Point(1160, -1);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(36, 38);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -332,7 +331,7 @@
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
-            this.btnMinimizar.Location = new System.Drawing.Point(1075, -1);
+            this.btnMinimizar.Location = new System.Drawing.Point(1076, -1);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(36, 38);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -345,7 +344,7 @@
             this.btnMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(1117, -1);
+            this.btnMaximizar.Location = new System.Drawing.Point(1118, -1);
             this.btnMaximizar.Name = "btnMaximizar";
             this.btnMaximizar.Size = new System.Drawing.Size(36, 38);
             this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -358,7 +357,7 @@
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(1117, -1);
+            this.btnRestaurar.Location = new System.Drawing.Point(1118, -1);
             this.btnRestaurar.Name = "btnRestaurar";
             this.btnRestaurar.Size = new System.Drawing.Size(36, 38);
             this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -386,10 +385,9 @@
             this.PnlBarraTitulo.Controls.Add(this.btnMaximizar);
             this.PnlBarraTitulo.Controls.Add(this.btnMinimizar);
             this.PnlBarraTitulo.Controls.Add(this.btnCerrar);
-            this.PnlBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlBarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.PnlBarraTitulo.Name = "PnlBarraTitulo";
-            this.PnlBarraTitulo.Size = new System.Drawing.Size(1200, 38);
+            this.PnlBarraTitulo.Size = new System.Drawing.Size(1201, 38);
             this.PnlBarraTitulo.TabIndex = 0;
             this.PnlBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlBarraTitulo_MouseDown);
             // 
@@ -397,10 +395,9 @@
             // 
             this.PnlContenedor.BackColor = System.Drawing.Color.White;
             this.PnlContenedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlContenedor.Location = new System.Drawing.Point(220, 38);
             this.PnlContenedor.Name = "PnlContenedor";
-            this.PnlContenedor.Size = new System.Drawing.Size(980, 562);
+            this.PnlContenedor.Size = new System.Drawing.Size(981, 562);
             this.PnlContenedor.TabIndex = 4;
             // 
             // Principal
@@ -411,10 +408,8 @@
             this.Controls.Add(this.PnlContenedor);
             this.Controls.Add(this.PnlMenuVertical);
             this.Controls.Add(this.PnlBarraTitulo);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Principal";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
             this.Load += new System.EventHandler(this.Principal_Load);
             this.PnlMenuVertical.ResumeLayout(false);

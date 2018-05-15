@@ -52,7 +52,6 @@
             this.label39 = new System.Windows.Forms.Label();
             this.txtPresicion = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.txtClase = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
             this.txtTipo = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
@@ -94,6 +93,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupComunicacion = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.gro_B_RadioFrecuencia = new System.Windows.Forms.GroupBox();
             this.radio_RadiFrecuencia_no = new System.Windows.Forms.RadioButton();
             this.radio_RadiFrecuencia_si = new System.Windows.Forms.RadioButton();
@@ -148,9 +148,9 @@
             this.txtNombreMedidor = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.epError = new System.Windows.Forms.ErrorProvider(this.components);
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.epNombreMedidor = new System.Windows.Forms.ErrorProvider(this.components);
             this.epClase = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txtClase = new MetroFramework.Controls.MetroComboBox();
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
@@ -327,6 +327,7 @@
             // 
             this.PnlFormMedidor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.PnlFormMedidor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PnlFormMedidor.Controls.Add(this.txtClase);
             this.PnlFormMedidor.Controls.Add(this.label41);
             this.PnlFormMedidor.Controls.Add(this.txtArea);
             this.PnlFormMedidor.Controls.Add(this.txtNumero_Serie);
@@ -335,7 +336,6 @@
             this.PnlFormMedidor.Controls.Add(this.label39);
             this.PnlFormMedidor.Controls.Add(this.txtPresicion);
             this.PnlFormMedidor.Controls.Add(this.label38);
-            this.PnlFormMedidor.Controls.Add(this.txtClase);
             this.PnlFormMedidor.Controls.Add(this.label37);
             this.PnlFormMedidor.Controls.Add(this.txtTipo);
             this.PnlFormMedidor.Controls.Add(this.label36);
@@ -467,15 +467,6 @@
             this.label38.TabIndex = 136;
             this.label38.Text = "Presicion";
             // 
-            // txtClase
-            // 
-            this.txtClase.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtClase.Location = new System.Drawing.Point(368, 135);
-            this.txtClase.Name = "txtClase";
-            this.txtClase.Size = new System.Drawing.Size(100, 26);
-            this.txtClase.TabIndex = 135;
-            this.txtClase.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtClase_KeyPress);
-            // 
             // label37
             // 
             this.label37.AutoSize = true;
@@ -521,9 +512,9 @@
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(253, 2);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(147, 22);
+            this.label9.Size = new System.Drawing.Size(202, 22);
             this.label9.TabIndex = 130;
-            this.label9.Text = "N° Del Medidor";
+            this.label9.Text = "N° Del Medidor(IP-ID)";
             // 
             // txtNumero_Grupo
             // 
@@ -566,7 +557,7 @@
             // txtTP_primaria
             // 
             this.txtTP_primaria.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtTP_primaria.Location = new System.Drawing.Point(374, 183);
+            this.txtTP_primaria.Location = new System.Drawing.Point(369, 182);
             this.txtTP_primaria.Name = "txtTP_primaria";
             this.txtTP_primaria.Size = new System.Drawing.Size(100, 26);
             this.txtTP_primaria.TabIndex = 125;
@@ -888,6 +879,19 @@
             this.groupComunicacion.TabIndex = 95;
             this.groupComunicacion.TabStop = false;
             this.groupComunicacion.Text = "Comunicacion";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "200",
+            "100"});
+            this.comboBox1.Location = new System.Drawing.Point(894, 227);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(16, 31);
+            this.comboBox1.TabIndex = 125;
+            this.comboBox1.UseWaitCursor = true;
+            this.comboBox1.Visible = false;
             // 
             // gro_B_RadioFrecuencia
             // 
@@ -1420,7 +1424,6 @@
             // 
             // txtNIS
             // 
-            this.txtNIS.Enabled = false;
             this.txtNIS.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.txtNIS.Location = new System.Drawing.Point(7, 27);
             this.txtNIS.MaximumSize = new System.Drawing.Size(212, 20);
@@ -1463,19 +1466,6 @@
             this.epError.ContainerControl = this;
             this.epError.Icon = ((System.Drawing.Icon)(resources.GetObject("epError.Icon")));
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "200",
-            "100"});
-            this.comboBox1.Location = new System.Drawing.Point(894, 227);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(16, 31);
-            this.comboBox1.TabIndex = 125;
-            this.comboBox1.UseWaitCursor = true;
-            this.comboBox1.Visible = false;
-            // 
             // epNombreMedidor
             // 
             this.epNombreMedidor.ContainerControl = this;
@@ -1485,6 +1475,21 @@
             // 
             this.epClase.ContainerControl = this;
             this.epClase.Icon = ((System.Drawing.Icon)(resources.GetObject("epClase.Icon")));
+            // 
+            // txtClase
+            // 
+            this.txtClase.FormattingEnabled = true;
+            this.txtClase.ItemHeight = 23;
+            this.txtClase.Items.AddRange(new object[] {
+            "20",
+            "100",
+            "200",
+            "320"});
+            this.txtClase.Location = new System.Drawing.Point(370, 132);
+            this.txtClase.Name = "txtClase";
+            this.txtClase.Size = new System.Drawing.Size(100, 29);
+            this.txtClase.TabIndex = 144;
+            this.txtClase.UseSelectable = true;
             // 
             // AgregarMedidor
             // 
@@ -1639,7 +1644,6 @@
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.TextBox txtPresicion;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox txtClase;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.TextBox txtNumero_Serie;
         private System.Windows.Forms.Label label40;
@@ -1659,5 +1663,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ErrorProvider epNombreMedidor;
         private System.Windows.Forms.ErrorProvider epClase;
+        private MetroFramework.Controls.MetroComboBox txtClase;
     }
 }
