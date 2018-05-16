@@ -222,3 +222,4 @@ C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.U
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.csproj.GenerateResource.Cache
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.exe
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.pdb
+C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.Herramientas.resources

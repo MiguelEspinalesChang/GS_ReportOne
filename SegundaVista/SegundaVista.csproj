@@ -198,6 +198,12 @@
     <Compile Include="Vistas\EditarCliente.Designer.cs">
       <DependentUpon>EditarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Herramientas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Herramientas.Designer.cs">
+      <DependentUpon>Herramientas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -258,6 +264,9 @@
     <EmbeddedResource Include="Vistas\EditarCliente.resx">
       <DependentUpon>EditarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Herramientas.resx">
+      <DependentUpon>Herramientas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
@@ -308,8 +317,10 @@
     <Content Include="layout\iconos\icons8-guardar-32.png" />
     <Content Include="layout\iconos\icons8-hibernar-32.png" />
     <Content Include="layout\iconos\icons8-maximizar-la-ventana-100.png" />
+    <Content Include="layout\iconos\icons8-medidor-de-energía-32%281%29.png" />
     <Content Include="layout\iconos\icons8-medidor-de-energía-32.png" />
     <Content Include="layout\iconos\icons8-medidor-de-energía-Editar32.png" />
+    <Content Include="layout\iconos\icons8-medidor-de-energía-filled-24.png" />
     <Content Include="layout\iconos\icons8-medidor-editar-de-energía-32 %282%29.png" />
     <Content Include="layout\iconos\icons8-minimizar-la-ventana-100.png" />
     <Content Include="layout\iconos\icons8-multiedición-32.png" />

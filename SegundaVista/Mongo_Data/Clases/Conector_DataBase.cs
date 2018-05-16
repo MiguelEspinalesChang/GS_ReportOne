@@ -42,9 +42,12 @@ namespace SegundaVista.Mongo_Data.Clases
         // funcion para agregar Medidores
         public void insertar_Medidor(DatosMedidor datosTxt)
         {
+            string DB_Inicio  = "", DB_Final = "";
             var documento = new BsonDocument
            {
                 {"date_Loader",DateTime.Now},
+                {"DB_Inicio",DB_Inicio },
+                {"DB_Final",DB_Final},
                 {"NisCliente",datosTxt.Nis},
                 {"Numero_Medidor",datosTxt.Numero_Medidor},
                 {"Nombre_Medidor",datosTxt.Nombre_Medidor},

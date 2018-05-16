@@ -33,6 +33,7 @@
             this.lblVersionAplicacion = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -47,7 +48,6 @@
             this.btnMedidor = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnUsuario = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
@@ -107,7 +107,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel5.Location = new System.Drawing.Point(2, 378);
+            this.panel5.Location = new System.Drawing.Point(1, 378);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(5, 32);
             this.panel5.TabIndex = 21;
@@ -121,17 +121,29 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(6, 378);
+            this.button2.Location = new System.Drawing.Point(-1, 378);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(209, 32);
+            this.button2.Size = new System.Drawing.Size(220, 32);
             this.button2.TabIndex = 20;
             this.button2.Text = "Ayuda";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(221, 107);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel4.Location = new System.Drawing.Point(2, 340);
+            this.panel4.Location = new System.Drawing.Point(1, 340);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(5, 32);
             this.panel4.TabIndex = 19;
@@ -145,17 +157,18 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(6, 340);
+            this.button1.Location = new System.Drawing.Point(-1, 340);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(209, 32);
+            this.button1.Size = new System.Drawing.Size(221, 32);
             this.button1.TabIndex = 18;
             this.button1.Text = "Herramientas";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel10.Location = new System.Drawing.Point(4, 264);
+            this.panel10.Location = new System.Drawing.Point(1, 264);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(5, 32);
             this.panel10.TabIndex = 17;
@@ -169,9 +182,9 @@
             this.btnEstadistica.ForeColor = System.Drawing.Color.White;
             this.btnEstadistica.Image = ((System.Drawing.Image)(resources.GetObject("btnEstadistica.Image")));
             this.btnEstadistica.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEstadistica.Location = new System.Drawing.Point(5, 264);
+            this.btnEstadistica.Location = new System.Drawing.Point(-2, 264);
             this.btnEstadistica.Name = "btnEstadistica";
-            this.btnEstadistica.Size = new System.Drawing.Size(209, 32);
+            this.btnEstadistica.Size = new System.Drawing.Size(222, 32);
             this.btnEstadistica.TabIndex = 16;
             this.btnEstadistica.Text = "Estadistica";
             this.btnEstadistica.UseVisualStyleBackColor = true;
@@ -179,7 +192,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel6.Location = new System.Drawing.Point(4, 112);
+            this.panel6.Location = new System.Drawing.Point(1, 112);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(5, 32);
             this.panel6.TabIndex = 15;
@@ -193,9 +206,9 @@
             this.btnCliente.ForeColor = System.Drawing.Color.White;
             this.btnCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnCliente.Image")));
             this.btnCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCliente.Location = new System.Drawing.Point(5, 112);
+            this.btnCliente.Location = new System.Drawing.Point(-1, 112);
             this.btnCliente.Name = "btnCliente";
-            this.btnCliente.Size = new System.Drawing.Size(209, 32);
+            this.btnCliente.Size = new System.Drawing.Size(221, 32);
             this.btnCliente.TabIndex = 14;
             this.btnCliente.Text = "Cliente";
             this.btnCliente.UseVisualStyleBackColor = true;
@@ -204,7 +217,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel7.Location = new System.Drawing.Point(3, 302);
+            this.panel7.Location = new System.Drawing.Point(1, 302);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(5, 32);
             this.panel7.TabIndex = 13;
@@ -218,9 +231,9 @@
             this.btnReportes.ForeColor = System.Drawing.Color.White;
             this.btnReportes.Image = ((System.Drawing.Image)(resources.GetObject("btnReportes.Image")));
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(4, 302);
+            this.btnReportes.Location = new System.Drawing.Point(-1, 302);
             this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(209, 32);
+            this.btnReportes.Size = new System.Drawing.Size(220, 32);
             this.btnReportes.TabIndex = 12;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = true;
@@ -229,7 +242,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel3.Location = new System.Drawing.Point(3, 226);
+            this.panel3.Location = new System.Drawing.Point(1, 226);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(5, 32);
             this.panel3.TabIndex = 6;
@@ -243,9 +256,9 @@
             this.btnAnalis.ForeColor = System.Drawing.Color.White;
             this.btnAnalis.Image = ((System.Drawing.Image)(resources.GetObject("btnAnalis.Image")));
             this.btnAnalis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAnalis.Location = new System.Drawing.Point(6, 226);
+            this.btnAnalis.Location = new System.Drawing.Point(-1, 226);
             this.btnAnalis.Name = "btnAnalis";
-            this.btnAnalis.Size = new System.Drawing.Size(214, 32);
+            this.btnAnalis.Size = new System.Drawing.Size(221, 32);
             this.btnAnalis.TabIndex = 5;
             this.btnAnalis.Text = "Datos Origen";
             this.btnAnalis.UseVisualStyleBackColor = true;
@@ -254,7 +267,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel2.Location = new System.Drawing.Point(4, 188);
+            this.panel2.Location = new System.Drawing.Point(1, 188);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(5, 32);
             this.panel2.TabIndex = 4;
@@ -268,9 +281,9 @@
             this.btnMedidor.ForeColor = System.Drawing.Color.White;
             this.btnMedidor.Image = ((System.Drawing.Image)(resources.GetObject("btnMedidor.Image")));
             this.btnMedidor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMedidor.Location = new System.Drawing.Point(5, 188);
+            this.btnMedidor.Location = new System.Drawing.Point(-2, 188);
             this.btnMedidor.Name = "btnMedidor";
-            this.btnMedidor.Size = new System.Drawing.Size(209, 32);
+            this.btnMedidor.Size = new System.Drawing.Size(222, 32);
             this.btnMedidor.TabIndex = 3;
             this.btnMedidor.Text = "Medidor";
             this.btnMedidor.UseVisualStyleBackColor = true;
@@ -279,7 +292,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel1.Location = new System.Drawing.Point(4, 150);
+            this.panel1.Location = new System.Drawing.Point(1, 150);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(5, 32);
             this.panel1.TabIndex = 2;
@@ -293,25 +306,13 @@
             this.btnUsuario.ForeColor = System.Drawing.Color.White;
             this.btnUsuario.Image = ((System.Drawing.Image)(resources.GetObject("btnUsuario.Image")));
             this.btnUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUsuario.Location = new System.Drawing.Point(6, 150);
+            this.btnUsuario.Location = new System.Drawing.Point(-1, 150);
             this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(209, 32);
+            this.btnUsuario.Size = new System.Drawing.Size(221, 32);
             this.btnUsuario.TabIndex = 1;
             this.btnUsuario.Text = "Usuario";
             this.btnUsuario.UseVisualStyleBackColor = true;
             this.btnUsuario.Click += new System.EventHandler(this.btnUsuario_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(221, 107);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnCerrar
             // 

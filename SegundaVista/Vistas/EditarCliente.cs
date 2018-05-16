@@ -60,6 +60,8 @@ namespace SegundaVista.Vistas
             //System.ComponentModel.
             public ObjectId _id { get; set; }
             public DateTime date_Loader { get; set; }
+            public string DB_Inicio { get; set; }
+            public string DB_Final { get; set; }
             public string NisCliente { get; set; }
             public string Nombre_Medidor { get; set; }
             public string Area { get; set; }
@@ -116,7 +118,7 @@ namespace SegundaVista.Vistas
                 Conector_DataBase conector = new Conector_DataBase();
                 DatosCliente cliente_Editado = new DatosCliente();
                 var Cliente = MongoConexion.DataBase.GetCollection<DatosCliente>("Clientes");
-
+     
                 cliente_Editado.Nombre = txt_E_Nombre.Text;
                 cliente_Editado.Apellido = txt_E_Apellido.Text;
                 cliente_Editado.Nombre_Empresa = txt_E_NombreEmpresa.Text;
@@ -126,7 +128,7 @@ namespace SegundaVista.Vistas
                 cliente_Editado.Ruc = txt_E_Ruc.Text;
                 cliente_Editado.NisCliente = txt_E_NisCliente.Text;
 
-                var query = Query.EQ("id_cliente", txt_E_IdCliente.Text);
+                var query = Query.EQ("id_cliente", txt_IdCliente.Text);
                 var entity = Cliente.FindOne(query);
                 entity.Nombre = cliente_Editado.Nombre;
                 entity.Apellido = cliente_Editado.Apellido;

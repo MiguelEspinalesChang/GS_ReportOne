@@ -117,6 +117,10 @@ namespace SegundaVista.Vistas
             public ObjectId _id { get; set; }
             [Browsable(false)]
             public DateTime date_Loader { get; set; }
+            [DisplayName("DataBase Inicio")]
+            public string DB_Inicio { get; set; }
+            [DisplayName("DataBase Final")]
+            public string DB_Final { get; set; }
             [DisplayName("Nis Cliente")]
             public string NisCliente { get; set; }
             [DisplayName("Nombre Medido")]
@@ -302,7 +306,7 @@ namespace SegundaVista.Vistas
                 string idPropia = Convert.ToString(celdas["id_cliente"].Value);
 
                 EditarCliente cliente_Edit = new EditarCliente();
-                cliente_Edit.txt_E_IdCliente.Text = idPropia;
+                cliente_Edit.txt_IdCliente.Text = idPropia;
                 cliente_Edit.txt_E_Nombre.Text = clienteNombre;
                 cliente_Edit.txt_E_RazonSocial.Text = RazonSocial;
                 cliente_Edit.txt_E_Apellido.Text = clienteApellido;

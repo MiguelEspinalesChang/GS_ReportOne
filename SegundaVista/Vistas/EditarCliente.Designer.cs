@@ -49,20 +49,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.PnlFormCliente = new System.Windows.Forms.Panel();
-            this.txt_E_ResponsableMedidcion = new System.Windows.Forms.TextBox();
+            this.lblNisCliente = new System.Windows.Forms.Label();
+            this.lblNombreCliente = new System.Windows.Forms.Label();
             this.txt_E_NisCliente = new System.Windows.Forms.TextBox();
-            this.txt_E_DirigirReporte = new System.Windows.Forms.TextBox();
-            this.txt_E_Nombre = new System.Windows.Forms.TextBox();
             this.txt_E_Ruc = new System.Windows.Forms.TextBox();
-            this.txt_E_NombreEmpresa = new System.Windows.Forms.TextBox();
             this.txt_E_RazonSocial = new System.Windows.Forms.TextBox();
-            this.txt_E_Apellido = new System.Windows.Forms.TextBox();
-            this.txt_E_IdCliente = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.lblNombreCliente = new System.Windows.Forms.Label();
-            this.lblNisCliente = new System.Windows.Forms.Label();
+            this.txt_IdCliente = new MetroFramework.Controls.MetroTextBox();
+            this.txt_E_Nombre = new MetroFramework.Controls.MetroTextBox();
+            this.txt_E_Apellido = new MetroFramework.Controls.MetroTextBox();
+            this.txt_E_NombreEmpresa = new MetroFramework.Controls.MetroTextBox();
+            this.txt_E_ResponsableMedidcion = new MetroFramework.Controls.MetroTextBox();
+            this.txt_E_DirigirReporte = new MetroFramework.Controls.MetroTextBox();
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
@@ -237,7 +237,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(14, 194);
+            this.label6.Location = new System.Drawing.Point(14, 199);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(273, 22);
             this.label6.TabIndex = 94;
@@ -267,7 +267,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 146);
+            this.label3.Location = new System.Drawing.Point(14, 151);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(225, 22);
             this.label3.TabIndex = 88;
@@ -277,7 +277,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 98);
+            this.label2.Location = new System.Drawing.Point(14, 103);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(84, 22);
             this.label2.TabIndex = 83;
@@ -286,17 +286,17 @@
             // PnlFormCliente
             // 
             this.PnlFormCliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PnlFormCliente.Controls.Add(this.txt_E_DirigirReporte);
+            this.PnlFormCliente.Controls.Add(this.txt_E_ResponsableMedidcion);
+            this.PnlFormCliente.Controls.Add(this.txt_E_NombreEmpresa);
+            this.PnlFormCliente.Controls.Add(this.txt_E_Apellido);
+            this.PnlFormCliente.Controls.Add(this.txt_E_Nombre);
+            this.PnlFormCliente.Controls.Add(this.txt_IdCliente);
             this.PnlFormCliente.Controls.Add(this.lblNisCliente);
             this.PnlFormCliente.Controls.Add(this.lblNombreCliente);
-            this.PnlFormCliente.Controls.Add(this.txt_E_ResponsableMedidcion);
             this.PnlFormCliente.Controls.Add(this.txt_E_NisCliente);
-            this.PnlFormCliente.Controls.Add(this.txt_E_DirigirReporte);
-            this.PnlFormCliente.Controls.Add(this.txt_E_Nombre);
             this.PnlFormCliente.Controls.Add(this.txt_E_Ruc);
-            this.PnlFormCliente.Controls.Add(this.txt_E_NombreEmpresa);
             this.PnlFormCliente.Controls.Add(this.txt_E_RazonSocial);
-            this.PnlFormCliente.Controls.Add(this.txt_E_Apellido);
-            this.PnlFormCliente.Controls.Add(this.txt_E_IdCliente);
             this.PnlFormCliente.Controls.Add(this.label9);
             this.PnlFormCliente.Controls.Add(this.label8);
             this.PnlFormCliente.Controls.Add(this.label7);
@@ -309,112 +309,9 @@
             this.PnlFormCliente.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlFormCliente.Location = new System.Drawing.Point(0, 95);
             this.PnlFormCliente.Name = "PnlFormCliente";
-            this.PnlFormCliente.Size = new System.Drawing.Size(464, 297);
+            this.PnlFormCliente.Size = new System.Drawing.Size(464, 309);
             this.PnlFormCliente.TabIndex = 10;
             this.PnlFormCliente.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlFormCliente_Paint);
-            // 
-            // txt_E_ResponsableMedidcion
-            // 
-            this.txt_E_ResponsableMedidcion.Location = new System.Drawing.Point(18, 219);
-            this.txt_E_ResponsableMedidcion.Name = "txt_E_ResponsableMedidcion";
-            this.txt_E_ResponsableMedidcion.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_ResponsableMedidcion.TabIndex = 109;
-            // 
-            // txt_E_NisCliente
-            // 
-            this.txt_E_NisCliente.Location = new System.Drawing.Point(247, 171);
-            this.txt_E_NisCliente.Name = "txt_E_NisCliente";
-            this.txt_E_NisCliente.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_NisCliente.TabIndex = 108;
-            // 
-            // txt_E_DirigirReporte
-            // 
-            this.txt_E_DirigirReporte.Location = new System.Drawing.Point(15, 267);
-            this.txt_E_DirigirReporte.Name = "txt_E_DirigirReporte";
-            this.txt_E_DirigirReporte.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_DirigirReporte.TabIndex = 107;
-            // 
-            // txt_E_Nombre
-            // 
-            this.txt_E_Nombre.Location = new System.Drawing.Point(18, 75);
-            this.txt_E_Nombre.Name = "txt_E_Nombre";
-            this.txt_E_Nombre.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_Nombre.TabIndex = 106;
-            // 
-            // txt_E_Ruc
-            // 
-            this.txt_E_Ruc.Location = new System.Drawing.Point(247, 123);
-            this.txt_E_Ruc.Name = "txt_E_Ruc";
-            this.txt_E_Ruc.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_Ruc.TabIndex = 105;
-            // 
-            // txt_E_NombreEmpresa
-            // 
-            this.txt_E_NombreEmpresa.Location = new System.Drawing.Point(21, 171);
-            this.txt_E_NombreEmpresa.Name = "txt_E_NombreEmpresa";
-            this.txt_E_NombreEmpresa.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_NombreEmpresa.TabIndex = 104;
-            // 
-            // txt_E_RazonSocial
-            // 
-            this.txt_E_RazonSocial.Location = new System.Drawing.Point(247, 75);
-            this.txt_E_RazonSocial.Name = "txt_E_RazonSocial";
-            this.txt_E_RazonSocial.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_RazonSocial.TabIndex = 103;
-            // 
-            // txt_E_Apellido
-            // 
-            this.txt_E_Apellido.Location = new System.Drawing.Point(18, 123);
-            this.txt_E_Apellido.Name = "txt_E_Apellido";
-            this.txt_E_Apellido.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_Apellido.TabIndex = 102;
-            // 
-            // txt_E_IdCliente
-            // 
-            this.txt_E_IdCliente.Enabled = false;
-            this.txt_E_IdCliente.Location = new System.Drawing.Point(15, 27);
-            this.txt_E_IdCliente.Name = "txt_E_IdCliente";
-            this.txt_E_IdCliente.Size = new System.Drawing.Size(160, 20);
-            this.txt_E_IdCliente.TabIndex = 100;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(14, 2);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 22);
-            this.label9.TabIndex = 99;
-            this.label9.Text = "Id Cliente";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(14, 242);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(157, 22);
-            this.label7.TabIndex = 96;
-            this.label7.Text = "Dirigir Reporte A";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(14, 50);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(84, 22);
-            this.label19.TabIndex = 80;
-            this.label19.Text = "Nombre";
-            // 
-            // lblNombreCliente
-            // 
-            this.lblNombreCliente.AutoSize = true;
-            this.lblNombreCliente.Location = new System.Drawing.Point(205, 10);
-            this.lblNombreCliente.Name = "lblNombreCliente";
-            this.lblNombreCliente.Size = new System.Drawing.Size(0, 13);
-            this.lblNombreCliente.TabIndex = 110;
-            this.lblNombreCliente.Visible = false;
             // 
             // lblNisCliente
             // 
@@ -425,16 +322,263 @@
             this.lblNisCliente.TabIndex = 111;
             this.lblNisCliente.Visible = false;
             // 
+            // lblNombreCliente
+            // 
+            this.lblNombreCliente.AutoSize = true;
+            this.lblNombreCliente.Location = new System.Drawing.Point(205, 10);
+            this.lblNombreCliente.Name = "lblNombreCliente";
+            this.lblNombreCliente.Size = new System.Drawing.Size(0, 13);
+            this.lblNombreCliente.TabIndex = 110;
+            this.lblNombreCliente.Visible = false;
+            // 
+            // txt_E_NisCliente
+            // 
+            this.txt_E_NisCliente.Location = new System.Drawing.Point(247, 171);
+            this.txt_E_NisCliente.Name = "txt_E_NisCliente";
+            this.txt_E_NisCliente.Size = new System.Drawing.Size(160, 20);
+            this.txt_E_NisCliente.TabIndex = 108;
+            // 
+            // txt_E_Ruc
+            // 
+            this.txt_E_Ruc.Location = new System.Drawing.Point(247, 123);
+            this.txt_E_Ruc.Name = "txt_E_Ruc";
+            this.txt_E_Ruc.Size = new System.Drawing.Size(160, 20);
+            this.txt_E_Ruc.TabIndex = 105;
+            // 
+            // txt_E_RazonSocial
+            // 
+            this.txt_E_RazonSocial.Location = new System.Drawing.Point(247, 75);
+            this.txt_E_RazonSocial.Name = "txt_E_RazonSocial";
+            this.txt_E_RazonSocial.Size = new System.Drawing.Size(160, 20);
+            this.txt_E_RazonSocial.TabIndex = 103;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(17, 2);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 22);
+            this.label9.TabIndex = 99;
+            this.label9.Text = "Id Cliente";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(17, 252);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(157, 22);
+            this.label7.TabIndex = 96;
+            this.label7.Text = "Dirigir Reporte A";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(17, 50);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(84, 22);
+            this.label19.TabIndex = 80;
+            this.label19.Text = "Nombre";
+            // 
+            // txt_IdCliente
+            // 
+            // 
+            // 
+            // 
+            this.txt_IdCliente.CustomButton.Image = null;
+            this.txt_IdCliente.CustomButton.Location = new System.Drawing.Point(166, 1);
+            this.txt_IdCliente.CustomButton.Name = "";
+            this.txt_IdCliente.CustomButton.Size = new System.Drawing.Size(23, 23);
+            this.txt_IdCliente.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txt_IdCliente.CustomButton.TabIndex = 1;
+            this.txt_IdCliente.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txt_IdCliente.CustomButton.UseSelectable = true;
+            this.txt_IdCliente.CustomButton.Visible = false;
+            this.txt_IdCliente.Enabled = false;
+            this.txt_IdCliente.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txt_IdCliente.Lines = new string[0];
+            this.txt_IdCliente.Location = new System.Drawing.Point(21, 22);
+            this.txt_IdCliente.MaxLength = 32767;
+            this.txt_IdCliente.Name = "txt_IdCliente";
+            this.txt_IdCliente.PasswordChar = '\0';
+            this.txt_IdCliente.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt_IdCliente.SelectedText = "";
+            this.txt_IdCliente.SelectionLength = 0;
+            this.txt_IdCliente.SelectionStart = 0;
+            this.txt_IdCliente.ShortcutsEnabled = true;
+            this.txt_IdCliente.Size = new System.Drawing.Size(190, 25);
+            this.txt_IdCliente.TabIndex = 112;
+            this.txt_IdCliente.UseSelectable = true;
+            this.txt_IdCliente.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txt_IdCliente.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // txt_E_Nombre
+            // 
+            // 
+            // 
+            // 
+            this.txt_E_Nombre.CustomButton.Image = null;
+            this.txt_E_Nombre.CustomButton.Location = new System.Drawing.Point(142, 1);
+            this.txt_E_Nombre.CustomButton.Name = "";
+            this.txt_E_Nombre.CustomButton.Size = new System.Drawing.Size(23, 23);
+            this.txt_E_Nombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txt_E_Nombre.CustomButton.TabIndex = 1;
+            this.txt_E_Nombre.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txt_E_Nombre.CustomButton.UseSelectable = true;
+            this.txt_E_Nombre.CustomButton.Visible = false;
+            this.txt_E_Nombre.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txt_E_Nombre.Lines = new string[0];
+            this.txt_E_Nombre.Location = new System.Drawing.Point(21, 75);
+            this.txt_E_Nombre.MaxLength = 32767;
+            this.txt_E_Nombre.Name = "txt_E_Nombre";
+            this.txt_E_Nombre.PasswordChar = '\0';
+            this.txt_E_Nombre.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt_E_Nombre.SelectedText = "";
+            this.txt_E_Nombre.SelectionLength = 0;
+            this.txt_E_Nombre.SelectionStart = 0;
+            this.txt_E_Nombre.ShortcutsEnabled = true;
+            this.txt_E_Nombre.Size = new System.Drawing.Size(166, 25);
+            this.txt_E_Nombre.TabIndex = 113;
+            this.txt_E_Nombre.UseSelectable = true;
+            this.txt_E_Nombre.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txt_E_Nombre.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // txt_E_Apellido
+            // 
+            // 
+            // 
+            // 
+            this.txt_E_Apellido.CustomButton.Image = null;
+            this.txt_E_Apellido.CustomButton.Location = new System.Drawing.Point(142, 1);
+            this.txt_E_Apellido.CustomButton.Name = "";
+            this.txt_E_Apellido.CustomButton.Size = new System.Drawing.Size(23, 23);
+            this.txt_E_Apellido.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txt_E_Apellido.CustomButton.TabIndex = 1;
+            this.txt_E_Apellido.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txt_E_Apellido.CustomButton.UseSelectable = true;
+            this.txt_E_Apellido.CustomButton.Visible = false;
+            this.txt_E_Apellido.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txt_E_Apellido.Lines = new string[0];
+            this.txt_E_Apellido.Location = new System.Drawing.Point(21, 128);
+            this.txt_E_Apellido.MaxLength = 32767;
+            this.txt_E_Apellido.Name = "txt_E_Apellido";
+            this.txt_E_Apellido.PasswordChar = '\0';
+            this.txt_E_Apellido.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt_E_Apellido.SelectedText = "";
+            this.txt_E_Apellido.SelectionLength = 0;
+            this.txt_E_Apellido.SelectionStart = 0;
+            this.txt_E_Apellido.ShortcutsEnabled = true;
+            this.txt_E_Apellido.Size = new System.Drawing.Size(166, 25);
+            this.txt_E_Apellido.TabIndex = 114;
+            this.txt_E_Apellido.UseSelectable = true;
+            this.txt_E_Apellido.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txt_E_Apellido.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // txt_E_NombreEmpresa
+            // 
+            // 
+            // 
+            // 
+            this.txt_E_NombreEmpresa.CustomButton.Image = null;
+            this.txt_E_NombreEmpresa.CustomButton.Location = new System.Drawing.Point(142, 1);
+            this.txt_E_NombreEmpresa.CustomButton.Name = "";
+            this.txt_E_NombreEmpresa.CustomButton.Size = new System.Drawing.Size(23, 23);
+            this.txt_E_NombreEmpresa.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txt_E_NombreEmpresa.CustomButton.TabIndex = 1;
+            this.txt_E_NombreEmpresa.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txt_E_NombreEmpresa.CustomButton.UseSelectable = true;
+            this.txt_E_NombreEmpresa.CustomButton.Visible = false;
+            this.txt_E_NombreEmpresa.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txt_E_NombreEmpresa.Lines = new string[0];
+            this.txt_E_NombreEmpresa.Location = new System.Drawing.Point(21, 176);
+            this.txt_E_NombreEmpresa.MaxLength = 32767;
+            this.txt_E_NombreEmpresa.Name = "txt_E_NombreEmpresa";
+            this.txt_E_NombreEmpresa.PasswordChar = '\0';
+            this.txt_E_NombreEmpresa.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt_E_NombreEmpresa.SelectedText = "";
+            this.txt_E_NombreEmpresa.SelectionLength = 0;
+            this.txt_E_NombreEmpresa.SelectionStart = 0;
+            this.txt_E_NombreEmpresa.ShortcutsEnabled = true;
+            this.txt_E_NombreEmpresa.Size = new System.Drawing.Size(166, 25);
+            this.txt_E_NombreEmpresa.TabIndex = 115;
+            this.txt_E_NombreEmpresa.UseSelectable = true;
+            this.txt_E_NombreEmpresa.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txt_E_NombreEmpresa.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // txt_E_ResponsableMedidcion
+            // 
+            // 
+            // 
+            // 
+            this.txt_E_ResponsableMedidcion.CustomButton.Image = null;
+            this.txt_E_ResponsableMedidcion.CustomButton.Location = new System.Drawing.Point(142, 1);
+            this.txt_E_ResponsableMedidcion.CustomButton.Name = "";
+            this.txt_E_ResponsableMedidcion.CustomButton.Size = new System.Drawing.Size(23, 23);
+            this.txt_E_ResponsableMedidcion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txt_E_ResponsableMedidcion.CustomButton.TabIndex = 1;
+            this.txt_E_ResponsableMedidcion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txt_E_ResponsableMedidcion.CustomButton.UseSelectable = true;
+            this.txt_E_ResponsableMedidcion.CustomButton.Visible = false;
+            this.txt_E_ResponsableMedidcion.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txt_E_ResponsableMedidcion.Lines = new string[0];
+            this.txt_E_ResponsableMedidcion.Location = new System.Drawing.Point(21, 224);
+            this.txt_E_ResponsableMedidcion.MaxLength = 32767;
+            this.txt_E_ResponsableMedidcion.Name = "txt_E_ResponsableMedidcion";
+            this.txt_E_ResponsableMedidcion.PasswordChar = '\0';
+            this.txt_E_ResponsableMedidcion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt_E_ResponsableMedidcion.SelectedText = "";
+            this.txt_E_ResponsableMedidcion.SelectionLength = 0;
+            this.txt_E_ResponsableMedidcion.SelectionStart = 0;
+            this.txt_E_ResponsableMedidcion.ShortcutsEnabled = true;
+            this.txt_E_ResponsableMedidcion.Size = new System.Drawing.Size(166, 25);
+            this.txt_E_ResponsableMedidcion.TabIndex = 116;
+            this.txt_E_ResponsableMedidcion.UseSelectable = true;
+            this.txt_E_ResponsableMedidcion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txt_E_ResponsableMedidcion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // txt_E_DirigirReporte
+            // 
+            // 
+            // 
+            // 
+            this.txt_E_DirigirReporte.CustomButton.Image = null;
+            this.txt_E_DirigirReporte.CustomButton.Location = new System.Drawing.Point(142, 1);
+            this.txt_E_DirigirReporte.CustomButton.Name = "";
+            this.txt_E_DirigirReporte.CustomButton.Size = new System.Drawing.Size(23, 23);
+            this.txt_E_DirigirReporte.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txt_E_DirigirReporte.CustomButton.TabIndex = 1;
+            this.txt_E_DirigirReporte.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txt_E_DirigirReporte.CustomButton.UseSelectable = true;
+            this.txt_E_DirigirReporte.CustomButton.Visible = false;
+            this.txt_E_DirigirReporte.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txt_E_DirigirReporte.Lines = new string[0];
+            this.txt_E_DirigirReporte.Location = new System.Drawing.Point(18, 277);
+            this.txt_E_DirigirReporte.MaxLength = 32767;
+            this.txt_E_DirigirReporte.Name = "txt_E_DirigirReporte";
+            this.txt_E_DirigirReporte.PasswordChar = '\0';
+            this.txt_E_DirigirReporte.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txt_E_DirigirReporte.SelectedText = "";
+            this.txt_E_DirigirReporte.SelectionLength = 0;
+            this.txt_E_DirigirReporte.SelectionStart = 0;
+            this.txt_E_DirigirReporte.ShortcutsEnabled = true;
+            this.txt_E_DirigirReporte.Size = new System.Drawing.Size(166, 25);
+            this.txt_E_DirigirReporte.TabIndex = 117;
+            this.txt_E_DirigirReporte.UseSelectable = true;
+            this.txt_E_DirigirReporte.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txt_E_DirigirReporte.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
             // EditarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 392);
+            this.ClientSize = new System.Drawing.Size(464, 404);
             this.Controls.Add(this.PnlFormCliente);
             this.Controls.Add(this.pnlBtnClientes);
             this.Controls.Add(this.PnlBarraTitulo);
-            this.MaximumSize = new System.Drawing.Size(480, 430);
-            this.MinimumSize = new System.Drawing.Size(480, 430);
+            this.MaximumSize = new System.Drawing.Size(480, 442);
+            this.MinimumSize = new System.Drawing.Size(480, 442);
             this.Name = "EditarCliente";
             this.Text = "EditarCliente";
             this.Load += new System.EventHandler(this.EditarCliente_Load);
@@ -480,16 +624,16 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label9;
-        public System.Windows.Forms.TextBox txt_E_ResponsableMedidcion;
         public System.Windows.Forms.TextBox txt_E_NisCliente;
-        public System.Windows.Forms.TextBox txt_E_DirigirReporte;
-        public System.Windows.Forms.TextBox txt_E_Nombre;
         public System.Windows.Forms.TextBox txt_E_Ruc;
-        public System.Windows.Forms.TextBox txt_E_NombreEmpresa;
         public System.Windows.Forms.TextBox txt_E_RazonSocial;
-        public System.Windows.Forms.TextBox txt_E_Apellido;
-        public System.Windows.Forms.TextBox txt_E_IdCliente;
         private System.Windows.Forms.Label lblNisCliente;
         private System.Windows.Forms.Label lblNombreCliente;
+        public MetroFramework.Controls.MetroTextBox txt_IdCliente;
+        public MetroFramework.Controls.MetroTextBox txt_E_Nombre;
+        public MetroFramework.Controls.MetroTextBox txt_E_Apellido;
+        public MetroFramework.Controls.MetroTextBox txt_E_NombreEmpresa;
+        public MetroFramework.Controls.MetroTextBox txt_E_DirigirReporte;
+        public MetroFramework.Controls.MetroTextBox txt_E_ResponsableMedidcion;
     }
 }
