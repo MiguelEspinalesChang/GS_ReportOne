@@ -79,8 +79,9 @@
             this.PnlBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlBarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.PnlBarraTitulo.Name = "PnlBarraTitulo";
-            this.PnlBarraTitulo.Size = new System.Drawing.Size(464, 38);
+            this.PnlBarraTitulo.Size = new System.Drawing.Size(480, 38);
             this.PnlBarraTitulo.TabIndex = 7;
+            this.PnlBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlBarraTitulo_MouseDown);
             // 
             // label1
             // 
@@ -92,13 +93,14 @@
             this.label1.Size = new System.Drawing.Size(286, 24);
             this.label1.TabIndex = 4;
             this.label1.Text = "GS Report One - Agregar Cliente";
+            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
             // 
             // btnCerrar
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(423, -1);
+            this.btnCerrar.Location = new System.Drawing.Point(439, -1);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(36, 38);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -114,14 +116,14 @@
             this.pnlBtnClientes.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBtnClientes.Location = new System.Drawing.Point(0, 38);
             this.pnlBtnClientes.Name = "pnlBtnClientes";
-            this.pnlBtnClientes.Size = new System.Drawing.Size(464, 57);
+            this.pnlBtnClientes.Size = new System.Drawing.Size(480, 57);
             this.pnlBtnClientes.TabIndex = 8;
             // 
             // pnlAlerta
             // 
             this.pnlAlerta.Controls.Add(this.pnlAlertaVerde);
             this.pnlAlerta.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlAlerta.Location = new System.Drawing.Point(217, 0);
+            this.pnlAlerta.Location = new System.Drawing.Point(233, 0);
             this.pnlAlerta.Name = "pnlAlerta";
             this.pnlAlerta.Size = new System.Drawing.Size(245, 55);
             this.pnlAlerta.TabIndex = 24;
@@ -241,7 +243,7 @@
             this.PnlFormCliente.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlFormCliente.Location = new System.Drawing.Point(0, 95);
             this.PnlFormCliente.Name = "PnlFormCliente";
-            this.PnlFormCliente.Size = new System.Drawing.Size(464, 297);
+            this.PnlFormCliente.Size = new System.Drawing.Size(480, 335);
             this.PnlFormCliente.TabIndex = 9;
             // 
             // txt_m_NisCliente
@@ -584,13 +586,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 392);
+            this.ClientSize = new System.Drawing.Size(480, 430);
             this.Controls.Add(this.PnlFormCliente);
             this.Controls.Add(this.pnlBtnClientes);
             this.Controls.Add(this.PnlBarraTitulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(480, 430);
             this.MinimumSize = new System.Drawing.Size(480, 430);
             this.Name = "AgregarCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarCliente";
             this.Load += new System.EventHandler(this.AgregarCliente_Load);
             this.PnlBarraTitulo.ResumeLayout(false);

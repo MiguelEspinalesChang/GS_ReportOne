@@ -44,6 +44,7 @@
             this.lblverde = new System.Windows.Forms.Label();
             this.btnGuardarMedidor = new System.Windows.Forms.Button();
             this.PnlFormMedidor = new System.Windows.Forms.Panel();
+            this.txtClase = new MetroFramework.Controls.MetroComboBox();
             this.label41 = new System.Windows.Forms.Label();
             this.txtArea = new System.Windows.Forms.TextBox();
             this.txtNumero_Serie = new System.Windows.Forms.TextBox();
@@ -150,7 +151,6 @@
             this.epError = new System.Windows.Forms.ErrorProvider(this.components);
             this.epNombreMedidor = new System.Windows.Forms.ErrorProvider(this.components);
             this.epClase = new System.Windows.Forms.ErrorProvider(this.components);
-            this.txtClase = new MetroFramework.Controls.MetroComboBox();
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
@@ -183,8 +183,9 @@
             this.PnlBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlBarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.PnlBarraTitulo.Name = "PnlBarraTitulo";
-            this.PnlBarraTitulo.Size = new System.Drawing.Size(991, 38);
+            this.PnlBarraTitulo.Size = new System.Drawing.Size(995, 38);
             this.PnlBarraTitulo.TabIndex = 8;
+            this.PnlBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlBarraTitulo_MouseDown);
             // 
             // label1
             // 
@@ -196,13 +197,14 @@
             this.label1.Size = new System.Drawing.Size(298, 24);
             this.label1.TabIndex = 4;
             this.label1.Text = "GS Report One - Agregar Medidor";
+            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
             // 
             // btnCerrar
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(950, -1);
+            this.btnCerrar.Location = new System.Drawing.Point(954, -1);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(36, 38);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -218,7 +220,7 @@
             this.pnlBtnClientes.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBtnClientes.Location = new System.Drawing.Point(0, 38);
             this.pnlBtnClientes.Name = "pnlBtnClientes";
-            this.pnlBtnClientes.Size = new System.Drawing.Size(991, 57);
+            this.pnlBtnClientes.Size = new System.Drawing.Size(995, 57);
             this.pnlBtnClientes.TabIndex = 9;
             // 
             // pnlAlerta
@@ -226,7 +228,7 @@
             this.pnlAlerta.Controls.Add(this.pnlAlertaRojo);
             this.pnlAlerta.Controls.Add(this.pnlAlertaVerde);
             this.pnlAlerta.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlAlerta.Location = new System.Drawing.Point(584, 0);
+            this.pnlAlerta.Location = new System.Drawing.Point(588, 0);
             this.pnlAlerta.Name = "pnlAlerta";
             this.pnlAlerta.Size = new System.Drawing.Size(405, 55);
             this.pnlAlerta.TabIndex = 23;
@@ -389,9 +391,24 @@
             this.PnlFormMedidor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlFormMedidor.Location = new System.Drawing.Point(0, 95);
             this.PnlFormMedidor.Name = "PnlFormMedidor";
-            this.PnlFormMedidor.Size = new System.Drawing.Size(991, 545);
+            this.PnlFormMedidor.Size = new System.Drawing.Size(995, 547);
             this.PnlFormMedidor.TabIndex = 10;
             this.PnlFormMedidor.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlFormMedidor_Paint);
+            // 
+            // txtClase
+            // 
+            this.txtClase.FormattingEnabled = true;
+            this.txtClase.ItemHeight = 23;
+            this.txtClase.Items.AddRange(new object[] {
+            "20",
+            "100",
+            "200",
+            "320"});
+            this.txtClase.Location = new System.Drawing.Point(370, 132);
+            this.txtClase.Name = "txtClase";
+            this.txtClase.Size = new System.Drawing.Size(100, 29);
+            this.txtClase.TabIndex = 144;
+            this.txtClase.UseSelectable = true;
             // 
             // label41
             // 
@@ -1476,32 +1493,20 @@
             this.epClase.ContainerControl = this;
             this.epClase.Icon = ((System.Drawing.Icon)(resources.GetObject("epClase.Icon")));
             // 
-            // txtClase
-            // 
-            this.txtClase.FormattingEnabled = true;
-            this.txtClase.ItemHeight = 23;
-            this.txtClase.Items.AddRange(new object[] {
-            "20",
-            "100",
-            "200",
-            "320"});
-            this.txtClase.Location = new System.Drawing.Point(370, 132);
-            this.txtClase.Name = "txtClase";
-            this.txtClase.Size = new System.Drawing.Size(100, 29);
-            this.txtClase.TabIndex = 144;
-            this.txtClase.UseSelectable = true;
-            // 
             // AgregarMedidor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(991, 640);
+            this.ClientSize = new System.Drawing.Size(995, 642);
             this.Controls.Add(this.PnlFormMedidor);
             this.Controls.Add(this.pnlBtnClientes);
             this.Controls.Add(this.PnlBarraTitulo);
-            this.MaximumSize = new System.Drawing.Size(1007, 678);
-            this.MinimumSize = new System.Drawing.Size(1007, 678);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(995, 642);
+            this.MinimumSize = new System.Drawing.Size(995, 642);
             this.Name = "AgregarMedidor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarMedidor";
             this.Load += new System.EventHandler(this.AgregarMedidor_Load);
             this.PnlBarraTitulo.ResumeLayout(false);
