@@ -199,6 +199,8 @@ namespace SegundaVista.Vistas
             public BsonBoolean RadioFrecuencia { get; set; }
             [DisplayName("RadioFrecuencia Operativo")]
             public BsonBoolean RadioFrecuencia_Operativo { get; set; }
+            [DisplayName("Id Medidor")]
+            public string id_Medidor { get; set; }
 
         }
 
@@ -261,6 +263,7 @@ namespace SegundaVista.Vistas
                     Medi.txtNom_Propietario.Text = clienteNombre;
                     pnlAlertaRojo.Visible = false;
                     Medi.ShowDialog();
+                    RefrescarCocaCola();
                     var cdeldas = clienteSelect.Cells;
                 }
                 else
@@ -323,7 +326,7 @@ namespace SegundaVista.Vistas
             else
             {
                 pnlAlertaRojo.Visible = true;
-                lblRojo.Text = "Seleccione Una Celda";
+                lblRojo.Text = "Seleccione Una Celda De Cliente";
 
             }
         }
@@ -335,7 +338,7 @@ namespace SegundaVista.Vistas
             //    pnlAlertaRojo.Visible = true;
             //    lblRojo.Text = "si";
             //}
-           
+
             var contador = gridClientes.SelectedRows.Count;
             if (contador > 0)
             {
@@ -344,7 +347,7 @@ namespace SegundaVista.Vistas
                 var celdas = clienteSelect.Cells;
                 string idPropia = Convert.ToString(celdas["id_cliente"].Value);
 
-               
+
 
                 DialogResult dialogResult = MessageBox.Show("Desea Eliminar El Cliente", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dialogResult == DialogResult.Yes)
@@ -356,13 +359,13 @@ namespace SegundaVista.Vistas
                     pnlAlertaVerde.Visible = true;
                     lblverde.Text = "Cliente Eliminado";
                 }
-               
-                
+
+
             }
             else
             {
                 pnlAlertaRojo.Visible = true;
-                lblRojo.Text = "Seleccione Una Celda";
+                lblRojo.Text = "Seleccione Una Celda De clientes";
 
             }
         }
@@ -370,6 +373,79 @@ namespace SegundaVista.Vistas
         private void pnlContenedorHijo_Paint_2(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnEliminarMedidor_Click(object sender, EventArgs e)
+        {
+            var contador = gridMedidor.SelectedRows.Count;
+            if (contador > 0)
+            {
+                var Documento = MongoConexion.DataBase.GetCollection<MedidorDatos>("Medidor");
+                var clienteSelect = gridMedidor.SelectedRows[0];
+                var celdas = clienteSelect.Cells;
+                string idPropia = Convert.ToString(celdas["id_Medidor"].Value);
+
+
+                DialogResult dialogResult = MessageBox.Show("Desea Eliminar El Medidor", "Alerta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    var consulta = Query.EQ("id_Medidor", idPropia);
+                    Documento.Remove(consulta);
+
+                    RefrescarCocaCola();
+                    pnlAlertaVerde.Visible = true;
+                    lblverde.Text = "Medidor Eliminado";
+                }
+            }
+            else
+            {
+                pnlAlertaRojo.Visible = true;
+                lblRojo.Text = "Seleccione Una Celda De Medidore";
+
+            }
+        }
+
+        private void btnEditarMedidor_Click(object sender, EventArgs e)
+        {
+            var contador = gridMedidor.SelectedRows.Count;
+            if (contador > 0)
+            {
+                var MedidorSelect = gridMedidor.SelectedRows[0];
+                var celdas = MedidorSelect.Cells;
+
+                EditarMedidor Medidor_Edit = new EditarMedidor();
+
+                Medidor_Edit.txtNumero_Medidor.Text = Convert.ToString(celdas["Numero_Medidor"].Value);
+                Medidor_Edit.txtNIS.Text = Convert.ToString(celdas["NisCliente"].Value);
+                Medidor_Edit.txtNombreMedidor.Text = Convert.ToString(celdas["Nombre_Medidor"].Value);
+                Medidor_Edit.txtArea.Text = Convert.ToString(celdas["Area"].Value);
+                Medidor_Edit.txtModo_Uso.Text = Convert.ToString(celdas["Modo_De_Uso"].Value);
+                Medidor_Edit.txtNom_Propietario.Text = Convert.ToString(celdas["Nombre_Del_Propietario"].Value);
+                Medidor_Edit.txtUbicacionMedidor.Text = Convert.ToString(celdas["Ubicacion_Del_Medidor"].Value);
+                Medidor_Edit.txtKWH_punto_dia.Text = Convert.ToString(celdas["KWH_punto_Dia"].Value);
+                Medidor_Edit.txtNumero_Grupo.Text = Convert.ToString(celdas["Grupo"].Value);
+                Medidor_Edit.txtPotencia_Punto_dia.Text = Convert.ToString(celdas["Pototencia_punto_Dia"].Value);
+                Medidor_Edit.txtMarca.Text = Convert.ToString(celdas["Marca"].Value);
+                Medidor_Edit.txtModelo.Text = Convert.ToString(celdas["Modelo"].Value);
+                Medidor_Edit.txtTipo.Text = Convert.ToString(celdas["Tipo"].Value);
+                Medidor_Edit.txtClase.Text = Convert.ToString(celdas["Clase"].Value);
+                Medidor_Edit.txtPresicion.Text = Convert.ToString(celdas["Presicion"].Value);
+                Medidor_Edit.txtCodigo_Fabricante.Text = Convert.ToString(celdas["Codigo_Del_Fabricante"].Value);
+                Medidor_Edit.txtTc_primaria.Text = Convert.ToString(celdas["TC_Primario"].Value);
+                Medidor_Edit.txtTc_secundaria.Text = Convert.ToString(celdas["TC_Secundario"].Value);
+                Medidor_Edit.txtRelacion_TC.Text = Convert.ToString(celdas["Relacion_TC"].Value);
+                Medidor_Edit.txtTP_primaria.Text = Convert.ToString(celdas["Tp_Primario"].Value);
+                Medidor_Edit.txtTP_secundario.Text = Convert.ToString(celdas["Tp_Secundario"].Value);
+                Medidor_Edit.txtRelacion_TP.Text = Convert.ToString(celdas["Tp_Secundario"].Value);
+                Medidor_Edit.txtNumero_Serie.Text = Convert.ToString(celdas["Numero_Serie"].Value);
+                Medidor_Edit.txt_Ia_punto.Text = Convert.ToString(celdas["Ia_punto"].Value);
+            }
+            else
+            {
+                pnlAlertaRojo.Visible = true;
+                lblRojo.Text = "Seleccione Una Celda De Cliente";
+
+            }
         }
     }
 }

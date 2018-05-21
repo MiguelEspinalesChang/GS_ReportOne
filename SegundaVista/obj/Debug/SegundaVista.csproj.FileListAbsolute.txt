@@ -223,3 +223,4 @@ C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.csproj.G
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.exe
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.pdb
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.Herramientas.resources
+C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.EditarMedidor.resources

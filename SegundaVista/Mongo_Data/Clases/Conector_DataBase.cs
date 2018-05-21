@@ -43,8 +43,10 @@ namespace SegundaVista.Mongo_Data.Clases
         public void insertar_Medidor(DatosMedidor datosTxt)
         {
             string DB_Inicio  = "", DB_Final = "";
+            string id = ObjectId.GenerateNewId().ToString();
             var documento = new BsonDocument
            {
+                {"id_Medidor",id },
                 {"date_Loader",DateTime.Now},
                 {"DB_Inicio",DB_Inicio },
                 {"DB_Final",DB_Final},

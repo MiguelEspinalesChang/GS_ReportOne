@@ -819,5 +819,10 @@ namespace SegundaVista.Vistas
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void PnlBarraTitulo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

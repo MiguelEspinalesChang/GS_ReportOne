@@ -1,6 +1,6 @@
 ﻿namespace SegundaVista.Vistas
 {
-    partial class AgregarMedidor
+    partial class EditarMedidor
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarMedidor));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarMedidor));
             this.PnlBarraTitulo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
@@ -147,9 +146,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombreMedidor = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.epError = new System.Windows.Forms.ErrorProvider(this.components);
-            this.epNombreMedidor = new System.Windows.Forms.ErrorProvider(this.components);
-            this.epClase = new System.Windows.Forms.ErrorProvider(this.components);
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
@@ -168,14 +164,11 @@
             this.gro_B_RS_232.SuspendLayout();
             this.gro_B_Modem.SuspendLayout();
             this.gro_B_RS_485.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.epError)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.epNombreMedidor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.epClase)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlBarraTitulo
             // 
-            this.PnlBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            this.PnlBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(179)))), ((int)(((byte)(0)))));
             this.PnlBarraTitulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PnlBarraTitulo.Controls.Add(this.label1);
             this.PnlBarraTitulo.Controls.Add(this.btnCerrar);
@@ -183,8 +176,7 @@
             this.PnlBarraTitulo.Location = new System.Drawing.Point(0, 0);
             this.PnlBarraTitulo.Name = "PnlBarraTitulo";
             this.PnlBarraTitulo.Size = new System.Drawing.Size(995, 38);
-            this.PnlBarraTitulo.TabIndex = 8;
-            this.PnlBarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlBarraTitulo_Paint);
+            this.PnlBarraTitulo.TabIndex = 9;
             this.PnlBarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PnlBarraTitulo_MouseDown);
             // 
             // label1
@@ -194,9 +186,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(11, 8);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 24);
+            this.label1.Size = new System.Drawing.Size(278, 24);
             this.label1.TabIndex = 4;
-            this.label1.Text = "GS Report One - Agregar Medidor";
+            this.label1.Text = "GS Report One - Editar Medidor";
             this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
             // 
             // btnCerrar
@@ -210,7 +202,6 @@
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // pnlBtnClientes
             // 
@@ -221,7 +212,7 @@
             this.pnlBtnClientes.Location = new System.Drawing.Point(0, 38);
             this.pnlBtnClientes.Name = "pnlBtnClientes";
             this.pnlBtnClientes.Size = new System.Drawing.Size(995, 57);
-            this.pnlBtnClientes.TabIndex = 9;
+            this.pnlBtnClientes.TabIndex = 10;
             // 
             // pnlAlerta
             // 
@@ -256,7 +247,6 @@
             this.btnCerrarAlertaR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCerrarAlertaR.TabIndex = 2;
             this.btnCerrarAlertaR.TabStop = false;
-            this.btnCerrarAlertaR.Click += new System.EventHandler(this.btnCerrarAlertaR_Click);
             // 
             // lblRojo
             // 
@@ -299,7 +289,6 @@
             this.btnCerrarAlertaV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCerrarAlertaV.TabIndex = 1;
             this.btnCerrarAlertaV.TabStop = false;
-            this.btnCerrarAlertaV.Click += new System.EventHandler(this.btnCerrarAlertaV_Click);
             // 
             // lblverde
             // 
@@ -323,7 +312,6 @@
             this.btnGuardarMedidor.TabIndex = 22;
             this.btnGuardarMedidor.Text = "Guardar";
             this.btnGuardarMedidor.UseVisualStyleBackColor = true;
-            this.btnGuardarMedidor.Click += new System.EventHandler(this.btnGuardarMedidor_Click);
             // 
             // PnlFormMedidor
             // 
@@ -392,8 +380,7 @@
             this.PnlFormMedidor.Location = new System.Drawing.Point(0, 95);
             this.PnlFormMedidor.Name = "PnlFormMedidor";
             this.PnlFormMedidor.Size = new System.Drawing.Size(995, 547);
-            this.PnlFormMedidor.TabIndex = 10;
-            this.PnlFormMedidor.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlFormMedidor_Paint);
+            this.PnlFormMedidor.TabIndex = 11;
             // 
             // txtClase
             // 
@@ -472,7 +459,6 @@
             this.txtPresicion.Name = "txtPresicion";
             this.txtPresicion.Size = new System.Drawing.Size(212, 26);
             this.txtPresicion.TabIndex = 137;
-            this.txtPresicion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPresicion_KeyPress);
             // 
             // label38
             // 
@@ -519,9 +505,6 @@
             this.txtNumero_Medidor.Name = "txtNumero_Medidor";
             this.txtNumero_Medidor.Size = new System.Drawing.Size(212, 26);
             this.txtNumero_Medidor.TabIndex = 131;
-            this.txtNumero_Medidor.Click += new System.EventHandler(this.txtNumero_Medidor_Click);
-            this.txtNumero_Medidor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumero_Medidor_KeyPress);
-            this.txtNumero_Medidor.Validated += new System.EventHandler(this.txtNumero_Medidor_Validated);
             // 
             // label9
             // 
@@ -559,7 +542,6 @@
             this.txtTP_secundario.Name = "txtTP_secundario";
             this.txtTP_secundario.Size = new System.Drawing.Size(100, 26);
             this.txtTP_secundario.TabIndex = 127;
-            this.txtTP_secundario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTP_secundario_KeyPress);
             // 
             // label34
             // 
@@ -578,7 +560,6 @@
             this.txtTP_primaria.Name = "txtTP_primaria";
             this.txtTP_primaria.Size = new System.Drawing.Size(100, 26);
             this.txtTP_primaria.TabIndex = 125;
-            this.txtTP_primaria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTP_primaria_KeyPress);
             // 
             // label33
             // 
@@ -646,7 +627,6 @@
             this.txtTc_secundaria.Name = "txtTc_secundaria";
             this.txtTc_secundaria.Size = new System.Drawing.Size(100, 26);
             this.txtTc_secundaria.TabIndex = 118;
-            this.txtTc_secundaria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTc_secundaria_KeyPress);
             // 
             // txt_Vc_punto
             // 
@@ -655,7 +635,6 @@
             this.txt_Vc_punto.Name = "txt_Vc_punto";
             this.txt_Vc_punto.Size = new System.Drawing.Size(100, 26);
             this.txt_Vc_punto.TabIndex = 117;
-            this.txt_Vc_punto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Vc_punto_KeyPress);
             // 
             // label18
             // 
@@ -674,7 +653,6 @@
             this.txt_Vb_punto.Name = "txt_Vb_punto";
             this.txt_Vb_punto.Size = new System.Drawing.Size(100, 26);
             this.txt_Vb_punto.TabIndex = 115;
-            this.txt_Vb_punto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Vb_punto_KeyPress);
             // 
             // label17
             // 
@@ -693,7 +671,6 @@
             this.txt_Va_punto.Name = "txt_Va_punto";
             this.txt_Va_punto.Size = new System.Drawing.Size(100, 26);
             this.txt_Va_punto.TabIndex = 113;
-            this.txt_Va_punto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Va_punto_KeyPress_1);
             // 
             // label16
             // 
@@ -712,7 +689,6 @@
             this.txt_Ic_punto.Name = "txt_Ic_punto";
             this.txt_Ic_punto.Size = new System.Drawing.Size(100, 26);
             this.txt_Ic_punto.TabIndex = 111;
-            this.txt_Ic_punto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Ic_punto_KeyPress);
             // 
             // label15
             // 
@@ -731,8 +707,6 @@
             this.txt_Ib_punto.Name = "txt_Ib_punto";
             this.txt_Ib_punto.Size = new System.Drawing.Size(100, 26);
             this.txt_Ib_punto.TabIndex = 109;
-            this.txt_Ib_punto.TextChanged += new System.EventHandler(this.txt_Ib_punto_TextChanged);
-            this.txt_Ib_punto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Ib_punto_KeyPress);
             // 
             // label14
             // 
@@ -751,7 +725,6 @@
             this.txt_Ia_punto.Name = "txt_Ia_punto";
             this.txt_Ia_punto.Size = new System.Drawing.Size(100, 26);
             this.txt_Ia_punto.TabIndex = 107;
-            this.txt_Ia_punto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Ia_punto_KeyPress);
             // 
             // label13
             // 
@@ -770,7 +743,6 @@
             this.txtPotencia_Punto_dia.Name = "txtPotencia_Punto_dia";
             this.txtPotencia_Punto_dia.Size = new System.Drawing.Size(100, 26);
             this.txtPotencia_Punto_dia.TabIndex = 105;
-            this.txtPotencia_Punto_dia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPotencia_Punto_dia_KeyPress);
             // 
             // label12
             // 
@@ -789,7 +761,6 @@
             this.txtKWH_punto_dia.Name = "txtKWH_punto_dia";
             this.txtKWH_punto_dia.Size = new System.Drawing.Size(212, 26);
             this.txtKWH_punto_dia.TabIndex = 103;
-            this.txtKWH_punto_dia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtKWH_punto_dia_KeyPress);
             // 
             // label11
             // 
@@ -819,7 +790,6 @@
             this.label10.Size = new System.Drawing.Size(71, 22);
             this.label10.TabIndex = 100;
             this.label10.Text = "Rel _TP";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // txtTc_primaria
             // 
@@ -829,7 +799,6 @@
             this.txtTc_primaria.Name = "txtTc_primaria";
             this.txtTc_primaria.Size = new System.Drawing.Size(100, 26);
             this.txtTc_primaria.TabIndex = 97;
-            this.txtTc_primaria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTc_primaria_KeyPress);
             // 
             // label8
             // 
@@ -920,7 +889,6 @@
             this.radio_RadiFrecuencia_no.TabStop = true;
             this.radio_RadiFrecuencia_no.Text = "no";
             this.radio_RadiFrecuencia_no.UseVisualStyleBackColor = true;
-            this.radio_RadiFrecuencia_no.CheckedChanged += new System.EventHandler(this.radioButton5_CheckedChanged);
             // 
             // radio_RadiFrecuencia_si
             // 
@@ -1041,7 +1009,6 @@
             this.check_radio_frecuencia.TabIndex = 121;
             this.check_radio_frecuencia.Text = "Radio frecuencia";
             this.check_radio_frecuencia.UseVisualStyleBackColor = true;
-            this.check_radio_frecuencia.CheckedChanged += new System.EventHandler(this.check_radio_frecuencia_CheckedChanged);
             // 
             // check_infrarrojo
             // 
@@ -1052,7 +1019,6 @@
             this.check_infrarrojo.TabIndex = 120;
             this.check_infrarrojo.Text = "Infrarrojo";
             this.check_infrarrojo.UseVisualStyleBackColor = true;
-            this.check_infrarrojo.CheckedChanged += new System.EventHandler(this.check_infrarrojo_CheckedChanged);
             // 
             // checkPuerto_optico
             // 
@@ -1063,7 +1029,6 @@
             this.checkPuerto_optico.TabIndex = 119;
             this.checkPuerto_optico.Text = "Puerto Optico";
             this.checkPuerto_optico.UseVisualStyleBackColor = true;
-            this.checkPuerto_optico.CheckedChanged += new System.EventHandler(this.checkPuerto_optico_CheckedChanged);
             // 
             // check_RS_485
             // 
@@ -1074,7 +1039,6 @@
             this.check_RS_485.TabIndex = 118;
             this.check_RS_485.Text = "RS_485";
             this.check_RS_485.UseVisualStyleBackColor = true;
-            this.check_RS_485.CheckedChanged += new System.EventHandler(this.check_RS_485_CheckedChanged);
             // 
             // checkRS_232
             // 
@@ -1085,7 +1049,6 @@
             this.checkRS_232.TabIndex = 117;
             this.checkRS_232.Text = "RS_232";
             this.checkRS_232.UseVisualStyleBackColor = true;
-            this.checkRS_232.CheckedChanged += new System.EventHandler(this.checkRS_232_CheckedChanged);
             // 
             // check_Modem
             // 
@@ -1096,7 +1059,6 @@
             this.check_Modem.TabIndex = 116;
             this.check_Modem.Text = "Modem";
             this.check_Modem.UseVisualStyleBackColor = true;
-            this.check_Modem.CheckedChanged += new System.EventHandler(this.check_Modem_CheckedChanged);
             // 
             // check_Eternet
             // 
@@ -1107,7 +1069,6 @@
             this.check_Eternet.TabIndex = 115;
             this.check_Eternet.Text = "Eternet";
             this.check_Eternet.UseVisualStyleBackColor = true;
-            this.check_Eternet.CheckedChanged += new System.EventHandler(this.check_Eternet_CheckedChanged);
             // 
             // gro_B_Eternet
             // 
@@ -1290,7 +1251,6 @@
             this.txtNumTelefono_modem.Name = "txtNumTelefono_modem";
             this.txtNumTelefono_modem.Size = new System.Drawing.Size(203, 31);
             this.txtNumTelefono_modem.TabIndex = 111;
-            this.txtNumTelefono_modem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumTelefono_modem_KeyPress);
             // 
             // label23
             // 
@@ -1328,7 +1288,6 @@
             this.radio_RS485_no.TabStop = true;
             this.radio_RS485_no.Text = "no";
             this.radio_RS485_no.UseVisualStyleBackColor = true;
-            this.radio_RS485_no.CheckedChanged += new System.EventHandler(this.radio_Eternet_no_CheckedChanged);
             // 
             // radio_RS485_si
             // 
@@ -1339,7 +1298,6 @@
             this.radio_RS485_si.TabIndex = 113;
             this.radio_RS485_si.Text = "si";
             this.radio_RS485_si.UseVisualStyleBackColor = true;
-            this.radio_RS485_si.CheckedChanged += new System.EventHandler(this.radio_Eternet_si_CheckedChanged);
             // 
             // label21
             // 
@@ -1433,7 +1391,6 @@
             this.txtNIS.Name = "txtNIS";
             this.txtNIS.Size = new System.Drawing.Size(212, 26);
             this.txtNIS.TabIndex = 84;
-            this.txtNIS.TextChanged += new System.EventHandler(this.txtNIS_TextChanged);
             // 
             // label2
             // 
@@ -1452,7 +1409,6 @@
             this.txtNombreMedidor.Name = "txtNombreMedidor";
             this.txtNombreMedidor.Size = new System.Drawing.Size(212, 26);
             this.txtNombreMedidor.TabIndex = 82;
-            this.txtNombreMedidor.TextChanged += new System.EventHandler(this.txtNombreMedidor_TextChanged);
             // 
             // label19
             // 
@@ -1464,22 +1420,7 @@
             this.label19.TabIndex = 81;
             this.label19.Text = "Nombre Del Medidor";
             // 
-            // epError
-            // 
-            this.epError.ContainerControl = this;
-            this.epError.Icon = ((System.Drawing.Icon)(resources.GetObject("epError.Icon")));
-            // 
-            // epNombreMedidor
-            // 
-            this.epNombreMedidor.ContainerControl = this;
-            this.epNombreMedidor.Icon = ((System.Drawing.Icon)(resources.GetObject("epNombreMedidor.Icon")));
-            // 
-            // epClase
-            // 
-            this.epClase.ContainerControl = this;
-            this.epClase.Icon = ((System.Drawing.Icon)(resources.GetObject("epClase.Icon")));
-            // 
-            // AgregarMedidor
+            // EditarMedidor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1491,10 +1432,10 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(995, 642);
             this.MinimumSize = new System.Drawing.Size(995, 642);
-            this.Name = "AgregarMedidor";
+            this.Name = "EditarMedidor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AgregarMedidor";
-            this.Load += new System.EventHandler(this.AgregarMedidor_Load);
+            this.Text = "EditarMedidor";
+            this.Load += new System.EventHandler(this.EditarMedidor_Load);
             this.PnlBarraTitulo.ResumeLayout(false);
             this.PnlBarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
@@ -1525,9 +1466,6 @@
             this.gro_B_Modem.PerformLayout();
             this.gro_B_RS_485.ResumeLayout(false);
             this.gro_B_RS_485.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.epError)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.epNombreMedidor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.epClase)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1538,75 +1476,42 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.Panel pnlBtnClientes;
+        public System.Windows.Forms.Panel pnlAlerta;
+        public System.Windows.Forms.Panel pnlAlertaRojo;
+        private System.Windows.Forms.PictureBox btnCerrarAlertaR;
+        public System.Windows.Forms.Label lblRojo;
+        private System.Windows.Forms.Panel pnlAlertaVerde;
+        private System.Windows.Forms.Label lbl_verde;
+        private System.Windows.Forms.PictureBox btnCerrarAlertaV;
+        private System.Windows.Forms.Label lblverde;
         private System.Windows.Forms.Button btnGuardarMedidor;
         private System.Windows.Forms.Panel PnlFormMedidor;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox txtNombreMedidor;
-        private System.Windows.Forms.TextBox txtUbicacionMedidor;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtMarca;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupComunicacion;
-        private System.Windows.Forms.TextBox txtModelo;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtTc_primaria;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtRelacion_TP;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtPotencia_Punto_dia;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtKWH_punto_dia;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txt_Ic_punto;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txt_Ib_punto;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txt_Ia_punto;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txt_Va_punto;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txt_Vb_punto;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox txt_Vc_punto;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.GroupBox gro_B_RS_485;
-        private System.Windows.Forms.TextBox txtRS485_Id;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.RadioButton radio_RS485_no;
-        private System.Windows.Forms.RadioButton radio_RS485_si;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.GroupBox gro_B_Modem;
-        private System.Windows.Forms.RadioButton radio_Modem_no;
-        private System.Windows.Forms.RadioButton radio_Modem_si;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox txtNumTelefono_modem;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.GroupBox gro_B_RS_232;
-        private System.Windows.Forms.RadioButton radio_RS232_no;
-        private System.Windows.Forms.RadioButton radio_RS232_si;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox txtId_RS232;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.GroupBox gro_B_Eternet;
-        private System.Windows.Forms.RadioButton radio_Eternet_no;
-        private System.Windows.Forms.RadioButton radio_Eternet_si;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox txtNumeroIp_Eternet;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.CheckBox check_Eternet;
-        private System.Windows.Forms.CheckBox check_infrarrojo;
-        private System.Windows.Forms.CheckBox checkPuerto_optico;
-        private System.Windows.Forms.CheckBox check_RS_485;
-        private System.Windows.Forms.CheckBox checkRS_232;
-        private System.Windows.Forms.CheckBox check_Modem;
-        private System.Windows.Forms.CheckBox check_radio_frecuencia;
-        private System.Windows.Forms.GroupBox gro_B_PuertoOptico;
-        private System.Windows.Forms.RadioButton radio_PuertoOptico_no;
-        private System.Windows.Forms.RadioButton radio_PuertoOptico_si;
-        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.GroupBox gro_B_RadioFrecuencia;
         private System.Windows.Forms.RadioButton radio_RadiFrecuencia_no;
         private System.Windows.Forms.RadioButton radio_RadiFrecuencia_si;
@@ -1615,44 +1520,74 @@
         private System.Windows.Forms.RadioButton radio_Infrarrojo_no;
         private System.Windows.Forms.RadioButton radio_Infrarrojo_si;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox txtTc_secundaria;
-        private System.Windows.Forms.TextBox txtRelacion_TC;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox txtModo_Uso;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox txtTP_secundario;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox txtTP_primaria;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox txtNumero_Grupo;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.TextBox txtNumero_Medidor;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtTipo;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox txtCodigo_Fabricante;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox txtPresicion;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox txtNumero_Serie;
-        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.GroupBox gro_B_PuertoOptico;
+        private System.Windows.Forms.RadioButton radio_PuertoOptico_no;
+        private System.Windows.Forms.RadioButton radio_PuertoOptico_si;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.CheckBox check_radio_frecuencia;
+        private System.Windows.Forms.CheckBox check_infrarrojo;
+        private System.Windows.Forms.CheckBox checkPuerto_optico;
+        private System.Windows.Forms.CheckBox check_RS_485;
+        private System.Windows.Forms.CheckBox checkRS_232;
+        private System.Windows.Forms.CheckBox check_Modem;
+        private System.Windows.Forms.CheckBox check_Eternet;
+        private System.Windows.Forms.GroupBox gro_B_Eternet;
+        private System.Windows.Forms.RadioButton radio_Eternet_no;
+        private System.Windows.Forms.RadioButton radio_Eternet_si;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox txtNumeroIp_Eternet;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.GroupBox gro_B_RS_232;
+        private System.Windows.Forms.RadioButton radio_RS232_no;
+        private System.Windows.Forms.RadioButton radio_RS232_si;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox txtId_RS232;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.GroupBox gro_B_Modem;
+        private System.Windows.Forms.RadioButton radio_Modem_no;
+        private System.Windows.Forms.RadioButton radio_Modem_si;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox txtNumTelefono_modem;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.GroupBox gro_B_RS_485;
+        private System.Windows.Forms.RadioButton radio_RS485_no;
+        private System.Windows.Forms.RadioButton radio_RS485_si;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox txtRS485_Id;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
         public System.Windows.Forms.TextBox txtNom_Propietario;
+        private System.Windows.Forms.Label label3;
         public System.Windows.Forms.TextBox txtNIS;
-        private System.Windows.Forms.PictureBox btnCerrarAlertaR;
-        private System.Windows.Forms.Panel pnlAlertaVerde;
-        private System.Windows.Forms.PictureBox btnCerrarAlertaV;
-        private System.Windows.Forms.Label lblverde;
-        public System.Windows.Forms.Panel pnlAlerta;
-        public System.Windows.Forms.Panel pnlAlertaRojo;
-        public System.Windows.Forms.Label lblRojo;
-        private System.Windows.Forms.Label lbl_verde;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox txtArea;
-        private System.Windows.Forms.ErrorProvider epError;
-        private System.Windows.Forms.ErrorProvider epNombreMedidor;
-        private System.Windows.Forms.ErrorProvider epClase;
-        private MetroFramework.Controls.MetroComboBox txtClase;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label19;
+        public System.Windows.Forms.TextBox txtNumero_Medidor;
+        public MetroFramework.Controls.MetroComboBox txtClase;
+        public System.Windows.Forms.TextBox txtArea;
+        public System.Windows.Forms.TextBox txtNumero_Serie;
+        public System.Windows.Forms.TextBox txtCodigo_Fabricante;
+        public System.Windows.Forms.TextBox txtPresicion;
+        public System.Windows.Forms.TextBox txtTipo;
+        public System.Windows.Forms.TextBox txtNumero_Grupo;
+        public System.Windows.Forms.TextBox txtTP_secundario;
+        public System.Windows.Forms.TextBox txtTP_primaria;
+        public System.Windows.Forms.TextBox txtRelacion_TC;
+        public System.Windows.Forms.TextBox txtModo_Uso;
+        public System.Windows.Forms.TextBox txtTc_secundaria;
+        public System.Windows.Forms.TextBox txt_Vc_punto;
+        public System.Windows.Forms.TextBox txt_Vb_punto;
+        public System.Windows.Forms.TextBox txt_Va_punto;
+        public System.Windows.Forms.TextBox txt_Ic_punto;
+        public System.Windows.Forms.TextBox txt_Ib_punto;
+        public System.Windows.Forms.TextBox txt_Ia_punto;
+        public System.Windows.Forms.TextBox txtPotencia_Punto_dia;
+        public System.Windows.Forms.TextBox txtKWH_punto_dia;
+        public System.Windows.Forms.TextBox txtRelacion_TP;
+        public System.Windows.Forms.TextBox txtTc_primaria;
+        public System.Windows.Forms.TextBox txtModelo;
+        public System.Windows.Forms.TextBox txtMarca;
+        public System.Windows.Forms.TextBox txtUbicacionMedidor;
+        public System.Windows.Forms.TextBox txtNombreMedidor;
     }
 }

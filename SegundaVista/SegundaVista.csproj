@@ -198,6 +198,12 @@
     <Compile Include="Vistas\EditarCliente.Designer.cs">
       <DependentUpon>EditarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\EditarMedidor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\EditarMedidor.Designer.cs">
+      <DependentUpon>EditarMedidor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Herramientas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -263,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\EditarCliente.resx">
       <DependentUpon>EditarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\EditarMedidor.resx">
+      <DependentUpon>EditarMedidor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Herramientas.resx">
       <DependentUpon>Herramientas.cs</DependentUpon>

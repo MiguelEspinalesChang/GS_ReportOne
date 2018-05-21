@@ -65,6 +65,7 @@ namespace SegundaVista.Vistas
             public string Numero_Medidor { get; set; }
             //System.ComponentModel.
             public ObjectId _id { get; set; }
+            public string id_Medidor { get; set; }
             public DateTime date_Loader { get; set; }
             public string DB_Inicio { get; set; }
             public string DB_Final { get; set; }
