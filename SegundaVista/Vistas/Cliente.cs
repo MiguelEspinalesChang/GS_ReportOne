@@ -190,6 +190,7 @@ namespace SegundaVista.Vistas
             [DisplayName("RS485 Operativo")]
             public BsonBoolean RS485_Operativo { get; set; }
             public string RS485_Id { get; set; }
+            [DisplayName("Puerto Optico ")]
             public BsonBoolean PuertoOptico { get; set; }
             [DisplayName("PuertoOptico Operativo")]
             public BsonBoolean PuertoOptico_Operativo { get; set; }
@@ -412,9 +413,7 @@ namespace SegundaVista.Vistas
             {
                 var MedidorSelect = gridMedidor.SelectedRows[0];
                 var celdas = MedidorSelect.Cells;
-
                 EditarMedidor Medidor_Edit = new EditarMedidor();
-
                 Medidor_Edit.txtNumero_Medidor.Text = Convert.ToString(celdas["Numero_Medidor"].Value);
                 Medidor_Edit.txtNIS.Text = Convert.ToString(celdas["NisCliente"].Value);
                 Medidor_Edit.txtNombreMedidor.Text = Convert.ToString(celdas["Nombre_Medidor"].Value);
@@ -439,6 +438,34 @@ namespace SegundaVista.Vistas
                 Medidor_Edit.txtRelacion_TP.Text = Convert.ToString(celdas["Tp_Secundario"].Value);
                 Medidor_Edit.txtNumero_Serie.Text = Convert.ToString(celdas["Numero_Serie"].Value);
                 Medidor_Edit.txt_Ia_punto.Text = Convert.ToString(celdas["Ia_punto"].Value);
+                Medidor_Edit.txt_Ib_punto.Text = Convert.ToString(celdas["Ib_punto"].Value);
+                Medidor_Edit.txt_Ic_punto.Text = Convert.ToString(celdas["Ic_punto"].Value);
+                Medidor_Edit.txt_Va_punto.Text = Convert.ToString(celdas["Va_punto"].Value);
+                Medidor_Edit.txt_Vb_punto.Text = Convert.ToString(celdas["Vb_punto"].Value);
+                Medidor_Edit.txt_Vc_punto.Text = Convert.ToString(celdas["Vc_punto"].Value);
+                Medidor_Edit.check_Eternet.Checked = Convert.ToBoolean(celdas["Eternet"].Value);
+                Medidor_Edit.radio_Eternet_si.Checked = Convert.ToBoolean(celdas["Eternet_Operativo"].Value);
+                Medidor_Edit.txtNumeroIp_Eternet.Text = Convert.ToString(celdas["Eternet_NumeroIp"].Value);
+                Medidor_Edit.check_Modem.Checked = Convert.ToBoolean(celdas["Modem"].Value);
+                Medidor_Edit.radio_Modem_si.Checked = Convert.ToBoolean(celdas["Modem_Operativo"].Value);
+                Medidor_Edit.txtNumTelefono_modem.Text = Convert.ToString(celdas["Modem_Telefono"].Value);
+                Medidor_Edit.checkRS_232.Checked = Convert.ToBoolean(celdas["RS232"].Value);
+                Medidor_Edit.radio_RS232_si.Checked = Convert.ToBoolean(celdas["RS232_Operativo"].Value);
+                Medidor_Edit.txtId_RS232.Text = Convert.ToString(celdas["RS232_Id"].Value);
+                Medidor_Edit.check_RS_485.Checked = Convert.ToBoolean(celdas["RS485"].Value);
+                Medidor_Edit.radio_RS485_si.Checked = Convert.ToBoolean(celdas["RS485_Operativo"].Value);
+                Medidor_Edit.txtRS485_Id.Text = Convert.ToString(celdas["RS485_Id"].Value);
+                Medidor_Edit.checkPuerto_optico.Checked = Convert.ToBoolean(celdas["PuertoOptico"].Value);
+                Medidor_Edit.radio_PuertoOptico_si.Checked = Convert.ToBoolean(celdas["PuertoOptico_Operativo"].Value);
+                Medidor_Edit.check_infrarrojo.Checked = Convert.ToBoolean(celdas["infrarrojo"].Value);
+                Medidor_Edit.radio_Infrarrojo_si.Checked = Convert.ToBoolean(celdas["infrarrojo_Operativo"].Value);
+                Medidor_Edit.check_radio_frecuencia.Checked = Convert.ToBoolean(celdas["RadioFrecuencia"].Value);
+                Medidor_Edit.radio_RadiFrecuencia_si.Checked = Convert.ToBoolean(celdas["RadioFrecuencia_Operativo"].Value);
+                Medidor_Edit.lbl_IdMedidor.Text = Convert.ToString(celdas["id_Medidor"].Value);
+
+                pnlAlertaRojo.Visible = false;
+                Medidor_Edit.ShowDialog();
+                RefrescarCocaCola();
             }
             else
             {

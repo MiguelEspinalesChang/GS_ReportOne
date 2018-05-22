@@ -146,6 +146,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombreMedidor = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.lbl_IdMedidor = new System.Windows.Forms.Label();
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
@@ -202,10 +203,12 @@
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // pnlBtnClientes
             // 
             this.pnlBtnClientes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlBtnClientes.Controls.Add(this.lbl_IdMedidor);
             this.pnlBtnClientes.Controls.Add(this.pnlAlerta);
             this.pnlBtnClientes.Controls.Add(this.btnGuardarMedidor);
             this.pnlBtnClientes.Dock = System.Windows.Forms.DockStyle.Top;
@@ -247,6 +250,7 @@
             this.btnCerrarAlertaR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCerrarAlertaR.TabIndex = 2;
             this.btnCerrarAlertaR.TabStop = false;
+            this.btnCerrarAlertaR.Click += new System.EventHandler(this.btnCerrarAlertaR_Click);
             // 
             // lblRojo
             // 
@@ -289,6 +293,7 @@
             this.btnCerrarAlertaV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnCerrarAlertaV.TabIndex = 1;
             this.btnCerrarAlertaV.TabStop = false;
+            this.btnCerrarAlertaV.Click += new System.EventHandler(this.btnCerrarAlertaV_Click);
             // 
             // lblverde
             // 
@@ -1009,6 +1014,7 @@
             this.check_radio_frecuencia.TabIndex = 121;
             this.check_radio_frecuencia.Text = "Radio frecuencia";
             this.check_radio_frecuencia.UseVisualStyleBackColor = true;
+            this.check_radio_frecuencia.CheckedChanged += new System.EventHandler(this.check_radio_frecuencia_CheckedChanged);
             // 
             // check_infrarrojo
             // 
@@ -1019,6 +1025,7 @@
             this.check_infrarrojo.TabIndex = 120;
             this.check_infrarrojo.Text = "Infrarrojo";
             this.check_infrarrojo.UseVisualStyleBackColor = true;
+            this.check_infrarrojo.CheckedChanged += new System.EventHandler(this.check_infrarrojo_CheckedChanged);
             // 
             // checkPuerto_optico
             // 
@@ -1029,6 +1036,7 @@
             this.checkPuerto_optico.TabIndex = 119;
             this.checkPuerto_optico.Text = "Puerto Optico";
             this.checkPuerto_optico.UseVisualStyleBackColor = true;
+            this.checkPuerto_optico.CheckedChanged += new System.EventHandler(this.checkPuerto_optico_CheckedChanged);
             // 
             // check_RS_485
             // 
@@ -1039,6 +1047,7 @@
             this.check_RS_485.TabIndex = 118;
             this.check_RS_485.Text = "RS_485";
             this.check_RS_485.UseVisualStyleBackColor = true;
+            this.check_RS_485.CheckedChanged += new System.EventHandler(this.check_RS_485_CheckedChanged);
             // 
             // checkRS_232
             // 
@@ -1049,6 +1058,7 @@
             this.checkRS_232.TabIndex = 117;
             this.checkRS_232.Text = "RS_232";
             this.checkRS_232.UseVisualStyleBackColor = true;
+            this.checkRS_232.CheckedChanged += new System.EventHandler(this.checkRS_232_CheckedChanged);
             // 
             // check_Modem
             // 
@@ -1059,6 +1069,7 @@
             this.check_Modem.TabIndex = 116;
             this.check_Modem.Text = "Modem";
             this.check_Modem.UseVisualStyleBackColor = true;
+            this.check_Modem.CheckedChanged += new System.EventHandler(this.check_Modem_CheckedChanged);
             // 
             // check_Eternet
             // 
@@ -1069,6 +1080,7 @@
             this.check_Eternet.TabIndex = 115;
             this.check_Eternet.Text = "Eternet";
             this.check_Eternet.UseVisualStyleBackColor = true;
+            this.check_Eternet.CheckedChanged += new System.EventHandler(this.check_Eternet_CheckedChanged);
             // 
             // gro_B_Eternet
             // 
@@ -1420,6 +1432,14 @@
             this.label19.TabIndex = 81;
             this.label19.Text = "Nombre Del Medidor";
             // 
+            // lbl_IdMedidor
+            // 
+            this.lbl_IdMedidor.AutoSize = true;
+            this.lbl_IdMedidor.Location = new System.Drawing.Point(192, 14);
+            this.lbl_IdMedidor.Name = "lbl_IdMedidor";
+            this.lbl_IdMedidor.Size = new System.Drawing.Size(0, 13);
+            this.lbl_IdMedidor.TabIndex = 24;
+            // 
             // EditarMedidor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1440,6 +1460,7 @@
             this.PnlBarraTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.pnlBtnClientes.ResumeLayout(false);
+            this.pnlBtnClientes.PerformLayout();
             this.pnlAlerta.ResumeLayout(false);
             this.pnlAlertaRojo.ResumeLayout(false);
             this.pnlAlertaRojo.PerformLayout();
@@ -1514,46 +1535,28 @@
         private System.Windows.Forms.GroupBox groupComunicacion;
         private System.Windows.Forms.GroupBox gro_B_RadioFrecuencia;
         private System.Windows.Forms.RadioButton radio_RadiFrecuencia_no;
-        private System.Windows.Forms.RadioButton radio_RadiFrecuencia_si;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.GroupBox gro_B_Infrarrojo;
         private System.Windows.Forms.RadioButton radio_Infrarrojo_no;
-        private System.Windows.Forms.RadioButton radio_Infrarrojo_si;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.GroupBox gro_B_PuertoOptico;
         private System.Windows.Forms.RadioButton radio_PuertoOptico_no;
-        private System.Windows.Forms.RadioButton radio_PuertoOptico_si;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.CheckBox check_radio_frecuencia;
-        private System.Windows.Forms.CheckBox check_infrarrojo;
-        private System.Windows.Forms.CheckBox checkPuerto_optico;
-        private System.Windows.Forms.CheckBox check_RS_485;
-        private System.Windows.Forms.CheckBox checkRS_232;
-        private System.Windows.Forms.CheckBox check_Modem;
-        private System.Windows.Forms.CheckBox check_Eternet;
         private System.Windows.Forms.GroupBox gro_B_Eternet;
         private System.Windows.Forms.RadioButton radio_Eternet_no;
-        private System.Windows.Forms.RadioButton radio_Eternet_si;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox txtNumeroIp_Eternet;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.GroupBox gro_B_RS_232;
         private System.Windows.Forms.RadioButton radio_RS232_no;
-        private System.Windows.Forms.RadioButton radio_RS232_si;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox txtId_RS232;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.GroupBox gro_B_Modem;
         private System.Windows.Forms.RadioButton radio_Modem_no;
-        private System.Windows.Forms.RadioButton radio_Modem_si;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox txtNumTelefono_modem;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.GroupBox gro_B_RS_485;
         private System.Windows.Forms.RadioButton radio_RS485_no;
-        private System.Windows.Forms.RadioButton radio_RS485_si;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox txtRS485_Id;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -1589,5 +1592,24 @@
         public System.Windows.Forms.TextBox txtMarca;
         public System.Windows.Forms.TextBox txtUbicacionMedidor;
         public System.Windows.Forms.TextBox txtNombreMedidor;
+        public System.Windows.Forms.CheckBox check_radio_frecuencia;
+        public System.Windows.Forms.CheckBox check_infrarrojo;
+        public System.Windows.Forms.CheckBox checkPuerto_optico;
+        public System.Windows.Forms.CheckBox check_RS_485;
+        public System.Windows.Forms.CheckBox checkRS_232;
+        public System.Windows.Forms.CheckBox check_Modem;
+        public System.Windows.Forms.CheckBox check_Eternet;
+        public System.Windows.Forms.RadioButton radio_RadiFrecuencia_si;
+        public System.Windows.Forms.RadioButton radio_Infrarrojo_si;
+        public System.Windows.Forms.RadioButton radio_PuertoOptico_si;
+        public System.Windows.Forms.RadioButton radio_Eternet_si;
+        public System.Windows.Forms.TextBox txtNumeroIp_Eternet;
+        public System.Windows.Forms.RadioButton radio_RS232_si;
+        public System.Windows.Forms.TextBox txtId_RS232;
+        public System.Windows.Forms.RadioButton radio_Modem_si;
+        public System.Windows.Forms.TextBox txtNumTelefono_modem;
+        public System.Windows.Forms.RadioButton radio_RS485_si;
+        public System.Windows.Forms.TextBox txtRS485_Id;
+        public System.Windows.Forms.Label lbl_IdMedidor;
     }
 }
