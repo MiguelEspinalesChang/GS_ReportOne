@@ -122,7 +122,7 @@ namespace SegundaVista.Vistas
         {
             try
             {
-                Conector_DataBase conector = new Conector_DataBase();
+               // Conector_DataBase conector = new Conector_DataBase();
                 DatosCliente cliente_Editado = new DatosCliente();
                 var Cliente = MongoConexion.DataBase.GetCollection<DatosCliente>("Clientes");
      

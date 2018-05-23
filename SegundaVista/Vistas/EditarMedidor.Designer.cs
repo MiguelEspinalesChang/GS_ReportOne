@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.pnlBtnClientes = new System.Windows.Forms.Panel();
+            this.lbl_IdMedidor = new System.Windows.Forms.Label();
             this.pnlAlerta = new System.Windows.Forms.Panel();
             this.pnlAlertaRojo = new System.Windows.Forms.Panel();
             this.btnCerrarAlertaR = new System.Windows.Forms.PictureBox();
@@ -140,13 +141,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtUbicacionMedidor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtNom_Propietario = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNIS = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombreMedidor = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.lbl_IdMedidor = new System.Windows.Forms.Label();
+            this.txtNom_Propietario = new System.Windows.Forms.ComboBox();
+            this.lblNombreOrigen = new System.Windows.Forms.Label();
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
@@ -208,6 +209,7 @@
             // pnlBtnClientes
             // 
             this.pnlBtnClientes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlBtnClientes.Controls.Add(this.lblNombreOrigen);
             this.pnlBtnClientes.Controls.Add(this.lbl_IdMedidor);
             this.pnlBtnClientes.Controls.Add(this.pnlAlerta);
             this.pnlBtnClientes.Controls.Add(this.btnGuardarMedidor);
@@ -216,6 +218,14 @@
             this.pnlBtnClientes.Name = "pnlBtnClientes";
             this.pnlBtnClientes.Size = new System.Drawing.Size(995, 57);
             this.pnlBtnClientes.TabIndex = 10;
+            // 
+            // lbl_IdMedidor
+            // 
+            this.lbl_IdMedidor.AutoSize = true;
+            this.lbl_IdMedidor.Location = new System.Drawing.Point(192, 14);
+            this.lbl_IdMedidor.Name = "lbl_IdMedidor";
+            this.lbl_IdMedidor.Size = new System.Drawing.Size(0, 13);
+            this.lbl_IdMedidor.TabIndex = 24;
             // 
             // pnlAlerta
             // 
@@ -317,11 +327,13 @@
             this.btnGuardarMedidor.TabIndex = 22;
             this.btnGuardarMedidor.Text = "Guardar";
             this.btnGuardarMedidor.UseVisualStyleBackColor = true;
+            this.btnGuardarMedidor.Click += new System.EventHandler(this.btnGuardarMedidor_Click);
             // 
             // PnlFormMedidor
             // 
             this.PnlFormMedidor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.PnlFormMedidor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PnlFormMedidor.Controls.Add(this.txtNom_Propietario);
             this.PnlFormMedidor.Controls.Add(this.txtClase);
             this.PnlFormMedidor.Controls.Add(this.label41);
             this.PnlFormMedidor.Controls.Add(this.txtArea);
@@ -375,7 +387,6 @@
             this.PnlFormMedidor.Controls.Add(this.label5);
             this.PnlFormMedidor.Controls.Add(this.txtUbicacionMedidor);
             this.PnlFormMedidor.Controls.Add(this.label4);
-            this.PnlFormMedidor.Controls.Add(this.txtNom_Propietario);
             this.PnlFormMedidor.Controls.Add(this.label3);
             this.PnlFormMedidor.Controls.Add(this.txtNIS);
             this.PnlFormMedidor.Controls.Add(this.label2);
@@ -400,6 +411,7 @@
             this.txtClase.Name = "txtClase";
             this.txtClase.Size = new System.Drawing.Size(100, 29);
             this.txtClase.TabIndex = 144;
+            this.txtClase.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtClase.UseSelectable = true;
             // 
             // label41
@@ -1375,16 +1387,6 @@
             this.label4.TabIndex = 87;
             this.label4.Text = "Ubicacion Del Medidor";
             // 
-            // txtNom_Propietario
-            // 
-            this.txtNom_Propietario.Enabled = false;
-            this.txtNom_Propietario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtNom_Propietario.Location = new System.Drawing.Point(7, 81);
-            this.txtNom_Propietario.Multiline = true;
-            this.txtNom_Propietario.Name = "txtNom_Propietario";
-            this.txtNom_Propietario.Size = new System.Drawing.Size(212, 26);
-            this.txtNom_Propietario.TabIndex = 86;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -1432,13 +1434,21 @@
             this.label19.TabIndex = 81;
             this.label19.Text = "Nombre Del Medidor";
             // 
-            // lbl_IdMedidor
+            // txtNom_Propietario
             // 
-            this.lbl_IdMedidor.AutoSize = true;
-            this.lbl_IdMedidor.Location = new System.Drawing.Point(192, 14);
-            this.lbl_IdMedidor.Name = "lbl_IdMedidor";
-            this.lbl_IdMedidor.Size = new System.Drawing.Size(0, 13);
-            this.lbl_IdMedidor.TabIndex = 24;
+            this.txtNom_Propietario.FormattingEnabled = true;
+            this.txtNom_Propietario.Location = new System.Drawing.Point(10, 81);
+            this.txtNom_Propietario.Name = "txtNom_Propietario";
+            this.txtNom_Propietario.Size = new System.Drawing.Size(209, 21);
+            this.txtNom_Propietario.TabIndex = 145;
+            // 
+            // lblNombreOrigen
+            // 
+            this.lblNombreOrigen.AutoSize = true;
+            this.lblNombreOrigen.Location = new System.Drawing.Point(383, 18);
+            this.lblNombreOrigen.Name = "lblNombreOrigen";
+            this.lblNombreOrigen.Size = new System.Drawing.Size(0, 13);
+            this.lblNombreOrigen.TabIndex = 25;
             // 
             // EditarMedidor
             // 
@@ -1560,7 +1570,6 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        public System.Windows.Forms.TextBox txtNom_Propietario;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.TextBox txtNIS;
         private System.Windows.Forms.Label label2;
@@ -1611,5 +1620,7 @@
         public System.Windows.Forms.RadioButton radio_RS485_si;
         public System.Windows.Forms.TextBox txtRS485_Id;
         public System.Windows.Forms.Label lbl_IdMedidor;
+        public System.Windows.Forms.ComboBox txtNom_Propietario;
+        private System.Windows.Forms.Label lblNombreOrigen;
     }
 }
