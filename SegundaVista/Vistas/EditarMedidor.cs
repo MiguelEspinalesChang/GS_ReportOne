@@ -351,7 +351,6 @@ namespace SegundaVista.Vistas
                 //    var dato2 = Cliente.FindOne(consulaCliente_Editado);
                 //    dato.NisCliente = dato2.NisCliente;
                 //    Cliente.Save(dato);
-
                 //}
 
                 Medidor.Save(entidad);

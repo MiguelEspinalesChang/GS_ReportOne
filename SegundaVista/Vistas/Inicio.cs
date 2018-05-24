@@ -21,7 +21,9 @@ namespace SegundaVista.Vistas
 
         private void Inicio_Load(object sender, EventArgs e)
         {
-          
+            pnlAlerta.Visible = true;
+            pnlAlertaVerde.Visible = false;
+            pnlAlertaRojo.Visible = false;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -67,6 +69,21 @@ namespace SegundaVista.Vistas
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void metroTextBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCerrarAlertaR_Click(object sender, EventArgs e)
+        {
+            pnlAlertaRojo.Visible = false;
+        }
+
+        private void btnCerrarAlertaV_Click(object sender, EventArgs e)
+        {
+            pnlAlertaVerde.Visible = false;
         }
     }
 }
