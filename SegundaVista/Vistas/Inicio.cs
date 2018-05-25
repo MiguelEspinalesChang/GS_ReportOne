@@ -85,5 +85,10 @@ namespace SegundaVista.Vistas
         {
             pnlAlertaVerde.Visible = false;
         }
+
+        private void ComboMedidores_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
