@@ -33,6 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.pnlBtnClientes = new System.Windows.Forms.Panel();
+            this.lblNombreOrigen = new System.Windows.Forms.Label();
             this.lbl_IdMedidor = new System.Windows.Forms.Label();
             this.pnlAlerta = new System.Windows.Forms.Panel();
             this.pnlAlertaRojo = new System.Windows.Forms.Panel();
@@ -44,6 +45,7 @@
             this.lblverde = new System.Windows.Forms.Label();
             this.btnGuardarMedidor = new System.Windows.Forms.Button();
             this.PnlFormMedidor = new System.Windows.Forms.Panel();
+            this.txtNom_Propietario = new System.Windows.Forms.ComboBox();
             this.txtClase = new MetroFramework.Controls.MetroComboBox();
             this.label41 = new System.Windows.Forms.Label();
             this.txtArea = new System.Windows.Forms.TextBox();
@@ -146,8 +148,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombreMedidor = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.txtNom_Propietario = new System.Windows.Forms.ComboBox();
-            this.lblNombreOrigen = new System.Windows.Forms.Label();
             this.PnlBarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlBtnClientes.SuspendLayout();
@@ -219,6 +219,15 @@
             this.pnlBtnClientes.Size = new System.Drawing.Size(995, 57);
             this.pnlBtnClientes.TabIndex = 10;
             // 
+            // lblNombreOrigen
+            // 
+            this.lblNombreOrigen.AutoSize = true;
+            this.lblNombreOrigen.Location = new System.Drawing.Point(383, 18);
+            this.lblNombreOrigen.Name = "lblNombreOrigen";
+            this.lblNombreOrigen.Size = new System.Drawing.Size(0, 13);
+            this.lblNombreOrigen.TabIndex = 25;
+            this.lblNombreOrigen.Visible = false;
+            // 
             // lbl_IdMedidor
             // 
             this.lbl_IdMedidor.AutoSize = true;
@@ -226,6 +235,7 @@
             this.lbl_IdMedidor.Name = "lbl_IdMedidor";
             this.lbl_IdMedidor.Size = new System.Drawing.Size(0, 13);
             this.lbl_IdMedidor.TabIndex = 24;
+            this.lbl_IdMedidor.Visible = false;
             // 
             // pnlAlerta
             // 
@@ -397,6 +407,14 @@
             this.PnlFormMedidor.Name = "PnlFormMedidor";
             this.PnlFormMedidor.Size = new System.Drawing.Size(995, 547);
             this.PnlFormMedidor.TabIndex = 11;
+            // 
+            // txtNom_Propietario
+            // 
+            this.txtNom_Propietario.FormattingEnabled = true;
+            this.txtNom_Propietario.Location = new System.Drawing.Point(10, 81);
+            this.txtNom_Propietario.Name = "txtNom_Propietario";
+            this.txtNom_Propietario.Size = new System.Drawing.Size(209, 21);
+            this.txtNom_Propietario.TabIndex = 145;
             // 
             // txtClase
             // 
@@ -1433,22 +1451,6 @@
             this.label19.Size = new System.Drawing.Size(199, 22);
             this.label19.TabIndex = 81;
             this.label19.Text = "Nombre Del Medidor";
-            // 
-            // txtNom_Propietario
-            // 
-            this.txtNom_Propietario.FormattingEnabled = true;
-            this.txtNom_Propietario.Location = new System.Drawing.Point(10, 81);
-            this.txtNom_Propietario.Name = "txtNom_Propietario";
-            this.txtNom_Propietario.Size = new System.Drawing.Size(209, 21);
-            this.txtNom_Propietario.TabIndex = 145;
-            // 
-            // lblNombreOrigen
-            // 
-            this.lblNombreOrigen.AutoSize = true;
-            this.lblNombreOrigen.Location = new System.Drawing.Point(383, 18);
-            this.lblNombreOrigen.Name = "lblNombreOrigen";
-            this.lblNombreOrigen.Size = new System.Drawing.Size(0, 13);
-            this.lblNombreOrigen.TabIndex = 25;
             // 
             // EditarMedidor
             // 

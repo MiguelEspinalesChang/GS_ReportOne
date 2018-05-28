@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlMenuHijo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlContenedorHijo = new System.Windows.Forms.Panel();
@@ -88,6 +88,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnDataBaseOnline = new System.Windows.Forms.Button();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.pnlMenuHijo.SuspendLayout();
             this.pnlContenedorHijo.SuspendLayout();
             this.pnlBtn.SuspendLayout();
@@ -127,7 +131,9 @@
             this.pnlContenedorHijo.BackColor = System.Drawing.Color.White;
             this.pnlContenedorHijo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlContenedorHijo.Controls.Add(this.txtFinDB);
+            this.pnlContenedorHijo.Controls.Add(this.pnlAlerta);
             this.pnlContenedorHijo.Controls.Add(this.label21);
+            this.pnlContenedorHijo.Controls.Add(this.btnDataBaseOnline);
             this.pnlContenedorHijo.Controls.Add(this.txtInicioDB);
             this.pnlContenedorHijo.Controls.Add(this.label20);
             this.pnlContenedorHijo.Controls.Add(this.txtRelacionTP);
@@ -180,7 +186,7 @@
             // 
             // 
             this.txtFinDB.CustomButton.Image = null;
-            this.txtFinDB.CustomButton.Location = new System.Drawing.Point(111, 1);
+            this.txtFinDB.CustomButton.Location = new System.Drawing.Point(137, 1);
             this.txtFinDB.CustomButton.Name = "";
             this.txtFinDB.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtFinDB.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -190,7 +196,7 @@
             this.txtFinDB.CustomButton.Visible = false;
             this.txtFinDB.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtFinDB.Lines = new string[0];
-            this.txtFinDB.Location = new System.Drawing.Point(459, 422);
+            this.txtFinDB.Location = new System.Drawing.Point(459, 447);
             this.txtFinDB.MaxLength = 32767;
             this.txtFinDB.Name = "txtFinDB";
             this.txtFinDB.PasswordChar = '\0';
@@ -199,7 +205,7 @@
             this.txtFinDB.SelectionLength = 0;
             this.txtFinDB.SelectionStart = 0;
             this.txtFinDB.ShortcutsEnabled = true;
-            this.txtFinDB.Size = new System.Drawing.Size(133, 23);
+            this.txtFinDB.Size = new System.Drawing.Size(159, 23);
             this.txtFinDB.TabIndex = 175;
             this.txtFinDB.UseSelectable = true;
             this.txtFinDB.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -209,7 +215,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(298, 423);
+            this.label21.Location = new System.Drawing.Point(298, 448);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(137, 22);
             this.label21.TabIndex = 174;
@@ -221,7 +227,7 @@
             // 
             // 
             this.txtInicioDB.CustomButton.Image = null;
-            this.txtInicioDB.CustomButton.Location = new System.Drawing.Point(111, 1);
+            this.txtInicioDB.CustomButton.Location = new System.Drawing.Point(137, 1);
             this.txtInicioDB.CustomButton.Name = "";
             this.txtInicioDB.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtInicioDB.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -231,7 +237,7 @@
             this.txtInicioDB.CustomButton.Visible = false;
             this.txtInicioDB.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtInicioDB.Lines = new string[0];
-            this.txtInicioDB.Location = new System.Drawing.Point(459, 388);
+            this.txtInicioDB.Location = new System.Drawing.Point(459, 418);
             this.txtInicioDB.MaxLength = 32767;
             this.txtInicioDB.Name = "txtInicioDB";
             this.txtInicioDB.PasswordChar = '\0';
@@ -240,7 +246,7 @@
             this.txtInicioDB.SelectionLength = 0;
             this.txtInicioDB.SelectionStart = 0;
             this.txtInicioDB.ShortcutsEnabled = true;
-            this.txtInicioDB.Size = new System.Drawing.Size(133, 23);
+            this.txtInicioDB.Size = new System.Drawing.Size(159, 23);
             this.txtInicioDB.TabIndex = 173;
             this.txtInicioDB.UseSelectable = true;
             this.txtInicioDB.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -250,7 +256,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(298, 389);
+            this.label20.Location = new System.Drawing.Point(298, 419);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(160, 22);
             this.label20.TabIndex = 172;
@@ -262,7 +268,7 @@
             // 
             // 
             this.txtRelacionTP.CustomButton.Image = null;
-            this.txtRelacionTP.CustomButton.Location = new System.Drawing.Point(122, 1);
+            this.txtRelacionTP.CustomButton.Location = new System.Drawing.Point(148, 1);
             this.txtRelacionTP.CustomButton.Name = "";
             this.txtRelacionTP.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtRelacionTP.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -272,7 +278,7 @@
             this.txtRelacionTP.CustomButton.Visible = false;
             this.txtRelacionTP.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtRelacionTP.Lines = new string[0];
-            this.txtRelacionTP.Location = new System.Drawing.Point(448, 359);
+            this.txtRelacionTP.Location = new System.Drawing.Point(448, 389);
             this.txtRelacionTP.MaxLength = 32767;
             this.txtRelacionTP.Name = "txtRelacionTP";
             this.txtRelacionTP.PasswordChar = '\0';
@@ -281,7 +287,7 @@
             this.txtRelacionTP.SelectionLength = 0;
             this.txtRelacionTP.SelectionStart = 0;
             this.txtRelacionTP.ShortcutsEnabled = true;
-            this.txtRelacionTP.Size = new System.Drawing.Size(144, 23);
+            this.txtRelacionTP.Size = new System.Drawing.Size(170, 23);
             this.txtRelacionTP.TabIndex = 171;
             this.txtRelacionTP.UseSelectable = true;
             this.txtRelacionTP.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -291,7 +297,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(298, 360);
+            this.label19.Location = new System.Drawing.Point(298, 390);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(123, 22);
             this.label19.TabIndex = 170;
@@ -303,7 +309,7 @@
             // 
             // 
             this.txtRelacionTC.CustomButton.Image = null;
-            this.txtRelacionTC.CustomButton.Location = new System.Drawing.Point(122, 1);
+            this.txtRelacionTC.CustomButton.Location = new System.Drawing.Point(148, 1);
             this.txtRelacionTC.CustomButton.Name = "";
             this.txtRelacionTC.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtRelacionTC.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -313,7 +319,7 @@
             this.txtRelacionTC.CustomButton.Visible = false;
             this.txtRelacionTC.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtRelacionTC.Lines = new string[0];
-            this.txtRelacionTC.Location = new System.Drawing.Point(448, 330);
+            this.txtRelacionTC.Location = new System.Drawing.Point(448, 360);
             this.txtRelacionTC.MaxLength = 32767;
             this.txtRelacionTC.Name = "txtRelacionTC";
             this.txtRelacionTC.PasswordChar = '\0';
@@ -322,7 +328,7 @@
             this.txtRelacionTC.SelectionLength = 0;
             this.txtRelacionTC.SelectionStart = 0;
             this.txtRelacionTC.ShortcutsEnabled = true;
-            this.txtRelacionTC.Size = new System.Drawing.Size(144, 23);
+            this.txtRelacionTC.Size = new System.Drawing.Size(170, 23);
             this.txtRelacionTC.TabIndex = 169;
             this.txtRelacionTC.UseSelectable = true;
             this.txtRelacionTC.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -332,7 +338,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(298, 331);
+            this.label18.Location = new System.Drawing.Point(298, 361);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(127, 22);
             this.label18.TabIndex = 168;
@@ -344,7 +350,7 @@
             // 
             // 
             this.txtMarcaMedidor.CustomButton.Image = null;
-            this.txtMarcaMedidor.CustomButton.Location = new System.Drawing.Point(122, 1);
+            this.txtMarcaMedidor.CustomButton.Location = new System.Drawing.Point(148, 1);
             this.txtMarcaMedidor.CustomButton.Name = "";
             this.txtMarcaMedidor.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtMarcaMedidor.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -354,7 +360,7 @@
             this.txtMarcaMedidor.CustomButton.Visible = false;
             this.txtMarcaMedidor.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtMarcaMedidor.Lines = new string[0];
-            this.txtMarcaMedidor.Location = new System.Drawing.Point(448, 301);
+            this.txtMarcaMedidor.Location = new System.Drawing.Point(448, 331);
             this.txtMarcaMedidor.MaxLength = 32767;
             this.txtMarcaMedidor.Name = "txtMarcaMedidor";
             this.txtMarcaMedidor.PasswordChar = '\0';
@@ -363,7 +369,7 @@
             this.txtMarcaMedidor.SelectionLength = 0;
             this.txtMarcaMedidor.SelectionStart = 0;
             this.txtMarcaMedidor.ShortcutsEnabled = true;
-            this.txtMarcaMedidor.Size = new System.Drawing.Size(144, 23);
+            this.txtMarcaMedidor.Size = new System.Drawing.Size(170, 23);
             this.txtMarcaMedidor.TabIndex = 167;
             this.txtMarcaMedidor.UseSelectable = true;
             this.txtMarcaMedidor.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -373,7 +379,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(298, 302);
+            this.label17.Location = new System.Drawing.Point(298, 332);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(81, 22);
             this.label17.TabIndex = 166;
@@ -385,7 +391,7 @@
             // 
             // 
             this.txtModeloMedidor.CustomButton.Image = null;
-            this.txtModeloMedidor.CustomButton.Location = new System.Drawing.Point(122, 1);
+            this.txtModeloMedidor.CustomButton.Location = new System.Drawing.Point(148, 1);
             this.txtModeloMedidor.CustomButton.Name = "";
             this.txtModeloMedidor.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtModeloMedidor.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -395,7 +401,7 @@
             this.txtModeloMedidor.CustomButton.Visible = false;
             this.txtModeloMedidor.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtModeloMedidor.Lines = new string[0];
-            this.txtModeloMedidor.Location = new System.Drawing.Point(448, 272);
+            this.txtModeloMedidor.Location = new System.Drawing.Point(448, 302);
             this.txtModeloMedidor.MaxLength = 32767;
             this.txtModeloMedidor.Name = "txtModeloMedidor";
             this.txtModeloMedidor.PasswordChar = '\0';
@@ -404,7 +410,7 @@
             this.txtModeloMedidor.SelectionLength = 0;
             this.txtModeloMedidor.SelectionStart = 0;
             this.txtModeloMedidor.ShortcutsEnabled = true;
-            this.txtModeloMedidor.Size = new System.Drawing.Size(144, 23);
+            this.txtModeloMedidor.Size = new System.Drawing.Size(170, 23);
             this.txtModeloMedidor.TabIndex = 165;
             this.txtModeloMedidor.UseSelectable = true;
             this.txtModeloMedidor.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -414,7 +420,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(298, 273);
+            this.label16.Location = new System.Drawing.Point(298, 303);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(89, 22);
             this.label16.TabIndex = 164;
@@ -426,7 +432,7 @@
             // 
             // 
             this.txtPotenciaDia.CustomButton.Image = null;
-            this.txtPotenciaDia.CustomButton.Location = new System.Drawing.Point(122, 1);
+            this.txtPotenciaDia.CustomButton.Location = new System.Drawing.Point(148, 1);
             this.txtPotenciaDia.CustomButton.Name = "";
             this.txtPotenciaDia.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtPotenciaDia.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -436,7 +442,7 @@
             this.txtPotenciaDia.CustomButton.Visible = false;
             this.txtPotenciaDia.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtPotenciaDia.Lines = new string[0];
-            this.txtPotenciaDia.Location = new System.Drawing.Point(448, 243);
+            this.txtPotenciaDia.Location = new System.Drawing.Point(448, 273);
             this.txtPotenciaDia.MaxLength = 32767;
             this.txtPotenciaDia.Name = "txtPotenciaDia";
             this.txtPotenciaDia.PasswordChar = '\0';
@@ -445,7 +451,7 @@
             this.txtPotenciaDia.SelectionLength = 0;
             this.txtPotenciaDia.SelectionStart = 0;
             this.txtPotenciaDia.ShortcutsEnabled = true;
-            this.txtPotenciaDia.Size = new System.Drawing.Size(144, 23);
+            this.txtPotenciaDia.Size = new System.Drawing.Size(170, 23);
             this.txtPotenciaDia.TabIndex = 163;
             this.txtPotenciaDia.UseSelectable = true;
             this.txtPotenciaDia.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -455,7 +461,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(298, 244);
+            this.label15.Location = new System.Drawing.Point(298, 274);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(137, 22);
             this.label15.TabIndex = 162;
@@ -467,7 +473,7 @@
             // 
             // 
             this.txtKwhDia.CustomButton.Image = null;
-            this.txtKwhDia.CustomButton.Location = new System.Drawing.Point(122, 1);
+            this.txtKwhDia.CustomButton.Location = new System.Drawing.Point(148, 1);
             this.txtKwhDia.CustomButton.Name = "";
             this.txtKwhDia.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtKwhDia.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -477,7 +483,7 @@
             this.txtKwhDia.CustomButton.Visible = false;
             this.txtKwhDia.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtKwhDia.Lines = new string[0];
-            this.txtKwhDia.Location = new System.Drawing.Point(448, 214);
+            this.txtKwhDia.Location = new System.Drawing.Point(448, 244);
             this.txtKwhDia.MaxLength = 32767;
             this.txtKwhDia.Name = "txtKwhDia";
             this.txtKwhDia.PasswordChar = '\0';
@@ -486,7 +492,7 @@
             this.txtKwhDia.SelectionLength = 0;
             this.txtKwhDia.SelectionStart = 0;
             this.txtKwhDia.ShortcutsEnabled = true;
-            this.txtKwhDia.Size = new System.Drawing.Size(144, 23);
+            this.txtKwhDia.Size = new System.Drawing.Size(170, 23);
             this.txtKwhDia.TabIndex = 161;
             this.txtKwhDia.UseSelectable = true;
             this.txtKwhDia.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -496,7 +502,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(298, 215);
+            this.label14.Location = new System.Drawing.Point(298, 245);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(94, 22);
             this.label14.TabIndex = 160;
@@ -508,7 +514,7 @@
             // 
             // 
             this.txtModoHusoMedidor.CustomButton.Image = null;
-            this.txtModoHusoMedidor.CustomButton.Location = new System.Drawing.Point(122, 1);
+            this.txtModoHusoMedidor.CustomButton.Location = new System.Drawing.Point(148, 1);
             this.txtModoHusoMedidor.CustomButton.Name = "";
             this.txtModoHusoMedidor.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtModoHusoMedidor.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -518,7 +524,7 @@
             this.txtModoHusoMedidor.CustomButton.Visible = false;
             this.txtModoHusoMedidor.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtModoHusoMedidor.Lines = new string[0];
-            this.txtModoHusoMedidor.Location = new System.Drawing.Point(448, 185);
+            this.txtModoHusoMedidor.Location = new System.Drawing.Point(448, 215);
             this.txtModoHusoMedidor.MaxLength = 32767;
             this.txtModoHusoMedidor.Name = "txtModoHusoMedidor";
             this.txtModoHusoMedidor.PasswordChar = '\0';
@@ -527,7 +533,7 @@
             this.txtModoHusoMedidor.SelectionLength = 0;
             this.txtModoHusoMedidor.SelectionStart = 0;
             this.txtModoHusoMedidor.ShortcutsEnabled = true;
-            this.txtModoHusoMedidor.Size = new System.Drawing.Size(144, 23);
+            this.txtModoHusoMedidor.Size = new System.Drawing.Size(170, 23);
             this.txtModoHusoMedidor.TabIndex = 159;
             this.txtModoHusoMedidor.UseSelectable = true;
             this.txtModoHusoMedidor.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -537,7 +543,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(298, 186);
+            this.label13.Location = new System.Drawing.Point(298, 216);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(153, 22);
             this.label13.TabIndex = 158;
@@ -549,7 +555,7 @@
             // 
             // 
             this.txtIdMedidor.CustomButton.Image = null;
-            this.txtIdMedidor.CustomButton.Location = new System.Drawing.Point(122, 1);
+            this.txtIdMedidor.CustomButton.Location = new System.Drawing.Point(148, 1);
             this.txtIdMedidor.CustomButton.Name = "";
             this.txtIdMedidor.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtIdMedidor.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -559,7 +565,7 @@
             this.txtIdMedidor.CustomButton.Visible = false;
             this.txtIdMedidor.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtIdMedidor.Lines = new string[0];
-            this.txtIdMedidor.Location = new System.Drawing.Point(448, 156);
+            this.txtIdMedidor.Location = new System.Drawing.Point(448, 186);
             this.txtIdMedidor.MaxLength = 32767;
             this.txtIdMedidor.Name = "txtIdMedidor";
             this.txtIdMedidor.PasswordChar = '\0';
@@ -568,7 +574,7 @@
             this.txtIdMedidor.SelectionLength = 0;
             this.txtIdMedidor.SelectionStart = 0;
             this.txtIdMedidor.ShortcutsEnabled = true;
-            this.txtIdMedidor.Size = new System.Drawing.Size(144, 23);
+            this.txtIdMedidor.Size = new System.Drawing.Size(170, 23);
             this.txtIdMedidor.TabIndex = 157;
             this.txtIdMedidor.UseSelectable = true;
             this.txtIdMedidor.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -578,7 +584,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(298, 157);
+            this.label12.Location = new System.Drawing.Point(298, 187);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(88, 22);
             this.label12.TabIndex = 156;
@@ -590,7 +596,7 @@
             // 
             // 
             this.txtNombreMedidor.CustomButton.Image = null;
-            this.txtNombreMedidor.CustomButton.Location = new System.Drawing.Point(122, 1);
+            this.txtNombreMedidor.CustomButton.Location = new System.Drawing.Point(148, 1);
             this.txtNombreMedidor.CustomButton.Name = "";
             this.txtNombreMedidor.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtNombreMedidor.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -600,7 +606,7 @@
             this.txtNombreMedidor.CustomButton.Visible = false;
             this.txtNombreMedidor.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtNombreMedidor.Lines = new string[0];
-            this.txtNombreMedidor.Location = new System.Drawing.Point(448, 127);
+            this.txtNombreMedidor.Location = new System.Drawing.Point(448, 157);
             this.txtNombreMedidor.MaxLength = 32767;
             this.txtNombreMedidor.Name = "txtNombreMedidor";
             this.txtNombreMedidor.PasswordChar = '\0';
@@ -609,7 +615,7 @@
             this.txtNombreMedidor.SelectionLength = 0;
             this.txtNombreMedidor.SelectionStart = 0;
             this.txtNombreMedidor.ShortcutsEnabled = true;
-            this.txtNombreMedidor.Size = new System.Drawing.Size(144, 23);
+            this.txtNombreMedidor.Size = new System.Drawing.Size(170, 23);
             this.txtNombreMedidor.TabIndex = 155;
             this.txtNombreMedidor.UseSelectable = true;
             this.txtNombreMedidor.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -619,7 +625,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(298, 128);
+            this.label11.Location = new System.Drawing.Point(298, 158);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(144, 22);
             this.label11.TabIndex = 154;
@@ -641,7 +647,7 @@
             this.txtNombreEmpresaCliente.CustomButton.Visible = false;
             this.txtNombreEmpresaCliente.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtNombreEmpresaCliente.Lines = new string[0];
-            this.txtNombreEmpresaCliente.Location = new System.Drawing.Point(142, 243);
+            this.txtNombreEmpresaCliente.Location = new System.Drawing.Point(143, 274);
             this.txtNombreEmpresaCliente.MaxLength = 32767;
             this.txtNombreEmpresaCliente.Name = "txtNombreEmpresaCliente";
             this.txtNombreEmpresaCliente.PasswordChar = '\0';
@@ -660,7 +666,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(2, 244);
+            this.label10.Location = new System.Drawing.Point(3, 275);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(141, 22);
             this.label10.TabIndex = 152;
@@ -682,7 +688,7 @@
             this.txtRucCliente.CustomButton.Visible = false;
             this.txtRucCliente.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtRucCliente.Lines = new string[0];
-            this.txtRucCliente.Location = new System.Drawing.Point(142, 185);
+            this.txtRucCliente.Location = new System.Drawing.Point(143, 216);
             this.txtRucCliente.MaxLength = 32767;
             this.txtRucCliente.Name = "txtRucCliente";
             this.txtRucCliente.PasswordChar = '\0';
@@ -701,7 +707,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(5, 186);
+            this.label8.Location = new System.Drawing.Point(6, 217);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(56, 22);
             this.label8.TabIndex = 150;
@@ -723,7 +729,7 @@
             this.txtNombreCliente.CustomButton.Visible = false;
             this.txtNombreCliente.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtNombreCliente.Lines = new string[0];
-            this.txtNombreCliente.Location = new System.Drawing.Point(142, 127);
+            this.txtNombreCliente.Location = new System.Drawing.Point(143, 158);
             this.txtNombreCliente.MaxLength = 32767;
             this.txtNombreCliente.Name = "txtNombreCliente";
             this.txtNombreCliente.PasswordChar = '\0';
@@ -742,7 +748,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(5, 128);
+            this.label7.Location = new System.Drawing.Point(6, 159);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(127, 22);
             this.label7.TabIndex = 148;
@@ -764,7 +770,7 @@
             this.txtRazonSocial.CustomButton.Visible = false;
             this.txtRazonSocial.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtRazonSocial.Lines = new string[0];
-            this.txtRazonSocial.Location = new System.Drawing.Point(142, 214);
+            this.txtRazonSocial.Location = new System.Drawing.Point(143, 245);
             this.txtRazonSocial.MaxLength = 32767;
             this.txtRazonSocial.Name = "txtRazonSocial";
             this.txtRazonSocial.PasswordChar = '\0';
@@ -795,7 +801,7 @@
             this.txtNissCliente.CustomButton.Visible = false;
             this.txtNissCliente.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtNissCliente.Lines = new string[0];
-            this.txtNissCliente.Location = new System.Drawing.Point(142, 156);
+            this.txtNissCliente.Location = new System.Drawing.Point(143, 187);
             this.txtNissCliente.MaxLength = 32767;
             this.txtNissCliente.Name = "txtNissCliente";
             this.txtNissCliente.PasswordChar = '\0';
@@ -815,7 +821,9 @@
             // 
             this.pnlBtn.BackColor = System.Drawing.Color.White;
             this.pnlBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlBtn.Controls.Add(this.pnlAlerta);
+            this.pnlBtn.Controls.Add(this.label24);
+            this.pnlBtn.Controls.Add(this.label23);
+            this.pnlBtn.Controls.Add(this.label22);
             this.pnlBtn.Controls.Add(this.button1);
             this.pnlBtn.Controls.Add(this.btnAbrirDB);
             this.pnlBtn.Controls.Add(this.label6);
@@ -830,9 +838,9 @@
             // 
             this.pnlAlerta.Controls.Add(this.pnlAlertaRojo);
             this.pnlAlerta.Controls.Add(this.pnlAlertaVerde);
-            this.pnlAlerta.Location = new System.Drawing.Point(677, 9);
+            this.pnlAlerta.Location = new System.Drawing.Point(571, 69);
             this.pnlAlerta.Name = "pnlAlerta";
-            this.pnlAlerta.Size = new System.Drawing.Size(296, 41);
+            this.pnlAlerta.Size = new System.Drawing.Size(396, 41);
             this.pnlAlerta.TabIndex = 2;
             // 
             // pnlAlertaRojo
@@ -843,9 +851,9 @@
             this.pnlAlertaRojo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlAlertaRojo.Controls.Add(this.btnCerrarAlertaR);
             this.pnlAlertaRojo.Controls.Add(this.lblRojo);
-            this.pnlAlertaRojo.Location = new System.Drawing.Point(13, 8);
+            this.pnlAlertaRojo.Location = new System.Drawing.Point(44, 5);
             this.pnlAlertaRojo.Name = "pnlAlertaRojo";
-            this.pnlAlertaRojo.Size = new System.Drawing.Size(279, 30);
+            this.pnlAlertaRojo.Size = new System.Drawing.Size(348, 30);
             this.pnlAlertaRojo.TabIndex = 1;
             // 
             // btnCerrarAlertaR
@@ -877,9 +885,9 @@
             this.pnlAlertaVerde.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlAlertaVerde.Controls.Add(this.btnCerrarAlertaV);
             this.pnlAlertaVerde.Controls.Add(this.lblverde);
-            this.pnlAlertaVerde.Location = new System.Drawing.Point(13, 8);
+            this.pnlAlertaVerde.Location = new System.Drawing.Point(44, 5);
             this.pnlAlertaVerde.Name = "pnlAlertaVerde";
-            this.pnlAlertaVerde.Size = new System.Drawing.Size(280, 30);
+            this.pnlAlertaVerde.Size = new System.Drawing.Size(349, 30);
             this.pnlAlertaVerde.TabIndex = 0;
             // 
             // btnCerrarAlertaV
@@ -910,10 +918,10 @@
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(458, 9);
+            this.button1.Location = new System.Drawing.Point(536, 9);
             this.button1.Margin = new System.Windows.Forms.Padding(10);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 41);
+            this.button1.Size = new System.Drawing.Size(223, 41);
             this.button1.TabIndex = 52;
             this.button1.Text = "Analisis";
             this.button1.UseVisualStyleBackColor = true;
@@ -927,19 +935,19 @@
             this.btnAbrirDB.ForeColor = System.Drawing.Color.Black;
             this.btnAbrirDB.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrirDB.Image")));
             this.btnAbrirDB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAbrirDB.Location = new System.Drawing.Point(182, 9);
+            this.btnAbrirDB.Location = new System.Drawing.Point(254, 9);
             this.btnAbrirDB.Margin = new System.Windows.Forms.Padding(10);
             this.btnAbrirDB.Name = "btnAbrirDB";
-            this.btnAbrirDB.Size = new System.Drawing.Size(272, 41);
+            this.btnAbrirDB.Size = new System.Drawing.Size(223, 41);
             this.btnAbrirDB.TabIndex = 18;
-            this.btnAbrirDB.Text = "Abrir ,Crear  o act BD";
+            this.btnAbrirDB.Text = "Abrir  o act BD";
             this.btnAbrirDB.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(10, 1);
+            this.label6.Location = new System.Drawing.Point(42, 1);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(152, 22);
             this.label6.TabIndex = 146;
@@ -949,9 +957,9 @@
             // 
             this.ComboMedidores.FormattingEnabled = true;
             this.ComboMedidores.ItemHeight = 23;
-            this.ComboMedidores.Location = new System.Drawing.Point(8, 26);
+            this.ComboMedidores.Location = new System.Drawing.Point(40, 26);
             this.ComboMedidores.Name = "ComboMedidores";
-            this.ComboMedidores.Size = new System.Drawing.Size(167, 29);
+            this.ComboMedidores.Size = new System.Drawing.Size(154, 29);
             this.ComboMedidores.TabIndex = 145;
             this.ComboMedidores.Theme = MetroFramework.MetroThemeStyle.Light;
             this.ComboMedidores.UseSelectable = true;
@@ -961,7 +969,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(2, 215);
+            this.label5.Location = new System.Drawing.Point(3, 246);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(134, 22);
             this.label5.TabIndex = 58;
@@ -971,7 +979,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(5, 157);
+            this.label4.Location = new System.Drawing.Point(6, 188);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 22);
             this.label4.TabIndex = 56;
@@ -981,9 +989,9 @@
             // 
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.gridFechaDb);
-            this.panel11.Location = new System.Drawing.Point(642, 128);
+            this.panel11.Location = new System.Drawing.Point(642, 156);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(325, 381);
+            this.panel11.Size = new System.Drawing.Size(325, 353);
             this.panel11.TabIndex = 55;
             // 
             // gridFechaDb
@@ -997,24 +1005,24 @@
             this.gridFechaDb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridFechaDb.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridFechaDb.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridFechaDb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridFechaDb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.gridFechaDb.ColumnHeadersHeight = 35;
             this.gridFechaDb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridFechaDb.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridFechaDb.DefaultCellStyle = dataGridViewCellStyle10;
             this.gridFechaDb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridFechaDb.EnableHeadersVisualStyles = false;
             this.gridFechaDb.GridColor = System.Drawing.Color.White;
@@ -1022,26 +1030,27 @@
             this.gridFechaDb.Name = "gridFechaDb";
             this.gridFechaDb.ReadOnly = true;
             this.gridFechaDb.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridFechaDb.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridFechaDb.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.gridFechaDb.RowHeadersVisible = false;
             this.gridFechaDb.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.gridFechaDb.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            this.gridFechaDb.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.gridFechaDb.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridFechaDb.Size = new System.Drawing.Size(323, 379);
+            this.gridFechaDb.Size = new System.Drawing.Size(323, 351);
             this.gridFechaDb.TabIndex = 1;
+            this.gridFechaDb.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.gridFechaDb_CellFormatting);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel1.Location = new System.Drawing.Point(713, 101);
+            this.panel1.Location = new System.Drawing.Point(698, 135);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(213, 2);
             this.panel1.TabIndex = 54;
@@ -1050,7 +1059,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(721, 79);
+            this.label2.Location = new System.Drawing.Point(706, 113);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(195, 22);
             this.label2.TabIndex = 53;
@@ -1059,7 +1068,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel7.Location = new System.Drawing.Point(6, 98);
+            this.panel7.Location = new System.Drawing.Point(6, 139);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(176, 2);
             this.panel7.TabIndex = 42;
@@ -1068,7 +1077,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(11, 76);
+            this.label9.Location = new System.Drawing.Point(11, 117);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(166, 22);
             this.label9.TabIndex = 41;
@@ -1077,7 +1086,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel2.Location = new System.Drawing.Point(302, 100);
+            this.panel2.Location = new System.Drawing.Point(348, 137);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(213, 2);
             this.panel2.TabIndex = 25;
@@ -1086,11 +1095,59 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(309, 78);
+            this.label3.Location = new System.Drawing.Point(355, 115);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(197, 22);
             this.label3.TabIndex = 22;
             this.label3.Text = "Datos Del Medidores";
+            // 
+            // btnDataBaseOnline
+            // 
+            this.btnDataBaseOnline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnDataBaseOnline.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            this.btnDataBaseOnline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDataBaseOnline.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDataBaseOnline.ForeColor = System.Drawing.Color.Black;
+            this.btnDataBaseOnline.Image = ((System.Drawing.Image)(resources.GetObject("btnDataBaseOnline.Image")));
+            this.btnDataBaseOnline.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDataBaseOnline.Location = new System.Drawing.Point(10, 69);
+            this.btnDataBaseOnline.Margin = new System.Windows.Forms.Padding(10);
+            this.btnDataBaseOnline.Name = "btnDataBaseOnline";
+            this.btnDataBaseOnline.Size = new System.Drawing.Size(185, 41);
+            this.btnDataBaseOnline.TabIndex = 147;
+            this.btnDataBaseOnline.Text = "BD Online";
+            this.btnDataBaseOnline.UseVisualStyleBackColor = false;
+            this.btnDataBaseOnline.Click += new System.EventHandler(this.btnDataBaseOnline_Click);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(-8, 12);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(44, 39);
+            this.label22.TabIndex = 176;
+            this.label22.Text = "1.";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(207, 12);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(44, 39);
+            this.label23.TabIndex = 177;
+            this.label23.Text = "2.";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(491, 12);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(44, 39);
+            this.label24.TabIndex = 178;
+            this.label24.Text = "3.";
             // 
             // Inicio
             // 
@@ -1181,5 +1238,9 @@
         private System.Windows.Forms.Label label20;
         private MetroFramework.Controls.MetroTextBox txtRelacionTP;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button btnDataBaseOnline;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
     }
 }
