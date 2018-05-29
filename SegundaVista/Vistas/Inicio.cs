@@ -12,6 +12,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MongoDB.Bson;
 using MongoDB.Driver.Builders;
+using System.IO;
+using SegundaVista.Mongo_Data.Clases;
 
 namespace SegundaVista.Vistas
 {
@@ -253,10 +255,10 @@ namespace SegundaVista.Vistas
 
         private void gridFechaDb_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-           
+
             if (this.gridFechaDb.Columns[e.ColumnIndex].Name == "DB_Inicio")
             {
-                if (e.Value.ToString() == "" )
+                if (e.Value.ToString() == "")
                 {
                     e.CellStyle.ForeColor = Color.Red;
                     e.CellStyle.BackColor = Color.OrangeRed;
@@ -270,6 +272,150 @@ namespace SegundaVista.Vistas
                     e.CellStyle.BackColor = Color.OrangeRed;
                 }
             }
+        }
+        public string SacarTexto(string linea, int ubicacion)
+        {
+            linea = linea.TrimEnd(',');
+            string[] arregloLinea = linea.Split(',');
+            return (arregloLinea.Length >= ubicacion) ? arregloLinea[ubicacion - 1] : "";
+        }
+
+        private void btnAbrirDB_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //if (ComboMedidores.ToString() == "")
+                //{
+                    pnlAlertaVerde.Visible = false;
+                    pnlAlertaRojo.Visible = false;
+                    Conector_DataBase conector = new Conector_DataBase();
+                    OpenFileDialog openFileDialog1 = new OpenFileDialog();
+                    openFileDialog1.RestoreDirectory = true;
+                    openFileDialog1.CheckFileExists = true;
+                    openFileDialog1.CheckPathExists = true;
+                    openFileDialog1.Title = "Buscar medición en formato csv";
+                    openFileDialog1.DefaultExt = ".csv";
+                    openFileDialog1.Filter = "archivos csv (*.csv)|*.csv";
+
+                    if (openFileDialog1.ShowDialog() == DialogResult.OK && openFileDialog1.ToString() != "")
+                    {
+                        if (File.Exists("" + openFileDialog1.FileName))
+                        {
+                            string line;
+                            int counter = 0;
+                            // Read the file and display it line by line.  
+                            System.IO.StreamReader file = new System.IO.StreamReader(@"" + openFileDialog1.FileName);
+                            PilotDB filaData = new PilotDB();
+                            filaData.Nombre = txtNombreMedidor.Text;
+                            filaData.NombrePropietadio = txtNombreCliente.Text;
+                            filaData.Marca = txtMarcaMedidor.Text;
+                            while ((line = file.ReadLine()) != null)
+                            {
+                                counter++;
+                                int cantidadColumnas = line.Split(',').Count();
+                                string[] columnasCsv = new string[cantidadColumnas];
+                                int[] columnasUsar = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15, 17, 18, 19, 20, 21 };
+                                columnasCsv = line.Split(',');
+                                dbDatosPilot Dato = new dbDatosPilot();
+                                if (counter > 1 && counter <= 41)
+                                {
+                                    // this.gridDatos.Rows.Add(1);
+                                    Random rnd = new Random();
+                                    for (var i = 0; i < cantidadColumnas; i++)
+                                    {
+                                        var texto = SacarTexto(line, i + 1);
+                                        switch (i)
+                                        {
+                                            case 1:
+                                                Dato.Time = Convert.ToDateTime(texto);
+                                                break;
+                                            case 2:
+                                                Dato.Va = Convert.ToDecimal(texto);
+                                                break;
+                                            case 3:
+                                                Dato.Vb = Convert.ToDecimal(texto);
+                                                break;
+                                            case 4:
+                                                Dato.Vc = Convert.ToDecimal(texto);
+                                                break;
+                                            case 5:
+                                                Dato.Ia = Convert.ToDecimal(texto);
+                                                break;
+                                            case 6:
+                                                Dato.Ib = Convert.ToDecimal(texto);
+                                                break;
+                                            case 7:
+                                                Dato.Ic = Convert.ToDecimal(texto);
+                                                break;
+                                            case 8:
+                                                Dato.Frequency = Convert.ToDecimal(texto);
+                                                break;
+                                            case 9:
+                                                Dato.Pa = Convert.ToDecimal(texto);
+                                                break;
+                                            case 10:
+                                                Dato.Pb = Convert.ToDecimal(texto);
+                                                break;
+                                            case 11:
+                                                Dato.Pc = Convert.ToDecimal(texto);
+                                                break;
+                                            case 15:
+                                                Dato.TotalkW = Convert.ToDecimal(texto);
+                                                break;
+                                            case 18:
+                                                Dato.Pftot = Convert.ToDecimal(texto);
+                                                break;
+                                            case 19:
+                                                Dato.KwhRec = Convert.ToDecimal(texto);
+                                                break;
+                                            case 20:
+                                                Dato.KwhDel = Convert.ToDecimal(texto);
+                                                break;
+                                            case 21:
+                                                Dato.kVARhDel = Convert.ToDecimal(texto);
+                                                break;
+                                            case 22:
+                                                Dato.kVARhRec = Convert.ToDecimal(texto);
+                                                break;
+                                            case 23:
+                                                Dato.TotalkWh_del_Rec = (Dato.KwhRec - Dato.KwhDel);
+                                                Dato.TotalkVARh = (Dato.kVARhDel - Dato.kVARhRec);
+                                                ////
+                                                Dato.Rec_kW = (Dato.KwhRec * 4);
+                                                Dato.Del_kW = (Dato.KwhDel * 4);
+                                                double a = Convert.ToDouble(Dato.TotalkVARh);
+                                                Dato.kVAh_rms = Convert.ToDecimal(a * 0.8);
+                                                double b = Convert.ToDouble(Dato.KwhRec);
+                                                Dato.Rec_kVAh = Convert.ToDecimal(b * 0.8);
+                                                double c = Convert.ToDouble(Dato.KwhDel);
+                                                Dato.Rec_kVAh = Convert.ToDecimal(c * 0.8);
+                                                break;
+                                        }
+                                    }
+                                    filaData.Regitros.Add(Dato);
+                                }
+                            }
+                            //Pasar Los Datos Leidos Ala Base de datos
+                            conector.insertarDatosPilot(filaData);
+                            pnlAlertaVerde.Visible = true;
+                            lblverde.Text = "Registros Agregados";
+                        }
+                    }
+                //}
+                //else
+                //{
+                //    pnlAlertaRojo.Visible = true;
+                //    lblR.Text = "Seleccione Un Medidor";
+                //}
+
+            }
+            catch (Exception ex)
+            {
+                pnlAlertaRojo.Visible = true;
+                lblR.Text = "Erro AL Guardar Los Registro : "+ex.ToString();
+            }
+
+
         }
 
         private void ComboMedidores_SelectedIndexChanged(object sender, EventArgs e)

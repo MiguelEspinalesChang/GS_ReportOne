@@ -87,8 +87,6 @@ namespace SegundaVista.Vistas
             try
             {
 
-
-
                 //Ternarios Para Validar Y rellenar los datos del Medidor
                 datosTxt.Nis = txtNIS.Text;
                 datosTxt.Nombre_Propietario = txtNom_Propietario.Text;

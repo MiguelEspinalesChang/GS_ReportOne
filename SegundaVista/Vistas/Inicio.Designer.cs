@@ -29,15 +29,22 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Inicio));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlMenuHijo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pnlContenedorHijo = new System.Windows.Forms.Panel();
             this.txtFinDB = new MetroFramework.Controls.MetroTextBox();
+            this.pnlAlerta = new System.Windows.Forms.Panel();
+            this.pnlAlertaRojo = new System.Windows.Forms.Panel();
+            this.btnCerrarAlertaR = new System.Windows.Forms.PictureBox();
+            this.pnlAlertaVerde = new System.Windows.Forms.Panel();
+            this.btnCerrarAlertaV = new System.Windows.Forms.PictureBox();
+            this.lblverde = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.btnDataBaseOnline = new System.Windows.Forms.Button();
             this.txtInicioDB = new MetroFramework.Controls.MetroTextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.txtRelacionTP = new MetroFramework.Controls.MetroTextBox();
@@ -67,13 +74,9 @@
             this.txtRazonSocial = new MetroFramework.Controls.MetroTextBox();
             this.txtNissCliente = new MetroFramework.Controls.MetroTextBox();
             this.pnlBtn = new System.Windows.Forms.Panel();
-            this.pnlAlerta = new System.Windows.Forms.Panel();
-            this.pnlAlertaRojo = new System.Windows.Forms.Panel();
-            this.btnCerrarAlertaR = new System.Windows.Forms.PictureBox();
-            this.lblRojo = new System.Windows.Forms.Label();
-            this.pnlAlertaVerde = new System.Windows.Forms.Panel();
-            this.btnCerrarAlertaV = new System.Windows.Forms.PictureBox();
-            this.lblverde = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnAbrirDB = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -88,18 +91,15 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnDataBaseOnline = new System.Windows.Forms.Button();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.lblR = new System.Windows.Forms.Label();
             this.pnlMenuHijo.SuspendLayout();
             this.pnlContenedorHijo.SuspendLayout();
-            this.pnlBtn.SuspendLayout();
             this.pnlAlerta.SuspendLayout();
             this.pnlAlertaRojo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrarAlertaR)).BeginInit();
             this.pnlAlertaVerde.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrarAlertaV)).BeginInit();
+            this.pnlBtn.SuspendLayout();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridFechaDb)).BeginInit();
             this.SuspendLayout();
@@ -211,6 +211,73 @@
             this.txtFinDB.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtFinDB.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // pnlAlerta
+            // 
+            this.pnlAlerta.Controls.Add(this.pnlAlertaRojo);
+            this.pnlAlerta.Controls.Add(this.pnlAlertaVerde);
+            this.pnlAlerta.Location = new System.Drawing.Point(571, 69);
+            this.pnlAlerta.Name = "pnlAlerta";
+            this.pnlAlerta.Size = new System.Drawing.Size(396, 41);
+            this.pnlAlerta.TabIndex = 2;
+            // 
+            // pnlAlertaRojo
+            // 
+            this.pnlAlertaRojo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlAlertaRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
+            this.pnlAlertaRojo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlAlertaRojo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlAlertaRojo.Controls.Add(this.lblR);
+            this.pnlAlertaRojo.Controls.Add(this.btnCerrarAlertaR);
+            this.pnlAlertaRojo.Location = new System.Drawing.Point(44, 5);
+            this.pnlAlertaRojo.Name = "pnlAlertaRojo";
+            this.pnlAlertaRojo.Size = new System.Drawing.Size(348, 30);
+            this.pnlAlertaRojo.TabIndex = 1;
+            // 
+            // btnCerrarAlertaR
+            // 
+            this.btnCerrarAlertaR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarAlertaR.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarAlertaR.Image")));
+            this.btnCerrarAlertaR.Location = new System.Drawing.Point(5, 3);
+            this.btnCerrarAlertaR.Name = "btnCerrarAlertaR";
+            this.btnCerrarAlertaR.Size = new System.Drawing.Size(22, 22);
+            this.btnCerrarAlertaR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnCerrarAlertaR.TabIndex = 2;
+            this.btnCerrarAlertaR.TabStop = false;
+            this.btnCerrarAlertaR.Click += new System.EventHandler(this.btnCerrarAlertaR_Click);
+            // 
+            // pnlAlertaVerde
+            // 
+            this.pnlAlertaVerde.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlAlertaVerde.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(216)))));
+            this.pnlAlertaVerde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnlAlertaVerde.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlAlertaVerde.Controls.Add(this.btnCerrarAlertaV);
+            this.pnlAlertaVerde.Controls.Add(this.lblverde);
+            this.pnlAlertaVerde.Location = new System.Drawing.Point(44, 5);
+            this.pnlAlertaVerde.Name = "pnlAlertaVerde";
+            this.pnlAlertaVerde.Size = new System.Drawing.Size(349, 30);
+            this.pnlAlertaVerde.TabIndex = 0;
+            // 
+            // btnCerrarAlertaV
+            // 
+            this.btnCerrarAlertaV.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrarAlertaV.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarAlertaV.Image")));
+            this.btnCerrarAlertaV.Location = new System.Drawing.Point(5, 3);
+            this.btnCerrarAlertaV.Name = "btnCerrarAlertaV";
+            this.btnCerrarAlertaV.Size = new System.Drawing.Size(22, 22);
+            this.btnCerrarAlertaV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnCerrarAlertaV.TabIndex = 1;
+            this.btnCerrarAlertaV.TabStop = false;
+            this.btnCerrarAlertaV.Click += new System.EventHandler(this.btnCerrarAlertaV_Click);
+            // 
+            // lblverde
+            // 
+            this.lblverde.AutoSize = true;
+            this.lblverde.Location = new System.Drawing.Point(45, 3);
+            this.lblverde.Name = "lblverde";
+            this.lblverde.Size = new System.Drawing.Size(0, 20);
+            this.lblverde.TabIndex = 0;
+            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -220,6 +287,24 @@
             this.label21.Size = new System.Drawing.Size(137, 22);
             this.label21.TabIndex = 174;
             this.label21.Text = "Fecha Fin DB :";
+            // 
+            // btnDataBaseOnline
+            // 
+            this.btnDataBaseOnline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnDataBaseOnline.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            this.btnDataBaseOnline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDataBaseOnline.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDataBaseOnline.ForeColor = System.Drawing.Color.Black;
+            this.btnDataBaseOnline.Image = ((System.Drawing.Image)(resources.GetObject("btnDataBaseOnline.Image")));
+            this.btnDataBaseOnline.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDataBaseOnline.Location = new System.Drawing.Point(10, 69);
+            this.btnDataBaseOnline.Margin = new System.Windows.Forms.Padding(10);
+            this.btnDataBaseOnline.Name = "btnDataBaseOnline";
+            this.btnDataBaseOnline.Size = new System.Drawing.Size(185, 41);
+            this.btnDataBaseOnline.TabIndex = 147;
+            this.btnDataBaseOnline.Text = "BD Online";
+            this.btnDataBaseOnline.UseVisualStyleBackColor = false;
+            this.btnDataBaseOnline.Click += new System.EventHandler(this.btnDataBaseOnline_Click);
             // 
             // txtInicioDB
             // 
@@ -834,81 +919,35 @@
             this.pnlBtn.Size = new System.Drawing.Size(978, 64);
             this.pnlBtn.TabIndex = 60;
             // 
-            // pnlAlerta
+            // label24
             // 
-            this.pnlAlerta.Controls.Add(this.pnlAlertaRojo);
-            this.pnlAlerta.Controls.Add(this.pnlAlertaVerde);
-            this.pnlAlerta.Location = new System.Drawing.Point(571, 69);
-            this.pnlAlerta.Name = "pnlAlerta";
-            this.pnlAlerta.Size = new System.Drawing.Size(396, 41);
-            this.pnlAlerta.TabIndex = 2;
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(491, 12);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(44, 39);
+            this.label24.TabIndex = 178;
+            this.label24.Text = "3.";
             // 
-            // pnlAlertaRojo
+            // label23
             // 
-            this.pnlAlertaRojo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlAlertaRojo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(222)))), ((int)(((byte)(222)))));
-            this.pnlAlertaRojo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnlAlertaRojo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlAlertaRojo.Controls.Add(this.btnCerrarAlertaR);
-            this.pnlAlertaRojo.Controls.Add(this.lblRojo);
-            this.pnlAlertaRojo.Location = new System.Drawing.Point(44, 5);
-            this.pnlAlertaRojo.Name = "pnlAlertaRojo";
-            this.pnlAlertaRojo.Size = new System.Drawing.Size(348, 30);
-            this.pnlAlertaRojo.TabIndex = 1;
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(207, 12);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(44, 39);
+            this.label23.TabIndex = 177;
+            this.label23.Text = "2.";
             // 
-            // btnCerrarAlertaR
+            // label22
             // 
-            this.btnCerrarAlertaR.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrarAlertaR.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarAlertaR.Image")));
-            this.btnCerrarAlertaR.Location = new System.Drawing.Point(5, 3);
-            this.btnCerrarAlertaR.Name = "btnCerrarAlertaR";
-            this.btnCerrarAlertaR.Size = new System.Drawing.Size(22, 22);
-            this.btnCerrarAlertaR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnCerrarAlertaR.TabIndex = 2;
-            this.btnCerrarAlertaR.TabStop = false;
-            this.btnCerrarAlertaR.Click += new System.EventHandler(this.btnCerrarAlertaR_Click);
-            // 
-            // lblRojo
-            // 
-            this.lblRojo.AutoSize = true;
-            this.lblRojo.Location = new System.Drawing.Point(47, 8);
-            this.lblRojo.Name = "lblRojo";
-            this.lblRojo.Size = new System.Drawing.Size(0, 20);
-            this.lblRojo.TabIndex = 0;
-            this.lblRojo.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // pnlAlertaVerde
-            // 
-            this.pnlAlertaVerde.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlAlertaVerde.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(240)))), ((int)(((byte)(216)))));
-            this.pnlAlertaVerde.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pnlAlertaVerde.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlAlertaVerde.Controls.Add(this.btnCerrarAlertaV);
-            this.pnlAlertaVerde.Controls.Add(this.lblverde);
-            this.pnlAlertaVerde.Location = new System.Drawing.Point(44, 5);
-            this.pnlAlertaVerde.Name = "pnlAlertaVerde";
-            this.pnlAlertaVerde.Size = new System.Drawing.Size(349, 30);
-            this.pnlAlertaVerde.TabIndex = 0;
-            // 
-            // btnCerrarAlertaV
-            // 
-            this.btnCerrarAlertaV.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrarAlertaV.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrarAlertaV.Image")));
-            this.btnCerrarAlertaV.Location = new System.Drawing.Point(5, 3);
-            this.btnCerrarAlertaV.Name = "btnCerrarAlertaV";
-            this.btnCerrarAlertaV.Size = new System.Drawing.Size(22, 22);
-            this.btnCerrarAlertaV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnCerrarAlertaV.TabIndex = 1;
-            this.btnCerrarAlertaV.TabStop = false;
-            this.btnCerrarAlertaV.Click += new System.EventHandler(this.btnCerrarAlertaV_Click);
-            // 
-            // lblverde
-            // 
-            this.lblverde.AutoSize = true;
-            this.lblverde.Location = new System.Drawing.Point(45, 3);
-            this.lblverde.Name = "lblverde";
-            this.lblverde.Size = new System.Drawing.Size(0, 20);
-            this.lblverde.TabIndex = 0;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(-8, 12);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(44, 39);
+            this.label22.TabIndex = 176;
+            this.label22.Text = "1.";
             // 
             // button1
             // 
@@ -942,6 +981,7 @@
             this.btnAbrirDB.TabIndex = 18;
             this.btnAbrirDB.Text = "Abrir  o act BD";
             this.btnAbrirDB.UseVisualStyleBackColor = true;
+            this.btnAbrirDB.Click += new System.EventHandler(this.btnAbrirDB_Click);
             // 
             // label6
             // 
@@ -1005,24 +1045,24 @@
             this.gridFechaDb.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridFechaDb.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridFechaDb.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridFechaDb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridFechaDb.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridFechaDb.ColumnHeadersHeight = 35;
             this.gridFechaDb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridFechaDb.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridFechaDb.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridFechaDb.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridFechaDb.EnableHeadersVisualStyles = false;
             this.gridFechaDb.GridColor = System.Drawing.Color.White;
@@ -1030,18 +1070,18 @@
             this.gridFechaDb.Name = "gridFechaDb";
             this.gridFechaDb.ReadOnly = true;
             this.gridFechaDb.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridFechaDb.RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridFechaDb.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.gridFechaDb.RowHeadersVisible = false;
             this.gridFechaDb.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.gridFechaDb.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            this.gridFechaDb.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridFechaDb.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridFechaDb.Size = new System.Drawing.Size(323, 351);
             this.gridFechaDb.TabIndex = 1;
@@ -1101,53 +1141,13 @@
             this.label3.TabIndex = 22;
             this.label3.Text = "Datos Del Medidores";
             // 
-            // btnDataBaseOnline
+            // lblR
             // 
-            this.btnDataBaseOnline.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnDataBaseOnline.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.btnDataBaseOnline.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDataBaseOnline.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDataBaseOnline.ForeColor = System.Drawing.Color.Black;
-            this.btnDataBaseOnline.Image = ((System.Drawing.Image)(resources.GetObject("btnDataBaseOnline.Image")));
-            this.btnDataBaseOnline.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDataBaseOnline.Location = new System.Drawing.Point(10, 69);
-            this.btnDataBaseOnline.Margin = new System.Windows.Forms.Padding(10);
-            this.btnDataBaseOnline.Name = "btnDataBaseOnline";
-            this.btnDataBaseOnline.Size = new System.Drawing.Size(185, 41);
-            this.btnDataBaseOnline.TabIndex = 147;
-            this.btnDataBaseOnline.Text = "BD Online";
-            this.btnDataBaseOnline.UseVisualStyleBackColor = false;
-            this.btnDataBaseOnline.Click += new System.EventHandler(this.btnDataBaseOnline_Click);
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(-8, 12);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(44, 39);
-            this.label22.TabIndex = 176;
-            this.label22.Text = "1.";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(207, 12);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(44, 39);
-            this.label23.TabIndex = 177;
-            this.label23.Text = "2.";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(491, 12);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(44, 39);
-            this.label24.TabIndex = 178;
-            this.label24.Text = "3.";
+            this.lblR.AutoSize = true;
+            this.lblR.Location = new System.Drawing.Point(34, 4);
+            this.lblR.Name = "lblR";
+            this.lblR.Size = new System.Drawing.Size(0, 20);
+            this.lblR.TabIndex = 3;
             // 
             // Inicio
             // 
@@ -1166,8 +1166,6 @@
             this.pnlMenuHijo.PerformLayout();
             this.pnlContenedorHijo.ResumeLayout(false);
             this.pnlContenedorHijo.PerformLayout();
-            this.pnlBtn.ResumeLayout(false);
-            this.pnlBtn.PerformLayout();
             this.pnlAlerta.ResumeLayout(false);
             this.pnlAlertaRojo.ResumeLayout(false);
             this.pnlAlertaRojo.PerformLayout();
@@ -1175,6 +1173,8 @@
             this.pnlAlertaVerde.ResumeLayout(false);
             this.pnlAlertaVerde.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrarAlertaV)).EndInit();
+            this.pnlBtn.ResumeLayout(false);
+            this.pnlBtn.PerformLayout();
             this.panel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridFechaDb)).EndInit();
             this.ResumeLayout(false);
@@ -1202,7 +1202,6 @@
         private System.Windows.Forms.Panel pnlAlerta;
         private System.Windows.Forms.Panel pnlAlertaRojo;
         private System.Windows.Forms.PictureBox btnCerrarAlertaR;
-        private System.Windows.Forms.Label lblRojo;
         private System.Windows.Forms.Panel pnlAlertaVerde;
         private System.Windows.Forms.PictureBox btnCerrarAlertaV;
         private System.Windows.Forms.Label lblverde;
@@ -1242,5 +1241,6 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label lblR;
     }
 }

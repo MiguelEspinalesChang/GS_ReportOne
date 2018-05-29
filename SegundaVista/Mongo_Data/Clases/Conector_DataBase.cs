@@ -10,6 +10,7 @@ using System.ComponentModel;
 using MongoDB.Driver.Linq;
 using SegundaVista.Vistas;
 using SegundaVista.clases;
+using SegundaVista.clases.Medidores;
 
 namespace SegundaVista.Mongo_Data.Clases
 {
@@ -34,7 +35,7 @@ namespace SegundaVista.Mongo_Data.Clases
                 {"RazonSocial",RazonSocial},
                 {"Ruc",Ruc},
                 {"NisCliente",NisCliente},
-               
+
             };
             var collection_ = dataLocal.GetCollection<BsonDocument>("Clientes");
             collection_.InsertOneAsync(documento);
@@ -42,7 +43,7 @@ namespace SegundaVista.Mongo_Data.Clases
         // funcion para agregar Medidores
         public void insertar_Medidor(DatosMedidor datosTxt)
         {
-            string DB_Inicio  = "", DB_Final = "";
+            string DB_Inicio = "", DB_Final = "";
             string id = ObjectId.GenerateNewId().ToString();
             var documento = new BsonDocument
            {
@@ -102,15 +103,57 @@ namespace SegundaVista.Mongo_Data.Clases
             var collection_ = dataLocal.GetCollection<BsonDocument>("Medidor");
             collection_.InsertOneAsync(documento);
         }
-
-        public void Buscar_Cliente(string id)
+        public void insertarDatosPilot(PilotDB filaData)
         {
-            var collection_ = dataLocal.GetCollection<BsonDocument>("Usuarios");
-            var filtro = Builders<BsonDocument>.Filter.Eq("_id", id);
-            var datos = collection_.Find<BsonDocument>(filtro).FirstOrDefault();
-            string nombre = datos["status"].ToString();
+            string id = ObjectId.GenerateNewId().ToString();
+            var documento = new BsonDocument
+            {
+                {"id_pilot",id},
+                {"Marca",filaData.Marca},
+                {"Nombre",filaData.Nombre},
+                {"NombrePropietadio",filaData.NombrePropietadio},
+                {"date_Loader",DateTime.Now}
+            };
+            var arreglo = new BsonArray();
+            //Agregar Datos al Areglo de Registro de mongo
 
+            foreach (var valor in filaData.Regitros)
+            {
+                var Registro = new BsonDocument
+            {
+                {"Time",valor.Time},
+                {"Va", valor.Va},
+                {"Vb", valor.Vb},
+                {"Vc",valor.Vc},
+                {"Ia",valor.Ia},
+                {"Ib",valor.Ib},
+                {"Ic",valor.Ic},
+                {"Frequency",valor.Frequency},
+                {"Pa",valor.Pa},
+                {"Pb",valor.Pb},
+                {"Pc",valor.Pc},
+                {"TotalkW",valor.TotalkW},
+                {"Pftot",valor.Pftot},
+                {"KwhRec",valor.KwhRec},
+                {"KwhDel",valor.KwhDel},
+                {"kVARhDel",valor.kVARhDel},
+                {"kVARhRec",valor.kVARhRec},
+                {"TotalkWh_del_Rec",valor.TotalkWh_del_Rec},
+                {"TotalkVARh",valor.TotalkVARh},
+                {"Rec_kW",valor.Rec_kW},
+                {"Del_kW",valor.Del_kW},
+                {"kVAh_rms",valor.kVAh_rms},
+                {"Rec_kVAh",valor.Rec_kVAh},
+                {"Del_kVAh",valor.Del_kVAh}
+            };
+                arreglo.Add(Registro);
+            }
+            documento.Add("Regitros", arreglo);
+            var collection_ = dataLocal.GetCollection<BsonDocument>("Datos");
+            collection_.InsertOneAsync(documento);
         }
+
+
 
     }
 }
