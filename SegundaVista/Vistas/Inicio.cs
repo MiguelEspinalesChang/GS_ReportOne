@@ -260,7 +260,8 @@ namespace SegundaVista.Vistas
             {
                 if (e.Value.ToString() == "")
                 {
-                    e.CellStyle.ForeColor = Color.Red;
+                    e.Value = "Sin Registro";
+                    e.CellStyle.ForeColor = Color.White;
                     e.CellStyle.BackColor = Color.OrangeRed;
                 }
             }
@@ -268,7 +269,8 @@ namespace SegundaVista.Vistas
             {
                 if (e.Value.ToString() == "")
                 {
-                    e.CellStyle.ForeColor = Color.Red;
+                    e.Value = "Sin Registro";
+                    e.CellStyle.ForeColor = Color.White;
                     e.CellStyle.BackColor = Color.OrangeRed;
                 }
             }
@@ -284,8 +286,8 @@ namespace SegundaVista.Vistas
         {
             try
             {
-                //if (ComboMedidores.ToString() == "")
-                //{
+                if (ComboMedidores.Text != "")
+                {
                     pnlAlertaVerde.Visible = false;
                     pnlAlertaRojo.Visible = false;
                     Conector_DataBase conector = new Conector_DataBase();
@@ -309,6 +311,7 @@ namespace SegundaVista.Vistas
                             filaData.Nombre = txtNombreMedidor.Text;
                             filaData.NombrePropietadio = txtNombreCliente.Text;
                             filaData.Marca = txtMarcaMedidor.Text;
+                            filaData.NumeroMedidor = txtNumeroMedidor.Text;
                             while ((line = file.ReadLine()) != null)
                             {
                                 counter++;
@@ -401,12 +404,12 @@ namespace SegundaVista.Vistas
                             lblverde.Text = "Registros Agregados";
                         }
                     }
-                //}
-                //else
-                //{
-                //    pnlAlertaRojo.Visible = true;
-                //    lblR.Text = "Seleccione Un Medidor";
-                //}
+                }
+                else
+                {
+                 pnlAlertaRojo.Visible = true;
+                 lblR.Text = "Seleccione Un Medidor";
+                }
 
             }
             catch (Exception ex)
@@ -430,6 +433,7 @@ namespace SegundaVista.Vistas
             {
                 if (valor.Nombre_Medidor == Medidor)
                 {
+                    txtNumeroMedidor.Text = valor.Numero_Medidor;
                     txtNombreMedidor.Text = valor.Nombre_Medidor;
                     txtIdMedidor.Text = valor.id_Medidor;
                     txtModoHusoMedidor.Text = valor.Modo_De_Uso;

@@ -111,6 +111,7 @@ namespace SegundaVista.Mongo_Data.Clases
                 {"id_pilot",id},
                 {"Marca",filaData.Marca},
                 {"Nombre",filaData.Nombre},
+                {"NumeroMedidor",filaData.NumeroMedidor},
                 {"NombrePropietadio",filaData.NombrePropietadio},
                 {"date_Loader",DateTime.Now}
             };

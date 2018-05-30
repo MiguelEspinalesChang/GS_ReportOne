@@ -46,6 +46,7 @@ namespace SegundaVista.clases.Medidores
         public ObjectId _id { get; set; }            //
         public string id_pilot { get; set; }         //id del registro
         public string Nombre { get; set; }
+        public string NumeroMedidor { get; set; }
         public string NombrePropietadio { get; set; }
         public string Marca { get; set; }
         public DateTime date_Loader { get; set; }    //Fecha de creacion del Registro
