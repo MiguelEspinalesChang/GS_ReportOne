@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SegundaVista.Vistas;
 
 namespace SegundaVista.Vistas
 {
@@ -20,25 +19,24 @@ namespace SegundaVista.Vistas
 
         private void Analisis_Load(object sender, EventArgs e)
         {
-
+            pnlAlerta.Visible = true;
+            pnlAlertaVerde.Visible = false;
+            pnlAlertaRojo.Visible = false;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        private void btnMS4X_Click(object sender, EventArgs e)
+        private void btnCerrarAlertaR_Click(object sender, EventArgs e)
         {
-            Form abrir = new S4X();
-            abrir.ShowDialog();
+            pnlAlertaVerde.Visible = false;
         }
 
-        private void btnMpilot_Click(object sender, EventArgs e)
+        private void btnCerrarAlertaV_Click(object sender, EventArgs e)
         {
-            Form abrir = new Pilot();
-            abrir.ShowDialog();
-
+            pnlAlertaVerde.Visible = false;
         }
     }
 }

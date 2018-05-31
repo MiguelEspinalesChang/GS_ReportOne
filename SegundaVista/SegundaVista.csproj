@@ -186,6 +186,12 @@
     <Compile Include="Vistas\Analisis.Designer.cs">
       <DependentUpon>Analisis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\DatosOrige.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\DatosOrige.Designer.cs">
+      <DependentUpon>DatosOrige.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -264,6 +270,9 @@
     <EmbeddedResource Include="Vistas\Analisis.resx">
       <DependentUpon>Analisis.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\DatosOrige.resx">
+      <DependentUpon>DatosOrige.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -324,6 +333,7 @@
     <Content Include="layout\iconos\icons8-eliminar-50.png" />
     <Content Include="layout\iconos\icons8-estadísticas-32.png" />
     <Content Include="layout\iconos\icons8-gráfico-combinado-32.png" />
+    <Content Include="layout\iconos\icons8-gráfico-combinado-negro-32.png" />
     <Content Include="layout\iconos\icons8-guardar-32.png" />
     <Content Include="layout\iconos\icons8-hibernar-32.png" />
     <Content Include="layout\iconos\icons8-maximizar-la-ventana-100.png" />
@@ -336,6 +346,7 @@
     <Content Include="layout\iconos\icons8-multiedición-32.png" />
     <Content Include="layout\iconos\icons8-multiedición-50.png" />
     <Content Include="layout\iconos\icons8-placa-base-32.png" />
+    <Content Include="layout\iconos\icons8-rango-de-fechas-32.png" />
     <Content Include="layout\iconos\icons8-reequilibrar-la-cartera-32.png" />
     <Content Include="layout\iconos\icons8-restaurar-ventana-100.png" />
     <Content Include="layout\iconos\icons8-signo-de-exclamación-32.ico" />

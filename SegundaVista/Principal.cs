@@ -120,7 +120,7 @@ namespace SegundaVista
 
         private void btnAnalis_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Analisis());
+            AbrirFormHijo(new DatosOrige());
         }
 
         private void PnlContenedor_Paint_1(object sender, PaintEventArgs e)

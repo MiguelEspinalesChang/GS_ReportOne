@@ -229,7 +229,8 @@ namespace SegundaVista.Vistas
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form abrir = new Analisis();
+            abrir.ShowDialog();
         }
 
         private void metroTextBox1_Click(object sender, EventArgs e)
@@ -291,27 +292,41 @@ namespace SegundaVista.Vistas
                     pnlAlertaVerde.Visible = false;
                     pnlAlertaRojo.Visible = false;
                     Conector_DataBase conector = new Conector_DataBase();
-                    OpenFileDialog openFileDialog1 = new OpenFileDialog();
-                    openFileDialog1.RestoreDirectory = true;
-                    openFileDialog1.CheckFileExists = true;
-                    openFileDialog1.CheckPathExists = true;
-                    openFileDialog1.Title = "Buscar medición en formato csv";
-                    openFileDialog1.DefaultExt = ".csv";
-                    openFileDialog1.Filter = "archivos csv (*.csv)|*.csv";
+                    //OpenFileDialog openFileDialog1 = new OpenFileDialog();
+                    //openFileDialog1.RestoreDirectory = true;
+                    //openFileDialog1.CheckFileExists = true;
+                    //openFileDialog1.CheckPathExists = true;
+                    //openFileDialog1.Title = "Buscar medición en formato csv";
+                    //openFileDialog1.DefaultExt = ".csv";
+                    //openFileDialog1.Filter = "archivos csv (*.csv)|*.csv";
 
-                    if (openFileDialog1.ShowDialog() == DialogResult.OK && openFileDialog1.ToString() != "")
+                    string ScvMedidor = txtNumeroMedidor.Text + ".csv";
+                    string url = "C:\\Data Origen Report One\\DBPILOT\\"+ ScvMedidor;
+
+                    if (File.Exists(url).ToString() != "")
                     {
-                        if (File.Exists("" + openFileDialog1.FileName))
+                        if (File.Exists(url))
                         {
                             string line;
+                            string linea;
                             int counter = 0;
                             // Read the file and display it line by line.  
-                            System.IO.StreamReader file = new System.IO.StreamReader(@"" + openFileDialog1.FileName);
+                            System.IO.StreamReader file = new System.IO.StreamReader(@"" + url);
+                            //se crear un clon de la lectura del archivon para saber la cantidad de lineas
+                            System.IO.StreamReader fileCantidad = new System.IO.StreamReader(@"" + url);
                             PilotDB filaData = new PilotDB();
                             filaData.Nombre = txtNombreMedidor.Text;
                             filaData.NombrePropietadio = txtNombreCliente.Text;
                             filaData.Marca = txtMarcaMedidor.Text;
                             filaData.NumeroMedidor = txtNumeroMedidor.Text;
+                            //sacar la cantidad de lineas
+                            int cantidadLineas = 0;
+                            while ((linea = fileCantidad.ReadLine()) != null)
+                            {
+                                cantidadLineas++;
+                            }
+
+
                             while ((line = file.ReadLine()) != null)
                             {
                                 counter++;
@@ -320,7 +335,7 @@ namespace SegundaVista.Vistas
                                 int[] columnasUsar = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15, 17, 18, 19, 20, 21 };
                                 columnasCsv = line.Split(',');
                                 dbDatosPilot Dato = new dbDatosPilot();
-                                if (counter > 1 && counter <= 41)
+                                if (counter > 1 && counter <= cantidadLineas+1)
                                 {
                                     // this.gridDatos.Rows.Add(1);
                                     Random rnd = new Random();
@@ -383,7 +398,7 @@ namespace SegundaVista.Vistas
                                             case 23:
                                                 Dato.TotalkWh_del_Rec = (Dato.KwhRec - Dato.KwhDel);
                                                 Dato.TotalkVARh = (Dato.kVARhDel - Dato.kVARhRec);
-                                                ////
+                                                ////datos Calculado a partir de lo registros
                                                 Dato.Rec_kW = (Dato.KwhRec * 4);
                                                 Dato.Del_kW = (Dato.KwhDel * 4);
                                                 double a = Convert.ToDouble(Dato.TotalkVARh);
@@ -403,6 +418,16 @@ namespace SegundaVista.Vistas
                             pnlAlertaVerde.Visible = true;
                             lblverde.Text = "Registros Agregados";
                         }
+                        else
+                        {
+                            pnlAlertaRojo.Visible = true;
+                            lblR.Text = "El archivo scv  no se encuentra";
+                        }
+                    }
+                    else
+                    {
+                        pnlAlertaRojo.Visible = true;
+                        lblR.Text = "El archivo scv esta Vacio ";
                     }
                 }
                 else
@@ -417,8 +442,6 @@ namespace SegundaVista.Vistas
                 pnlAlertaRojo.Visible = true;
                 lblR.Text = "Erro AL Guardar Los Registro : "+ex.ToString();
             }
-
-
         }
 
         private void ComboMedidores_SelectedIndexChanged(object sender, EventArgs e)
@@ -465,8 +488,6 @@ namespace SegundaVista.Vistas
                 }
 
             }
-
-
 
         }
     }
