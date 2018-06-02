@@ -38,5 +38,20 @@ namespace SegundaVista.Vistas
         {
             pnlAlertaVerde.Visible = false;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Valores de Fecha para la consulta
+            DateTime fechaInicial = dtFechaFinalRegistro.Value.Date;
+            DateTime horaInicial = Convert.ToDateTime(CbHoraInicialRegistro.Text +":" +CbMinutoInicialRegistro.Text +":" +"00");
+            DateTime FechaInicialRegistro = fechaInicial.AddHours(horaInicial.Hour).AddMinutes(horaInicial.Minute).AddSeconds(horaInicial.Second);
+     
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
