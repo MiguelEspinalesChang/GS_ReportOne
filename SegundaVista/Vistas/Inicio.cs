@@ -15,6 +15,7 @@ using MongoDB.Driver.Builders;
 using System.IO;
 using SegundaVista.Mongo_Data.Clases;
 
+
 namespace SegundaVista.Vistas
 {
     public partial class Inicio : Form
@@ -229,8 +230,22 @@ namespace SegundaVista.Vistas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form abrir = new Analisis();
-            abrir.ShowDialog();
+            pnlAlertaRojo.Visible = false;
+            pnlAlertaVerde.Visible = false;
+            if (ComboMedidores.Text != "")
+            {
+               
+                Analisis vistaAnalisis = new Analisis();
+
+                vistaAnalisis.ShowDialog();
+                
+            }
+            else
+            {
+                pnlAlertaRojo.Visible = true;
+                lblR.Text = "Seleccione Un Medidor";
+            }
+           
         }
 
         private void metroTextBox1_Click(object sender, EventArgs e)

@@ -53,5 +53,25 @@ namespace SegundaVista.Vistas
         {
 
         }
+
+        private void pnlContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlDatosRegistro_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel13_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
