@@ -236,6 +236,10 @@ namespace SegundaVista.Vistas
             {
                
                 Analisis vistaAnalisis = new Analisis();
+                vistaAnalisis.txtNombreMedidor.Text = txtNombreMedidor.Text;
+                vistaAnalisis.txtNumeroMedidor.Text = txtNumeroMedidor.Text;
+                vistaAnalisis.txtNissCliente.Text = txtNissCliente.Text;
+                vistaAnalisis.txtIdMedidor.Text = txtIdMedidor.Text;
 
                 vistaAnalisis.ShowDialog();
                 
