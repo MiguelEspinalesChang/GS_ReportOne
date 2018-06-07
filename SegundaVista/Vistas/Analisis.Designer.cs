@@ -50,12 +50,9 @@
             this.txtMaxL3 = new MetroFramework.Controls.MetroTextBox();
             this.txtMaxL2 = new MetroFramework.Controls.MetroTextBox();
             this.txtMaxL1 = new MetroFramework.Controls.MetroTextBox();
-            this.txtL3 = new MetroFramework.Controls.MetroTextBox();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.txtL2 = new MetroFramework.Controls.MetroTextBox();
             this.label39 = new System.Windows.Forms.Label();
-            this.txtL1 = new MetroFramework.Controls.MetroTextBox();
             this.label28 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
@@ -349,7 +346,7 @@
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(494, 161);
+            this.label41.Location = new System.Drawing.Point(309, 161);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(119, 22);
             this.label41.TabIndex = 198;
@@ -358,7 +355,7 @@
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel23.Location = new System.Drawing.Point(478, 188);
+            this.panel23.Location = new System.Drawing.Point(293, 188);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(150, 2);
             this.panel23.TabIndex = 199;
@@ -367,7 +364,7 @@
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(697, 163);
+            this.label40.Location = new System.Drawing.Point(511, 161);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(68, 22);
             this.label40.TabIndex = 196;
@@ -376,7 +373,7 @@
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel22.Location = new System.Drawing.Point(659, 190);
+            this.panel22.Location = new System.Drawing.Point(470, 188);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(150, 2);
             this.panel22.TabIndex = 197;
@@ -385,7 +382,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(291, 161);
+            this.label12.Location = new System.Drawing.Point(65, 215);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(75, 22);
             this.label12.TabIndex = 194;
@@ -394,7 +391,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel9.Location = new System.Drawing.Point(253, 188);
+            this.panel9.Location = new System.Drawing.Point(27, 242);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(150, 2);
             this.panel9.TabIndex = 195;
@@ -408,15 +405,12 @@
             this.panel4.Controls.Add(this.txtMaxL3);
             this.panel4.Controls.Add(this.txtMaxL2);
             this.panel4.Controls.Add(this.txtMaxL1);
-            this.panel4.Controls.Add(this.txtL3);
             this.panel4.Controls.Add(this.label37);
             this.panel4.Controls.Add(this.label38);
-            this.panel4.Controls.Add(this.txtL2);
             this.panel4.Controls.Add(this.label39);
-            this.panel4.Controls.Add(this.txtL1);
             this.panel4.Location = new System.Drawing.Point(194, 194);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(625, 91);
+            this.panel4.Size = new System.Drawing.Size(443, 91);
             this.panel4.TabIndex = 193;
             // 
             // txtFechaMaxL3
@@ -435,7 +429,7 @@
             this.txtFechaMaxL3.CustomButton.Visible = false;
             this.txtFechaMaxL3.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtFechaMaxL3.Lines = new string[0];
-            this.txtFechaMaxL3.Location = new System.Drawing.Point(457, 62);
+            this.txtFechaMaxL3.Location = new System.Drawing.Point(277, 62);
             this.txtFechaMaxL3.MaxLength = 32767;
             this.txtFechaMaxL3.Name = "txtFechaMaxL3";
             this.txtFechaMaxL3.PasswordChar = '\0';
@@ -466,7 +460,7 @@
             this.txtFechaMaxL2.CustomButton.Visible = false;
             this.txtFechaMaxL2.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtFechaMaxL2.Lines = new string[0];
-            this.txtFechaMaxL2.Location = new System.Drawing.Point(457, 33);
+            this.txtFechaMaxL2.Location = new System.Drawing.Point(277, 33);
             this.txtFechaMaxL2.MaxLength = 32767;
             this.txtFechaMaxL2.Name = "txtFechaMaxL2";
             this.txtFechaMaxL2.PasswordChar = '\0';
@@ -497,7 +491,7 @@
             this.txtFechaMaxL1.CustomButton.Visible = false;
             this.txtFechaMaxL1.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtFechaMaxL1.Lines = new string[0];
-            this.txtFechaMaxL1.Location = new System.Drawing.Point(457, 5);
+            this.txtFechaMaxL1.Location = new System.Drawing.Point(277, 5);
             this.txtFechaMaxL1.MaxLength = 32767;
             this.txtFechaMaxL1.Name = "txtFechaMaxL1";
             this.txtFechaMaxL1.PasswordChar = '\0';
@@ -528,7 +522,7 @@
             this.txtMaxL3.CustomButton.Visible = false;
             this.txtMaxL3.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtMaxL3.Lines = new string[0];
-            this.txtMaxL3.Location = new System.Drawing.Point(277, 62);
+            this.txtMaxL3.Location = new System.Drawing.Point(101, 62);
             this.txtMaxL3.MaxLength = 32767;
             this.txtMaxL3.Name = "txtMaxL3";
             this.txtMaxL3.PasswordChar = '\0';
@@ -559,7 +553,7 @@
             this.txtMaxL2.CustomButton.Visible = false;
             this.txtMaxL2.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtMaxL2.Lines = new string[0];
-            this.txtMaxL2.Location = new System.Drawing.Point(277, 33);
+            this.txtMaxL2.Location = new System.Drawing.Point(101, 33);
             this.txtMaxL2.MaxLength = 32767;
             this.txtMaxL2.Name = "txtMaxL2";
             this.txtMaxL2.PasswordChar = '\0';
@@ -590,7 +584,7 @@
             this.txtMaxL1.CustomButton.Visible = false;
             this.txtMaxL1.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtMaxL1.Lines = new string[0];
-            this.txtMaxL1.Location = new System.Drawing.Point(277, 5);
+            this.txtMaxL1.Location = new System.Drawing.Point(101, 5);
             this.txtMaxL1.MaxLength = 32767;
             this.txtMaxL1.Name = "txtMaxL1";
             this.txtMaxL1.PasswordChar = '\0';
@@ -604,37 +598,6 @@
             this.txtMaxL1.UseSelectable = true;
             this.txtMaxL1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtMaxL1.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // txtL3
-            // 
-            // 
-            // 
-            // 
-            this.txtL3.CustomButton.Image = null;
-            this.txtL3.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.txtL3.CustomButton.Name = "";
-            this.txtL3.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtL3.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtL3.CustomButton.TabIndex = 1;
-            this.txtL3.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtL3.CustomButton.UseSelectable = true;
-            this.txtL3.CustomButton.Visible = false;
-            this.txtL3.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.txtL3.Lines = new string[0];
-            this.txtL3.Location = new System.Drawing.Point(101, 61);
-            this.txtL3.MaxLength = 32767;
-            this.txtL3.Name = "txtL3";
-            this.txtL3.PasswordChar = '\0';
-            this.txtL3.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtL3.SelectedText = "";
-            this.txtL3.SelectionLength = 0;
-            this.txtL3.SelectionStart = 0;
-            this.txtL3.ShortcutsEnabled = true;
-            this.txtL3.Size = new System.Drawing.Size(156, 23);
-            this.txtL3.TabIndex = 183;
-            this.txtL3.UseSelectable = true;
-            this.txtL3.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtL3.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // label37
             // 
@@ -656,37 +619,6 @@
             this.label38.TabIndex = 181;
             this.label38.Text = "L2";
             // 
-            // txtL2
-            // 
-            // 
-            // 
-            // 
-            this.txtL2.CustomButton.Image = null;
-            this.txtL2.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.txtL2.CustomButton.Name = "";
-            this.txtL2.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtL2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtL2.CustomButton.TabIndex = 1;
-            this.txtL2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtL2.CustomButton.UseSelectable = true;
-            this.txtL2.CustomButton.Visible = false;
-            this.txtL2.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.txtL2.Lines = new string[0];
-            this.txtL2.Location = new System.Drawing.Point(101, 32);
-            this.txtL2.MaxLength = 32767;
-            this.txtL2.Name = "txtL2";
-            this.txtL2.PasswordChar = '\0';
-            this.txtL2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtL2.SelectedText = "";
-            this.txtL2.SelectionLength = 0;
-            this.txtL2.SelectionStart = 0;
-            this.txtL2.ShortcutsEnabled = true;
-            this.txtL2.Size = new System.Drawing.Size(156, 23);
-            this.txtL2.TabIndex = 180;
-            this.txtL2.UseSelectable = true;
-            this.txtL2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtL2.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // label39
             // 
             this.label39.AutoSize = true;
@@ -696,37 +628,6 @@
             this.label39.Size = new System.Drawing.Size(30, 22);
             this.label39.TabIndex = 179;
             this.label39.Text = "L1";
-            // 
-            // txtL1
-            // 
-            // 
-            // 
-            // 
-            this.txtL1.CustomButton.Image = null;
-            this.txtL1.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.txtL1.CustomButton.Name = "";
-            this.txtL1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.txtL1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtL1.CustomButton.TabIndex = 1;
-            this.txtL1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtL1.CustomButton.UseSelectable = true;
-            this.txtL1.CustomButton.Visible = false;
-            this.txtL1.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.txtL1.Lines = new string[0];
-            this.txtL1.Location = new System.Drawing.Point(101, 4);
-            this.txtL1.MaxLength = 32767;
-            this.txtL1.Name = "txtL1";
-            this.txtL1.PasswordChar = '\0';
-            this.txtL1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtL1.SelectedText = "";
-            this.txtL1.SelectionLength = 0;
-            this.txtL1.SelectionStart = 0;
-            this.txtL1.ShortcutsEnabled = true;
-            this.txtL1.Size = new System.Drawing.Size(156, 23);
-            this.txtL1.TabIndex = 158;
-            this.txtL1.UseSelectable = true;
-            this.txtL1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtL1.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // label28
             // 
@@ -2978,12 +2879,9 @@
         public MetroFramework.Controls.MetroTextBox txtNombreMedidor;
         public MetroFramework.Controls.MetroTextBox txtNissCliente;
         private System.Windows.Forms.Panel panel4;
-        private MetroFramework.Controls.MetroTextBox txtL3;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
-        private MetroFramework.Controls.MetroTextBox txtL2;
         private System.Windows.Forms.Label label39;
-        private MetroFramework.Controls.MetroTextBox txtL1;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label41;
