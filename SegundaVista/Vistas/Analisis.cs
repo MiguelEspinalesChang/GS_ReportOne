@@ -54,7 +54,7 @@ namespace SegundaVista.Vistas
         }
 
         public int CantidadDias;
-       
+
 
         private void label13_Click(object sender, EventArgs e)
         {
@@ -100,7 +100,7 @@ namespace SegundaVista.Vistas
         {
 
         }
-       public DateTime L1MAxdate;
+        public DateTime L1MAxdate;
         private void btnAnlizarRangoFecha_Click(object sender, EventArgs e)
         {
             //Valores de Fecha para la consulta
@@ -119,7 +119,7 @@ namespace SegundaVista.Vistas
                 CantidadDias++;
             }
             txtCantidadDias.Text = "" + CantidadDias;
-            PilotDB pilot = new PilotDB();
+            // PilotDB pilot = new PilotDB();
             dbDatosPilot dpilot = new dbDatosPilot();
             dbDatosPilot dpilotValle = new dbDatosPilot();
             dbDatosPilot dpilotPunta = new dbDatosPilot();
@@ -127,55 +127,53 @@ namespace SegundaVista.Vistas
 
             var DocumentoRegistro = MongoConexion.DataBase.GetCollection<PilotDB>("Datos");
 
-            //Expresion lamda
-            // var filtro = Query<PilotDB>.EQ(pil => pil.NumeroMedidor, txtNumeroMedidor.Text );
-            //var Reg = DocumentoRegistro.FindAs<PilotDB>(filtro);
-
-
-            //foreach (var valor in Reg)
-            //{
-            //    pilot.Nombre = valor.Nombre;
-            //    pilot.Regitros = valor.Regitros;
-            //}
-
 
             //Linq
+            //version Pro
+            //var resutado = from d in DocumentoRegistro.FindAll()
+            //               where d.NumeroMedidor == txtNumeroMedidor.Text
+            //               /*&& d.Regitros["Time"] == */
+            //               select d.Regitros.Select(x=>x)
+            //               .Where(x=>x.Time >= FechaInicialRegistro 
+            //               && x.Time <= FechaFinalRegistro).OrderByDescending(x=>x.Time).ToList();
+
             var resutado = from d in DocumentoRegistro.FindAll()
-                           where d.NumeroMedidor == txtNumeroMedidor.Text /*&& d.Regitros["Time"] == */
-                           select d;
+                           where d.NumeroMedidor == txtNumeroMedidor.Text
+                           select (
+                                from otraVariableInventada in d.Regitros
+                                where otraVariableInventada.Time >= FechaInicialRegistro
+                                && otraVariableInventada.Time <= FechaFinalRegistro
+                                orderby otraVariableInventada.Time descending
+                                select otraVariableInventada
+                                ).ToList();//.FirstOrDefault();
 
-          
-
-            //Recorro y guardo los valores de la consulta
-            foreach (var valor in resutado)
+            if (resutado == null || resutado.Count() < 1)
             {
-                pilot._id = valor._id;
-                pilot.id_pilot = valor.id_pilot;
-                pilot.Nombre = valor.Nombre;
-                pilot.NumeroMedidor = valor.NumeroMedidor;
-                pilot.NombrePropietadio = valor.NombrePropietadio;
-                pilot.Marca = valor.Marca;
-                pilot.date_Loader = valor.date_Loader;
-                pilot.Regitros = valor.Regitros;
+                //HACER ALGO POR QUE NO HAY DATA
             }
-            decimal L1Max = 0;
-           
-            foreach (var Datos in pilot.Regitros)
+            else
             {
+                //FUMADAS CON DATA
+
+
+
+            }
+
+            decimal L1Max = 0;
+            foreach (var Datos in resutado.Select(x => x).FirstOrDefault())
+            {
+                //Llano
                 dpilot.TotalkWh_del_Rec = dpilot.TotalkWh_del_Rec + Datos.TotalkWh_del_Rec;
                 dpilot.TotalkVARh = dpilot.TotalkVARh + Datos.TotalkVARh;
                 dpilot.TotalkW = dpilot.TotalkW + Datos.TotalkW;
                 dpilot.Pftot = dpilot.Pftot + Datos.Pftot;
-
-               // DateTime fecha = Convert.ToDateTime(dpilot);
-                //validar rango de punta y valle
-                if (Datos.Time.Hour >= 18 && Datos.Time.Hour <= 22)
+                if (Datos.Time.Hour > 18 && Datos.Time.Hour < 20)
                 {
-                    //Punta
+                    //punta
                     dpilotPunta.TotalkWh_del_Rec = dpilotPunta.TotalkWh_del_Rec + Datos.TotalkWh_del_Rec;
                     dpilotPunta.TotalkVARh = dpilotPunta.TotalkVARh + Datos.TotalkVARh;
                     dpilotPunta.TotalkW = dpilotPunta.TotalkW + Datos.TotalkW;
-                    dpilotPunta.Pftot = dpilotPunta.Pftot + Datos.Pftot;
+                    dpilotPunta.Pftot = dpilotPunta.Pftot + Datos.TotalkW;
                 }
                 else
                 {
@@ -184,15 +182,17 @@ namespace SegundaVista.Vistas
                     dpilotValle.TotalkVARh = dpilotValle.TotalkVARh + Datos.TotalkVARh;
                     dpilotValle.TotalkW = dpilotValle.TotalkW + Datos.TotalkW;
                     dpilotValle.Pftot = dpilotValle.Pftot + Datos.Pftot;
+
                 }
-                //validar maximo valor en L1
-                if (L1Max < Datos.Va)
+                if (L1Max < Datos.Ia)
                 {
-                    L1Max = Datos.Va;
+                    L1Max = Datos.Ia;
                     L1MAxdate = Datos.Time;
                 }
 
+
             }
+            //Llano
             txtKwhLlano.Text = dpilot.TotalkWh_del_Rec + "";
             txtKvahrLlano.Text = dpilot.TotalkVARh + "";
             txtKwdLlano.Text = dpilot.TotalkW + "";
@@ -202,16 +202,14 @@ namespace SegundaVista.Vistas
             txtKvahrPunta.Text = dpilotPunta.TotalkVARh + "";
             txtKwdPunta.Text = dpilotPunta.TotalkW + "";
             txtFactorPotenciaPunta.Text = dpilotPunta.Pftot + "";
-
             //valle
             txtKwhValle.Text = dpilotValle.TotalkWh_del_Rec + "";
             txtKvahrValle.Text = dpilotValle.TotalkVARh + "";
             txtKwdValle.Text = dpilotValle.TotalkW + "";
             txtFactorPotenciaValle.Text = dpilotValle.Pftot + "";
-
             //Voltaje
             txtMaxL1.Text = L1Max + "";
-            txtFechaMaxL1.Text = L1MAxdate.Date + "";
+            txtFechaMaxL1.Text = L1MAxdate  + "";
         }
     }
 }

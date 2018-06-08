@@ -225,3 +225,9 @@ C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.H
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.EditarMedidor.resources
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.DatosOrige.resources
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.Analisis.resources
+C:\Users\Chang-PC\Desktop\GS_ReportOne\SegundaVista\bin\Debug\MetroFramework.Design.dll
+C:\Users\Chang-PC\Desktop\GS_ReportOne\SegundaVista\bin\Debug\MetroFramework.dll
+C:\Users\Chang-PC\Desktop\GS_ReportOne\SegundaVista\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Chang-PC\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.DatosOrige.resources
+C:\Users\Chang-PC\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.EditarMedidor.resources
+C:\Users\Chang-PC\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.Herramientas.resources
