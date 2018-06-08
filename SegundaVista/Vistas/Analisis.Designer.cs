@@ -35,14 +35,11 @@
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.txtIdMedidor = new MetroFramework.Controls.MetroTextBox();
             this.label42 = new System.Windows.Forms.Label();
+            this.btnAnlizarRangoFecha = new System.Windows.Forms.Button();
             this.tabcRegistrosMedidor = new System.Windows.Forms.TabControl();
             this.tabDatosNeto = new System.Windows.Forms.TabPage();
             this.label41 = new System.Windows.Forms.Label();
-            this.panel23 = new System.Windows.Forms.Panel();
             this.label40 = new System.Windows.Forms.Label();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtFechaMaxL3 = new MetroFramework.Controls.MetroTextBox();
             this.txtFechaMaxL2 = new MetroFramework.Controls.MetroTextBox();
@@ -54,9 +51,7 @@
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.panel16 = new System.Windows.Forms.Panel();
             this.label27 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.txtFactorPotenciaPunta = new MetroFramework.Controls.MetroTextBox();
             this.txtKwdPunta = new MetroFramework.Controls.MetroTextBox();
@@ -81,56 +76,51 @@
             this.label13 = new System.Windows.Forms.Label();
             this.txtKwhLlano = new MetroFramework.Controls.MetroTextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.tabDelivery = new System.Windows.Forms.TabPage();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
             this.label36 = new System.Windows.Forms.Label();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.metroTextBox48 = new MetroFramework.Controls.MetroTextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.metroTextBox49 = new MetroFramework.Controls.MetroTextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.metroTextBox50 = new MetroFramework.Controls.MetroTextBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.metroTextBox51 = new MetroFramework.Controls.MetroTextBox();
+            this.txtPfLlanoR = new MetroFramework.Controls.MetroTextBox();
+            this.txtKwdLlanoR = new MetroFramework.Controls.MetroTextBox();
+            this.txtKvarhLlanoR = new MetroFramework.Controls.MetroTextBox();
+            this.txtKwhLlanoR = new MetroFramework.Controls.MetroTextBox();
             this.panel21 = new System.Windows.Forms.Panel();
-            this.metroTextBox36 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox37 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox38 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox39 = new MetroFramework.Controls.MetroTextBox();
+            this.txtPfPuntaR = new MetroFramework.Controls.MetroTextBox();
+            this.txtKwdPuntaR = new MetroFramework.Controls.MetroTextBox();
+            this.txtKvarhPuntaR = new MetroFramework.Controls.MetroTextBox();
+            this.txtKwhPuntaR = new MetroFramework.Controls.MetroTextBox();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.metroTextBox32 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox33 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox34 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox35 = new MetroFramework.Controls.MetroTextBox();
+            this.txtPfValleR = new MetroFramework.Controls.MetroTextBox();
+            this.txtKwdValleR = new MetroFramework.Controls.MetroTextBox();
+            this.txtKvarhValleR = new MetroFramework.Controls.MetroTextBox();
+            this.txtKwhValleR = new MetroFramework.Controls.MetroTextBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
             this.label30 = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
-            this.panel19 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.metroTextBox28 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox29 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox30 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox31 = new MetroFramework.Controls.MetroTextBox();
+            this.txtPfPuntaD = new MetroFramework.Controls.MetroTextBox();
+            this.txtKwdPuntaD = new MetroFramework.Controls.MetroTextBox();
+            this.txtKvarhPuntaD = new MetroFramework.Controls.MetroTextBox();
+            this.txtKwhPuntaD = new MetroFramework.Controls.MetroTextBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.metroTextBox24 = new MetroFramework.Controls.MetroTextBox();
+            this.txtPfLlanoD = new MetroFramework.Controls.MetroTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.metroTextBox25 = new MetroFramework.Controls.MetroTextBox();
+            this.txtKwdLlanoD = new MetroFramework.Controls.MetroTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.metroTextBox26 = new MetroFramework.Controls.MetroTextBox();
+            this.txtKvarhLlanoD = new MetroFramework.Controls.MetroTextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.metroTextBox27 = new MetroFramework.Controls.MetroTextBox();
+            this.txtKwhLlanoD = new MetroFramework.Controls.MetroTextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.metroTextBox4 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox5 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox22 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox23 = new MetroFramework.Controls.MetroTextBox();
+            this.txtPfValleD = new MetroFramework.Controls.MetroTextBox();
+            this.txtKwdValleD = new MetroFramework.Controls.MetroTextBox();
+            this.txtKvarhValleD = new MetroFramework.Controls.MetroTextBox();
+            this.txtKwhValleD = new MetroFramework.Controls.MetroTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtCantidadDias = new MetroFramework.Controls.MetroTextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -164,7 +154,6 @@
             this.pnlAlertaVerde = new System.Windows.Forms.Panel();
             this.btnCerrarAlertaV = new System.Windows.Forms.PictureBox();
             this.lblverde = new System.Windows.Forms.Label();
-            this.btnAnlizarRangoFecha = new System.Windows.Forms.Button();
             this.pnlMenuHijo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlContenedor.SuspendLayout();
@@ -230,6 +219,7 @@
             this.pnlContenedor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlContenedor.Controls.Add(this.txtIdMedidor);
             this.pnlContenedor.Controls.Add(this.label42);
+            this.pnlContenedor.Controls.Add(this.btnAnlizarRangoFecha);
             this.pnlContenedor.Controls.Add(this.tabcRegistrosMedidor);
             this.pnlContenedor.Controls.Add(this.label4);
             this.pnlContenedor.Controls.Add(this.txtCantidadDias);
@@ -277,6 +267,7 @@
             this.txtIdMedidor.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtIdMedidor.CustomButton.UseSelectable = true;
             this.txtIdMedidor.CustomButton.Visible = false;
+            this.txtIdMedidor.Enabled = false;
             this.txtIdMedidor.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtIdMedidor.Lines = new string[0];
             this.txtIdMedidor.Location = new System.Drawing.Point(836, 92);
@@ -304,40 +295,50 @@
             this.label42.TabIndex = 195;
             this.label42.Text = "ID :";
             // 
+            // btnAnlizarRangoFecha
+            // 
+            this.btnAnlizarRangoFecha.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            this.btnAnlizarRangoFecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnlizarRangoFecha.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnlizarRangoFecha.ForeColor = System.Drawing.Color.Black;
+            this.btnAnlizarRangoFecha.Image = ((System.Drawing.Image)(resources.GetObject("btnAnlizarRangoFecha.Image")));
+            this.btnAnlizarRangoFecha.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAnlizarRangoFecha.Location = new System.Drawing.Point(1, 176);
+            this.btnAnlizarRangoFecha.Margin = new System.Windows.Forms.Padding(10);
+            this.btnAnlizarRangoFecha.Name = "btnAnlizarRangoFecha";
+            this.btnAnlizarRangoFecha.Size = new System.Drawing.Size(217, 41);
+            this.btnAnlizarRangoFecha.TabIndex = 18;
+            this.btnAnlizarRangoFecha.Text = "Analizar Rango";
+            this.btnAnlizarRangoFecha.UseVisualStyleBackColor = true;
+            this.btnAnlizarRangoFecha.Click += new System.EventHandler(this.btnAnlizarRangoFecha_Click);
+            // 
             // tabcRegistrosMedidor
             // 
             this.tabcRegistrosMedidor.Controls.Add(this.tabDatosNeto);
             this.tabcRegistrosMedidor.Controls.Add(this.tabDelivery);
             this.tabcRegistrosMedidor.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabcRegistrosMedidor.Location = new System.Drawing.Point(4, 221);
+            this.tabcRegistrosMedidor.Location = new System.Drawing.Point(4, 290);
             this.tabcRegistrosMedidor.Name = "tabcRegistrosMedidor";
             this.tabcRegistrosMedidor.SelectedIndex = 0;
-            this.tabcRegistrosMedidor.Size = new System.Drawing.Size(986, 318);
+            this.tabcRegistrosMedidor.Size = new System.Drawing.Size(986, 249);
             this.tabcRegistrosMedidor.TabIndex = 194;
             // 
             // tabDatosNeto
             // 
             this.tabDatosNeto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(255)))), ((int)(((byte)(224)))));
             this.tabDatosNeto.Controls.Add(this.label41);
-            this.tabDatosNeto.Controls.Add(this.panel23);
             this.tabDatosNeto.Controls.Add(this.label40);
-            this.tabDatosNeto.Controls.Add(this.panel22);
-            this.tabDatosNeto.Controls.Add(this.label12);
-            this.tabDatosNeto.Controls.Add(this.panel9);
             this.tabDatosNeto.Controls.Add(this.panel4);
             this.tabDatosNeto.Controls.Add(this.label28);
-            this.tabDatosNeto.Controls.Add(this.panel16);
             this.tabDatosNeto.Controls.Add(this.label27);
-            this.tabDatosNeto.Controls.Add(this.panel15);
             this.tabDatosNeto.Controls.Add(this.panel7);
             this.tabDatosNeto.Controls.Add(this.panel5);
             this.tabDatosNeto.Controls.Add(this.panel3);
             this.tabDatosNeto.Controls.Add(this.label25);
-            this.tabDatosNeto.Controls.Add(this.panel6);
             this.tabDatosNeto.Location = new System.Drawing.Point(4, 26);
             this.tabDatosNeto.Name = "tabDatosNeto";
             this.tabDatosNeto.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDatosNeto.Size = new System.Drawing.Size(978, 288);
+            this.tabDatosNeto.Size = new System.Drawing.Size(978, 219);
             this.tabDatosNeto.TabIndex = 0;
             this.tabDatosNeto.Text = "Datos Neto";
             this.tabDatosNeto.Click += new System.EventHandler(this.tabDatosNeto_Click);
@@ -346,55 +347,21 @@
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(309, 161);
+            this.label41.Location = new System.Drawing.Point(536, 19);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(119, 22);
             this.label41.TabIndex = 198;
             this.label41.Text = "Voltaje Max";
             // 
-            // panel23
-            // 
-            this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel23.Location = new System.Drawing.Point(293, 188);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(150, 2);
-            this.panel23.TabIndex = 199;
-            // 
             // label40
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(511, 161);
+            this.label40.Location = new System.Drawing.Point(724, 19);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(68, 22);
             this.label40.TabIndex = 196;
             this.label40.Text = "Fecha";
-            // 
-            // panel22
-            // 
-            this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel22.Location = new System.Drawing.Point(470, 188);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(150, 2);
-            this.panel22.TabIndex = 197;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(65, 215);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 22);
-            this.label12.TabIndex = 194;
-            this.label12.Text = "Voltaje";
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel9.Location = new System.Drawing.Point(27, 242);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(150, 2);
-            this.panel9.TabIndex = 195;
             // 
             // panel4
             // 
@@ -408,9 +375,9 @@
             this.panel4.Controls.Add(this.label37);
             this.panel4.Controls.Add(this.label38);
             this.panel4.Controls.Add(this.label39);
-            this.panel4.Location = new System.Drawing.Point(194, 194);
+            this.panel4.Location = new System.Drawing.Point(507, 44);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(443, 91);
+            this.panel4.Size = new System.Drawing.Size(363, 123);
             this.panel4.TabIndex = 193;
             // 
             // txtFechaMaxL3
@@ -419,7 +386,7 @@
             // 
             // 
             this.txtFechaMaxL3.CustomButton.Image = null;
-            this.txtFechaMaxL3.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtFechaMaxL3.CustomButton.Location = new System.Drawing.Point(161, 1);
             this.txtFechaMaxL3.CustomButton.Name = "";
             this.txtFechaMaxL3.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtFechaMaxL3.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -429,7 +396,7 @@
             this.txtFechaMaxL3.CustomButton.Visible = false;
             this.txtFechaMaxL3.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtFechaMaxL3.Lines = new string[0];
-            this.txtFechaMaxL3.Location = new System.Drawing.Point(277, 62);
+            this.txtFechaMaxL3.Location = new System.Drawing.Point(177, 69);
             this.txtFechaMaxL3.MaxLength = 32767;
             this.txtFechaMaxL3.Name = "txtFechaMaxL3";
             this.txtFechaMaxL3.PasswordChar = '\0';
@@ -438,7 +405,7 @@
             this.txtFechaMaxL3.SelectionLength = 0;
             this.txtFechaMaxL3.SelectionStart = 0;
             this.txtFechaMaxL3.ShortcutsEnabled = true;
-            this.txtFechaMaxL3.Size = new System.Drawing.Size(156, 23);
+            this.txtFechaMaxL3.Size = new System.Drawing.Size(183, 23);
             this.txtFechaMaxL3.TabIndex = 189;
             this.txtFechaMaxL3.UseSelectable = true;
             this.txtFechaMaxL3.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -450,7 +417,7 @@
             // 
             // 
             this.txtFechaMaxL2.CustomButton.Image = null;
-            this.txtFechaMaxL2.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtFechaMaxL2.CustomButton.Location = new System.Drawing.Point(161, 1);
             this.txtFechaMaxL2.CustomButton.Name = "";
             this.txtFechaMaxL2.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtFechaMaxL2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -460,7 +427,7 @@
             this.txtFechaMaxL2.CustomButton.Visible = false;
             this.txtFechaMaxL2.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtFechaMaxL2.Lines = new string[0];
-            this.txtFechaMaxL2.Location = new System.Drawing.Point(277, 33);
+            this.txtFechaMaxL2.Location = new System.Drawing.Point(177, 40);
             this.txtFechaMaxL2.MaxLength = 32767;
             this.txtFechaMaxL2.Name = "txtFechaMaxL2";
             this.txtFechaMaxL2.PasswordChar = '\0';
@@ -469,7 +436,7 @@
             this.txtFechaMaxL2.SelectionLength = 0;
             this.txtFechaMaxL2.SelectionStart = 0;
             this.txtFechaMaxL2.ShortcutsEnabled = true;
-            this.txtFechaMaxL2.Size = new System.Drawing.Size(156, 23);
+            this.txtFechaMaxL2.Size = new System.Drawing.Size(183, 23);
             this.txtFechaMaxL2.TabIndex = 188;
             this.txtFechaMaxL2.UseSelectable = true;
             this.txtFechaMaxL2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -481,7 +448,7 @@
             // 
             // 
             this.txtFechaMaxL1.CustomButton.Image = null;
-            this.txtFechaMaxL1.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtFechaMaxL1.CustomButton.Location = new System.Drawing.Point(161, 1);
             this.txtFechaMaxL1.CustomButton.Name = "";
             this.txtFechaMaxL1.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtFechaMaxL1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -491,7 +458,7 @@
             this.txtFechaMaxL1.CustomButton.Visible = false;
             this.txtFechaMaxL1.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtFechaMaxL1.Lines = new string[0];
-            this.txtFechaMaxL1.Location = new System.Drawing.Point(277, 5);
+            this.txtFechaMaxL1.Location = new System.Drawing.Point(177, 11);
             this.txtFechaMaxL1.MaxLength = 32767;
             this.txtFechaMaxL1.Name = "txtFechaMaxL1";
             this.txtFechaMaxL1.PasswordChar = '\0';
@@ -500,7 +467,7 @@
             this.txtFechaMaxL1.SelectionLength = 0;
             this.txtFechaMaxL1.SelectionStart = 0;
             this.txtFechaMaxL1.ShortcutsEnabled = true;
-            this.txtFechaMaxL1.Size = new System.Drawing.Size(156, 23);
+            this.txtFechaMaxL1.Size = new System.Drawing.Size(183, 23);
             this.txtFechaMaxL1.TabIndex = 187;
             this.txtFechaMaxL1.UseSelectable = true;
             this.txtFechaMaxL1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -512,7 +479,7 @@
             // 
             // 
             this.txtMaxL3.CustomButton.Image = null;
-            this.txtMaxL3.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtMaxL3.CustomButton.Location = new System.Drawing.Point(101, 1);
             this.txtMaxL3.CustomButton.Name = "";
             this.txtMaxL3.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtMaxL3.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -522,7 +489,7 @@
             this.txtMaxL3.CustomButton.Visible = false;
             this.txtMaxL3.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtMaxL3.Lines = new string[0];
-            this.txtMaxL3.Location = new System.Drawing.Point(101, 62);
+            this.txtMaxL3.Location = new System.Drawing.Point(41, 69);
             this.txtMaxL3.MaxLength = 32767;
             this.txtMaxL3.Name = "txtMaxL3";
             this.txtMaxL3.PasswordChar = '\0';
@@ -531,7 +498,7 @@
             this.txtMaxL3.SelectionLength = 0;
             this.txtMaxL3.SelectionStart = 0;
             this.txtMaxL3.ShortcutsEnabled = true;
-            this.txtMaxL3.Size = new System.Drawing.Size(156, 23);
+            this.txtMaxL3.Size = new System.Drawing.Size(123, 23);
             this.txtMaxL3.TabIndex = 186;
             this.txtMaxL3.UseSelectable = true;
             this.txtMaxL3.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -543,7 +510,7 @@
             // 
             // 
             this.txtMaxL2.CustomButton.Image = null;
-            this.txtMaxL2.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtMaxL2.CustomButton.Location = new System.Drawing.Point(101, 1);
             this.txtMaxL2.CustomButton.Name = "";
             this.txtMaxL2.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtMaxL2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -553,7 +520,7 @@
             this.txtMaxL2.CustomButton.Visible = false;
             this.txtMaxL2.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtMaxL2.Lines = new string[0];
-            this.txtMaxL2.Location = new System.Drawing.Point(101, 33);
+            this.txtMaxL2.Location = new System.Drawing.Point(41, 40);
             this.txtMaxL2.MaxLength = 32767;
             this.txtMaxL2.Name = "txtMaxL2";
             this.txtMaxL2.PasswordChar = '\0';
@@ -562,7 +529,7 @@
             this.txtMaxL2.SelectionLength = 0;
             this.txtMaxL2.SelectionStart = 0;
             this.txtMaxL2.ShortcutsEnabled = true;
-            this.txtMaxL2.Size = new System.Drawing.Size(156, 23);
+            this.txtMaxL2.Size = new System.Drawing.Size(123, 23);
             this.txtMaxL2.TabIndex = 185;
             this.txtMaxL2.UseSelectable = true;
             this.txtMaxL2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -574,7 +541,7 @@
             // 
             // 
             this.txtMaxL1.CustomButton.Image = null;
-            this.txtMaxL1.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtMaxL1.CustomButton.Location = new System.Drawing.Point(100, 1);
             this.txtMaxL1.CustomButton.Name = "";
             this.txtMaxL1.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtMaxL1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -584,7 +551,7 @@
             this.txtMaxL1.CustomButton.Visible = false;
             this.txtMaxL1.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtMaxL1.Lines = new string[0];
-            this.txtMaxL1.Location = new System.Drawing.Point(101, 5);
+            this.txtMaxL1.Location = new System.Drawing.Point(41, 11);
             this.txtMaxL1.MaxLength = 32767;
             this.txtMaxL1.Name = "txtMaxL1";
             this.txtMaxL1.PasswordChar = '\0';
@@ -593,7 +560,7 @@
             this.txtMaxL1.SelectionLength = 0;
             this.txtMaxL1.SelectionStart = 0;
             this.txtMaxL1.ShortcutsEnabled = true;
-            this.txtMaxL1.Size = new System.Drawing.Size(156, 23);
+            this.txtMaxL1.Size = new System.Drawing.Size(122, 23);
             this.txtMaxL1.TabIndex = 184;
             this.txtMaxL1.UseSelectable = true;
             this.txtMaxL1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -603,7 +570,7 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(4, 62);
+            this.label37.Location = new System.Drawing.Point(4, 69);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(30, 22);
             this.label37.TabIndex = 182;
@@ -613,7 +580,7 @@
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(3, 33);
+            this.label38.Location = new System.Drawing.Point(4, 41);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(30, 22);
             this.label38.TabIndex = 181;
@@ -623,7 +590,7 @@
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(4, 5);
+            this.label39.Location = new System.Drawing.Point(4, 11);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(30, 22);
             this.label39.TabIndex = 179;
@@ -633,37 +600,21 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(251, 3);
+            this.label28.Location = new System.Drawing.Point(35, 20);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(149, 22);
             this.label28.TabIndex = 191;
             this.label28.Text = "LLANO(A) + (B)";
             // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel16.Location = new System.Drawing.Point(250, 30);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(150, 2);
-            this.panel16.TabIndex = 192;
-            // 
             // label27
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(681, 5);
+            this.label27.Location = new System.Drawing.Point(382, 20);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(100, 22);
             this.label27.TabIndex = 189;
             this.label27.Text = "PUNTA (B)";
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel15.Location = new System.Drawing.Point(656, 32);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(150, 2);
-            this.panel15.TabIndex = 190;
             // 
             // panel7
             // 
@@ -672,9 +623,9 @@
             this.panel7.Controls.Add(this.txtKwdPunta);
             this.panel7.Controls.Add(this.txtKvahrPunta);
             this.panel7.Controls.Add(this.txtKwhPunta);
-            this.panel7.Location = new System.Drawing.Point(643, 38);
+            this.panel7.Location = new System.Drawing.Point(366, 45);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(176, 122);
+            this.panel7.Size = new System.Drawing.Size(135, 122);
             this.panel7.TabIndex = 187;
             // 
             // txtFactorPotenciaPunta
@@ -683,7 +634,7 @@
             // 
             // 
             this.txtFactorPotenciaPunta.CustomButton.Image = null;
-            this.txtFactorPotenciaPunta.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtFactorPotenciaPunta.CustomButton.Location = new System.Drawing.Point(100, 1);
             this.txtFactorPotenciaPunta.CustomButton.Name = "";
             this.txtFactorPotenciaPunta.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtFactorPotenciaPunta.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -702,7 +653,7 @@
             this.txtFactorPotenciaPunta.SelectionLength = 0;
             this.txtFactorPotenciaPunta.SelectionStart = 0;
             this.txtFactorPotenciaPunta.ShortcutsEnabled = true;
-            this.txtFactorPotenciaPunta.Size = new System.Drawing.Size(156, 23);
+            this.txtFactorPotenciaPunta.Size = new System.Drawing.Size(122, 23);
             this.txtFactorPotenciaPunta.TabIndex = 185;
             this.txtFactorPotenciaPunta.UseSelectable = true;
             this.txtFactorPotenciaPunta.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -714,7 +665,7 @@
             // 
             // 
             this.txtKwdPunta.CustomButton.Image = null;
-            this.txtKwdPunta.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtKwdPunta.CustomButton.Location = new System.Drawing.Point(100, 1);
             this.txtKwdPunta.CustomButton.Name = "";
             this.txtKwdPunta.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtKwdPunta.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -733,7 +684,7 @@
             this.txtKwdPunta.SelectionLength = 0;
             this.txtKwdPunta.SelectionStart = 0;
             this.txtKwdPunta.ShortcutsEnabled = true;
-            this.txtKwdPunta.Size = new System.Drawing.Size(156, 23);
+            this.txtKwdPunta.Size = new System.Drawing.Size(122, 23);
             this.txtKwdPunta.TabIndex = 183;
             this.txtKwdPunta.UseSelectable = true;
             this.txtKwdPunta.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -745,7 +696,7 @@
             // 
             // 
             this.txtKvahrPunta.CustomButton.Image = null;
-            this.txtKvahrPunta.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtKvahrPunta.CustomButton.Location = new System.Drawing.Point(100, 1);
             this.txtKvahrPunta.CustomButton.Name = "";
             this.txtKvahrPunta.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtKvahrPunta.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -764,7 +715,7 @@
             this.txtKvahrPunta.SelectionLength = 0;
             this.txtKvahrPunta.SelectionStart = 0;
             this.txtKvahrPunta.ShortcutsEnabled = true;
-            this.txtKvahrPunta.Size = new System.Drawing.Size(156, 23);
+            this.txtKvahrPunta.Size = new System.Drawing.Size(122, 23);
             this.txtKvahrPunta.TabIndex = 180;
             this.txtKvahrPunta.UseSelectable = true;
             this.txtKvahrPunta.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -776,7 +727,7 @@
             // 
             // 
             this.txtKwhPunta.CustomButton.Image = null;
-            this.txtKwhPunta.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtKwhPunta.CustomButton.Location = new System.Drawing.Point(100, 1);
             this.txtKwhPunta.CustomButton.Name = "";
             this.txtKwhPunta.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtKwhPunta.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -795,7 +746,7 @@
             this.txtKwhPunta.SelectionLength = 0;
             this.txtKwhPunta.SelectionStart = 0;
             this.txtKwhPunta.ShortcutsEnabled = true;
-            this.txtKwhPunta.Size = new System.Drawing.Size(156, 23);
+            this.txtKwhPunta.Size = new System.Drawing.Size(122, 23);
             this.txtKwhPunta.TabIndex = 158;
             this.txtKwhPunta.UseSelectable = true;
             this.txtKwhPunta.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -812,9 +763,9 @@
             this.panel5.Controls.Add(this.panel8);
             this.panel5.Controls.Add(this.txtKwhValle);
             this.panel5.Controls.Add(this.label21);
-            this.panel5.Location = new System.Drawing.Point(463, 38);
+            this.panel5.Location = new System.Drawing.Point(225, 45);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(174, 122);
+            this.panel5.Size = new System.Drawing.Size(135, 122);
             this.panel5.TabIndex = 186;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
@@ -824,7 +775,7 @@
             // 
             // 
             this.txtFactorPotenciaValle.CustomButton.Image = null;
-            this.txtFactorPotenciaValle.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtFactorPotenciaValle.CustomButton.Location = new System.Drawing.Point(100, 1);
             this.txtFactorPotenciaValle.CustomButton.Name = "";
             this.txtFactorPotenciaValle.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtFactorPotenciaValle.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -843,7 +794,7 @@
             this.txtFactorPotenciaValle.SelectionLength = 0;
             this.txtFactorPotenciaValle.SelectionStart = 0;
             this.txtFactorPotenciaValle.ShortcutsEnabled = true;
-            this.txtFactorPotenciaValle.Size = new System.Drawing.Size(156, 23);
+            this.txtFactorPotenciaValle.Size = new System.Drawing.Size(122, 23);
             this.txtFactorPotenciaValle.TabIndex = 185;
             this.txtFactorPotenciaValle.UseSelectable = true;
             this.txtFactorPotenciaValle.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -863,7 +814,7 @@
             // 
             // 
             this.txtKwdValle.CustomButton.Image = null;
-            this.txtKwdValle.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtKwdValle.CustomButton.Location = new System.Drawing.Point(100, 1);
             this.txtKwdValle.CustomButton.Name = "";
             this.txtKwdValle.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtKwdValle.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -882,7 +833,7 @@
             this.txtKwdValle.SelectionLength = 0;
             this.txtKwdValle.SelectionStart = 0;
             this.txtKwdValle.ShortcutsEnabled = true;
-            this.txtKwdValle.Size = new System.Drawing.Size(156, 23);
+            this.txtKwdValle.Size = new System.Drawing.Size(122, 23);
             this.txtKwdValle.TabIndex = 183;
             this.txtKwdValle.UseSelectable = true;
             this.txtKwdValle.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -904,7 +855,7 @@
             // 
             // 
             this.txtKvahrValle.CustomButton.Image = null;
-            this.txtKvahrValle.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtKvahrValle.CustomButton.Location = new System.Drawing.Point(100, 1);
             this.txtKvahrValle.CustomButton.Name = "";
             this.txtKvahrValle.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtKvahrValle.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -923,7 +874,7 @@
             this.txtKvahrValle.SelectionLength = 0;
             this.txtKvahrValle.SelectionStart = 0;
             this.txtKvahrValle.ShortcutsEnabled = true;
-            this.txtKvahrValle.Size = new System.Drawing.Size(156, 23);
+            this.txtKvahrValle.Size = new System.Drawing.Size(122, 23);
             this.txtKvahrValle.TabIndex = 180;
             this.txtKvahrValle.UseSelectable = true;
             this.txtKvahrValle.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -943,7 +894,7 @@
             // 
             // 
             this.txtKwhValle.CustomButton.Image = null;
-            this.txtKwhValle.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtKwhValle.CustomButton.Location = new System.Drawing.Point(100, 1);
             this.txtKwhValle.CustomButton.Name = "";
             this.txtKwhValle.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtKwhValle.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -962,7 +913,7 @@
             this.txtKwhValle.SelectionLength = 0;
             this.txtKwhValle.SelectionStart = 0;
             this.txtKwhValle.ShortcutsEnabled = true;
-            this.txtKwhValle.Size = new System.Drawing.Size(156, 23);
+            this.txtKwhValle.Size = new System.Drawing.Size(122, 23);
             this.txtKwhValle.TabIndex = 158;
             this.txtKwhValle.UseSelectable = true;
             this.txtKwhValle.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -989,9 +940,9 @@
             this.panel3.Controls.Add(this.txtKvahrLlano);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.txtKwhLlano);
-            this.panel3.Location = new System.Drawing.Point(194, 38);
+            this.panel3.Location = new System.Drawing.Point(6, 44);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(263, 120);
+            this.panel3.Size = new System.Drawing.Size(213, 120);
             this.panel3.TabIndex = 0;
             // 
             // txtFactorPotenciaLlano
@@ -1000,7 +951,7 @@
             // 
             // 
             this.txtFactorPotenciaLlano.CustomButton.Image = null;
-            this.txtFactorPotenciaLlano.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtFactorPotenciaLlano.CustomButton.Location = new System.Drawing.Point(100, 1);
             this.txtFactorPotenciaLlano.CustomButton.Name = "";
             this.txtFactorPotenciaLlano.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtFactorPotenciaLlano.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -1010,7 +961,7 @@
             this.txtFactorPotenciaLlano.CustomButton.Visible = false;
             this.txtFactorPotenciaLlano.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtFactorPotenciaLlano.Lines = new string[0];
-            this.txtFactorPotenciaLlano.Location = new System.Drawing.Point(101, 90);
+            this.txtFactorPotenciaLlano.Location = new System.Drawing.Point(78, 90);
             this.txtFactorPotenciaLlano.MaxLength = 32767;
             this.txtFactorPotenciaLlano.Name = "txtFactorPotenciaLlano";
             this.txtFactorPotenciaLlano.PasswordChar = '\0';
@@ -1019,7 +970,7 @@
             this.txtFactorPotenciaLlano.SelectionLength = 0;
             this.txtFactorPotenciaLlano.SelectionStart = 0;
             this.txtFactorPotenciaLlano.ShortcutsEnabled = true;
-            this.txtFactorPotenciaLlano.Size = new System.Drawing.Size(156, 23);
+            this.txtFactorPotenciaLlano.Size = new System.Drawing.Size(122, 23);
             this.txtFactorPotenciaLlano.TabIndex = 185;
             this.txtFactorPotenciaLlano.UseSelectable = true;
             this.txtFactorPotenciaLlano.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -1041,7 +992,7 @@
             // 
             // 
             this.txtKwdLlano.CustomButton.Image = null;
-            this.txtKwdLlano.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtKwdLlano.CustomButton.Location = new System.Drawing.Point(100, 1);
             this.txtKwdLlano.CustomButton.Name = "";
             this.txtKwdLlano.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtKwdLlano.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -1051,7 +1002,7 @@
             this.txtKwdLlano.CustomButton.Visible = false;
             this.txtKwdLlano.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtKwdLlano.Lines = new string[0];
-            this.txtKwdLlano.Location = new System.Drawing.Point(101, 61);
+            this.txtKwdLlano.Location = new System.Drawing.Point(78, 61);
             this.txtKwdLlano.MaxLength = 32767;
             this.txtKwdLlano.Name = "txtKwdLlano";
             this.txtKwdLlano.PasswordChar = '\0';
@@ -1060,7 +1011,7 @@
             this.txtKwdLlano.SelectionLength = 0;
             this.txtKwdLlano.SelectionStart = 0;
             this.txtKwdLlano.ShortcutsEnabled = true;
-            this.txtKwdLlano.Size = new System.Drawing.Size(156, 23);
+            this.txtKwdLlano.Size = new System.Drawing.Size(122, 23);
             this.txtKwdLlano.TabIndex = 183;
             this.txtKwdLlano.UseSelectable = true;
             this.txtKwdLlano.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -1092,7 +1043,7 @@
             // 
             // 
             this.txtKvahrLlano.CustomButton.Image = null;
-            this.txtKvahrLlano.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtKvahrLlano.CustomButton.Location = new System.Drawing.Point(100, 1);
             this.txtKvahrLlano.CustomButton.Name = "";
             this.txtKvahrLlano.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtKvahrLlano.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -1102,7 +1053,7 @@
             this.txtKvahrLlano.CustomButton.Visible = false;
             this.txtKvahrLlano.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtKvahrLlano.Lines = new string[0];
-            this.txtKvahrLlano.Location = new System.Drawing.Point(101, 32);
+            this.txtKvahrLlano.Location = new System.Drawing.Point(78, 32);
             this.txtKvahrLlano.MaxLength = 32767;
             this.txtKvahrLlano.Name = "txtKvahrLlano";
             this.txtKvahrLlano.PasswordChar = '\0';
@@ -1111,7 +1062,7 @@
             this.txtKvahrLlano.SelectionLength = 0;
             this.txtKvahrLlano.SelectionStart = 0;
             this.txtKvahrLlano.ShortcutsEnabled = true;
-            this.txtKvahrLlano.Size = new System.Drawing.Size(156, 23);
+            this.txtKvahrLlano.Size = new System.Drawing.Size(122, 23);
             this.txtKvahrLlano.TabIndex = 180;
             this.txtKvahrLlano.UseSelectable = true;
             this.txtKvahrLlano.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -1133,7 +1084,7 @@
             // 
             // 
             this.txtKwhLlano.CustomButton.Image = null;
-            this.txtKwhLlano.CustomButton.Location = new System.Drawing.Point(134, 1);
+            this.txtKwhLlano.CustomButton.Location = new System.Drawing.Point(100, 1);
             this.txtKwhLlano.CustomButton.Name = "";
             this.txtKwhLlano.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtKwhLlano.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -1143,7 +1094,7 @@
             this.txtKwhLlano.CustomButton.Visible = false;
             this.txtKwhLlano.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtKwhLlano.Lines = new string[0];
-            this.txtKwhLlano.Location = new System.Drawing.Point(101, 4);
+            this.txtKwhLlano.Location = new System.Drawing.Point(79, 6);
             this.txtKwhLlano.MaxLength = 32767;
             this.txtKwhLlano.Name = "txtKwhLlano";
             this.txtKwhLlano.PasswordChar = '\0';
@@ -1152,7 +1103,7 @@
             this.txtKwhLlano.SelectionLength = 0;
             this.txtKwhLlano.SelectionStart = 0;
             this.txtKwhLlano.ShortcutsEnabled = true;
-            this.txtKwhLlano.Size = new System.Drawing.Size(156, 23);
+            this.txtKwhLlano.Size = new System.Drawing.Size(122, 23);
             this.txtKwhLlano.TabIndex = 158;
             this.txtKwhLlano.UseSelectable = true;
             this.txtKwhLlano.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -1162,36 +1113,27 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(499, 3);
+            this.label25.Location = new System.Drawing.Point(241, 20);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(102, 22);
             this.label25.TabIndex = 180;
             this.label25.Text = "VALLE (A)";
             this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel6.Location = new System.Drawing.Point(475, 30);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(150, 2);
-            this.panel6.TabIndex = 181;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
-            // 
             // tabDelivery
             // 
             this.tabDelivery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(255)))), ((int)(((byte)(224)))));
+            this.tabDelivery.Controls.Add(this.label33);
+            this.tabDelivery.Controls.Add(this.label32);
+            this.tabDelivery.Controls.Add(this.label12);
             this.tabDelivery.Controls.Add(this.panel25);
             this.tabDelivery.Controls.Add(this.label36);
             this.tabDelivery.Controls.Add(this.panel24);
             this.tabDelivery.Controls.Add(this.panel21);
             this.tabDelivery.Controls.Add(this.panel20);
             this.tabDelivery.Controls.Add(this.label29);
-            this.tabDelivery.Controls.Add(this.panel17);
             this.tabDelivery.Controls.Add(this.label30);
-            this.tabDelivery.Controls.Add(this.panel18);
             this.tabDelivery.Controls.Add(this.label31);
-            this.tabDelivery.Controls.Add(this.panel19);
             this.tabDelivery.Controls.Add(this.panel14);
             this.tabDelivery.Controls.Add(this.panel13);
             this.tabDelivery.Controls.Add(this.panel12);
@@ -1200,14 +1142,45 @@
             this.tabDelivery.Location = new System.Drawing.Point(4, 26);
             this.tabDelivery.Name = "tabDelivery";
             this.tabDelivery.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDelivery.Size = new System.Drawing.Size(978, 288);
+            this.tabDelivery.Size = new System.Drawing.Size(978, 219);
             this.tabDelivery.TabIndex = 1;
             this.tabDelivery.Text = "Enviado , Recibido";
+            this.tabDelivery.Click += new System.EventHandler(this.tabDelivery_Click);
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(503, 43);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(149, 22);
+            this.label33.TabIndex = 211;
+            this.label33.Text = "LLANO(A) + (B)";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(808, 43);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(100, 22);
+            this.label32.TabIndex = 210;
+            this.label32.Text = "PUNTA (B)";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(663, 43);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(102, 22);
+            this.label12.TabIndex = 209;
+            this.label12.Text = "VALLE (A)";
             // 
             // panel25
             // 
             this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel25.Location = new System.Drawing.Point(85, 219);
+            this.panel25.Location = new System.Drawing.Point(677, 32);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(100, 2);
             this.panel25.TabIndex = 208;
@@ -1216,7 +1189,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(86, 194);
+            this.label36.Location = new System.Drawing.Point(678, 7);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(99, 22);
             this.label36.TabIndex = 207;
@@ -1225,649 +1198,581 @@
             // panel24
             // 
             this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
-            this.panel24.Controls.Add(this.metroTextBox48);
-            this.panel24.Controls.Add(this.label32);
-            this.panel24.Controls.Add(this.metroTextBox49);
-            this.panel24.Controls.Add(this.label33);
-            this.panel24.Controls.Add(this.label34);
-            this.panel24.Controls.Add(this.metroTextBox50);
-            this.panel24.Controls.Add(this.label35);
-            this.panel24.Controls.Add(this.metroTextBox51);
-            this.panel24.Location = new System.Drawing.Point(196, 157);
+            this.panel24.Controls.Add(this.txtPfLlanoR);
+            this.panel24.Controls.Add(this.txtKwdLlanoR);
+            this.panel24.Controls.Add(this.txtKvarhLlanoR);
+            this.panel24.Controls.Add(this.txtKwhLlanoR);
+            this.panel24.Location = new System.Drawing.Point(507, 68);
             this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(263, 120);
+            this.panel24.Size = new System.Drawing.Size(135, 122);
             this.panel24.TabIndex = 206;
             // 
-            // metroTextBox48
+            // txtPfLlanoR
             // 
             // 
             // 
             // 
-            this.metroTextBox48.CustomButton.Image = null;
-            this.metroTextBox48.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox48.CustomButton.Name = "";
-            this.metroTextBox48.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox48.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox48.CustomButton.TabIndex = 1;
-            this.metroTextBox48.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox48.CustomButton.UseSelectable = true;
-            this.metroTextBox48.CustomButton.Visible = false;
-            this.metroTextBox48.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox48.Lines = new string[0];
-            this.metroTextBox48.Location = new System.Drawing.Point(101, 90);
-            this.metroTextBox48.MaxLength = 32767;
-            this.metroTextBox48.Name = "metroTextBox48";
-            this.metroTextBox48.PasswordChar = '\0';
-            this.metroTextBox48.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox48.SelectedText = "";
-            this.metroTextBox48.SelectionLength = 0;
-            this.metroTextBox48.SelectionStart = 0;
-            this.metroTextBox48.ShortcutsEnabled = true;
-            this.metroTextBox48.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox48.TabIndex = 185;
-            this.metroTextBox48.UseSelectable = true;
-            this.metroTextBox48.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox48.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPfLlanoR.CustomButton.Image = null;
+            this.txtPfLlanoR.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtPfLlanoR.CustomButton.Name = "";
+            this.txtPfLlanoR.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtPfLlanoR.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtPfLlanoR.CustomButton.TabIndex = 1;
+            this.txtPfLlanoR.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtPfLlanoR.CustomButton.UseSelectable = true;
+            this.txtPfLlanoR.CustomButton.Visible = false;
+            this.txtPfLlanoR.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtPfLlanoR.Lines = new string[0];
+            this.txtPfLlanoR.Location = new System.Drawing.Point(8, 92);
+            this.txtPfLlanoR.MaxLength = 32767;
+            this.txtPfLlanoR.Name = "txtPfLlanoR";
+            this.txtPfLlanoR.PasswordChar = '\0';
+            this.txtPfLlanoR.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPfLlanoR.SelectedText = "";
+            this.txtPfLlanoR.SelectionLength = 0;
+            this.txtPfLlanoR.SelectionStart = 0;
+            this.txtPfLlanoR.ShortcutsEnabled = true;
+            this.txtPfLlanoR.Size = new System.Drawing.Size(122, 23);
+            this.txtPfLlanoR.TabIndex = 185;
+            this.txtPfLlanoR.UseSelectable = true;
+            this.txtPfLlanoR.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtPfLlanoR.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(4, 91);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(50, 22);
-            this.label32.TabIndex = 184;
-            this.label32.Text = "P.F : ";
-            // 
-            // metroTextBox49
+            // txtKwdLlanoR
             // 
             // 
             // 
             // 
-            this.metroTextBox49.CustomButton.Image = null;
-            this.metroTextBox49.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox49.CustomButton.Name = "";
-            this.metroTextBox49.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox49.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox49.CustomButton.TabIndex = 1;
-            this.metroTextBox49.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox49.CustomButton.UseSelectable = true;
-            this.metroTextBox49.CustomButton.Visible = false;
-            this.metroTextBox49.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox49.Lines = new string[0];
-            this.metroTextBox49.Location = new System.Drawing.Point(101, 61);
-            this.metroTextBox49.MaxLength = 32767;
-            this.metroTextBox49.Name = "metroTextBox49";
-            this.metroTextBox49.PasswordChar = '\0';
-            this.metroTextBox49.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox49.SelectedText = "";
-            this.metroTextBox49.SelectionLength = 0;
-            this.metroTextBox49.SelectionStart = 0;
-            this.metroTextBox49.ShortcutsEnabled = true;
-            this.metroTextBox49.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox49.TabIndex = 183;
-            this.metroTextBox49.UseSelectable = true;
-            this.metroTextBox49.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox49.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKwdLlanoR.CustomButton.Image = null;
+            this.txtKwdLlanoR.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKwdLlanoR.CustomButton.Name = "";
+            this.txtKwdLlanoR.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKwdLlanoR.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKwdLlanoR.CustomButton.TabIndex = 1;
+            this.txtKwdLlanoR.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKwdLlanoR.CustomButton.UseSelectable = true;
+            this.txtKwdLlanoR.CustomButton.Visible = false;
+            this.txtKwdLlanoR.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKwdLlanoR.Lines = new string[0];
+            this.txtKwdLlanoR.Location = new System.Drawing.Point(8, 65);
+            this.txtKwdLlanoR.MaxLength = 32767;
+            this.txtKwdLlanoR.Name = "txtKwdLlanoR";
+            this.txtKwdLlanoR.PasswordChar = '\0';
+            this.txtKwdLlanoR.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKwdLlanoR.SelectedText = "";
+            this.txtKwdLlanoR.SelectionLength = 0;
+            this.txtKwdLlanoR.SelectionStart = 0;
+            this.txtKwdLlanoR.ShortcutsEnabled = true;
+            this.txtKwdLlanoR.Size = new System.Drawing.Size(122, 23);
+            this.txtKwdLlanoR.TabIndex = 183;
+            this.txtKwdLlanoR.UseSelectable = true;
+            this.txtKwdLlanoR.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKwdLlanoR.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(4, 62);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(60, 22);
-            this.label33.TabIndex = 182;
-            this.label33.Text = "Kwd :";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(3, 33);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(80, 22);
-            this.label34.TabIndex = 181;
-            this.label34.Text = "Kvarh : ";
-            // 
-            // metroTextBox50
+            // txtKvarhLlanoR
             // 
             // 
             // 
             // 
-            this.metroTextBox50.CustomButton.Image = null;
-            this.metroTextBox50.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox50.CustomButton.Name = "";
-            this.metroTextBox50.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox50.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox50.CustomButton.TabIndex = 1;
-            this.metroTextBox50.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox50.CustomButton.UseSelectable = true;
-            this.metroTextBox50.CustomButton.Visible = false;
-            this.metroTextBox50.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox50.Lines = new string[0];
-            this.metroTextBox50.Location = new System.Drawing.Point(101, 32);
-            this.metroTextBox50.MaxLength = 32767;
-            this.metroTextBox50.Name = "metroTextBox50";
-            this.metroTextBox50.PasswordChar = '\0';
-            this.metroTextBox50.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox50.SelectedText = "";
-            this.metroTextBox50.SelectionLength = 0;
-            this.metroTextBox50.SelectionStart = 0;
-            this.metroTextBox50.ShortcutsEnabled = true;
-            this.metroTextBox50.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox50.TabIndex = 180;
-            this.metroTextBox50.UseSelectable = true;
-            this.metroTextBox50.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox50.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKvarhLlanoR.CustomButton.Image = null;
+            this.txtKvarhLlanoR.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKvarhLlanoR.CustomButton.Name = "";
+            this.txtKvarhLlanoR.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKvarhLlanoR.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKvarhLlanoR.CustomButton.TabIndex = 1;
+            this.txtKvarhLlanoR.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKvarhLlanoR.CustomButton.UseSelectable = true;
+            this.txtKvarhLlanoR.CustomButton.Visible = false;
+            this.txtKvarhLlanoR.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKvarhLlanoR.Lines = new string[0];
+            this.txtKvarhLlanoR.Location = new System.Drawing.Point(8, 36);
+            this.txtKvarhLlanoR.MaxLength = 32767;
+            this.txtKvarhLlanoR.Name = "txtKvarhLlanoR";
+            this.txtKvarhLlanoR.PasswordChar = '\0';
+            this.txtKvarhLlanoR.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKvarhLlanoR.SelectedText = "";
+            this.txtKvarhLlanoR.SelectionLength = 0;
+            this.txtKvarhLlanoR.SelectionStart = 0;
+            this.txtKvarhLlanoR.ShortcutsEnabled = true;
+            this.txtKvarhLlanoR.Size = new System.Drawing.Size(122, 23);
+            this.txtKvarhLlanoR.TabIndex = 180;
+            this.txtKvarhLlanoR.UseSelectable = true;
+            this.txtKvarhLlanoR.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKvarhLlanoR.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(4, 5);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(59, 22);
-            this.label35.TabIndex = 179;
-            this.label35.Text = "Kwh :";
-            // 
-            // metroTextBox51
+            // txtKwhLlanoR
             // 
             // 
             // 
             // 
-            this.metroTextBox51.CustomButton.Image = null;
-            this.metroTextBox51.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox51.CustomButton.Name = "";
-            this.metroTextBox51.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox51.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox51.CustomButton.TabIndex = 1;
-            this.metroTextBox51.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox51.CustomButton.UseSelectable = true;
-            this.metroTextBox51.CustomButton.Visible = false;
-            this.metroTextBox51.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox51.Lines = new string[0];
-            this.metroTextBox51.Location = new System.Drawing.Point(101, 4);
-            this.metroTextBox51.MaxLength = 32767;
-            this.metroTextBox51.Name = "metroTextBox51";
-            this.metroTextBox51.PasswordChar = '\0';
-            this.metroTextBox51.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox51.SelectedText = "";
-            this.metroTextBox51.SelectionLength = 0;
-            this.metroTextBox51.SelectionStart = 0;
-            this.metroTextBox51.ShortcutsEnabled = true;
-            this.metroTextBox51.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox51.TabIndex = 158;
-            this.metroTextBox51.UseSelectable = true;
-            this.metroTextBox51.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox51.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKwhLlanoR.CustomButton.Image = null;
+            this.txtKwhLlanoR.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKwhLlanoR.CustomButton.Name = "";
+            this.txtKwhLlanoR.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKwhLlanoR.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKwhLlanoR.CustomButton.TabIndex = 1;
+            this.txtKwhLlanoR.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKwhLlanoR.CustomButton.UseSelectable = true;
+            this.txtKwhLlanoR.CustomButton.Visible = false;
+            this.txtKwhLlanoR.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKwhLlanoR.Lines = new string[0];
+            this.txtKwhLlanoR.Location = new System.Drawing.Point(8, 7);
+            this.txtKwhLlanoR.MaxLength = 32767;
+            this.txtKwhLlanoR.Name = "txtKwhLlanoR";
+            this.txtKwhLlanoR.PasswordChar = '\0';
+            this.txtKwhLlanoR.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKwhLlanoR.SelectedText = "";
+            this.txtKwhLlanoR.SelectionLength = 0;
+            this.txtKwhLlanoR.SelectionStart = 0;
+            this.txtKwhLlanoR.ShortcutsEnabled = true;
+            this.txtKwhLlanoR.Size = new System.Drawing.Size(122, 23);
+            this.txtKwhLlanoR.TabIndex = 158;
+            this.txtKwhLlanoR.UseSelectable = true;
+            this.txtKwhLlanoR.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKwhLlanoR.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
-            this.panel21.Controls.Add(this.metroTextBox36);
-            this.panel21.Controls.Add(this.metroTextBox37);
-            this.panel21.Controls.Add(this.metroTextBox38);
-            this.panel21.Controls.Add(this.metroTextBox39);
-            this.panel21.Location = new System.Drawing.Point(646, 159);
+            this.panel21.Controls.Add(this.txtPfPuntaR);
+            this.panel21.Controls.Add(this.txtKwdPuntaR);
+            this.panel21.Controls.Add(this.txtKvarhPuntaR);
+            this.panel21.Controls.Add(this.txtKwhPuntaR);
+            this.panel21.Location = new System.Drawing.Point(790, 68);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(175, 122);
+            this.panel21.Size = new System.Drawing.Size(135, 122);
             this.panel21.TabIndex = 203;
             // 
-            // metroTextBox36
+            // txtPfPuntaR
             // 
             // 
             // 
             // 
-            this.metroTextBox36.CustomButton.Image = null;
-            this.metroTextBox36.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox36.CustomButton.Name = "";
-            this.metroTextBox36.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox36.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox36.CustomButton.TabIndex = 1;
-            this.metroTextBox36.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox36.CustomButton.UseSelectable = true;
-            this.metroTextBox36.CustomButton.Visible = false;
-            this.metroTextBox36.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox36.Lines = new string[0];
-            this.metroTextBox36.Location = new System.Drawing.Point(8, 92);
-            this.metroTextBox36.MaxLength = 32767;
-            this.metroTextBox36.Name = "metroTextBox36";
-            this.metroTextBox36.PasswordChar = '\0';
-            this.metroTextBox36.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox36.SelectedText = "";
-            this.metroTextBox36.SelectionLength = 0;
-            this.metroTextBox36.SelectionStart = 0;
-            this.metroTextBox36.ShortcutsEnabled = true;
-            this.metroTextBox36.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox36.TabIndex = 185;
-            this.metroTextBox36.UseSelectable = true;
-            this.metroTextBox36.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox36.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPfPuntaR.CustomButton.Image = null;
+            this.txtPfPuntaR.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtPfPuntaR.CustomButton.Name = "";
+            this.txtPfPuntaR.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtPfPuntaR.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtPfPuntaR.CustomButton.TabIndex = 1;
+            this.txtPfPuntaR.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtPfPuntaR.CustomButton.UseSelectable = true;
+            this.txtPfPuntaR.CustomButton.Visible = false;
+            this.txtPfPuntaR.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtPfPuntaR.Lines = new string[0];
+            this.txtPfPuntaR.Location = new System.Drawing.Point(8, 92);
+            this.txtPfPuntaR.MaxLength = 32767;
+            this.txtPfPuntaR.Name = "txtPfPuntaR";
+            this.txtPfPuntaR.PasswordChar = '\0';
+            this.txtPfPuntaR.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPfPuntaR.SelectedText = "";
+            this.txtPfPuntaR.SelectionLength = 0;
+            this.txtPfPuntaR.SelectionStart = 0;
+            this.txtPfPuntaR.ShortcutsEnabled = true;
+            this.txtPfPuntaR.Size = new System.Drawing.Size(122, 23);
+            this.txtPfPuntaR.TabIndex = 185;
+            this.txtPfPuntaR.UseSelectable = true;
+            this.txtPfPuntaR.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtPfPuntaR.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // metroTextBox37
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox37.CustomButton.Image = null;
-            this.metroTextBox37.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox37.CustomButton.Name = "";
-            this.metroTextBox37.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox37.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox37.CustomButton.TabIndex = 1;
-            this.metroTextBox37.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox37.CustomButton.UseSelectable = true;
-            this.metroTextBox37.CustomButton.Visible = false;
-            this.metroTextBox37.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox37.Lines = new string[0];
-            this.metroTextBox37.Location = new System.Drawing.Point(8, 63);
-            this.metroTextBox37.MaxLength = 32767;
-            this.metroTextBox37.Name = "metroTextBox37";
-            this.metroTextBox37.PasswordChar = '\0';
-            this.metroTextBox37.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox37.SelectedText = "";
-            this.metroTextBox37.SelectionLength = 0;
-            this.metroTextBox37.SelectionStart = 0;
-            this.metroTextBox37.ShortcutsEnabled = true;
-            this.metroTextBox37.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox37.TabIndex = 183;
-            this.metroTextBox37.UseSelectable = true;
-            this.metroTextBox37.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox37.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // metroTextBox38
+            // txtKwdPuntaR
             // 
             // 
             // 
             // 
-            this.metroTextBox38.CustomButton.Image = null;
-            this.metroTextBox38.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox38.CustomButton.Name = "";
-            this.metroTextBox38.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox38.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox38.CustomButton.TabIndex = 1;
-            this.metroTextBox38.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox38.CustomButton.UseSelectable = true;
-            this.metroTextBox38.CustomButton.Visible = false;
-            this.metroTextBox38.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox38.Lines = new string[0];
-            this.metroTextBox38.Location = new System.Drawing.Point(8, 34);
-            this.metroTextBox38.MaxLength = 32767;
-            this.metroTextBox38.Name = "metroTextBox38";
-            this.metroTextBox38.PasswordChar = '\0';
-            this.metroTextBox38.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox38.SelectedText = "";
-            this.metroTextBox38.SelectionLength = 0;
-            this.metroTextBox38.SelectionStart = 0;
-            this.metroTextBox38.ShortcutsEnabled = true;
-            this.metroTextBox38.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox38.TabIndex = 180;
-            this.metroTextBox38.UseSelectable = true;
-            this.metroTextBox38.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox38.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKwdPuntaR.CustomButton.Image = null;
+            this.txtKwdPuntaR.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKwdPuntaR.CustomButton.Name = "";
+            this.txtKwdPuntaR.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKwdPuntaR.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKwdPuntaR.CustomButton.TabIndex = 1;
+            this.txtKwdPuntaR.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKwdPuntaR.CustomButton.UseSelectable = true;
+            this.txtKwdPuntaR.CustomButton.Visible = false;
+            this.txtKwdPuntaR.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKwdPuntaR.Lines = new string[0];
+            this.txtKwdPuntaR.Location = new System.Drawing.Point(8, 63);
+            this.txtKwdPuntaR.MaxLength = 32767;
+            this.txtKwdPuntaR.Name = "txtKwdPuntaR";
+            this.txtKwdPuntaR.PasswordChar = '\0';
+            this.txtKwdPuntaR.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKwdPuntaR.SelectedText = "";
+            this.txtKwdPuntaR.SelectionLength = 0;
+            this.txtKwdPuntaR.SelectionStart = 0;
+            this.txtKwdPuntaR.ShortcutsEnabled = true;
+            this.txtKwdPuntaR.Size = new System.Drawing.Size(122, 23);
+            this.txtKwdPuntaR.TabIndex = 183;
+            this.txtKwdPuntaR.UseSelectable = true;
+            this.txtKwdPuntaR.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKwdPuntaR.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // metroTextBox39
-            // 
-            // 
+            // txtKvarhPuntaR
             // 
             // 
-            this.metroTextBox39.CustomButton.Image = null;
-            this.metroTextBox39.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox39.CustomButton.Name = "";
-            this.metroTextBox39.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox39.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox39.CustomButton.TabIndex = 1;
-            this.metroTextBox39.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox39.CustomButton.UseSelectable = true;
-            this.metroTextBox39.CustomButton.Visible = false;
-            this.metroTextBox39.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox39.Lines = new string[0];
-            this.metroTextBox39.Location = new System.Drawing.Point(8, 6);
-            this.metroTextBox39.MaxLength = 32767;
-            this.metroTextBox39.Name = "metroTextBox39";
-            this.metroTextBox39.PasswordChar = '\0';
-            this.metroTextBox39.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox39.SelectedText = "";
-            this.metroTextBox39.SelectionLength = 0;
-            this.metroTextBox39.SelectionStart = 0;
-            this.metroTextBox39.ShortcutsEnabled = true;
-            this.metroTextBox39.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox39.TabIndex = 158;
-            this.metroTextBox39.UseSelectable = true;
-            this.metroTextBox39.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox39.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // 
+            this.txtKvarhPuntaR.CustomButton.Image = null;
+            this.txtKvarhPuntaR.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKvarhPuntaR.CustomButton.Name = "";
+            this.txtKvarhPuntaR.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKvarhPuntaR.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKvarhPuntaR.CustomButton.TabIndex = 1;
+            this.txtKvarhPuntaR.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKvarhPuntaR.CustomButton.UseSelectable = true;
+            this.txtKvarhPuntaR.CustomButton.Visible = false;
+            this.txtKvarhPuntaR.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKvarhPuntaR.Lines = new string[0];
+            this.txtKvarhPuntaR.Location = new System.Drawing.Point(8, 34);
+            this.txtKvarhPuntaR.MaxLength = 32767;
+            this.txtKvarhPuntaR.Name = "txtKvarhPuntaR";
+            this.txtKvarhPuntaR.PasswordChar = '\0';
+            this.txtKvarhPuntaR.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKvarhPuntaR.SelectedText = "";
+            this.txtKvarhPuntaR.SelectionLength = 0;
+            this.txtKvarhPuntaR.SelectionStart = 0;
+            this.txtKvarhPuntaR.ShortcutsEnabled = true;
+            this.txtKvarhPuntaR.Size = new System.Drawing.Size(122, 23);
+            this.txtKvarhPuntaR.TabIndex = 180;
+            this.txtKvarhPuntaR.UseSelectable = true;
+            this.txtKvarhPuntaR.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKvarhPuntaR.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // txtKwhPuntaR
+            // 
+            // 
+            // 
+            // 
+            this.txtKwhPuntaR.CustomButton.Image = null;
+            this.txtKwhPuntaR.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKwhPuntaR.CustomButton.Name = "";
+            this.txtKwhPuntaR.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKwhPuntaR.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKwhPuntaR.CustomButton.TabIndex = 1;
+            this.txtKwhPuntaR.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKwhPuntaR.CustomButton.UseSelectable = true;
+            this.txtKwhPuntaR.CustomButton.Visible = false;
+            this.txtKwhPuntaR.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKwhPuntaR.Lines = new string[0];
+            this.txtKwhPuntaR.Location = new System.Drawing.Point(8, 6);
+            this.txtKwhPuntaR.MaxLength = 32767;
+            this.txtKwhPuntaR.Name = "txtKwhPuntaR";
+            this.txtKwhPuntaR.PasswordChar = '\0';
+            this.txtKwhPuntaR.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKwhPuntaR.SelectedText = "";
+            this.txtKwhPuntaR.SelectionLength = 0;
+            this.txtKwhPuntaR.SelectionStart = 0;
+            this.txtKwhPuntaR.ShortcutsEnabled = true;
+            this.txtKwhPuntaR.Size = new System.Drawing.Size(122, 23);
+            this.txtKwhPuntaR.TabIndex = 158;
+            this.txtKwhPuntaR.UseSelectable = true;
+            this.txtKwhPuntaR.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKwhPuntaR.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
-            this.panel20.Controls.Add(this.metroTextBox32);
-            this.panel20.Controls.Add(this.metroTextBox33);
-            this.panel20.Controls.Add(this.metroTextBox34);
-            this.panel20.Controls.Add(this.metroTextBox35);
-            this.panel20.Location = new System.Drawing.Point(465, 157);
+            this.panel20.Controls.Add(this.txtPfValleR);
+            this.panel20.Controls.Add(this.txtKwdValleR);
+            this.panel20.Controls.Add(this.txtKvarhValleR);
+            this.panel20.Controls.Add(this.txtKwhValleR);
+            this.panel20.Location = new System.Drawing.Point(647, 68);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(175, 122);
+            this.panel20.Size = new System.Drawing.Size(135, 122);
             this.panel20.TabIndex = 202;
             // 
-            // metroTextBox32
+            // txtPfValleR
             // 
             // 
             // 
             // 
-            this.metroTextBox32.CustomButton.Image = null;
-            this.metroTextBox32.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox32.CustomButton.Name = "";
-            this.metroTextBox32.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox32.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox32.CustomButton.TabIndex = 1;
-            this.metroTextBox32.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox32.CustomButton.UseSelectable = true;
-            this.metroTextBox32.CustomButton.Visible = false;
-            this.metroTextBox32.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox32.Lines = new string[0];
-            this.metroTextBox32.Location = new System.Drawing.Point(8, 92);
-            this.metroTextBox32.MaxLength = 32767;
-            this.metroTextBox32.Name = "metroTextBox32";
-            this.metroTextBox32.PasswordChar = '\0';
-            this.metroTextBox32.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox32.SelectedText = "";
-            this.metroTextBox32.SelectionLength = 0;
-            this.metroTextBox32.SelectionStart = 0;
-            this.metroTextBox32.ShortcutsEnabled = true;
-            this.metroTextBox32.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox32.TabIndex = 185;
-            this.metroTextBox32.UseSelectable = true;
-            this.metroTextBox32.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox32.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPfValleR.CustomButton.Image = null;
+            this.txtPfValleR.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtPfValleR.CustomButton.Name = "";
+            this.txtPfValleR.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtPfValleR.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtPfValleR.CustomButton.TabIndex = 1;
+            this.txtPfValleR.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtPfValleR.CustomButton.UseSelectable = true;
+            this.txtPfValleR.CustomButton.Visible = false;
+            this.txtPfValleR.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtPfValleR.Lines = new string[0];
+            this.txtPfValleR.Location = new System.Drawing.Point(8, 92);
+            this.txtPfValleR.MaxLength = 32767;
+            this.txtPfValleR.Name = "txtPfValleR";
+            this.txtPfValleR.PasswordChar = '\0';
+            this.txtPfValleR.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPfValleR.SelectedText = "";
+            this.txtPfValleR.SelectionLength = 0;
+            this.txtPfValleR.SelectionStart = 0;
+            this.txtPfValleR.ShortcutsEnabled = true;
+            this.txtPfValleR.Size = new System.Drawing.Size(122, 23);
+            this.txtPfValleR.TabIndex = 185;
+            this.txtPfValleR.UseSelectable = true;
+            this.txtPfValleR.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtPfValleR.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // metroTextBox33
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox33.CustomButton.Image = null;
-            this.metroTextBox33.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox33.CustomButton.Name = "";
-            this.metroTextBox33.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox33.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox33.CustomButton.TabIndex = 1;
-            this.metroTextBox33.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox33.CustomButton.UseSelectable = true;
-            this.metroTextBox33.CustomButton.Visible = false;
-            this.metroTextBox33.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox33.Lines = new string[0];
-            this.metroTextBox33.Location = new System.Drawing.Point(8, 63);
-            this.metroTextBox33.MaxLength = 32767;
-            this.metroTextBox33.Name = "metroTextBox33";
-            this.metroTextBox33.PasswordChar = '\0';
-            this.metroTextBox33.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox33.SelectedText = "";
-            this.metroTextBox33.SelectionLength = 0;
-            this.metroTextBox33.SelectionStart = 0;
-            this.metroTextBox33.ShortcutsEnabled = true;
-            this.metroTextBox33.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox33.TabIndex = 183;
-            this.metroTextBox33.UseSelectable = true;
-            this.metroTextBox33.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox33.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // metroTextBox34
+            // txtKwdValleR
             // 
             // 
             // 
             // 
-            this.metroTextBox34.CustomButton.Image = null;
-            this.metroTextBox34.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox34.CustomButton.Name = "";
-            this.metroTextBox34.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox34.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox34.CustomButton.TabIndex = 1;
-            this.metroTextBox34.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox34.CustomButton.UseSelectable = true;
-            this.metroTextBox34.CustomButton.Visible = false;
-            this.metroTextBox34.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox34.Lines = new string[0];
-            this.metroTextBox34.Location = new System.Drawing.Point(8, 34);
-            this.metroTextBox34.MaxLength = 32767;
-            this.metroTextBox34.Name = "metroTextBox34";
-            this.metroTextBox34.PasswordChar = '\0';
-            this.metroTextBox34.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox34.SelectedText = "";
-            this.metroTextBox34.SelectionLength = 0;
-            this.metroTextBox34.SelectionStart = 0;
-            this.metroTextBox34.ShortcutsEnabled = true;
-            this.metroTextBox34.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox34.TabIndex = 180;
-            this.metroTextBox34.UseSelectable = true;
-            this.metroTextBox34.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox34.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKwdValleR.CustomButton.Image = null;
+            this.txtKwdValleR.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKwdValleR.CustomButton.Name = "";
+            this.txtKwdValleR.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKwdValleR.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKwdValleR.CustomButton.TabIndex = 1;
+            this.txtKwdValleR.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKwdValleR.CustomButton.UseSelectable = true;
+            this.txtKwdValleR.CustomButton.Visible = false;
+            this.txtKwdValleR.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKwdValleR.Lines = new string[0];
+            this.txtKwdValleR.Location = new System.Drawing.Point(8, 63);
+            this.txtKwdValleR.MaxLength = 32767;
+            this.txtKwdValleR.Name = "txtKwdValleR";
+            this.txtKwdValleR.PasswordChar = '\0';
+            this.txtKwdValleR.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKwdValleR.SelectedText = "";
+            this.txtKwdValleR.SelectionLength = 0;
+            this.txtKwdValleR.SelectionStart = 0;
+            this.txtKwdValleR.ShortcutsEnabled = true;
+            this.txtKwdValleR.Size = new System.Drawing.Size(122, 23);
+            this.txtKwdValleR.TabIndex = 183;
+            this.txtKwdValleR.UseSelectable = true;
+            this.txtKwdValleR.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKwdValleR.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // metroTextBox35
-            // 
-            // 
+            // txtKvarhValleR
             // 
             // 
-            this.metroTextBox35.CustomButton.Image = null;
-            this.metroTextBox35.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox35.CustomButton.Name = "";
-            this.metroTextBox35.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox35.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox35.CustomButton.TabIndex = 1;
-            this.metroTextBox35.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox35.CustomButton.UseSelectable = true;
-            this.metroTextBox35.CustomButton.Visible = false;
-            this.metroTextBox35.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox35.Lines = new string[0];
-            this.metroTextBox35.Location = new System.Drawing.Point(8, 6);
-            this.metroTextBox35.MaxLength = 32767;
-            this.metroTextBox35.Name = "metroTextBox35";
-            this.metroTextBox35.PasswordChar = '\0';
-            this.metroTextBox35.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox35.SelectedText = "";
-            this.metroTextBox35.SelectionLength = 0;
-            this.metroTextBox35.SelectionStart = 0;
-            this.metroTextBox35.ShortcutsEnabled = true;
-            this.metroTextBox35.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox35.TabIndex = 158;
-            this.metroTextBox35.UseSelectable = true;
-            this.metroTextBox35.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox35.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // 
+            this.txtKvarhValleR.CustomButton.Image = null;
+            this.txtKvarhValleR.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKvarhValleR.CustomButton.Name = "";
+            this.txtKvarhValleR.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKvarhValleR.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKvarhValleR.CustomButton.TabIndex = 1;
+            this.txtKvarhValleR.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKvarhValleR.CustomButton.UseSelectable = true;
+            this.txtKvarhValleR.CustomButton.Visible = false;
+            this.txtKvarhValleR.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKvarhValleR.Lines = new string[0];
+            this.txtKvarhValleR.Location = new System.Drawing.Point(8, 34);
+            this.txtKvarhValleR.MaxLength = 32767;
+            this.txtKvarhValleR.Name = "txtKvarhValleR";
+            this.txtKvarhValleR.PasswordChar = '\0';
+            this.txtKvarhValleR.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKvarhValleR.SelectedText = "";
+            this.txtKvarhValleR.SelectionLength = 0;
+            this.txtKvarhValleR.SelectionStart = 0;
+            this.txtKvarhValleR.ShortcutsEnabled = true;
+            this.txtKvarhValleR.Size = new System.Drawing.Size(122, 23);
+            this.txtKvarhValleR.TabIndex = 180;
+            this.txtKvarhValleR.UseSelectable = true;
+            this.txtKvarhValleR.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKvarhValleR.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // txtKwhValleR
+            // 
+            // 
+            // 
+            // 
+            this.txtKwhValleR.CustomButton.Image = null;
+            this.txtKwhValleR.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKwhValleR.CustomButton.Name = "";
+            this.txtKwhValleR.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKwhValleR.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKwhValleR.CustomButton.TabIndex = 1;
+            this.txtKwhValleR.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKwhValleR.CustomButton.UseSelectable = true;
+            this.txtKwhValleR.CustomButton.Visible = false;
+            this.txtKwhValleR.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKwhValleR.Lines = new string[0];
+            this.txtKwhValleR.Location = new System.Drawing.Point(8, 6);
+            this.txtKwhValleR.MaxLength = 32767;
+            this.txtKwhValleR.Name = "txtKwhValleR";
+            this.txtKwhValleR.PasswordChar = '\0';
+            this.txtKwhValleR.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKwhValleR.SelectedText = "";
+            this.txtKwhValleR.SelectionLength = 0;
+            this.txtKwhValleR.SelectionStart = 0;
+            this.txtKwhValleR.ShortcutsEnabled = true;
+            this.txtKwhValleR.Size = new System.Drawing.Size(122, 23);
+            this.txtKwhValleR.TabIndex = 158;
+            this.txtKwhValleR.UseSelectable = true;
+            this.txtKwhValleR.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKwhValleR.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(257, 0);
+            this.label29.Location = new System.Drawing.Point(34, 43);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(149, 22);
             this.label29.TabIndex = 200;
             this.label29.Text = "LLANO(A) + (B)";
             // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel17.Location = new System.Drawing.Point(256, 27);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(150, 2);
-            this.panel17.TabIndex = 201;
-            // 
             // label30
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(683, 0);
+            this.label30.Location = new System.Drawing.Point(382, 43);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(100, 22);
             this.label30.TabIndex = 198;
             this.label30.Text = "PUNTA (B)";
             // 
-            // panel18
-            // 
-            this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel18.Location = new System.Drawing.Point(659, 27);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(150, 2);
-            this.panel18.TabIndex = 199;
-            // 
             // label31
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(502, -2);
+            this.label31.Location = new System.Drawing.Point(253, 43);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(102, 22);
             this.label31.TabIndex = 196;
             this.label31.Text = "VALLE (A)";
             // 
-            // panel19
-            // 
-            this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel19.Location = new System.Drawing.Point(478, 25);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(150, 2);
-            this.panel19.TabIndex = 197;
-            // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
-            this.panel14.Controls.Add(this.metroTextBox28);
-            this.panel14.Controls.Add(this.metroTextBox29);
-            this.panel14.Controls.Add(this.metroTextBox30);
-            this.panel14.Controls.Add(this.metroTextBox31);
-            this.panel14.Location = new System.Drawing.Point(646, 31);
+            this.panel14.Controls.Add(this.txtPfPuntaD);
+            this.panel14.Controls.Add(this.txtKwdPuntaD);
+            this.panel14.Controls.Add(this.txtKvarhPuntaD);
+            this.panel14.Controls.Add(this.txtKwhPuntaD);
+            this.panel14.Location = new System.Drawing.Point(366, 68);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(175, 122);
+            this.panel14.Size = new System.Drawing.Size(135, 122);
             this.panel14.TabIndex = 195;
             // 
-            // metroTextBox28
+            // txtPfPuntaD
             // 
             // 
             // 
             // 
-            this.metroTextBox28.CustomButton.Image = null;
-            this.metroTextBox28.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox28.CustomButton.Name = "";
-            this.metroTextBox28.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox28.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox28.CustomButton.TabIndex = 1;
-            this.metroTextBox28.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox28.CustomButton.UseSelectable = true;
-            this.metroTextBox28.CustomButton.Visible = false;
-            this.metroTextBox28.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox28.Lines = new string[0];
-            this.metroTextBox28.Location = new System.Drawing.Point(8, 92);
-            this.metroTextBox28.MaxLength = 32767;
-            this.metroTextBox28.Name = "metroTextBox28";
-            this.metroTextBox28.PasswordChar = '\0';
-            this.metroTextBox28.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox28.SelectedText = "";
-            this.metroTextBox28.SelectionLength = 0;
-            this.metroTextBox28.SelectionStart = 0;
-            this.metroTextBox28.ShortcutsEnabled = true;
-            this.metroTextBox28.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox28.TabIndex = 185;
-            this.metroTextBox28.UseSelectable = true;
-            this.metroTextBox28.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox28.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPfPuntaD.CustomButton.Image = null;
+            this.txtPfPuntaD.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtPfPuntaD.CustomButton.Name = "";
+            this.txtPfPuntaD.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtPfPuntaD.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtPfPuntaD.CustomButton.TabIndex = 1;
+            this.txtPfPuntaD.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtPfPuntaD.CustomButton.UseSelectable = true;
+            this.txtPfPuntaD.CustomButton.Visible = false;
+            this.txtPfPuntaD.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtPfPuntaD.Lines = new string[0];
+            this.txtPfPuntaD.Location = new System.Drawing.Point(8, 92);
+            this.txtPfPuntaD.MaxLength = 32767;
+            this.txtPfPuntaD.Name = "txtPfPuntaD";
+            this.txtPfPuntaD.PasswordChar = '\0';
+            this.txtPfPuntaD.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPfPuntaD.SelectedText = "";
+            this.txtPfPuntaD.SelectionLength = 0;
+            this.txtPfPuntaD.SelectionStart = 0;
+            this.txtPfPuntaD.ShortcutsEnabled = true;
+            this.txtPfPuntaD.Size = new System.Drawing.Size(122, 23);
+            this.txtPfPuntaD.TabIndex = 185;
+            this.txtPfPuntaD.UseSelectable = true;
+            this.txtPfPuntaD.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtPfPuntaD.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // metroTextBox29
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox29.CustomButton.Image = null;
-            this.metroTextBox29.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox29.CustomButton.Name = "";
-            this.metroTextBox29.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox29.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox29.CustomButton.TabIndex = 1;
-            this.metroTextBox29.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox29.CustomButton.UseSelectable = true;
-            this.metroTextBox29.CustomButton.Visible = false;
-            this.metroTextBox29.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox29.Lines = new string[0];
-            this.metroTextBox29.Location = new System.Drawing.Point(8, 63);
-            this.metroTextBox29.MaxLength = 32767;
-            this.metroTextBox29.Name = "metroTextBox29";
-            this.metroTextBox29.PasswordChar = '\0';
-            this.metroTextBox29.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox29.SelectedText = "";
-            this.metroTextBox29.SelectionLength = 0;
-            this.metroTextBox29.SelectionStart = 0;
-            this.metroTextBox29.ShortcutsEnabled = true;
-            this.metroTextBox29.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox29.TabIndex = 183;
-            this.metroTextBox29.UseSelectable = true;
-            this.metroTextBox29.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox29.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // metroTextBox30
+            // txtKwdPuntaD
             // 
             // 
             // 
             // 
-            this.metroTextBox30.CustomButton.Image = null;
-            this.metroTextBox30.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox30.CustomButton.Name = "";
-            this.metroTextBox30.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox30.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox30.CustomButton.TabIndex = 1;
-            this.metroTextBox30.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox30.CustomButton.UseSelectable = true;
-            this.metroTextBox30.CustomButton.Visible = false;
-            this.metroTextBox30.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox30.Lines = new string[0];
-            this.metroTextBox30.Location = new System.Drawing.Point(8, 34);
-            this.metroTextBox30.MaxLength = 32767;
-            this.metroTextBox30.Name = "metroTextBox30";
-            this.metroTextBox30.PasswordChar = '\0';
-            this.metroTextBox30.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox30.SelectedText = "";
-            this.metroTextBox30.SelectionLength = 0;
-            this.metroTextBox30.SelectionStart = 0;
-            this.metroTextBox30.ShortcutsEnabled = true;
-            this.metroTextBox30.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox30.TabIndex = 180;
-            this.metroTextBox30.UseSelectable = true;
-            this.metroTextBox30.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox30.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKwdPuntaD.CustomButton.Image = null;
+            this.txtKwdPuntaD.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKwdPuntaD.CustomButton.Name = "";
+            this.txtKwdPuntaD.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKwdPuntaD.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKwdPuntaD.CustomButton.TabIndex = 1;
+            this.txtKwdPuntaD.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKwdPuntaD.CustomButton.UseSelectable = true;
+            this.txtKwdPuntaD.CustomButton.Visible = false;
+            this.txtKwdPuntaD.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKwdPuntaD.Lines = new string[0];
+            this.txtKwdPuntaD.Location = new System.Drawing.Point(8, 63);
+            this.txtKwdPuntaD.MaxLength = 32767;
+            this.txtKwdPuntaD.Name = "txtKwdPuntaD";
+            this.txtKwdPuntaD.PasswordChar = '\0';
+            this.txtKwdPuntaD.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKwdPuntaD.SelectedText = "";
+            this.txtKwdPuntaD.SelectionLength = 0;
+            this.txtKwdPuntaD.SelectionStart = 0;
+            this.txtKwdPuntaD.ShortcutsEnabled = true;
+            this.txtKwdPuntaD.Size = new System.Drawing.Size(122, 23);
+            this.txtKwdPuntaD.TabIndex = 183;
+            this.txtKwdPuntaD.UseSelectable = true;
+            this.txtKwdPuntaD.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKwdPuntaD.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // metroTextBox31
-            // 
-            // 
+            // txtKvarhPuntaD
             // 
             // 
-            this.metroTextBox31.CustomButton.Image = null;
-            this.metroTextBox31.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox31.CustomButton.Name = "";
-            this.metroTextBox31.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox31.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox31.CustomButton.TabIndex = 1;
-            this.metroTextBox31.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox31.CustomButton.UseSelectable = true;
-            this.metroTextBox31.CustomButton.Visible = false;
-            this.metroTextBox31.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox31.Lines = new string[0];
-            this.metroTextBox31.Location = new System.Drawing.Point(8, 6);
-            this.metroTextBox31.MaxLength = 32767;
-            this.metroTextBox31.Name = "metroTextBox31";
-            this.metroTextBox31.PasswordChar = '\0';
-            this.metroTextBox31.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox31.SelectedText = "";
-            this.metroTextBox31.SelectionLength = 0;
-            this.metroTextBox31.SelectionStart = 0;
-            this.metroTextBox31.ShortcutsEnabled = true;
-            this.metroTextBox31.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox31.TabIndex = 158;
-            this.metroTextBox31.UseSelectable = true;
-            this.metroTextBox31.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox31.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // 
+            this.txtKvarhPuntaD.CustomButton.Image = null;
+            this.txtKvarhPuntaD.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKvarhPuntaD.CustomButton.Name = "";
+            this.txtKvarhPuntaD.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKvarhPuntaD.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKvarhPuntaD.CustomButton.TabIndex = 1;
+            this.txtKvarhPuntaD.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKvarhPuntaD.CustomButton.UseSelectable = true;
+            this.txtKvarhPuntaD.CustomButton.Visible = false;
+            this.txtKvarhPuntaD.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKvarhPuntaD.Lines = new string[0];
+            this.txtKvarhPuntaD.Location = new System.Drawing.Point(8, 34);
+            this.txtKvarhPuntaD.MaxLength = 32767;
+            this.txtKvarhPuntaD.Name = "txtKvarhPuntaD";
+            this.txtKvarhPuntaD.PasswordChar = '\0';
+            this.txtKvarhPuntaD.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKvarhPuntaD.SelectedText = "";
+            this.txtKvarhPuntaD.SelectionLength = 0;
+            this.txtKvarhPuntaD.SelectionStart = 0;
+            this.txtKvarhPuntaD.ShortcutsEnabled = true;
+            this.txtKvarhPuntaD.Size = new System.Drawing.Size(122, 23);
+            this.txtKvarhPuntaD.TabIndex = 180;
+            this.txtKvarhPuntaD.UseSelectable = true;
+            this.txtKvarhPuntaD.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKvarhPuntaD.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // txtKwhPuntaD
+            // 
+            // 
+            // 
+            // 
+            this.txtKwhPuntaD.CustomButton.Image = null;
+            this.txtKwhPuntaD.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKwhPuntaD.CustomButton.Name = "";
+            this.txtKwhPuntaD.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKwhPuntaD.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKwhPuntaD.CustomButton.TabIndex = 1;
+            this.txtKwhPuntaD.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKwhPuntaD.CustomButton.UseSelectable = true;
+            this.txtKwhPuntaD.CustomButton.Visible = false;
+            this.txtKwhPuntaD.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKwhPuntaD.Lines = new string[0];
+            this.txtKwhPuntaD.Location = new System.Drawing.Point(8, 6);
+            this.txtKwhPuntaD.MaxLength = 32767;
+            this.txtKwhPuntaD.Name = "txtKwhPuntaD";
+            this.txtKwhPuntaD.PasswordChar = '\0';
+            this.txtKwhPuntaD.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKwhPuntaD.SelectedText = "";
+            this.txtKwhPuntaD.SelectionLength = 0;
+            this.txtKwhPuntaD.SelectionStart = 0;
+            this.txtKwhPuntaD.ShortcutsEnabled = true;
+            this.txtKwhPuntaD.Size = new System.Drawing.Size(122, 23);
+            this.txtKwhPuntaD.TabIndex = 158;
+            this.txtKwhPuntaD.UseSelectable = true;
+            this.txtKwhPuntaD.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKwhPuntaD.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel13.Location = new System.Drawing.Point(85, 88);
+            this.panel13.Location = new System.Drawing.Point(133, 32);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(100, 2);
             this.panel13.TabIndex = 191;
@@ -1876,49 +1781,49 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
-            this.panel12.Controls.Add(this.metroTextBox24);
+            this.panel12.Controls.Add(this.txtPfLlanoD);
             this.panel12.Controls.Add(this.label6);
-            this.panel12.Controls.Add(this.metroTextBox25);
+            this.panel12.Controls.Add(this.txtKwdLlanoD);
             this.panel12.Controls.Add(this.label7);
             this.panel12.Controls.Add(this.label23);
-            this.panel12.Controls.Add(this.metroTextBox26);
+            this.panel12.Controls.Add(this.txtKvarhLlanoD);
             this.panel12.Controls.Add(this.label24);
-            this.panel12.Controls.Add(this.metroTextBox27);
-            this.panel12.Location = new System.Drawing.Point(196, 31);
+            this.panel12.Controls.Add(this.txtKwhLlanoD);
+            this.panel12.Location = new System.Drawing.Point(6, 68);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(263, 120);
+            this.panel12.Size = new System.Drawing.Size(213, 120);
             this.panel12.TabIndex = 194;
             // 
-            // metroTextBox24
+            // txtPfLlanoD
             // 
             // 
             // 
             // 
-            this.metroTextBox24.CustomButton.Image = null;
-            this.metroTextBox24.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox24.CustomButton.Name = "";
-            this.metroTextBox24.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox24.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox24.CustomButton.TabIndex = 1;
-            this.metroTextBox24.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox24.CustomButton.UseSelectable = true;
-            this.metroTextBox24.CustomButton.Visible = false;
-            this.metroTextBox24.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox24.Lines = new string[0];
-            this.metroTextBox24.Location = new System.Drawing.Point(101, 90);
-            this.metroTextBox24.MaxLength = 32767;
-            this.metroTextBox24.Name = "metroTextBox24";
-            this.metroTextBox24.PasswordChar = '\0';
-            this.metroTextBox24.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox24.SelectedText = "";
-            this.metroTextBox24.SelectionLength = 0;
-            this.metroTextBox24.SelectionStart = 0;
-            this.metroTextBox24.ShortcutsEnabled = true;
-            this.metroTextBox24.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox24.TabIndex = 185;
-            this.metroTextBox24.UseSelectable = true;
-            this.metroTextBox24.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox24.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPfLlanoD.CustomButton.Image = null;
+            this.txtPfLlanoD.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtPfLlanoD.CustomButton.Name = "";
+            this.txtPfLlanoD.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtPfLlanoD.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtPfLlanoD.CustomButton.TabIndex = 1;
+            this.txtPfLlanoD.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtPfLlanoD.CustomButton.UseSelectable = true;
+            this.txtPfLlanoD.CustomButton.Visible = false;
+            this.txtPfLlanoD.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtPfLlanoD.Lines = new string[0];
+            this.txtPfLlanoD.Location = new System.Drawing.Point(84, 90);
+            this.txtPfLlanoD.MaxLength = 32767;
+            this.txtPfLlanoD.Name = "txtPfLlanoD";
+            this.txtPfLlanoD.PasswordChar = '\0';
+            this.txtPfLlanoD.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPfLlanoD.SelectedText = "";
+            this.txtPfLlanoD.SelectionLength = 0;
+            this.txtPfLlanoD.SelectionStart = 0;
+            this.txtPfLlanoD.ShortcutsEnabled = true;
+            this.txtPfLlanoD.Size = new System.Drawing.Size(122, 23);
+            this.txtPfLlanoD.TabIndex = 185;
+            this.txtPfLlanoD.UseSelectable = true;
+            this.txtPfLlanoD.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtPfLlanoD.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // label6
             // 
@@ -1930,36 +1835,36 @@
             this.label6.TabIndex = 184;
             this.label6.Text = "P.F : ";
             // 
-            // metroTextBox25
+            // txtKwdLlanoD
             // 
             // 
             // 
             // 
-            this.metroTextBox25.CustomButton.Image = null;
-            this.metroTextBox25.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox25.CustomButton.Name = "";
-            this.metroTextBox25.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox25.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox25.CustomButton.TabIndex = 1;
-            this.metroTextBox25.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox25.CustomButton.UseSelectable = true;
-            this.metroTextBox25.CustomButton.Visible = false;
-            this.metroTextBox25.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox25.Lines = new string[0];
-            this.metroTextBox25.Location = new System.Drawing.Point(101, 61);
-            this.metroTextBox25.MaxLength = 32767;
-            this.metroTextBox25.Name = "metroTextBox25";
-            this.metroTextBox25.PasswordChar = '\0';
-            this.metroTextBox25.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox25.SelectedText = "";
-            this.metroTextBox25.SelectionLength = 0;
-            this.metroTextBox25.SelectionStart = 0;
-            this.metroTextBox25.ShortcutsEnabled = true;
-            this.metroTextBox25.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox25.TabIndex = 183;
-            this.metroTextBox25.UseSelectable = true;
-            this.metroTextBox25.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox25.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKwdLlanoD.CustomButton.Image = null;
+            this.txtKwdLlanoD.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKwdLlanoD.CustomButton.Name = "";
+            this.txtKwdLlanoD.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKwdLlanoD.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKwdLlanoD.CustomButton.TabIndex = 1;
+            this.txtKwdLlanoD.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKwdLlanoD.CustomButton.UseSelectable = true;
+            this.txtKwdLlanoD.CustomButton.Visible = false;
+            this.txtKwdLlanoD.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKwdLlanoD.Lines = new string[0];
+            this.txtKwdLlanoD.Location = new System.Drawing.Point(83, 62);
+            this.txtKwdLlanoD.MaxLength = 32767;
+            this.txtKwdLlanoD.Name = "txtKwdLlanoD";
+            this.txtKwdLlanoD.PasswordChar = '\0';
+            this.txtKwdLlanoD.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKwdLlanoD.SelectedText = "";
+            this.txtKwdLlanoD.SelectionLength = 0;
+            this.txtKwdLlanoD.SelectionStart = 0;
+            this.txtKwdLlanoD.ShortcutsEnabled = true;
+            this.txtKwdLlanoD.Size = new System.Drawing.Size(122, 23);
+            this.txtKwdLlanoD.TabIndex = 183;
+            this.txtKwdLlanoD.UseSelectable = true;
+            this.txtKwdLlanoD.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKwdLlanoD.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // label7
             // 
@@ -1981,36 +1886,36 @@
             this.label23.TabIndex = 181;
             this.label23.Text = "Kvarh : ";
             // 
-            // metroTextBox26
+            // txtKvarhLlanoD
             // 
             // 
             // 
             // 
-            this.metroTextBox26.CustomButton.Image = null;
-            this.metroTextBox26.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox26.CustomButton.Name = "";
-            this.metroTextBox26.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox26.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox26.CustomButton.TabIndex = 1;
-            this.metroTextBox26.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox26.CustomButton.UseSelectable = true;
-            this.metroTextBox26.CustomButton.Visible = false;
-            this.metroTextBox26.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox26.Lines = new string[0];
-            this.metroTextBox26.Location = new System.Drawing.Point(101, 32);
-            this.metroTextBox26.MaxLength = 32767;
-            this.metroTextBox26.Name = "metroTextBox26";
-            this.metroTextBox26.PasswordChar = '\0';
-            this.metroTextBox26.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox26.SelectedText = "";
-            this.metroTextBox26.SelectionLength = 0;
-            this.metroTextBox26.SelectionStart = 0;
-            this.metroTextBox26.ShortcutsEnabled = true;
-            this.metroTextBox26.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox26.TabIndex = 180;
-            this.metroTextBox26.UseSelectable = true;
-            this.metroTextBox26.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox26.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKvarhLlanoD.CustomButton.Image = null;
+            this.txtKvarhLlanoD.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKvarhLlanoD.CustomButton.Name = "";
+            this.txtKvarhLlanoD.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKvarhLlanoD.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKvarhLlanoD.CustomButton.TabIndex = 1;
+            this.txtKvarhLlanoD.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKvarhLlanoD.CustomButton.UseSelectable = true;
+            this.txtKvarhLlanoD.CustomButton.Visible = false;
+            this.txtKvarhLlanoD.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKvarhLlanoD.Lines = new string[0];
+            this.txtKvarhLlanoD.Location = new System.Drawing.Point(83, 33);
+            this.txtKvarhLlanoD.MaxLength = 32767;
+            this.txtKvarhLlanoD.Name = "txtKvarhLlanoD";
+            this.txtKvarhLlanoD.PasswordChar = '\0';
+            this.txtKvarhLlanoD.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKvarhLlanoD.SelectedText = "";
+            this.txtKvarhLlanoD.SelectionLength = 0;
+            this.txtKvarhLlanoD.SelectionStart = 0;
+            this.txtKvarhLlanoD.ShortcutsEnabled = true;
+            this.txtKvarhLlanoD.Size = new System.Drawing.Size(122, 23);
+            this.txtKvarhLlanoD.TabIndex = 180;
+            this.txtKvarhLlanoD.UseSelectable = true;
+            this.txtKvarhLlanoD.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKvarhLlanoD.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // label24
             // 
@@ -2022,42 +1927,42 @@
             this.label24.TabIndex = 179;
             this.label24.Text = "Kwh :";
             // 
-            // metroTextBox27
+            // txtKwhLlanoD
             // 
             // 
             // 
             // 
-            this.metroTextBox27.CustomButton.Image = null;
-            this.metroTextBox27.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox27.CustomButton.Name = "";
-            this.metroTextBox27.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox27.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox27.CustomButton.TabIndex = 1;
-            this.metroTextBox27.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox27.CustomButton.UseSelectable = true;
-            this.metroTextBox27.CustomButton.Visible = false;
-            this.metroTextBox27.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox27.Lines = new string[0];
-            this.metroTextBox27.Location = new System.Drawing.Point(101, 4);
-            this.metroTextBox27.MaxLength = 32767;
-            this.metroTextBox27.Name = "metroTextBox27";
-            this.metroTextBox27.PasswordChar = '\0';
-            this.metroTextBox27.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox27.SelectedText = "";
-            this.metroTextBox27.SelectionLength = 0;
-            this.metroTextBox27.SelectionStart = 0;
-            this.metroTextBox27.ShortcutsEnabled = true;
-            this.metroTextBox27.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox27.TabIndex = 158;
-            this.metroTextBox27.UseSelectable = true;
-            this.metroTextBox27.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox27.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKwhLlanoD.CustomButton.Image = null;
+            this.txtKwhLlanoD.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKwhLlanoD.CustomButton.Name = "";
+            this.txtKwhLlanoD.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKwhLlanoD.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKwhLlanoD.CustomButton.TabIndex = 1;
+            this.txtKwhLlanoD.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKwhLlanoD.CustomButton.UseSelectable = true;
+            this.txtKwhLlanoD.CustomButton.Visible = false;
+            this.txtKwhLlanoD.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKwhLlanoD.Lines = new string[0];
+            this.txtKwhLlanoD.Location = new System.Drawing.Point(83, 6);
+            this.txtKwhLlanoD.MaxLength = 32767;
+            this.txtKwhLlanoD.Name = "txtKwhLlanoD";
+            this.txtKwhLlanoD.PasswordChar = '\0';
+            this.txtKwhLlanoD.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKwhLlanoD.SelectedText = "";
+            this.txtKwhLlanoD.SelectionLength = 0;
+            this.txtKwhLlanoD.SelectionStart = 0;
+            this.txtKwhLlanoD.ShortcutsEnabled = true;
+            this.txtKwhLlanoD.Size = new System.Drawing.Size(122, 23);
+            this.txtKwhLlanoD.TabIndex = 158;
+            this.txtKwhLlanoD.UseSelectable = true;
+            this.txtKwhLlanoD.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKwhLlanoD.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(93, 63);
+            this.label26.Location = new System.Drawing.Point(141, 7);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(84, 22);
             this.label26.TabIndex = 190;
@@ -2067,144 +1972,144 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
-            this.panel11.Controls.Add(this.metroTextBox4);
-            this.panel11.Controls.Add(this.metroTextBox5);
-            this.panel11.Controls.Add(this.metroTextBox22);
-            this.panel11.Controls.Add(this.metroTextBox23);
-            this.panel11.Location = new System.Drawing.Point(465, 31);
+            this.panel11.Controls.Add(this.txtPfValleD);
+            this.panel11.Controls.Add(this.txtKwdValleD);
+            this.panel11.Controls.Add(this.txtKvarhValleD);
+            this.panel11.Controls.Add(this.txtKwhValleD);
+            this.panel11.Location = new System.Drawing.Point(225, 68);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(175, 122);
+            this.panel11.Size = new System.Drawing.Size(135, 122);
             this.panel11.TabIndex = 193;
             // 
-            // metroTextBox4
+            // txtPfValleD
             // 
             // 
             // 
             // 
-            this.metroTextBox4.CustomButton.Image = null;
-            this.metroTextBox4.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox4.CustomButton.Name = "";
-            this.metroTextBox4.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox4.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox4.CustomButton.TabIndex = 1;
-            this.metroTextBox4.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox4.CustomButton.UseSelectable = true;
-            this.metroTextBox4.CustomButton.Visible = false;
-            this.metroTextBox4.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox4.Lines = new string[0];
-            this.metroTextBox4.Location = new System.Drawing.Point(8, 92);
-            this.metroTextBox4.MaxLength = 32767;
-            this.metroTextBox4.Name = "metroTextBox4";
-            this.metroTextBox4.PasswordChar = '\0';
-            this.metroTextBox4.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox4.SelectedText = "";
-            this.metroTextBox4.SelectionLength = 0;
-            this.metroTextBox4.SelectionStart = 0;
-            this.metroTextBox4.ShortcutsEnabled = true;
-            this.metroTextBox4.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox4.TabIndex = 185;
-            this.metroTextBox4.UseSelectable = true;
-            this.metroTextBox4.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox4.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPfValleD.CustomButton.Image = null;
+            this.txtPfValleD.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtPfValleD.CustomButton.Name = "";
+            this.txtPfValleD.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtPfValleD.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtPfValleD.CustomButton.TabIndex = 1;
+            this.txtPfValleD.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtPfValleD.CustomButton.UseSelectable = true;
+            this.txtPfValleD.CustomButton.Visible = false;
+            this.txtPfValleD.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtPfValleD.Lines = new string[0];
+            this.txtPfValleD.Location = new System.Drawing.Point(8, 92);
+            this.txtPfValleD.MaxLength = 32767;
+            this.txtPfValleD.Name = "txtPfValleD";
+            this.txtPfValleD.PasswordChar = '\0';
+            this.txtPfValleD.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtPfValleD.SelectedText = "";
+            this.txtPfValleD.SelectionLength = 0;
+            this.txtPfValleD.SelectionStart = 0;
+            this.txtPfValleD.ShortcutsEnabled = true;
+            this.txtPfValleD.Size = new System.Drawing.Size(122, 23);
+            this.txtPfValleD.TabIndex = 185;
+            this.txtPfValleD.UseSelectable = true;
+            this.txtPfValleD.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtPfValleD.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // metroTextBox5
-            // 
-            // 
-            // 
-            // 
-            this.metroTextBox5.CustomButton.Image = null;
-            this.metroTextBox5.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox5.CustomButton.Name = "";
-            this.metroTextBox5.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox5.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox5.CustomButton.TabIndex = 1;
-            this.metroTextBox5.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox5.CustomButton.UseSelectable = true;
-            this.metroTextBox5.CustomButton.Visible = false;
-            this.metroTextBox5.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox5.Lines = new string[0];
-            this.metroTextBox5.Location = new System.Drawing.Point(8, 63);
-            this.metroTextBox5.MaxLength = 32767;
-            this.metroTextBox5.Name = "metroTextBox5";
-            this.metroTextBox5.PasswordChar = '\0';
-            this.metroTextBox5.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox5.SelectedText = "";
-            this.metroTextBox5.SelectionLength = 0;
-            this.metroTextBox5.SelectionStart = 0;
-            this.metroTextBox5.ShortcutsEnabled = true;
-            this.metroTextBox5.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox5.TabIndex = 183;
-            this.metroTextBox5.UseSelectable = true;
-            this.metroTextBox5.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox5.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // metroTextBox22
+            // txtKwdValleD
             // 
             // 
             // 
             // 
-            this.metroTextBox22.CustomButton.Image = null;
-            this.metroTextBox22.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox22.CustomButton.Name = "";
-            this.metroTextBox22.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox22.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox22.CustomButton.TabIndex = 1;
-            this.metroTextBox22.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox22.CustomButton.UseSelectable = true;
-            this.metroTextBox22.CustomButton.Visible = false;
-            this.metroTextBox22.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox22.Lines = new string[0];
-            this.metroTextBox22.Location = new System.Drawing.Point(8, 34);
-            this.metroTextBox22.MaxLength = 32767;
-            this.metroTextBox22.Name = "metroTextBox22";
-            this.metroTextBox22.PasswordChar = '\0';
-            this.metroTextBox22.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox22.SelectedText = "";
-            this.metroTextBox22.SelectionLength = 0;
-            this.metroTextBox22.SelectionStart = 0;
-            this.metroTextBox22.ShortcutsEnabled = true;
-            this.metroTextBox22.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox22.TabIndex = 180;
-            this.metroTextBox22.UseSelectable = true;
-            this.metroTextBox22.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox22.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKwdValleD.CustomButton.Image = null;
+            this.txtKwdValleD.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKwdValleD.CustomButton.Name = "";
+            this.txtKwdValleD.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKwdValleD.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKwdValleD.CustomButton.TabIndex = 1;
+            this.txtKwdValleD.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKwdValleD.CustomButton.UseSelectable = true;
+            this.txtKwdValleD.CustomButton.Visible = false;
+            this.txtKwdValleD.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKwdValleD.Lines = new string[0];
+            this.txtKwdValleD.Location = new System.Drawing.Point(8, 63);
+            this.txtKwdValleD.MaxLength = 32767;
+            this.txtKwdValleD.Name = "txtKwdValleD";
+            this.txtKwdValleD.PasswordChar = '\0';
+            this.txtKwdValleD.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKwdValleD.SelectedText = "";
+            this.txtKwdValleD.SelectionLength = 0;
+            this.txtKwdValleD.SelectionStart = 0;
+            this.txtKwdValleD.ShortcutsEnabled = true;
+            this.txtKwdValleD.Size = new System.Drawing.Size(122, 23);
+            this.txtKwdValleD.TabIndex = 183;
+            this.txtKwdValleD.UseSelectable = true;
+            this.txtKwdValleD.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKwdValleD.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
-            // metroTextBox23
-            // 
-            // 
+            // txtKvarhValleD
             // 
             // 
-            this.metroTextBox23.CustomButton.Image = null;
-            this.metroTextBox23.CustomButton.Location = new System.Drawing.Point(134, 1);
-            this.metroTextBox23.CustomButton.Name = "";
-            this.metroTextBox23.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.metroTextBox23.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.metroTextBox23.CustomButton.TabIndex = 1;
-            this.metroTextBox23.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroTextBox23.CustomButton.UseSelectable = true;
-            this.metroTextBox23.CustomButton.Visible = false;
-            this.metroTextBox23.FontSize = MetroFramework.MetroTextBoxSize.Medium;
-            this.metroTextBox23.Lines = new string[0];
-            this.metroTextBox23.Location = new System.Drawing.Point(8, 6);
-            this.metroTextBox23.MaxLength = 32767;
-            this.metroTextBox23.Name = "metroTextBox23";
-            this.metroTextBox23.PasswordChar = '\0';
-            this.metroTextBox23.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.metroTextBox23.SelectedText = "";
-            this.metroTextBox23.SelectionLength = 0;
-            this.metroTextBox23.SelectionStart = 0;
-            this.metroTextBox23.ShortcutsEnabled = true;
-            this.metroTextBox23.Size = new System.Drawing.Size(156, 23);
-            this.metroTextBox23.TabIndex = 158;
-            this.metroTextBox23.UseSelectable = true;
-            this.metroTextBox23.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.metroTextBox23.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // 
+            this.txtKvarhValleD.CustomButton.Image = null;
+            this.txtKvarhValleD.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKvarhValleD.CustomButton.Name = "";
+            this.txtKvarhValleD.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKvarhValleD.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKvarhValleD.CustomButton.TabIndex = 1;
+            this.txtKvarhValleD.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKvarhValleD.CustomButton.UseSelectable = true;
+            this.txtKvarhValleD.CustomButton.Visible = false;
+            this.txtKvarhValleD.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKvarhValleD.Lines = new string[0];
+            this.txtKvarhValleD.Location = new System.Drawing.Point(8, 34);
+            this.txtKvarhValleD.MaxLength = 32767;
+            this.txtKvarhValleD.Name = "txtKvarhValleD";
+            this.txtKvarhValleD.PasswordChar = '\0';
+            this.txtKvarhValleD.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKvarhValleD.SelectedText = "";
+            this.txtKvarhValleD.SelectionLength = 0;
+            this.txtKvarhValleD.SelectionStart = 0;
+            this.txtKvarhValleD.ShortcutsEnabled = true;
+            this.txtKvarhValleD.Size = new System.Drawing.Size(122, 23);
+            this.txtKvarhValleD.TabIndex = 180;
+            this.txtKvarhValleD.UseSelectable = true;
+            this.txtKvarhValleD.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKvarhValleD.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // txtKwhValleD
+            // 
+            // 
+            // 
+            // 
+            this.txtKwhValleD.CustomButton.Image = null;
+            this.txtKwhValleD.CustomButton.Location = new System.Drawing.Point(100, 1);
+            this.txtKwhValleD.CustomButton.Name = "";
+            this.txtKwhValleD.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtKwhValleD.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtKwhValleD.CustomButton.TabIndex = 1;
+            this.txtKwhValleD.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtKwhValleD.CustomButton.UseSelectable = true;
+            this.txtKwhValleD.CustomButton.Visible = false;
+            this.txtKwhValleD.FontSize = MetroFramework.MetroTextBoxSize.Medium;
+            this.txtKwhValleD.Lines = new string[0];
+            this.txtKwhValleD.Location = new System.Drawing.Point(8, 6);
+            this.txtKwhValleD.MaxLength = 32767;
+            this.txtKwhValleD.Name = "txtKwhValleD";
+            this.txtKwhValleD.PasswordChar = '\0';
+            this.txtKwhValleD.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtKwhValleD.SelectedText = "";
+            this.txtKwhValleD.SelectionLength = 0;
+            this.txtKwhValleD.SelectionStart = 0;
+            this.txtKwhValleD.ShortcutsEnabled = true;
+            this.txtKwhValleD.Size = new System.Drawing.Size(122, 23);
+            this.txtKwhValleD.TabIndex = 158;
+            this.txtKwhValleD.UseSelectable = true;
+            this.txtKwhValleD.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtKwhValleD.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(390, 159);
+            this.label4.Location = new System.Drawing.Point(388, 228);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(170, 22);
             this.label4.TabIndex = 187;
@@ -2226,7 +2131,7 @@
             this.txtCantidadDias.CustomButton.Visible = false;
             this.txtCantidadDias.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtCantidadDias.Lines = new string[0];
-            this.txtCantidadDias.Location = new System.Drawing.Point(391, 183);
+            this.txtCantidadDias.Location = new System.Drawing.Point(389, 252);
             this.txtCantidadDias.MaxLength = 32767;
             this.txtCantidadDias.Name = "txtCantidadDias";
             this.txtCantidadDias.PasswordChar = '\0';
@@ -2245,7 +2150,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(863, 158);
+            this.label16.Location = new System.Drawing.Point(864, 226);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(80, 22);
             this.label16.TabIndex = 185;
@@ -2255,7 +2160,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(775, 159);
+            this.label17.Location = new System.Drawing.Point(776, 227);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(54, 22);
             this.label17.TabIndex = 184;
@@ -2271,7 +2176,7 @@
             "15",
             "30",
             "45"});
-            this.CbMinutoFinalRegistro.Location = new System.Drawing.Point(867, 183);
+            this.CbMinutoFinalRegistro.Location = new System.Drawing.Point(868, 251);
             this.CbMinutoFinalRegistro.Name = "CbMinutoFinalRegistro";
             this.CbMinutoFinalRegistro.Size = new System.Drawing.Size(82, 29);
             this.CbMinutoFinalRegistro.TabIndex = 183;
@@ -2281,7 +2186,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(299, 160);
+            this.label15.Location = new System.Drawing.Point(296, 228);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(80, 22);
             this.label15.TabIndex = 182;
@@ -2291,7 +2196,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(211, 159);
+            this.label14.Location = new System.Drawing.Point(208, 227);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(54, 22);
             this.label14.TabIndex = 181;
@@ -2328,7 +2233,7 @@
             "22",
             "23",
             "24"});
-            this.CbHoraFinalRegistro.Location = new System.Drawing.Point(779, 183);
+            this.CbHoraFinalRegistro.Location = new System.Drawing.Point(780, 251);
             this.CbHoraFinalRegistro.Name = "CbHoraFinalRegistro";
             this.CbHoraFinalRegistro.Size = new System.Drawing.Size(82, 29);
             this.CbHoraFinalRegistro.TabIndex = 180;
@@ -2344,7 +2249,7 @@
             "15",
             "30",
             "45"});
-            this.CbMinutoInicialRegistro.Location = new System.Drawing.Point(303, 184);
+            this.CbMinutoInicialRegistro.Location = new System.Drawing.Point(300, 252);
             this.CbMinutoInicialRegistro.Name = "CbMinutoInicialRegistro";
             this.CbMinutoInicialRegistro.Size = new System.Drawing.Size(82, 29);
             this.CbMinutoInicialRegistro.TabIndex = 179;
@@ -2381,7 +2286,7 @@
             "22",
             "23",
             "24"});
-            this.CbHoraInicialRegistro.Location = new System.Drawing.Point(215, 184);
+            this.CbHoraInicialRegistro.Location = new System.Drawing.Point(212, 252);
             this.CbHoraInicialRegistro.Name = "CbHoraInicialRegistro";
             this.CbHoraInicialRegistro.Size = new System.Drawing.Size(82, 29);
             this.CbHoraInicialRegistro.TabIndex = 177;
@@ -2389,7 +2294,7 @@
             // 
             // dtFechaFinalRegistro
             // 
-            this.dtFechaFinalRegistro.Location = new System.Drawing.Point(566, 183);
+            this.dtFechaFinalRegistro.Location = new System.Drawing.Point(564, 252);
             this.dtFechaFinalRegistro.MaximumSize = new System.Drawing.Size(207, 22);
             this.dtFechaFinalRegistro.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtFechaFinalRegistro.Name = "dtFechaFinalRegistro";
@@ -2400,7 +2305,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(566, 160);
+            this.label10.Location = new System.Drawing.Point(564, 229);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(123, 22);
             this.label10.TabIndex = 174;
@@ -2408,8 +2313,7 @@
             // 
             // dtFechaInicalRegistro
             // 
-            this.dtFechaInicalRegistro.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtFechaInicalRegistro.Location = new System.Drawing.Point(4, 184);
+            this.dtFechaInicalRegistro.Location = new System.Drawing.Point(1, 252);
             this.dtFechaInicalRegistro.MaximumSize = new System.Drawing.Size(207, 29);
             this.dtFechaInicalRegistro.MinimumSize = new System.Drawing.Size(0, 29);
             this.dtFechaInicalRegistro.Name = "dtFechaInicalRegistro";
@@ -2419,7 +2323,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.panel1.Location = new System.Drawing.Point(411, 144);
+            this.panel1.Location = new System.Drawing.Point(399, 164);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 2);
             this.panel1.TabIndex = 172;
@@ -2428,7 +2332,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(416, 120);
+            this.label9.Location = new System.Drawing.Point(404, 140);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(211, 22);
             this.label9.TabIndex = 171;
@@ -2438,7 +2342,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(3, 159);
+            this.label8.Location = new System.Drawing.Point(0, 227);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(129, 22);
             this.label8.TabIndex = 170;
@@ -2517,6 +2421,7 @@
             this.txtNumeroMedidor.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtNumeroMedidor.CustomButton.UseSelectable = true;
             this.txtNumeroMedidor.CustomButton.Visible = false;
+            this.txtNumeroMedidor.Enabled = false;
             this.txtNumeroMedidor.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txtNumeroMedidor.Lines = new string[0];
             this.txtNumeroMedidor.Location = new System.Drawing.Point(423, 94);
@@ -2591,7 +2496,6 @@
             this.pnlBtn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlBtn.Controls.Add(this.btnAnalisisGrafico);
             this.pnlBtn.Controls.Add(this.pnlAlerta);
-            this.pnlBtn.Controls.Add(this.btnAnlizarRangoFecha);
             this.pnlBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBtn.Location = new System.Drawing.Point(0, 0);
             this.pnlBtn.Name = "pnlBtn";
@@ -2606,7 +2510,7 @@
             this.btnAnalisisGrafico.ForeColor = System.Drawing.Color.Black;
             this.btnAnalisisGrafico.Image = ((System.Drawing.Image)(resources.GetObject("btnAnalisisGrafico.Image")));
             this.btnAnalisisGrafico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAnalisisGrafico.Location = new System.Drawing.Point(234, 8);
+            this.btnAnalisisGrafico.Location = new System.Drawing.Point(7, 8);
             this.btnAnalisisGrafico.Margin = new System.Windows.Forms.Padding(10);
             this.btnAnalisisGrafico.Name = "btnAnalisisGrafico";
             this.btnAnalisisGrafico.Size = new System.Drawing.Size(217, 41);
@@ -2689,23 +2593,6 @@
             this.lblverde.Size = new System.Drawing.Size(0, 13);
             this.lblverde.TabIndex = 0;
             // 
-            // btnAnlizarRangoFecha
-            // 
-            this.btnAnlizarRangoFecha.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.btnAnlizarRangoFecha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnlizarRangoFecha.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnlizarRangoFecha.ForeColor = System.Drawing.Color.Black;
-            this.btnAnlizarRangoFecha.Image = ((System.Drawing.Image)(resources.GetObject("btnAnlizarRangoFecha.Image")));
-            this.btnAnlizarRangoFecha.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAnlizarRangoFecha.Location = new System.Drawing.Point(9, 8);
-            this.btnAnlizarRangoFecha.Margin = new System.Windows.Forms.Padding(10);
-            this.btnAnlizarRangoFecha.Name = "btnAnlizarRangoFecha";
-            this.btnAnlizarRangoFecha.Size = new System.Drawing.Size(217, 41);
-            this.btnAnlizarRangoFecha.TabIndex = 18;
-            this.btnAnlizarRangoFecha.Text = "Analizar Rango";
-            this.btnAnlizarRangoFecha.UseVisualStyleBackColor = true;
-            this.btnAnlizarRangoFecha.Click += new System.EventHandler(this.btnAnlizarRangoFecha_Click);
-            // 
             // Analisis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2739,7 +2626,6 @@
             this.tabDelivery.ResumeLayout(false);
             this.tabDelivery.PerformLayout();
             this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
             this.panel21.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
@@ -2812,7 +2698,6 @@
         private MetroFramework.Controls.MetroTextBox txtKwhValle;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel3;
         private MetroFramework.Controls.MetroTextBox txtFactorPotenciaLlano;
         private System.Windows.Forms.Label label20;
@@ -2824,57 +2709,48 @@
         private MetroFramework.Controls.MetroTextBox txtKwhLlano;
         private System.Windows.Forms.TabPage tabDelivery;
         private System.Windows.Forms.Panel panel14;
-        private MetroFramework.Controls.MetroTextBox metroTextBox28;
-        private MetroFramework.Controls.MetroTextBox metroTextBox29;
-        private MetroFramework.Controls.MetroTextBox metroTextBox30;
-        private MetroFramework.Controls.MetroTextBox metroTextBox31;
+        private MetroFramework.Controls.MetroTextBox txtPfPuntaD;
+        private MetroFramework.Controls.MetroTextBox txtKwdPuntaD;
+        private MetroFramework.Controls.MetroTextBox txtKvarhPuntaD;
+        private MetroFramework.Controls.MetroTextBox txtKwhPuntaD;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel12;
-        private MetroFramework.Controls.MetroTextBox metroTextBox24;
+        private MetroFramework.Controls.MetroTextBox txtPfLlanoD;
         private System.Windows.Forms.Label label6;
-        private MetroFramework.Controls.MetroTextBox metroTextBox25;
+        private MetroFramework.Controls.MetroTextBox txtKwdLlanoD;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label23;
-        private MetroFramework.Controls.MetroTextBox metroTextBox26;
+        private MetroFramework.Controls.MetroTextBox txtKvarhLlanoD;
         private System.Windows.Forms.Label label24;
-        private MetroFramework.Controls.MetroTextBox metroTextBox27;
+        private MetroFramework.Controls.MetroTextBox txtKwhLlanoD;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Panel panel11;
-        private MetroFramework.Controls.MetroTextBox metroTextBox4;
-        private MetroFramework.Controls.MetroTextBox metroTextBox5;
-        private MetroFramework.Controls.MetroTextBox metroTextBox22;
-        private MetroFramework.Controls.MetroTextBox metroTextBox23;
+        private MetroFramework.Controls.MetroTextBox txtPfValleD;
+        private MetroFramework.Controls.MetroTextBox txtKwdValleD;
+        private MetroFramework.Controls.MetroTextBox txtKvarhValleD;
+        private MetroFramework.Controls.MetroTextBox txtKwhValleD;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Panel panel20;
-        private MetroFramework.Controls.MetroTextBox metroTextBox32;
-        private MetroFramework.Controls.MetroTextBox metroTextBox33;
-        private MetroFramework.Controls.MetroTextBox metroTextBox34;
-        private MetroFramework.Controls.MetroTextBox metroTextBox35;
+        private MetroFramework.Controls.MetroTextBox txtPfValleR;
+        private MetroFramework.Controls.MetroTextBox txtKwdValleR;
+        private MetroFramework.Controls.MetroTextBox txtKvarhValleR;
+        private MetroFramework.Controls.MetroTextBox txtKwhValleR;
         private System.Windows.Forms.Panel panel21;
-        private MetroFramework.Controls.MetroTextBox metroTextBox36;
-        private MetroFramework.Controls.MetroTextBox metroTextBox37;
-        private MetroFramework.Controls.MetroTextBox metroTextBox38;
-        private MetroFramework.Controls.MetroTextBox metroTextBox39;
+        private MetroFramework.Controls.MetroTextBox txtPfPuntaR;
+        private MetroFramework.Controls.MetroTextBox txtKwdPuntaR;
+        private MetroFramework.Controls.MetroTextBox txtKvarhPuntaR;
+        private MetroFramework.Controls.MetroTextBox txtKwhPuntaR;
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Panel panel24;
-        private MetroFramework.Controls.MetroTextBox metroTextBox48;
-        private System.Windows.Forms.Label label32;
-        private MetroFramework.Controls.MetroTextBox metroTextBox49;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label34;
-        private MetroFramework.Controls.MetroTextBox metroTextBox50;
-        private System.Windows.Forms.Label label35;
-        private MetroFramework.Controls.MetroTextBox metroTextBox51;
+        private MetroFramework.Controls.MetroTextBox txtPfLlanoR;
+        private MetroFramework.Controls.MetroTextBox txtKwdLlanoR;
+        private MetroFramework.Controls.MetroTextBox txtKvarhLlanoR;
+        private MetroFramework.Controls.MetroTextBox txtKwhLlanoR;
         public MetroFramework.Controls.MetroTextBox txtNumeroMedidor;
         public MetroFramework.Controls.MetroTextBox txtNombreMedidor;
         public MetroFramework.Controls.MetroTextBox txtNissCliente;
@@ -2882,12 +2758,8 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Panel panel23;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Panel panel22;
         private MetroFramework.Controls.MetroTextBox txtFechaMaxL3;
         private MetroFramework.Controls.MetroTextBox txtFechaMaxL2;
         private MetroFramework.Controls.MetroTextBox txtFechaMaxL1;
@@ -2896,5 +2768,8 @@
         private MetroFramework.Controls.MetroTextBox txtMaxL1;
         public MetroFramework.Controls.MetroTextBox txtIdMedidor;
         private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label12;
     }
 }
