@@ -100,27 +100,27 @@ namespace SegundaVista.Vistas
         {
 
         }
-        public DateTime L1MAxdate , L2Maxdate , L3Maxdate;
+        public DateTime L1MAxdate, L2Maxdate, L3Maxdate;
         private void btnAnlizarRangoFecha_Click(object sender, EventArgs e)
         {
             //Llano
             txtKwhLlano.Text = "";
-            txtKvahrLlano.Text =  "";
-            txtKwdLlano.Text =  "";
+            txtKvahrLlano.Text = "";
+            txtKwdLlano.Text = "";
             txtFactorPotenciaLlano.Text = "";
             //punta
-            txtKwhPunta.Text =  "";
+            txtKwhPunta.Text = "";
             txtKvahrPunta.Text = "";
-            txtKwdPunta.Text =  "";
-            txtFactorPotenciaPunta.Text =  "";
+            txtKwdPunta.Text = "";
+            txtFactorPotenciaPunta.Text = "";
             //valle
-            txtKwhValle.Text =  "";
-            txtKvahrValle.Text =  "";
+            txtKwhValle.Text = "";
+            txtKvahrValle.Text = "";
             txtKwdValle.Text = "";
-            txtFactorPotenciaValle.Text =  "";
+            txtFactorPotenciaValle.Text = "";
             //Voltaje
-            txtMaxL1.Text =  "";
-            txtFechaMaxL1.Text =  "";
+            txtMaxL1.Text = "";
+            txtFechaMaxL1.Text = "";
 
             //Valores de Fecha para la consulta
             //Fecha Inicial
@@ -142,6 +142,9 @@ namespace SegundaVista.Vistas
             dbDatosPilot dpilot = new dbDatosPilot();
             dbDatosPilot dpilotValle = new dbDatosPilot();
             dbDatosPilot dpilotPunta = new dbDatosPilot();
+            //deliveri
+            dbDatosPilot dpilotDelivey = new dbDatosPilot();
+
             Conector_DataBase conector = new Conector_DataBase();
 
             var DocumentoRegistro = MongoConexion.DataBase.GetCollection<PilotDB>("Datos");
@@ -166,8 +169,8 @@ namespace SegundaVista.Vistas
                                 select otraVariableInventada
                                 ).ToList();//.FirstOrDefault();
 
-            decimal L1Max = 0 ,L2Max = 0 , L3Max = 0;
-            
+            decimal L1Max = 0, L2Max = 0, L3Max = 0;
+
             if (resutado == null || resutado.Count() < 1)
             {
                 //HACER ALGO POR QUE NO HAY DATA
@@ -183,14 +186,18 @@ namespace SegundaVista.Vistas
                     dpilot.TotalkWh_del_Rec = dpilot.TotalkWh_del_Rec + Datos.TotalkWh_del_Rec;
                     dpilot.TotalkVARh = dpilot.TotalkVARh + Datos.TotalkVARh;
                     dpilot.TotalkW = dpilot.TotalkW + Datos.TotalkW;
-                    dpilot.Pftot = dpilot.Pftot + Datos.Pftot;
+                    //Llano Delivery
+                    dpilotDelivey.KwhDel = dpilotDelivey.KwhDel + Datos.KwhDel;
+                    dpilotDelivey.kVARhDel = dpilotDelivey.kVARhDel + Datos.kVARhDel;
+                    dpilotDelivey.Del_kW = dpilotDelivey.Del_kW + Datos.Del_kW;
+
                     if (Datos.Time.Hour > 18 && Datos.Time.Hour < 20)
                     {
                         //punta
                         dpilotPunta.TotalkWh_del_Rec = dpilotPunta.TotalkWh_del_Rec + Datos.TotalkWh_del_Rec;
                         dpilotPunta.TotalkVARh = dpilotPunta.TotalkVARh + Datos.TotalkVARh;
                         dpilotPunta.TotalkW = dpilotPunta.TotalkW + Datos.TotalkW;
-                        dpilotPunta.Pftot = dpilotPunta.Pftot + Datos.Pftot;
+
                     }
                     else
                     {
@@ -198,7 +205,7 @@ namespace SegundaVista.Vistas
                         dpilotValle.TotalkWh_del_Rec = dpilotValle.TotalkWh_del_Rec + Datos.TotalkWh_del_Rec;
                         dpilotValle.TotalkVARh = dpilotValle.TotalkVARh + Datos.TotalkVARh;
                         dpilotValle.TotalkW = dpilotValle.TotalkW + Datos.TotalkW;
-                        dpilotValle.Pftot = dpilotValle.Pftot + Datos.Pftot;
+
 
                     }
                     //Enviado
@@ -223,16 +230,25 @@ namespace SegundaVista.Vistas
 
                 }
                 //Llano
+                dpilot.Pftot = (dpilot.TotalkVARh == 0) ? 0 : Convert.ToDecimal(Math.Cos(Math.Atan(Convert.ToSingle(dpilot.TotalkVARh / dpilot.TotalkWh_del_Rec))));
                 txtKwhLlano.Text = dpilot.TotalkWh_del_Rec + "";
                 txtKvahrLlano.Text = dpilot.TotalkVARh + "";
                 txtKwdLlano.Text = dpilot.TotalkW + "";
                 txtFactorPotenciaLlano.Text = dpilot.Pftot + "";
+                //Lano delivery
+                dpilotDelivey.Pftot = (dpilotDelivey.KwhDel == 0) ? 0 : Convert.ToDecimal(Math.Cos(Math.Atan(Convert.ToSingle(dpilotDelivey.kVARhDel / dpilotDelivey.KwhDel))));
+                txtKwhLlanoD.Text = dpilotDelivey.KwhDel + "";
+                txtKvarhLlanoD.Text = dpilotDelivey.kVARhDel + "";
+                txtKwdLlanoD.Text = dpilotDelivey.Del_kW + "";
+                txtPfLlanoD.Text = dpilotDelivey.Pftot + "";
                 //punta
+                dpilotPunta.Pftot = (dpilotPunta.TotalkVARh == 0) ? 0 : Convert.ToDecimal(Math.Cos(Math.Atan(Convert.ToSingle(dpilotPunta.TotalkVARh / dpilotPunta.TotalkWh_del_Rec))));
                 txtKwhPunta.Text = dpilotPunta.TotalkWh_del_Rec + "";
                 txtKvahrPunta.Text = dpilotPunta.TotalkVARh + "";
                 txtKwdPunta.Text = dpilotPunta.TotalkW + "";
                 txtFactorPotenciaPunta.Text = dpilotPunta.Pftot + "";
                 //valle
+                dpilotValle.Pftot = (dpilotValle.TotalkVARh == 0) ? 0 : Convert.ToDecimal(Math.Cos(Math.Atan(Convert.ToSingle(dpilotValle.TotalkVARh / dpilotValle.TotalkWh_del_Rec))));
                 txtKwhValle.Text = dpilotValle.TotalkWh_del_Rec + "";
                 txtKvahrValle.Text = dpilotValle.TotalkVARh + "";
                 txtKwdValle.Text = dpilotValle.TotalkW + "";
