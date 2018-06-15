@@ -942,7 +942,7 @@
             this.panel3.Controls.Add(this.txtKwhLlano);
             this.panel3.Location = new System.Drawing.Point(6, 44);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(213, 120);
+            this.panel3.Size = new System.Drawing.Size(213, 123);
             this.panel3.TabIndex = 0;
             // 
             // txtFactorPotenciaLlano

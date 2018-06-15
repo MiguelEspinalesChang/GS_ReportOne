@@ -138,12 +138,7 @@ namespace SegundaVista.Vistas
                 CantidadDias++;
             }
             txtCantidadDias.Text = "" + CantidadDias;
-            // PilotDB pilot = new PilotDB();
-            dbDatosPilot dpilot = new dbDatosPilot();
-            dbDatosPilot dpilotValle = new dbDatosPilot();
-            dbDatosPilot dpilotPunta = new dbDatosPilot();
-            //deliveri
-            dbDatosPilot dpilotDelivey = new dbDatosPilot();
+           
 
             Conector_DataBase conector = new Conector_DataBase();
 
@@ -170,6 +165,16 @@ namespace SegundaVista.Vistas
                                 ).ToList();//.FirstOrDefault();
 
             decimal L1Max = 0, L2Max = 0, L3Max = 0;
+            // PilotDB pilot = new PilotDB();
+            dbDatosPilot dpilot = new dbDatosPilot();
+            dbDatosPilot dpilotValle = new dbDatosPilot();
+            dbDatosPilot dpilotPunta = new dbDatosPilot();
+            //deliveri
+            dbDatosPilot dpilotDelivey = new dbDatosPilot();
+            dbDatosPilot dpilotValleDelivey = new dbDatosPilot();
+            dbDatosPilot dpilotPuntaDelivey = new dbDatosPilot();
+            //recibido
+            dbDatosPilot dpilotRecibido = new dbDatosPilot();
 
             if (resutado == null || resutado.Count() < 1)
             {
@@ -190,22 +195,37 @@ namespace SegundaVista.Vistas
                     dpilotDelivey.KwhDel = dpilotDelivey.KwhDel + Datos.KwhDel;
                     dpilotDelivey.kVARhDel = dpilotDelivey.kVARhDel + Datos.kVARhDel;
                     dpilotDelivey.Del_kW = dpilotDelivey.Del_kW + Datos.Del_kW;
+                    //Llano Resivido
+                    dpilotRecibido.KwhRec = dpilotRecibido.KwhRec + Datos.KwhRec;
+                    dpilotRecibido.kVARhRec = dpilotRecibido.kVARhRec + Datos.kVARhRec;
+                    dpilotRecibido.Rec_kW = dpilotRecibido.Rec_kW + Datos.Rec_kW;
 
                     if (Datos.Time.Hour > 18 && Datos.Time.Hour < 20)
                     {
                         //punta
+                        //neto
                         dpilotPunta.TotalkWh_del_Rec = dpilotPunta.TotalkWh_del_Rec + Datos.TotalkWh_del_Rec;
                         dpilotPunta.TotalkVARh = dpilotPunta.TotalkVARh + Datos.TotalkVARh;
                         dpilotPunta.TotalkW = dpilotPunta.TotalkW + Datos.TotalkW;
+                        //delivey
+                        dpilotPuntaDelivey.KwhDel = dpilotPuntaDelivey.KwhDel + Datos.KwhDel;
+                        dpilotPuntaDelivey.kVARhDel = dpilotPuntaDelivey.kVARhDel + Datos.kVARhDel;
+                        dpilotPuntaDelivey.Del_kW = dpilotPuntaDelivey.Del_kW + Datos.Del_kW;
+
+                        //Resibido
 
                     }
                     else
                     {
                         //Valle
+                        //Neto
                         dpilotValle.TotalkWh_del_Rec = dpilotValle.TotalkWh_del_Rec + Datos.TotalkWh_del_Rec;
                         dpilotValle.TotalkVARh = dpilotValle.TotalkVARh + Datos.TotalkVARh;
                         dpilotValle.TotalkW = dpilotValle.TotalkW + Datos.TotalkW;
-
+                        //delivey
+                        dpilotValleDelivey.KwhDel = dpilotValleDelivey.KwhDel + Datos.KwhDel;
+                        dpilotValleDelivey.kVARhDel = dpilotValleDelivey.kVARhDel + Datos.kVARhDel;
+                        dpilotValleDelivey.Del_kW = dpilotValleDelivey.Del_kW + Datos.Del_kW;
 
                     }
                     //Enviado
@@ -223,43 +243,67 @@ namespace SegundaVista.Vistas
                     }
                     if (L3Max < Datos.Vc)
                     {
-
                         L3Max = Datos.Vc;
                         L3Maxdate = Datos.Time;
                     }
-
                 }
-                //Llano
-                dpilot.Pftot = (dpilot.TotalkVARh == 0) ? 0 : Convert.ToDecimal(Math.Cos(Math.Atan(Convert.ToSingle(dpilot.TotalkVARh / dpilot.TotalkWh_del_Rec))));
-                txtKwhLlano.Text = dpilot.TotalkWh_del_Rec + "";
-                txtKvahrLlano.Text = dpilot.TotalkVARh + "";
-                txtKwdLlano.Text = dpilot.TotalkW + "";
-                txtFactorPotenciaLlano.Text = dpilot.Pftot + "";
+                //Llano////////////////////////
+
+                dpilot.Pftot = (dpilot.TotalkWh_del_Rec == 0) ? 0 : Convert.ToDecimal(Math.Cos(Math.Atan(Convert.ToSingle(dpilot.TotalkVARh / dpilot.TotalkWh_del_Rec))));
+                txtKwhLlano.Text = dpilot.TotalkWh_del_Rec.ToString();
+                txtKvahrLlano.Text = dpilot.TotalkVARh.ToString();
+                txtKwdLlano.Text = dpilot.TotalkW.ToString();
+                txtFactorPotenciaLlano.Text = dpilot.Pftot.ToString();
                 //Lano delivery
                 dpilotDelivey.Pftot = (dpilotDelivey.KwhDel == 0) ? 0 : Convert.ToDecimal(Math.Cos(Math.Atan(Convert.ToSingle(dpilotDelivey.kVARhDel / dpilotDelivey.KwhDel))));
-                txtKwhLlanoD.Text = dpilotDelivey.KwhDel + "";
-                txtKvarhLlanoD.Text = dpilotDelivey.kVARhDel + "";
-                txtKwdLlanoD.Text = dpilotDelivey.Del_kW + "";
-                txtPfLlanoD.Text = dpilotDelivey.Pftot + "";
-                //punta
-                dpilotPunta.Pftot = (dpilotPunta.TotalkVARh == 0) ? 0 : Convert.ToDecimal(Math.Cos(Math.Atan(Convert.ToSingle(dpilotPunta.TotalkVARh / dpilotPunta.TotalkWh_del_Rec))));
-                txtKwhPunta.Text = dpilotPunta.TotalkWh_del_Rec + "";
-                txtKvahrPunta.Text = dpilotPunta.TotalkVARh + "";
-                txtKwdPunta.Text = dpilotPunta.TotalkW + "";
-                txtFactorPotenciaPunta.Text = dpilotPunta.Pftot + "";
-                //valle
-                dpilotValle.Pftot = (dpilotValle.TotalkVARh == 0) ? 0 : Convert.ToDecimal(Math.Cos(Math.Atan(Convert.ToSingle(dpilotValle.TotalkVARh / dpilotValle.TotalkWh_del_Rec))));
-                txtKwhValle.Text = dpilotValle.TotalkWh_del_Rec + "";
-                txtKvahrValle.Text = dpilotValle.TotalkVARh + "";
-                txtKwdValle.Text = dpilotValle.TotalkW + "";
-                txtFactorPotenciaValle.Text = dpilotValle.Pftot + "";
+                txtKwhLlanoD.Text = dpilotDelivey.KwhDel.ToString();
+                txtKvarhLlanoD.Text = dpilotDelivey.kVARhDel.ToString();
+                txtKwdLlanoD.Text = dpilotDelivey.Del_kW.ToString();
+                txtPfLlanoD.Text = dpilotDelivey.Pftot.ToString();
+                //Llano Recibido
+                dpilotRecibido.Pftot = (dpilotRecibido.KwhRec == 0) ? 0 : Convert.ToDecimal(Math.Cos(Math.Atan(Convert.ToSingle(dpilotRecibido.kVARhRec / dpilotRecibido.KwhRec))));
+                txtKwhLlanoR.Text = dpilotRecibido.KwhRec.ToString();
+                txtKvarhLlanoR.Text = dpilotRecibido.kVARhRec.ToString();
+                txtKwdLlanoR.Text = dpilotRecibido.Rec_kW.ToString();
+                txtPfLlanoR.Text = dpilotRecibido.Pftot.ToString();
+
+                //punta/////////////////
+               
+
+                dpilotPunta.Pftot = (dpilotPunta.TotalkWh_del_Rec == 0) ? 0 : Convert.ToDecimal(Math.Cos(Math.Atan(Convert.ToSingle(dpilotPunta.TotalkVARh / dpilotPunta.TotalkWh_del_Rec))));
+                txtKwhPunta.Text = dpilotPunta.TotalkWh_del_Rec.ToString();
+                txtKvahrPunta.Text = dpilotPunta.TotalkVARh.ToString();
+                txtKwdPunta.Text = dpilotPunta.TotalkW.ToString();
+                txtFactorPotenciaPunta.Text = dpilotPunta.Pftot.ToString();
+                //Delivery
+                dpilotPuntaDelivey.Pftot = (dpilotPuntaDelivey.KwhDel == 0) ? 0 : Convert.ToDecimal(Math.Cos(Math.Atan(Convert.ToSingle(dpilotPuntaDelivey.kVARhDel / dpilotPuntaDelivey.KwhDel))));
+                txtKwhPuntaD.Text = dpilotPuntaDelivey.KwhDel.ToString();
+                txtKvarhPuntaD.Text = dpilotPuntaDelivey.kVARhDel.ToString();
+                txtKwdPuntaD.Text = dpilotPuntaDelivey.Del_kW.ToString();
+                txtPfPuntaD.Text = dpilotPuntaDelivey.Pftot.ToString();
+
+                //valle////////////
+
+                //netos///////
+                dpilotValle.Pftot = (dpilotValle.TotalkWh_del_Rec == 0) ? 0 : Convert.ToDecimal(Math.Cos(Math.Atan(Convert.ToSingle(dpilotValle.TotalkVARh / dpilotValle.TotalkWh_del_Rec))));
+                txtKwhValle.Text = dpilotValle.TotalkWh_del_Rec.ToString();
+                txtKvahrValle.Text = dpilotValle.TotalkVARh.ToString();
+                txtKwdValle.Text = dpilotValle.TotalkW.ToString();
+                txtFactorPotenciaValle.Text = dpilotValle.Pftot.ToString();
+                //Delivery
+                dpilotValleDelivey.Pftot = (dpilotValleDelivey.KwhDel==0) ? 0 : Convert.ToDecimal(Math.Cos(Math.Atan(Convert.ToSingle(dpilotValleDelivey.kVARhDel / dpilotValleDelivey.KwhDel))));
+                txtKwhValleD.Text = dpilotValleDelivey.KwhDel.ToString();
+                txtKvarhValleD.Text = dpilotValleDelivey.kVARhDel.ToString();
+                txtKwdValleD.Text = dpilotValleDelivey.Del_kW.ToString();
+                txtPfValleD.Text = dpilotValleDelivey.Pftot.ToString();
+
                 //Voltaje
-                txtMaxL1.Text = L1Max + "";
-                txtFechaMaxL1.Text = L1MAxdate + "";
-                txtMaxL2.Text = L2Max + "";
-                txtFechaMaxL2.Text = L2Maxdate + "";
-                txtMaxL3.Text = L3Max + "";
-                txtFechaMaxL3.Text = L3Maxdate + "";
+                txtMaxL1.Text = L1Max.ToString();
+                txtFechaMaxL1.Text = L1MAxdate.ToString();
+                txtMaxL2.Text = L2Max.ToString();
+                txtFechaMaxL2.Text = L2Maxdate.ToString();
+                txtMaxL3.Text = L3Max.ToString();
+                txtFechaMaxL3.Text = L3Maxdate.ToString();
             }
         }
 

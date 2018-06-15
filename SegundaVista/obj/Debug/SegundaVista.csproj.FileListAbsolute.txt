@@ -231,3 +231,6 @@ C:\Users\Chang-PC\Desktop\GS_ReportOne\SegundaVista\bin\Debug\MetroFramework.Fon
 C:\Users\Chang-PC\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.DatosOrige.resources
 C:\Users\Chang-PC\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.EditarMedidor.resources
 C:\Users\Chang-PC\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vistas.Herramientas.resources
+C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\ControlzEx.dll
+C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\ControlzEx.pdb
