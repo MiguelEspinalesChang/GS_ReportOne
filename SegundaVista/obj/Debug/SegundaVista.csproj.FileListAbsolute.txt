@@ -200,7 +200,6 @@ C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\Apache.NMS.xml
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\Apache.NMS.ActiveMQ.pdb
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\Apache.NMS.ActiveMQ.xml
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\DnsClient.xml
-C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\Jayrock.Json.pdb
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\MongoDB.Bson.xml
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\MongoDB.Driver.xml
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\MongoDB.Driver.Core.xml
@@ -234,3 +233,4 @@ C:\Users\Chang-PC\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.Vista
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\ControlzEx.dll
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\System.Windows.Interactivity.dll
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\ControlzEx.pdb
+C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\System.Buffers.xml

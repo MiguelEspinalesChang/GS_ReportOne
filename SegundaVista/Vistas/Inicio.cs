@@ -311,6 +311,7 @@ namespace SegundaVista.Vistas
                     pnlAlertaVerde.Visible = false;
                     pnlAlertaRojo.Visible = false;
                     Conector_DataBase conector = new Conector_DataBase();
+                    List<DatosPilot> Regitros = new List<DatosPilot>();
                     //OpenFileDialog openFileDialog1 = new OpenFileDialog();
                     //openFileDialog1.RestoreDirectory = true;
                     //openFileDialog1.CheckFileExists = true;
@@ -326,8 +327,8 @@ namespace SegundaVista.Vistas
                     {
                         if (File.Exists(url))
                         {
-                            string line;
-                            string linea;
+                            string line = "";
+                            string linea  = "";
                             int counter = 0;
                             // Read the file and display it line by line.  
                             System.IO.StreamReader file = new System.IO.StreamReader(@"" + url);
@@ -353,8 +354,9 @@ namespace SegundaVista.Vistas
                                 string[] columnasCsv = new string[cantidadColumnas];
                                 int[] columnasUsar = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15, 17, 18, 19, 20, 21 };
                                 columnasCsv = line.Split(',');
-                                dbDatosPilot Dato = new dbDatosPilot();
-                                if (counter > 1 && counter <= cantidadLineas+1)
+                                DatosPilot Dato = new DatosPilot();
+                             
+                                if (counter > 1 && counter <= cantidadLineas)
                                 {
                                     // this.gridDatos.Rows.Add(1);
                                     Random rnd = new Random();
@@ -425,15 +427,17 @@ namespace SegundaVista.Vistas
                                                 double b = Convert.ToDouble(Dato.KwhRec);
                                                 Dato.Rec_kVAh = Convert.ToDecimal(b * 0.8);
                                                 double c = Convert.ToDouble(Dato.KwhDel);
-                                                Dato.Rec_kVAh = Convert.ToDecimal(c * 0.8);
+                                                Dato.Del_kVAh = Convert.ToDecimal(c * 0.8);
                                                 break;
                                         }
                                     }
-                                    filaData.Regitros.Add(Dato);
+                                    Regitros.Add(Dato);
                                 }
                             }
                             //Pasar Los Datos Leidos Ala Base de datos
-                            conector.insertarDatosPilot(filaData);
+                            //conector.insertarDatosPilot(filaData); 
+
+                            conector.insertarDatosPilot(Regitros,filaData);
                             pnlAlertaVerde.Visible = true;
                             lblverde.Text = "Registros Agregados";
                         }
