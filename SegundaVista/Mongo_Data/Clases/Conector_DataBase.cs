@@ -166,6 +166,7 @@ namespace SegundaVista.Mongo_Data.Clases
                 {
                 {"id_pilot", id},
                 {"Nombre",filaData.Nombre},
+                {"NumeroMedidor",filaData.NumeroMedidor},
                 {"date_Loader",DateTime.Now},
                 {"Time",valor.Time},
                 {"Va", valor.Va},

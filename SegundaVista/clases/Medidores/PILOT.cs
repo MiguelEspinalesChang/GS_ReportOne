@@ -87,6 +87,7 @@ namespace SegundaVista.clases.Medidores
         public ObjectId _id { get; set; }            //
         public string id_pilot { get; set; }
         public string Nombre { get; set; }
+        public string NumeroMedidor { get; set; }
         public DateTime date_Loader { get; set; }
         public DateTime Time { get; set; }           //fecha 
         //  public string Modelo { get; set; }
