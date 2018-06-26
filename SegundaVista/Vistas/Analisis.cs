@@ -148,8 +148,13 @@ namespace SegundaVista.Vistas
             ////Linq
             var resutado = (from d in DocumentoRegistro.FindAll()
                            where (d.NumeroMedidor == txtNumeroMedidor.Text) && 
-                           (d.Time >= FechaInicialRegistro && d.Time <= FechaFinalRegistro) orderby d.Time descending
+                           (d.Time >= FechaInicialRegistro && d.Time <= FechaFinalRegistro) orderby d.Time ascending
                             select d).ToList();
+
+          //var PRUEBA = (from d in DocumentoRegistro.FindAll()
+          //                  where (d.NumeroMedidor == txtNumeroMedidor.Text)
+          //                orderby d.Time ascending
+          //                select d).ToList();
 
 
             decimal L1Max = 0, L2Max = 0, L3Max = 0;

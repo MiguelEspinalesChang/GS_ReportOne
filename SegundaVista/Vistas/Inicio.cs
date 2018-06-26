@@ -234,7 +234,7 @@ namespace SegundaVista.Vistas
             pnlAlertaVerde.Visible = false;
             if (ComboMedidores.Text != "")
             {
-               
+
                 Analisis vistaAnalisis = new Analisis();
                 vistaAnalisis.txtNombreMedidor.Text = txtNombreMedidor.Text;
                 vistaAnalisis.txtNumeroMedidor.Text = txtNumeroMedidor.Text;
@@ -242,14 +242,14 @@ namespace SegundaVista.Vistas
                 vistaAnalisis.txtIdMedidor.Text = txtIdMedidor.Text;
 
                 vistaAnalisis.ShowDialog();
-                
+
             }
             else
             {
                 pnlAlertaRojo.Visible = true;
                 lblR.Text = "Seleccione Un Medidor";
             }
-           
+
         }
 
         private void metroTextBox1_Click(object sender, EventArgs e)
@@ -321,14 +321,14 @@ namespace SegundaVista.Vistas
                     //openFileDialog1.Filter = "archivos csv (*.csv)|*.csv";
 
                     string ScvMedidor = txtNumeroMedidor.Text + ".csv";
-                    string url = "C:\\Data Origen Report One\\DBPILOT\\"+ ScvMedidor;
+                    string url = "C:\\Data Origen Report One\\DBPILOT\\" + ScvMedidor;
 
                     if (File.Exists(url).ToString() != "")
                     {
                         if (File.Exists(url))
                         {
                             string line = "";
-                            string linea  = "";
+                            string linea = "";
                             int counter = 0;
                             // Read the file and display it line by line.  
                             System.IO.StreamReader file = new System.IO.StreamReader(@"" + url);
@@ -355,8 +355,8 @@ namespace SegundaVista.Vistas
                                 int[] columnasUsar = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15, 17, 18, 19, 20, 21 };
                                 columnasCsv = line.Split(',');
                                 DatosPilot Dato = new DatosPilot();
-                             
-                                if (counter > 1 && counter <= cantidadLineas)
+
+                                if (counter > 1 && counter < cantidadLineas + 1)
                                 {
                                     // this.gridDatos.Rows.Add(1);
                                     Random rnd = new Random();
@@ -409,6 +409,12 @@ namespace SegundaVista.Vistas
                                                 break;
                                             case 20:
                                                 Dato.KwhDel = Convert.ToDecimal(texto);
+                                                decimal Blo_KwhDel_a = Dato.KwhDel;
+                                                //Datos generados en bloque
+                                                if (counter >= 2)
+                                                {
+                                                    Dato.Blo_KwhDel = Blo_KwhDel_a - Convert.ToDecimal(texto);
+                                                }
                                                 break;
                                             case 21:
                                                 Dato.kVARhDel = Convert.ToDecimal(texto);
@@ -417,7 +423,8 @@ namespace SegundaVista.Vistas
                                                 Dato.kVARhRec = Convert.ToDecimal(texto);
                                                 break;
                                             case 23:
-                                                Dato.TotalkWh_del_Rec = (Dato.KwhRec - Dato.KwhDel);
+                                                Dato.TotalkWh_del_Rec = (Dato.KwhDel - Dato.KwhRec);
+                                                                                          
                                                 Dato.TotalkVARh = (Dato.kVARhDel - Dato.kVARhRec);
                                                 ////datos Calculado a partir de lo registros
                                                 Dato.Rec_kW = (Dato.KwhRec * 4);
@@ -437,7 +444,7 @@ namespace SegundaVista.Vistas
                             //Pasar Los Datos Leidos Ala Base de datos
                             //conector.insertarDatosPilot(filaData); 
 
-                            conector.insertarDatosPilot(Regitros,filaData);
+                            conector.insertarDatosPilot(Regitros, filaData);
                             pnlAlertaVerde.Visible = true;
                             lblverde.Text = "Registros Agregados";
                         }
@@ -455,15 +462,15 @@ namespace SegundaVista.Vistas
                 }
                 else
                 {
-                 pnlAlertaRojo.Visible = true;
-                 lblR.Text = "Seleccione Un Medidor";
+                    pnlAlertaRojo.Visible = true;
+                    lblR.Text = "Seleccione Un Medidor";
                 }
 
             }
             catch (Exception ex)
             {
                 pnlAlertaRojo.Visible = true;
-                lblR.Text = "Erro AL Guardar Los Registro : "+ex.ToString();
+                lblR.Text = "Erro AL Guardar Los Registro : " + ex.ToString();
             }
         }
 

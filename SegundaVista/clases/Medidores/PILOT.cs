@@ -84,7 +84,7 @@ namespace SegundaVista.clases.Medidores
     //}
     public class DatosPilot
     {
-        public ObjectId _id { get; set; }            //
+        public ObjectId _id { get; set; }            
         public string id_pilot { get; set; }
         public string Nombre { get; set; }
         public string NumeroMedidor { get; set; }
@@ -115,5 +115,9 @@ namespace SegundaVista.clases.Medidores
         public decimal kVAh_rms { get; set; }        // Total kWh (del-Rec) * 0.8
         public decimal Rec_kVAh { get; set; }        // Kwh Rec Int * 0.8
         public decimal Del_kVAh { get; set; }        // Kwh Del Int * 0.8
+        //Bloque
+        public decimal Blo_TotalkWh_del_Rec { get; set; }//  Kwh Del Int - Kwh Rec Int
+        public decimal Blo_KwhRec { get; set; }          //kiloWatsHora  en Bloque recividos (rec - positivo) [KwhImp(kWh)]
+        public decimal Blo_KwhDel { get; set; }          //kiloWatsHora  en Bloque enviados  (del - Negativo) [KwhExp(kWh)]
     }
 }
