@@ -157,6 +157,7 @@
     <Compile Include="clases\Medidores\Landys\S4X.cs" />
     <Compile Include="clases\Medidores\NEXUS_orig.cs" />
     <Compile Include="clases\Medidores\PILOT.cs" />
+    <Compile Include="clases\Medidores\RegitrosMedidores.cs" />
     <Compile Include="clases\Registros.cs" />
     <Compile Include="clases\Medidores\SHNEIDER_ION.cs" />
     <Compile Include="clases\Usuario.cs" />

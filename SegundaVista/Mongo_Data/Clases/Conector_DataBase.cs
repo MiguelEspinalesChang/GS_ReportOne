@@ -192,9 +192,12 @@ namespace SegundaVista.Mongo_Data.Clases
                 {"kVAh_rms",valor.kVAh_rms},
                 {"Rec_kVAh",valor.Rec_kVAh},
                 {"Del_kVAh",valor.Del_kVAh},
+                {"Blo_TotalkWh_del_Rec",valor.Blo_TotalkWh_del_Rec},
                 {"Blo_KwhRec",valor.Blo_KwhRec},
-                {"Blo_KwhRec",valor.Blo_KwhRec},
-                {"Blo_KwhDel",valor.Blo_KwhDel }
+                {"Blo_KwhDel",valor.Blo_KwhDel },
+                {"Blo_TotalkVARh",valor.Blo_TotalkVARh },
+                {"Blo_kVARhDel",valor.Blo_kVARhDel },
+                {"Blo_kVARhRec",valor.Blo_kVARhRec }
                 };
                 var coleccion = dataLocal.GetCollection<BsonDocument>("pilot");
                 coleccion.InsertOneAsync(documento);

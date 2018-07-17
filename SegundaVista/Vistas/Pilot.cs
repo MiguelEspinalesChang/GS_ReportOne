@@ -1,4 +1,5 @@
 ﻿using SegundaVista.clases.Medidores;
+using SegundaVista.Vistas;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -59,7 +60,7 @@ namespace SegundaVista.Vistas
                     System.IO.StreamReader file =
                         new System.IO.StreamReader(@"" + openFileDialog1.FileName);
 
-                    List<PILOT> listaData = new List<PILOT>();
+                    List<DatosPilot> listaData = new List<DatosPilot>();
 
 
                     while ((line = file.ReadLine()) != null)
@@ -71,7 +72,7 @@ namespace SegundaVista.Vistas
                         int[] columnasUsar = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15, 17, 18, 19, 20, 21 };
                         columnasCsv = line.Split(',');
 
-                        PILOT filaData = new PILOT();
+                        DatosPilot filaData = new DatosPilot();
 
                         if (counter > 1 && counter <= 41)
                         {
@@ -153,7 +154,7 @@ namespace SegundaVista.Vistas
                             listaData.Add(filaData);
                         }
                     }
-                    var bindingList = new BindingList<PILOT>(listaData);
+                    var bindingList = new BindingList<DatosPilot>(listaData);
                     var source = new BindingSource(bindingList, null);
                     gridDatos.DataSource = source;
                 }

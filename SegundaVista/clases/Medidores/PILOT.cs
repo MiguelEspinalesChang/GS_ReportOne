@@ -7,40 +7,6 @@ using System.Threading.Tasks;
 
 namespace SegundaVista.clases.Medidores
 {
-    public class PILOT
-    {
-     
-        public DateTime Time { get; set; }           //fecha 
-        //  public string Modelo { get; set; }
-        public decimal Va { get; set; }              //voltaje en a                            [Ua/Uab(V)]
-        public decimal Vb { get; set; }              //voltaje en b                            [Ub/Ubc(V)]
-        public decimal Vc { get; set; }              //voltaje en c                            [Uc/Uca(V)]
-        public decimal Ia { get; set; }              //intencidad en a                         [Ia(A)]
-        public decimal Ib { get; set; }              //intencidad en b                         [Ib(A)]
-        public decimal Ic { get; set; }              //intencidad en c                         [Ic(A)]
-        public decimal Frequency { get; set; }       //frecuencia                              [F(Hz)]
-        public decimal Pa { get; set; }              //potencia en a                           [Pa(kW)]
-        public decimal Pb { get; set; }              //potencia en b                           [Pb(kW)]
-        public decimal Pc { get; set; }              //potencia en c                           [Pc(kW)]
-        public decimal TotalkW { get; set; }         //total Kilowhats                         [Ptot(kW)]
-        public decimal Pftot { get; set; }           //factor                                  [PFtot]
-        public decimal KwhRec { get; set; }          //kiloWatsHora recividos (rec - positivo) [KwhImp(kWh)]
-        public decimal KwhDel { get; set; }          //kiloWatsHora enviados  (del - Negativo) [KwhExp(kWh)]
-        public decimal kVARhDel { get; set; }        //kiloVarHora  enviados  (del - Negativo) [KvarhImp(kvarh)]
-        public decimal kVARhRec { get; set; }        //kiloVarHora  recividos (rec - positivo) [KvarhExp(kvarh)]
-
-        //Datos creados
-
-        public decimal TotalkWh_del_Rec { get; set; }//  Kwh Del Int - Kwh Rec Int
-        public decimal TotalkVARh { get; set; }      //  Del. kVARh Int - Rec. kVARh Int
-        public decimal Rec_kW { get; set; }          // Kwh Rec Int * 4
-        public decimal Del_kW { get; set; }          // Del. kW
-        public decimal kVAh_rms { get; set; }        // Total kWh (del-Rec) * 0.8
-        public decimal Rec_kVAh { get; set; }        // Kwh Rec Int * 0.8
-        public decimal Del_kVAh { get; set; }        // Kwh Del Int * 0.8
-
-    }
-
     public class PilotDB
     {
        public ObjectId _id { get; set; }            //
@@ -53,35 +19,6 @@ namespace SegundaVista.clases.Medidores
        //public List<dbDatosPilot> Regitros = new List<dbDatosPilot>();
        
     }
-    //public class dbDatosPilot
-    //{
-    //    public DateTime Time { get; set; }           //fecha 
-    //    //  public string Modelo { get; set; }
-    //    public decimal Va { get; set; }              //voltaje en a                            [Ua/Uab(V)]
-    //    public decimal Vb { get; set; }              //voltaje en b                            [Ub/Ubc(V)]
-    //    public decimal Vc { get; set; }              //voltaje en c                            [Uc/Uca(V)]
-    //    public decimal Ia { get; set; }              //intencidad en a                         [Ia(A)]
-    //    public decimal Ib { get; set; }              //intencidad en b                         [Ib(A)]
-    //    public decimal Ic { get; set; }              //intencidad en c                         [Ic(A)]
-    //    public decimal Frequency { get; set; }       //frecuencia                              [F(Hz)]
-    //    public decimal Pa { get; set; }              //potencia en a                           [Pa(kW)]
-    //    public decimal Pb { get; set; }              //potencia en b                           [Pb(kW)]
-    //    public decimal Pc { get; set; }              //potencia en c                           [Pc(kW)]
-    //    public decimal TotalkW { get; set; }         //total Kilowhats                         [Ptot(kW)]
-    //    public decimal Pftot { get; set; }           //factor                                  [PFtot]
-    //    public decimal KwhRec { get; set; }          //kiloWatsHora recividos (rec - positivo) [KwhImp(kWh)]
-    //    public decimal KwhDel { get; set; }          //kiloWatsHora enviados  (del - Negativo) [KwhExp(kWh)]
-    //    public decimal kVARhDel { get; set; }        //kiloVarHora  enviados  (del - Negativo) [KvarhImp(kvarh)]
-    //    public decimal kVARhRec { get; set; }        //kiloVarHora  recividos (rec - positivo) [KvarhExp(kvarh)]
-    //    //Datos creados
-    //    public decimal TotalkWh_del_Rec { get; set; }//  Kwh Del Int - Kwh Rec Int
-    //    public decimal TotalkVARh { get; set; }      //  Del. kVARh Int - Rec. kVARh Int
-    //    public decimal Rec_kW { get; set; }          // Kwh Rec Int * 4
-    //    public decimal Del_kW { get; set; }          // Del. kW
-    //    public decimal kVAh_rms { get; set; }        // Total kWh (del-Rec) * 0.8
-    //    public decimal Rec_kVAh { get; set; }        // Kwh Rec Int * 0.8
-    //    public decimal Del_kVAh { get; set; }        // Kwh Del Int * 0.8
-    //}
     public class DatosPilot
     {
         public ObjectId _id { get; set; }            
@@ -101,7 +38,7 @@ namespace SegundaVista.clases.Medidores
         public decimal Pa { get; set; }              //potencia en a                           [Pa(kW)]
         public decimal Pb { get; set; }              //potencia en b                           [Pb(kW)]
         public decimal Pc { get; set; }              //potencia en c                           [Pc(kW)]
-        public decimal TotalkW { get; set; }         //total Kilowhats                         [Ptot(kW)]
+        public decimal TotalkW { get; set; }         //total Kilowats                          [Ptot(kW)]
         public decimal Pftot { get; set; }           //factor                                  [PFtot]
         public decimal KwhRec { get; set; }          //kiloWatsHora recividos (rec - positivo) [KwhImp(kWh)]
         public decimal KwhDel { get; set; }          //kiloWatsHora enviados  (del - Negativo) [KwhExp(kWh)]
@@ -110,14 +47,18 @@ namespace SegundaVista.clases.Medidores
         //Datos creados
         public decimal TotalkWh_del_Rec { get; set; }//  Kwh Del Int - Kwh Rec Int
         public decimal TotalkVARh { get; set; }      //  Del. kVARh Int - Rec. kVARh Int
-        public decimal Rec_kW { get; set; }          // Kwh Rec Int * 4
-        public decimal Del_kW { get; set; }          // Del. kW
-        public decimal kVAh_rms { get; set; }        // Total kWh (del-Rec) * 0.8
+        public decimal Rec_kW { get; set; }          //  Bloque  Kwh Rec Int * 4
+        public decimal Del_kW { get; set; }          //  bloque  kwh Del int * 4
+        public decimal kVAh_rms { get; set; }        // Total kWh (rec-del) * 0.8
         public decimal Rec_kVAh { get; set; }        // Kwh Rec Int * 0.8
         public decimal Del_kVAh { get; set; }        // Kwh Del Int * 0.8
         //Bloque
         public decimal Blo_TotalkWh_del_Rec { get; set; }//  Kwh Del Int - Kwh Rec Int
         public decimal Blo_KwhRec { get; set; }          //kiloWatsHora  en Bloque recividos (rec - positivo) [KwhImp(kWh)]
         public decimal Blo_KwhDel { get; set; }          //kiloWatsHora  en Bloque enviados  (del - Negativo) [KwhExp(kWh)]
+        public decimal Blo_TotalkVARh { get; set; }      // total kvarh rec - del
+        public decimal Blo_kVARhDel { get; set; }        //kVARhDel en Bloque 
+        public decimal Blo_kVARhRec { get; set; }        //kVARhRec en Bloque
     }
+   
 }

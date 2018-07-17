@@ -328,7 +328,7 @@ namespace SegundaVista.Vistas
                         if (File.Exists(url))
                         {
                             string line = "";
-                            string linea = "";
+                            //string linea = "";
                             int counter = 0;
                             // Read the file and display it line by line.  
                             System.IO.StreamReader file = new System.IO.StreamReader(@"" + url);
@@ -339,14 +339,11 @@ namespace SegundaVista.Vistas
                             filaData.NombrePropietadio = txtNombreCliente.Text;
                             filaData.Marca = txtMarcaMedidor.Text;
                             filaData.NumeroMedidor = txtNumeroMedidor.Text;
-                            //sacar la cantidad de lineas
-                            int cantidadLineas = 0;
-                            while ((linea = fileCantidad.ReadLine()) != null)
-                            {
-                                cantidadLineas++;
-                            }
-
-
+                            //Bloque
+                            decimal Blo_KwhDel_a = 0;
+                            decimal Blo_KwhRec_a = 0;
+                            decimal Blo_kVARhDel_a = 0;
+                            decimal Blo_Blo_kVARhRec_a = 0;
                             while ((line = file.ReadLine()) != null)
                             {
                                 counter++;
@@ -356,7 +353,8 @@ namespace SegundaVista.Vistas
                                 columnasCsv = line.Split(',');
                                 DatosPilot Dato = new DatosPilot();
 
-                                if (counter > 1 && counter < cantidadLineas + 1)
+
+                                if (counter > 1)
                                 {
                                     // this.gridDatos.Rows.Add(1);
                                     Random rnd = new Random();
@@ -404,28 +402,79 @@ namespace SegundaVista.Vistas
                                             case 18:
                                                 Dato.Pftot = Convert.ToDecimal(texto);
                                                 break;
+                                            //Datos generados en bloque
                                             case 19:
-                                                Dato.KwhRec = Convert.ToDecimal(texto);
+                                                Dato.KwhRec = Convert.ToDecimal(texto); 
+                                                if (counter >= 3)
+                                                {
+                                                    if (Dato.KwhRec < Blo_KwhRec_a)
+                                                    {
+                                                         Dato.Blo_KwhRec = Blo_KwhRec_a - Convert.ToDecimal(texto);
+                                                    }
+                                                    else
+                                                    {
+                                                        Dato.Blo_KwhRec = 0;
+                                                    }
+
+                                                    Blo_KwhRec_a = Dato.KwhRec;
+                                                }
+                                                else
+                                                {
+                                                    Blo_KwhRec_a = Dato.KwhRec;
+                                                }
+
                                                 break;
                                             case 20:
                                                 Dato.KwhDel = Convert.ToDecimal(texto);
-                                                decimal Blo_KwhDel_a = Dato.KwhDel;
-                                                //Datos generados en bloque
-                                                if (counter >= 2)
+                                             
+                                                if (counter >= 3)
                                                 {
                                                     Dato.Blo_KwhDel = Blo_KwhDel_a - Convert.ToDecimal(texto);
+                                                    Blo_KwhDel_a = Dato.KwhDel;
                                                 }
+                                                else
+                                                {
+                                                    Blo_KwhDel_a = Dato.KwhDel;
+                                                }
+
                                                 break;
                                             case 21:
                                                 Dato.kVARhDel = Convert.ToDecimal(texto);
+                                                if (counter >= 3)
+                                                {
+                                                    if (Dato.kVARhDel < Blo_kVARhDel_a)
+                                                    {
+                                                        Dato.Blo_kVARhDel = 0;
+                                                    }
+                                                    else
+                                                    {
+                                                        Dato.Blo_kVARhDel = Blo_kVARhDel_a - Convert.ToDecimal(texto);
+                                                    }
+
+                                                    Blo_kVARhDel_a = Dato.kVARhDel;
+                                                }
+                                                else
+                                                {
+                                                    Blo_kVARhDel_a = Dato.kVARhDel;
+                                                }
                                                 break;
                                             case 22:
                                                 Dato.kVARhRec = Convert.ToDecimal(texto);
+                                                if (counter >= 3)
+                                                {
+                                                    Dato.Blo_kVARhRec = Blo_Blo_kVARhRec_a - Convert.ToDecimal(texto);
+                                                    Blo_Blo_kVARhRec_a = Dato.kVARhRec;
+                                                }
+                                                else
+                                                {
+                                                    Blo_Blo_kVARhRec_a = Dato.kVARhRec;
+                                                }
                                                 break;
                                             case 23:
-                                                Dato.TotalkWh_del_Rec = (Dato.KwhDel - Dato.KwhRec);
-                                                                                          
-                                                Dato.TotalkVARh = (Dato.kVARhDel - Dato.kVARhRec);
+                                                Dato.TotalkWh_del_Rec = Dato.KwhRec - Dato.KwhDel;
+                                                Dato.Blo_TotalkWh_del_Rec = Dato.Blo_KwhRec - Dato.Blo_KwhDel;
+                                                Dato.TotalkVARh = Dato.kVARhRec - Dato.kVARhDel;
+                                                Dato.Blo_TotalkVARh = Dato.Blo_kVARhRec - Dato.Blo_kVARhDel;
                                                 ////datos Calculado a partir de lo registros
                                                 Dato.Rec_kW = (Dato.KwhRec * 4);
                                                 Dato.Del_kW = (Dato.KwhDel * 4);
@@ -442,8 +491,6 @@ namespace SegundaVista.Vistas
                                 }
                             }
                             //Pasar Los Datos Leidos Ala Base de datos
-                            //conector.insertarDatosPilot(filaData); 
-
                             conector.insertarDatosPilot(Regitros, filaData);
                             pnlAlertaVerde.Visible = true;
                             lblverde.Text = "Registros Agregados";
