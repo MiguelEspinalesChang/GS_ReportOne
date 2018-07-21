@@ -15,6 +15,7 @@ using SegundaVista.Mongo_Data;
 using MongoDB;
 using MongoDB.Driver.Linq;
 using MongoDB.Driver;
+using SegundaVista.clases;
 
 namespace SegundaVista.Vistas
 {
@@ -100,7 +101,7 @@ namespace SegundaVista.Vistas
         {
 
         }
-      
+
         private void btnAnlizarRangoFecha_Click(object sender, EventArgs e)
         {
             //Llano
@@ -147,17 +148,18 @@ namespace SegundaVista.Vistas
 
             ////Linq
             var resutado = (from d in DocumentoRegistro.FindAll()
-                           where (d.NumeroMedidor == txtNumeroMedidor.Text) && 
-                           (d.Time >= FechaInicialRegistro && d.Time <= FechaFinalRegistro) orderby d.Time ascending
+                            where (d.NumeroMedidor == txtNumeroMedidor.Text) &&
+                            (d.Time >= FechaInicialRegistro && d.Time <= FechaFinalRegistro)
+                            orderby d.Time ascending
                             select d).ToList();
 
-          //var PRUEBA = (from d in DocumentoRegistro.FindAll()
-          //                  where (d.NumeroMedidor == txtNumeroMedidor.Text)
-          //                orderby d.Time ascending
-          //                select d).ToList();
+            //var PRUEBA = (from d in DocumentoRegistro.FindAll()
+            //                  where (d.NumeroMedidor == txtNumeroMedidor.Text)
+            //                orderby d.Time ascending
+            //                select d).ToList();
 
 
-            
+
             // PilotDB pilot = new PilotDB();
             DatosPilot dpilot = new DatosPilot();
             DatosPilot dpilotValle = new DatosPilot();
@@ -253,11 +255,11 @@ namespace SegundaVista.Vistas
 
 
                 //Agregar los datos de la consulta a una tabla
-                
-                //var bindingList = new BindingList<DatosPilot>(resutado);
-                //var source = new BindingSource(bindingList, null);
-                //gridDatosConsulta.DataSource = source;
-                //gridDatosConsulta.Refresh();
+
+                var bindingList = new BindingList<DatosPilot>(resutado);
+                var source = new BindingSource(bindingList, null);
+                gridDatosConsulta.DataSource = source;
+                gridDatosConsulta.Refresh();
 
                 ////Llano////////////////////////
 
@@ -324,6 +326,27 @@ namespace SegundaVista.Vistas
         private void tabDelivery_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnExportarExel_Click(object sender, EventArgs e)
+        {
+            Exportar_a ex = new Exportar_a();
+            try
+            {
+                if (gridDatosConsulta.Rows.Count > 0)
+                {
+                    ex.Exel(gridDatosConsulta);
+                }
+                else
+                {
+                    lblR.Text = "Tabla vacio " ;
+                } 
+            }
+            catch(Exception erro)
+            {
+                lblR.Text = "Error al exportar " + erro;
+            }
+           
         }
     }
 }

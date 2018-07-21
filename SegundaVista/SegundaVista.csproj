@@ -152,6 +152,7 @@
   <ItemGroup>
     <Compile Include="clases\Cliente.cs" />
     <Compile Include="clases\DatosMedidor.cs" />
+    <Compile Include="clases\Exportar_a.cs" />
     <Compile Include="clases\Medidores\Landys\Ax.cs" />
     <Compile Include="clases\Medidores\Landys\S4e.cs" />
     <Compile Include="clases\Medidores\Landys\S4X.cs" />
@@ -353,8 +354,10 @@
     <Content Include="layout\iconos\icons8-medidor-de-energía-filled-24.png" />
     <Content Include="layout\iconos\icons8-medidor-editar-de-energía-32 %282%29.png" />
     <Content Include="layout\iconos\icons8-minimizar-la-ventana-100.png" />
+    <Content Include="layout\iconos\icons8-ms-excel-32.png" />
     <Content Include="layout\iconos\icons8-multiedición-32.png" />
     <Content Include="layout\iconos\icons8-multiedición-50.png" />
+    <Content Include="layout\iconos\icons8-pdf-32.png" />
     <Content Include="layout\iconos\icons8-placa-base-32.png" />
     <Content Include="layout\iconos\icons8-rango-de-fechas-32.png" />
     <Content Include="layout\iconos\icons8-reequilibrar-la-cartera-32.png" />
@@ -389,6 +392,35 @@
     <Folder Include="Analisis_Grafico\Analisis_multi_Dias\" />
     <Folder Include="Reportes\Facturacion\" />
     <Folder Include="Reportes\Fact_multiple\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

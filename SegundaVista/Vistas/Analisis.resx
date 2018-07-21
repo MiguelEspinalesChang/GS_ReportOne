@@ -142,6 +142,30 @@
         M1NHgtekAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AAAFiSURBVFhH7de7SgNBGMXxIFbipdZ30AfQ2kthoYWNb2Bn
+        J2Ih+AJiYWGvYGvtpfNaWGmpYKGNCIIoiNf/gQx8LLObmexnIznwg2R2duYQsmHS6KQi3RjDXKIJuKUP
+        F/jJtAqXrCC2QZkX89qlxDbsBq0s4MS8r11iB3aDVuYxALcS7RRQ3Eq0W0BxKVGngKISxwjXs0vULaAU
+        SywiOR4FFFtCayYnt0CK/1fgGwe4M2NV3AtsQBnCK2JzLPcC+vkNOUVsjuVeYB0hV4jNsdwLPEBnBj1q
+        n82xKu4FZAaThbEyf1JgBP24N2Nl3AucI2QW+zjCI2LzXQvcYApKF/QphPTgGsV7XArcYhraVOfGPTxD
+        X8hhhFyieG/tAk8YRMgm7PV3bGHXjFm1CxwiZBxfKM6pklUgdij9wBLW8NYcy6E1k5N7LE+xjOT0Qo9Z
+        bKF2nEFrZiX3r1mZUWitTiJpNH4BebHQRTcjyI8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnExportarExel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsEAAA7BAbiRa+0AAAFlSURBVFhH7davSgRRFMfxq2AwGPyDKIhgsmkQTILYDBoM
+        FoMvYLAZFR/A4BOYLIIIvoJFEIPaFYOCRdAiiKLfs9wDl7tnnbvs3Zng/ODD7pw5M3OGGXavq1OnzYxj
+        BXs4xxO6FutiP4ZsmULRxSyaSawnmIWZDVgXKKJJPf4LM2hKWQMI6W1KpwOEj+ACul9rh0GtKwOEOUa8
+        Pzx/4QA3GMQQ7n3tAcOQO331NWGl4wHEKiQ7kO2txpZzuwj7NPHxf0ka4Bo9GMEj+v33N4R9muwDiDVI
+        lvznAeIezQJOPBlY92vtMqglD3CLXkgm8IG4x0qWd0BcQR6DZBTviHusZBtgEZJl/7mPuEeT/RGcQTIP
+        OWEfBvCCsE9j3UArhQN8YhqSU0hts7Hl3Da0T2iyDnAE+SGaw7ev3fnaGJ59TVjJ9g6ksFLJAJX/GbVz
+        fKUDtFyQVL4ki1P6ojQlpS7L6/yHOPcLgXCPxIdcz6IAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="btnAnlizarRangoFecha.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
