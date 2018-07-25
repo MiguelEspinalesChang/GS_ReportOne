@@ -2586,6 +2586,7 @@
             this.txtNombreMedidor.UseSelectable = true;
             this.txtNombreMedidor.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtNombreMedidor.WaterMarkFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreMedidor.Click += new System.EventHandler(this.txtNombreMedidor_Click);
             // 
             // label11
             // 

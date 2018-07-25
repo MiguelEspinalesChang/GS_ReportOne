@@ -335,7 +335,9 @@ namespace SegundaVista.Vistas
             {
                 if (gridDatosConsulta.Rows.Count > 0)
                 {
-                    ex.Exel(gridDatosConsulta);
+                    ex.Exel(gridDatosConsulta, txtNombreMedidor.Text);
+                    pnlAlertaVerde.Visible = true;
+                    lblverde.Text = "datos exportados";
                 }
                 else
                 {
@@ -344,9 +346,15 @@ namespace SegundaVista.Vistas
             }
             catch(Exception erro)
             {
+                pnlAlertaRojo.Visible = true;
                 lblR.Text = "Error al exportar " + erro;
             }
            
+        }
+
+        private void txtNombreMedidor_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
