@@ -102,7 +102,7 @@ namespace SegundaVista.Vistas
 
         }
 
-        private void btnAnlizarRangoFecha_Click(object sender, EventArgs e)
+        public void btnAnlizarRangoFecha_Click(object sender, EventArgs e)
         {
             //Llano
             txtKwhLlano.Text = "";
@@ -330,26 +330,29 @@ namespace SegundaVista.Vistas
 
         private void btnExportarExel_Click(object sender, EventArgs e)
         {
-            Exportar_a ex = new Exportar_a();
+            Exportar_a export = new Exportar_a();
             try
             {
                 if (gridDatosConsulta.Rows.Count > 0)
                 {
-                    ex.Exel(gridDatosConsulta, txtNombreMedidor.Text);
+                    //export.Exel(gridDatosConsulta, txtNombreMedidor.Text);
+                    export.excelPro(gridDatosConsulta, txtNombreMedidor.Text);
                     pnlAlertaVerde.Visible = true;
                     lblverde.Text = "datos exportados";
                 }
                 else
                 {
-                    lblR.Text = "Tabla vacio " ;
-                } 
+                    lblR.Text = "Tabla vacio ";
+                }
             }
-            catch(Exception erro)
+            catch (Exception erro)
             {
                 pnlAlertaRojo.Visible = true;
                 lblR.Text = "Error al exportar " + erro;
             }
-           
+
+
+
         }
 
         private void txtNombreMedidor_Click(object sender, EventArgs e)

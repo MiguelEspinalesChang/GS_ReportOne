@@ -235,3 +235,6 @@ C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\System.Windows.Intera
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\ControlzEx.pdb
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\System.Buffers.xml
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.csproj.ResolveComReference.cache
+C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\SpreadsheetLight.dll
+C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\SpreadsheetLight.xml
