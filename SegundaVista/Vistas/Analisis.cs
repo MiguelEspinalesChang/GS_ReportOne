@@ -1,21 +1,15 @@
 ﻿using SegundaVista.Mongo_Data.Clases;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using MongoDB.Bson;
-using MongoDB.Driver.Builders;
 using SegundaVista.clases.Medidores;
 using SegundaVista.Mongo_Data;
-using MongoDB;
 using MongoDB.Driver.Linq;
 using MongoDB.Driver;
 using SegundaVista.clases;
+using PagedList;
 
 namespace SegundaVista.Vistas
 {
@@ -25,7 +19,9 @@ namespace SegundaVista.Vistas
         {
             InitializeComponent();
         }
-
+        ///agregar paginacion
+        ///https://www.youtube.com/watch?v=L1wpQ_fKjVw
+        public int numeroPagina = 1;
 
         private Conexion MongoConexion = new Conexion();
         private void Analisis_Load(object sender, EventArgs e)
@@ -46,7 +42,7 @@ namespace SegundaVista.Vistas
 
         private void btnCerrarAlertaR_Click(object sender, EventArgs e)
         {
-            pnlAlertaVerde.Visible = false;
+            pnlAlertaRojo.Visible = false;
         }
 
         private void btnCerrarAlertaV_Click(object sender, EventArgs e)
@@ -258,6 +254,7 @@ namespace SegundaVista.Vistas
 
                 var bindingList = new BindingList<DatosPilot>(resutado);
                 var source = new BindingSource(bindingList, null);
+                gridDatosConsulta.Rows.Clear();
                 gridDatosConsulta.DataSource = source;
                 gridDatosConsulta.Refresh();
 
@@ -356,6 +353,31 @@ namespace SegundaVista.Vistas
         }
 
         private void txtNombreMedidor_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPageNumber_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPageFinal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPageSiguiente_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPageInicial_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPageAnterior_Click(object sender, EventArgs e)
         {
 
         }

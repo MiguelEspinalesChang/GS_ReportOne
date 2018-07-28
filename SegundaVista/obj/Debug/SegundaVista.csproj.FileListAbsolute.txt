@@ -238,3 +238,5 @@ C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\obj\Debug\SegundaVista.csproj.R
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\DocumentFormat.OpenXml.dll
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\SpreadsheetLight.dll
 C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\SpreadsheetLight.xml
+C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\PagedList.dll
+C:\Users\HP004\Desktop\GS_ReportOne\SegundaVista\bin\Debug\PagedList.xml

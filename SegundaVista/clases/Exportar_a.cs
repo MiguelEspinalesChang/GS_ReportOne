@@ -57,34 +57,14 @@ namespace SegundaVista.clases
         
         public void excelPro(DataGridView tabla, string Nombre_Medidor)
         {
-            DataTable dt = new DataTable();
-           // dt = tabla.DataSource as DataTable;
-            string pathFile = AppDomain.CurrentDomain.BaseDirectory + "miExcel.xlsx";
-            SLDocument Documet = new SLDocument();
-            //foreach (DataGridViewColumn columna in tabla.Columns)
-            //{
-            //    DataColumn col = new DataColumn(columna.Name);
-            //    dt.Columns.Add(col);
-            //}
-            //foreach (DataGridViewRow fila in tabla.Rows)
-            //{
-            //    dt.Rows.Add(fila);
-            //}
-            //columnas
-            //dt.Columns.Add("Nombre", typeof(string));
-            //dt.Columns.Add("Edad", typeof(int));
-            //dt.Columns.Add("Sexo", typeof(string));
+           // DataTable dt = new DataTable();
+           //// dt = tabla.DataSource as DataTable;
+           // string pathFile = AppDomain.CurrentDomain.BaseDirectory + "miExcel.xlsx";
+           // SLDocument Documet = new SLDocument();
+           // dt.Columns.Add();
 
-
-            ////registros , rows
-            //dt.Rows.Add("Pepe", 19, "Hombre");
-            //dt.Rows.Add("Ana", 20, "Mujer");
-            //dt.Rows.Add("Perla", 30, "Mujer");
-
-            //https://codereview.stackexchange.com/questions/79021/convert-datagridview-data-to-datatable
-
-            Documet.ImportDataTable(1,1, dt, true);
-            Documet.SaveAs(pathFile);
+           // Documet.ImportDataTable(1,1, dt, true);
+           // Documet.SaveAs(pathFile);
         }
     }
 }

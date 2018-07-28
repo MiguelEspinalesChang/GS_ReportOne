@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Analisis));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlMenuHijo = new System.Windows.Forms.Panel();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -162,6 +162,11 @@
             this.pnlAlertaVerde = new System.Windows.Forms.Panel();
             this.btnCerrarAlertaV = new System.Windows.Forms.PictureBox();
             this.lblverde = new System.Windows.Forms.Label();
+            this.btnPageAnterior = new System.Windows.Forms.Button();
+            this.btnPageInicial = new System.Windows.Forms.Button();
+            this.btnPageSiguiente = new System.Windows.Forms.Button();
+            this.btnPageFinal = new System.Windows.Forms.Button();
+            this.lblPageNumber = new System.Windows.Forms.Label();
             this.pnlMenuHijo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.pnlContenedor.SuspendLayout();
@@ -367,7 +372,7 @@
             this.tabcRegistrosMedidor.Location = new System.Drawing.Point(4, 290);
             this.tabcRegistrosMedidor.Name = "tabcRegistrosMedidor";
             this.tabcRegistrosMedidor.SelectedIndex = 0;
-            this.tabcRegistrosMedidor.Size = new System.Drawing.Size(986, 249);
+            this.tabcRegistrosMedidor.Size = new System.Drawing.Size(986, 246);
             this.tabcRegistrosMedidor.TabIndex = 194;
             // 
             // tabDatosNeto
@@ -385,7 +390,7 @@
             this.tabDatosNeto.Location = new System.Drawing.Point(4, 26);
             this.tabDatosNeto.Name = "tabDatosNeto";
             this.tabDatosNeto.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDatosNeto.Size = new System.Drawing.Size(978, 219);
+            this.tabDatosNeto.Size = new System.Drawing.Size(978, 216);
             this.tabDatosNeto.TabIndex = 0;
             this.tabDatosNeto.Text = "Datos Neto";
             this.tabDatosNeto.Click += new System.EventHandler(this.tabDatosNeto_Click);
@@ -1189,7 +1194,7 @@
             this.tabDelivery_Recibido.Location = new System.Drawing.Point(4, 26);
             this.tabDelivery_Recibido.Name = "tabDelivery_Recibido";
             this.tabDelivery_Recibido.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDelivery_Recibido.Size = new System.Drawing.Size(978, 219);
+            this.tabDelivery_Recibido.Size = new System.Drawing.Size(978, 216);
             this.tabDelivery_Recibido.TabIndex = 1;
             this.tabDelivery_Recibido.Text = "Enviado , Recibido";
             this.tabDelivery_Recibido.Click += new System.EventHandler(this.tabDelivery_Click);
@@ -2159,17 +2164,24 @@
             this.tabTablaDatos.Location = new System.Drawing.Point(4, 26);
             this.tabTablaDatos.Name = "tabTablaDatos";
             this.tabTablaDatos.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTablaDatos.Size = new System.Drawing.Size(978, 219);
+            this.tabTablaDatos.Size = new System.Drawing.Size(978, 216);
             this.tabTablaDatos.TabIndex = 2;
             this.tabTablaDatos.Text = "Tabla datos";
             // 
             // pnlTablaConsulta
             // 
+            this.pnlTablaConsulta.BackColor = System.Drawing.Color.White;
+            this.pnlTablaConsulta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTablaConsulta.Controls.Add(this.lblPageNumber);
+            this.pnlTablaConsulta.Controls.Add(this.btnPageFinal);
+            this.pnlTablaConsulta.Controls.Add(this.btnPageSiguiente);
+            this.pnlTablaConsulta.Controls.Add(this.btnPageInicial);
+            this.pnlTablaConsulta.Controls.Add(this.btnPageAnterior);
             this.pnlTablaConsulta.Controls.Add(this.gridDatosConsulta);
             this.pnlTablaConsulta.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlTablaConsulta.Location = new System.Drawing.Point(3, 3);
             this.pnlTablaConsulta.Name = "pnlTablaConsulta";
-            this.pnlTablaConsulta.Size = new System.Drawing.Size(972, 213);
+            this.pnlTablaConsulta.Size = new System.Drawing.Size(972, 210);
             this.pnlTablaConsulta.TabIndex = 0;
             // 
             // gridDatosConsulta
@@ -2177,39 +2189,37 @@
             this.gridDatosConsulta.AllowUserToAddRows = false;
             this.gridDatosConsulta.AllowUserToDeleteRows = false;
             this.gridDatosConsulta.AllowUserToOrderColumns = true;
-            this.gridDatosConsulta.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(255)))), ((int)(((byte)(224)))));
-            this.gridDatosConsulta.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridDatosConsulta.BackgroundColor = System.Drawing.Color.White;
             this.gridDatosConsulta.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridDatosConsulta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridDatosConsulta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.gridDatosConsulta.ColumnHeadersHeight = 30;
             this.gridDatosConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.gridDatosConsulta.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridDatosConsulta.EnableHeadersVisualStyles = false;
             this.gridDatosConsulta.GridColor = System.Drawing.Color.White;
             this.gridDatosConsulta.Location = new System.Drawing.Point(0, 0);
             this.gridDatosConsulta.Name = "gridDatosConsulta";
             this.gridDatosConsulta.ReadOnly = true;
             this.gridDatosConsulta.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridDatosConsulta.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
-            this.gridDatosConsulta.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.gridDatosConsulta.Size = new System.Drawing.Size(972, 213);
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(121)))), ((int)(((byte)(107)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridDatosConsulta.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(178)))));
+            this.gridDatosConsulta.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.gridDatosConsulta.Size = new System.Drawing.Size(972, 182);
             this.gridDatosConsulta.TabIndex = 1;
             // 
             // label4
@@ -2701,6 +2711,57 @@
             this.lblverde.Size = new System.Drawing.Size(0, 13);
             this.lblverde.TabIndex = 0;
             // 
+            // btnPageAnterior
+            // 
+            this.btnPageAnterior.Location = new System.Drawing.Point(375, 184);
+            this.btnPageAnterior.Name = "btnPageAnterior";
+            this.btnPageAnterior.Size = new System.Drawing.Size(75, 23);
+            this.btnPageAnterior.TabIndex = 2;
+            this.btnPageAnterior.Text = "<";
+            this.btnPageAnterior.UseVisualStyleBackColor = true;
+            this.btnPageAnterior.Click += new System.EventHandler(this.btnPageAnterior_Click);
+            // 
+            // btnPageInicial
+            // 
+            this.btnPageInicial.Location = new System.Drawing.Point(294, 184);
+            this.btnPageInicial.Name = "btnPageInicial";
+            this.btnPageInicial.Size = new System.Drawing.Size(75, 23);
+            this.btnPageInicial.TabIndex = 3;
+            this.btnPageInicial.Text = "<<";
+            this.btnPageInicial.UseVisualStyleBackColor = true;
+            this.btnPageInicial.Click += new System.EventHandler(this.btnPageInicial_Click);
+            // 
+            // btnPageSiguiente
+            // 
+            this.btnPageSiguiente.Location = new System.Drawing.Point(520, 185);
+            this.btnPageSiguiente.Name = "btnPageSiguiente";
+            this.btnPageSiguiente.Size = new System.Drawing.Size(75, 23);
+            this.btnPageSiguiente.TabIndex = 4;
+            this.btnPageSiguiente.Text = ">";
+            this.btnPageSiguiente.UseVisualStyleBackColor = true;
+            this.btnPageSiguiente.Click += new System.EventHandler(this.btnPageSiguiente_Click);
+            // 
+            // btnPageFinal
+            // 
+            this.btnPageFinal.Location = new System.Drawing.Point(601, 184);
+            this.btnPageFinal.Name = "btnPageFinal";
+            this.btnPageFinal.Size = new System.Drawing.Size(75, 23);
+            this.btnPageFinal.TabIndex = 5;
+            this.btnPageFinal.Text = ">>";
+            this.btnPageFinal.UseVisualStyleBackColor = true;
+            this.btnPageFinal.Click += new System.EventHandler(this.btnPageFinal_Click);
+            // 
+            // lblPageNumber
+            // 
+            this.lblPageNumber.AutoSize = true;
+            this.lblPageNumber.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPageNumber.Location = new System.Drawing.Point(456, 185);
+            this.lblPageNumber.Name = "lblPageNumber";
+            this.lblPageNumber.Size = new System.Drawing.Size(60, 22);
+            this.lblPageNumber.TabIndex = 183;
+            this.lblPageNumber.Text = "..........";
+            this.lblPageNumber.Click += new System.EventHandler(this.lblPageNumber_Click);
+            // 
             // Analisis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2742,6 +2803,7 @@
             this.panel11.ResumeLayout(false);
             this.tabTablaDatos.ResumeLayout(false);
             this.pnlTablaConsulta.ResumeLayout(false);
+            this.pnlTablaConsulta.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridDatosConsulta)).EndInit();
             this.pnlBtn.ResumeLayout(false);
             this.pnlAlerta.ResumeLayout(false);
@@ -2887,5 +2949,10 @@
         private System.Windows.Forms.DataGridView gridDatosConsulta;
         private System.Windows.Forms.Button btnExportarExel;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblPageNumber;
+        private System.Windows.Forms.Button btnPageFinal;
+        private System.Windows.Forms.Button btnPageSiguiente;
+        private System.Windows.Forms.Button btnPageInicial;
+        private System.Windows.Forms.Button btnPageAnterior;
     }
 }
